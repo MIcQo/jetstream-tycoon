@@ -1,12 +1,14 @@
-.PHONY: all build lint test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts determinism content-check wasm wasm-size-check balance migrate-up migrate-down dev
+.PHONY: all build lint test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
 WASM_BROTLI_MAX_BYTES := 2621440
 FUZZ_TIME ?= 3s
 MUTATION_THRESHOLD ?= 80
+POSTGRES_DSN ?= postgres://jetstream:jetstream@localhost:5432/jetstream?sslmode=disable
+CLICKHOUSE_DSN ?= clickhouse://localhost:9000?username=default&database=default&x-multi-statement=true
 
-all: lint test test-integration fuzz mutate content-check determinism wasm-size-check build
+all: lint migrations-check test test-integration fuzz mutate content-check determinism wasm-size-check build
 
 lint:
 	@test -z "$$(gofmt -l .)" || (echo "gofmt check failed on:" && gofmt -l . && exit 1)
@@ -15,6 +17,9 @@ lint:
 	@if [ -d web/node_modules ]; then \
 		npm --prefix web run typecheck; \
 	fi
+
+migrations-check:
+	go run ./tools/migrationcheck
 
 test: test-go test-ts
 
@@ -119,11 +124,13 @@ build: wasm
 balance:
 	go run ./tools/balancebot
 
-migrate-up:
-	@echo "migrate-up stub"
+migrate-up: migrations-check
+	migrate -path migrations/postgres -database "$(POSTGRES_DSN)" up
+	migrate -path migrations/clickhouse -database "$(CLICKHOUSE_DSN)" up
 
-migrate-down:
-	@echo "migrate-down stub"
+migrate-down: migrations-check
+	migrate -path migrations/postgres -database "$(POSTGRES_DSN)" down -all
+	migrate -path migrations/clickhouse -database "$(CLICKHOUSE_DSN)" down -all
 
 dev:
 	@echo "dev stub"
