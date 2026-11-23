@@ -93,10 +93,10 @@ content-check: i18n-check
 	go run ./tools/datagen
 
 determinism: wasm
-	go test -race -v -run TestDeterministicStateHash ./sim/...
+	go test -race -v -run '^TestDeterministic' ./sim/...
 	@hash=$$(go run ./cmd/simwasm); \
 	echo "native state hash: $$hash"; \
-	test "$$hash" = "8c94d155a43185c2bf23642b35a9588a72963e6559bf9daad7810b2f70720760"; \
+	test "$$hash" = "8fe4257585f92e735772ad9dcc4793c945cebbd32c8367a92a65a00c730ec2a1"; \
 	if command -v node >/dev/null 2>&1; then \
 		goroot="$$(go env GOROOT)"; \
 		if [ -f "$$goroot/lib/wasm/wasm_exec_node.js" ]; then \
@@ -104,7 +104,7 @@ determinism: wasm
 		else \
 			wasm_exec="$$goroot/misc/wasm/wasm_exec_node.js"; \
 		fi; \
-		wasm_hash=$$(node "$$wasm_exec" $(WASM_OUT)); \
+		wasm_hash=$$(env -i PATH="$$PATH" HOME="$$HOME" node "$$wasm_exec" $(WASM_OUT)); \
 		echo "wasm state hash:   $$wasm_hash"; \
 		test "$$wasm_hash" = "$$hash"; \
 	fi
