@@ -84,7 +84,7 @@ flowchart LR
 ```
 
 ## 3. Cloud save sync
-Revisions use optimistic locking. Save files go straight to object storage through presigned URLs. Nothing is uploaded if the save hasn't changed.
+Revisions use optimistic locking. Save files go straight to object storage through presigned URLs, which sign the size and checksum, into a staging prefix that expires after 24 h. The server keeps the last 3 committed revisions. Nothing is uploaded if the save hasn't changed.
 
 ```mermaid
 sequenceDiagram
@@ -95,14 +95,15 @@ sequenceDiagram
   D->>D: sha256(snapshot) equals last synced? then skip
   Note over D,PG: First upload: baseRevision=0, commit = INSERT ON CONFLICT DO NOTHING (identical retry 200, else 409/403)
   D->>API: POST /saves/{id}/upload-url (baseRevision=7, sha256, size)
-  API->>PG: SELECT revision WHERE id=?
+  API->>PG: SELECT revision WHERE id=? (+ quota, size cap, rate limit)
   alt revision is 7
-    API-->>D: presigned PUT URL (key .../8)
-    D->>OBJ: PUT blob
-    D->>API: PUT /saves/{id} commit (baseRevision=7, key, sha256, summary)
-    API->>OBJ: HEAD object (size, hash)
+    API-->>D: presigned PUT to staging/{save_id}/{uuid}, signs Content-Length + SHA-256, 5 min
+    D->>OBJ: PUT blob with signed headers (mismatch rejected by storage)
+    D->>API: PUT /saves/{id} commit (baseRevision=7, uploadId, sha256, summary)
+    API->>OBJ: HEAD staged object, copy to saves/{save_id}/8
     API->>PG: UPDATE saves ... WHERE id=? AND revision=7
     alt still 7
+      API->>PG: enqueue blob_gc saves/{save_id}/5
       API-->>D: 200 revision=8
     else changed meanwhile
       API-->>D: 409 server summary
@@ -172,6 +173,7 @@ erDiagram
   users ||--o{ saves : owns
   users ||--o{ user_aliases : "merged from"
   users ||--o{ deletion_jobs : requests
+  users ||--o| save_quotas : "limited by"
   devices ||--o{ saves : "last written by"
 
   users {
@@ -230,6 +232,15 @@ erDiagram
     bytea blob_sha256
     uuid device_id FK
     timestamptz updated_at
+  }
+  save_quotas {
+    uuid user_id PK
+    int max_saves "default 10"
+  }
+  blob_gc {
+    text key PK "old revision to delete"
+    timestamptz enqueued_at
+    int attempts
   }
   feature_flags {
     text key PK

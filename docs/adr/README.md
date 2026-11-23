@@ -26,3 +26,4 @@ Decisions are recorded in Nygard format (see `template.md` and ADR-0001). The cu
 | [0020](0020-ai-airlines.md) | AI airlines as full simulation entities driven by utility AI through the player's command path | Accepted |
 | [0021](0021-deterministic-math-and-modifier-stacking.md) | Deterministic math library, rounding and modifier stacking order | Accepted |
 | [0022](0022-save-keys-account-merge-deletion.md) | Per-save object keys, account merge on sign-in, and outbox-based account deletion | Accepted |
+| [0023](0023-save-retention-staging-upload-limits.md) | Server-side save revision retention, staged uploads and upload abuse limits | Accepted |

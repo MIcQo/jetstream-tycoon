@@ -103,20 +103,38 @@ type System interface {
 - **State traffic is MessagePack bytes.** Go copies the bytes into a JS `Uint8Array` with `js.CopyBytesToJS`, and the Worker **transfers** its `ArrayBuffer` to the UI thread without copying.
 ```
 sim.newGame(json{airlineName, homeCountry, difficulty, seed}) → Uint8Array   // zstd(MessagePack) snapshot
-sim.load(Uint8Array snapshot) → json{ok, error?}
+sim.load(Uint8Array snapshot) → json{ok, error?}                              // on success, the next update is kind "init"
 sim.save() → Uint8Array                                                       // zstd(MessagePack) snapshot → SaveStore
 sim.command(json{type, ...}) → json{ok, errorKey?}
 sim.advance(ticks) → Uint8Array                                               // MessagePack {delta, notifications, prompts, analytics[]}
 sim.query(json{type: "routeForecast", routeId, priceEco, priceBiz}) → json{result}
 ```
-The worker → UI message is `{kind: "update", buf: ArrayBuffer}` with `transfer: [buf]`. The UI decodes it with `@msgpack/msgpack`.
+Worker → UI messages carry an **uncompressed** MessagePack buffer, always sent with `transfer: [buf]`. The UI never needs a zstd decompressor; zstd is used only between the simulation and `SaveStore`.
+- **`{kind: "init", buf}`** is sent after `newGame` or a successful `load`, and after any detected sequence gap. It holds the full UI **state view**: every entity the UI renders, without simulation-internal caches.
+- **`{kind: "update", buf}`** is a delta envelope:
+```
+{ seq, tick,
+  changed: { airlines?: {...}, countries?: {...}, airports?: {...}, planes?: {...}, routes?: {...},
+             loans?: {...}, offers?: {...}, modifiers?: {...}, pending?: {...}, missions?: {...},
+             markets?: {...}, landingRights?: {...} },              // ID → full entity (not field diffs)
+  deleted: { planes?: ID[], routes?: ID[], loans?: ID[], offers?: ID[], modifiers?: ID[],
+             pending?: ID[], missions?: ID[], landingRights?: ID[], airlines?: ID[] },  // tombstones
+  flights:  [{planeId, from, to, departTick, arriveTick}],            // for client interpolation
+  notifications: [...], prompts: [...], analytics: [...] }
+```
+  - Changed entities are sent whole, which keeps the UI merge trivial.
+  - `seq` increases by 1 per message. If the UI sees a gap, it asks for a fresh `init`.
+- **Request priority in the Worker**:
+  - Commands and queries are handled **between ticks**, before the next tick runs.
+  - `routeForecast` queries are **coalesced**: a newer query for the same route replaces the queued one, so only the latest slider value is evaluated.
+  - **Autosave is deferred**: at a day boundary the Worker first sends the tick delta, then answers pending queries, and only then encodes and writes the save (in a later macrotask). A slider never waits behind zstd encoding.
 - Build: standard Go `GOOS=js GOARCH=wasm` with `-trimpath -ldflags="-s -w"`, then `wasm-opt -Oz`. Served brotli-compressed from the CDN.
   - **Realistic budget**: ≤ 10 MB raw and **≤ 2.5 MB brotli** including `expr`, measured in M0 and enforced in CI.
   - Compile and instantiate in ≤ 1.5 s on a low-end Android WebView, also measured in M0.
   - Loaded with `WebAssembly.instantiateStreaming` behind a branded loading screen; cached by the service worker on web and bundled inside the mobile apps.
   - Fallback if size is still a problem: TinyGo, which needs checking against `expr`.
 - **Worker → UI traffic**: the simulation can run at 4x, but the UI gets at most **~4 updates per second**.
-  - Each update is a compact delta of only the changed entities, sent as a transferable `ArrayBuffer` (MessagePack).
+  - Each update is a delta envelope with changed entities and tombstones (see above), sent as a transferable `ArrayBuffer` (MessagePack).
   - Plane positions are **not** streamed. The UI receives `{planeId, depart, arrive}` once per flight and interpolates locally.
 - Content is compiled to JSON, so no YAML parser is needed in WASM.
 - **GC and allocations**: Go WASM has a stop-the-world GC, so the hot paths are allocation-free:
@@ -212,7 +230,7 @@ These are starting values; all coefficients live in `content/balance.yaml`. Mone
 | Loan rate (annual) | `baseRate + spread(creditScore)`: ≥ 800 → +1%; 650–799 → +3%; 500–649 → +6%; 350–499 → +10%; < 350 → no new loans |
 | Loan instalment (weekly) | annuity `P·r / (1 − (1+r)^−n)`, `r = annual/52`, `(1+r)^n` by repeated multiplication |
 | Overdraft | negative cash accrues 25%/year, charged daily |
-| Credit score (0–1000) | `100 + 350·equityRatio + 250·min(coverage, 3)/3 + max(0, 200 − 60·missed365) + 100·cashTrend`, where `equityRatio = clamp((assets − debt)/assets, 0, 1)`, `coverage = opProfit90d / debtService90d`, `cashTrend = clamp(Δcash30d / |cash| + 0.5, 0, 1)` |
+| Credit score (0–1000) | `100 + 350·equityRatio + 250·min(coverage, 3)/3 + max(0, 200 − 60·missed365) + 100·cashTrend`, with guarded denominators: `equityRatio = assets ≤ 0 ? 0 : clamp((assets − debt)/assets, 0, 1)`; `coverage = debtService90d == 0 ? (opProfit90d ≥ 0 ? 3 : 0) : opProfit90d / debtService90d`; `cashTrend = clamp(Δcash30d / max(|cash|, dailyRevenue30d, 100_00) + 0.5, 0, 1)` (all values in cents) |
 | Net worth | `cash + Σ resale(planes) + Σ countryPrice(owned)·0.8 + Σ airport upgrade costs·0.5 − debt` |
 
 ### 7.1 New mechanics (formulas)
@@ -232,9 +250,20 @@ These are starting values; all coefficients live in `content/balance.yaml`. Mone
 
 ### 7.4 From daily demand to hourly flights
 Demand is calculated per **day**, while flights depart per **tick**. The two are linked like this:
-1. **Day start** (Demand system `OnDay`): for every market, class and airline, compute today's **direct pool**: `min(D_class · share, scheduledSeats_class_today)`.
-2. **Connecting itineraries are booked at day start**, after direct pools: `conn = min(connDemand, leftoverSeatsLeg1, leftoverSeatsLeg2)`, where leftover = scheduled seats − direct pool on that leg and class. The seats are **reserved on both legs**.
-3. **Each departure** (Flights `OnTick`) boards from the route-direction's remaining pool:
+1. **Day start** (Demand system `OnDay`): for every market, class, airline and **direction**, compute today's **direct pool**: `min(D_class · share, scheduledSeats_class_today)`.
+   - Each route has **two directional pools per day** (`from → to` and `to → from`). Planes alternate direction after each leg plus 1 turnaround tick, and the O–D demand splits 50/50 between the two directions.
+   - The day is defined by the **departure tick**.
+2. **Connecting itineraries are booked at day start**, after the direct pools.
+   - Leftover per leg and class = scheduled seats − direct pool.
+   - **Contention at a hub**: many connecting pairs `(S_i → H → S_j)` share the same leg capacity. All candidate pairs of an airline at a hub are processed in one pass:
+     1. Sort by **connecting fare descending**, then `(originIATA, destIATA)`. This is realistic yield management and fully deterministic.
+     2. Reserve greedily: `conn = min(connDemand, leftoverLeg1, leftoverLeg2)`, then subtract it from both legs.
+     3. **Fairness cap**: no single pair may take more than 50% of a leg's leftover in the first pass. A second pass (same order) fills whatever remains.
+   - The seats are **reserved on both legs**. The second leg's reservation belongs to the first departure of the second leg that is at least 1 tick after the first leg arrives, on that same day or the next.
+3. **Each departure** (Flights `OnTick`) does **all of its accounting at the departure tick**:
+   - The reliability roll (ok / delay / cancel), boarding, revenue, fuel and fees, and the `route_daily` counters are all booked on the **departure day**. A long-haul flight leaving at 20:00 on day *d* counts fully for day *d*.
+   - The plane is then locked in `flying` until `departTick + flightTicks + delayTicks`, plus 1 turnaround tick. The UI animates it across those ticks from the `flights` entries.
+   - Boarding from the direction's remaining pool:
    - `boarded = min(seatsLeft, ceil(poolRemaining / departuresRemainingToday))`. This spreads passengers evenly over the day's departures.
    - Direct passengers board first, then the reserved connecting passengers for that leg.
    - Pools are integers, and leftovers go to the last departure of the day.
@@ -396,7 +425,14 @@ CREATE TABLE saves (id UUID PRIMARY KEY, user_id UUID NOT NULL REFERENCES users(
   device_id UUID, updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE INDEX ON saves (user_id);
 ```
-Save files live in **object storage**, not Postgres, which keeps the `saves` rows small and avoids TOAST bloat from frequent rewrites. A bucket lifecycle rule keeps the last 3 revisions per save; older ones expire.
+Save files live in **object storage**, not Postgres, which keeps the `saves` rows small and avoids TOAST bloat from frequent rewrites. **Retention of old revisions is done by the server, not by S3**:
+- S3/MinIO lifecycle rules work by object age or noncurrent versions only. They can't keep "the highest 3 revisions" under a prefix.
+- After a commit of revision *R*, the server enqueues deletion of `saves/{save_id}/{R−3}` (and any lower revision still present) in a `blob_gc` table processed by a background worker. So the last **3 committed revisions** are kept.
+- **Uploads that are never committed** (upload-url issued and blob uploaded, but no `PUT /saves/{id}`) go to a staging prefix `staging/{save_id}/{uuid}`. A **lifecycle rule expires `staging/` after 24 h**. On commit, the server copies the staged object to `saves/{save_id}/{R}` (a server-side copy) and deletes the staged one.
+```sql
+CREATE TABLE blob_gc (key TEXT PRIMARY KEY, enqueued_at TIMESTAMPTZ NOT NULL DEFAULT now(), attempts INT NOT NULL DEFAULT 0);
+CREATE TABLE save_quotas (user_id UUID PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE, max_saves INT NOT NULL DEFAULT 10);
+```
 ```sql
 ```
 
@@ -404,11 +440,20 @@ Save files live in **object storage**, not Postgres, which keeps the `saves` row
 Single player, so the protocol is simple and conflicts are explicit:
 - **Skip when unchanged**: the client compares the snapshot's sha256 with the last synced hash and uploads nothing if they match.
 - Upload in **3 steps**, so save bytes never pass through the API:
-  1. `POST /saves/{id}/upload-url {baseRevision, sha256, size}` → presigned PUT URL (rejected early with 409 if `baseRevision` is stale).
-  2. The client PUTs the blob directly to object storage.
-  3. `PUT /saves/{id}` commits `{baseRevision, blobKey, sha256, summary}`. This is a conditional update (`WHERE revision = baseRevision`), and the server checks that the object exists with the right size and hash.
+  1. `POST /saves/{id}/upload-url {baseRevision, sha256, size}` returns a presigned PUT URL for `staging/{save_id}/{uuid}`. It is rejected early with 409 if `baseRevision` is stale, 413 if `size > maxSaveSizeBytes`, or 429 if the user is over quota. Details below.
+  2. The client PUTs the blob directly to object storage, with headers `Content-Length: size` and `x-amz-checksum-sha256: base64(sha256)`.
+  3. `PUT /saves/{id}` commits `{baseRevision, uploadId, sha256, summary}`. This is a conditional update (`WHERE revision = baseRevision`). The server checks the staged object (HEAD: size and checksum) and copies it to `saves/{save_id}/{R}`.
   - If the revision matches: `revision+1`, and the new revision is returned.
-  - Otherwise: return **409** with the server's metadata.
+  - Otherwise: return **409** with the server's metadata. The client shows "This device: Day 210, $45M / Cloud: Day 180, $30M — keep which?"
+- **Abuse protection**:
+  - **Size cap**: `size ≤ maxSaveSizeBytes` (remote config, default **4 MB**; typical saves are 50–500 KB).
+  - **Signed headers**: the presigned `PutObject` **signs `Content-Length` and `ChecksumSHA256`** (`x-amz-checksum-sha256`), so the storage layer itself rejects uploads with a different size or hash. A client can't claim 50 KB and upload gigabytes.
+  - **Short-lived URLs**: they expire after 5 minutes.
+  - **Rate limit**: `upload-url` is limited per user in Redis (e.g. 30 per hour).
+  - **Quotas**:
+    - At most **10 saves per user** (`save_quotas.max_saves`, adjustable). Creating an 11th returns 429 `quota.saves_exceeded`, and the UI offers to delete an old save.
+    - At most 3 revisions are retained per save (above).
+    - Storage per user is therefore bounded at roughly 10 × 3 × 4 MB.
 - **First upload of a new save** (`baseRevision = 0`):
   - Save IDs are client-generated **UUIDv7**.
   - `upload-url` checks that no row exists for the ID, or that one exists for the same user with the same sha256 (a retry).
@@ -416,7 +461,7 @@ Single player, so the protocol is simple and conflicts are explicit:
     - Existing row owned by the same user with the same sha256 and revision 1 → **200** (idempotent retry).
     - Owned by the same user but different → **409**.
     - Owned by another user → **403**.
-- Every save operation checks `saves.user_id = caller`, and returns 403 otherwise. The client shows "This device: Day 210, $45M / Cloud: Day 180, $30M — keep which?"
+- Every save operation checks `saves.user_id = caller`, and returns 403 otherwise.
 - `GET /saves` lists metadata. `GET /saves/{id}` returns metadata + a presigned download URL.
 - Sync triggers: app start, every 5 min of play while online, app background, manual "Sync now".
 - Later (anti-cheat, for leaderboards): upload the command log; the server replays it in the same Go simulation to verify.
@@ -527,7 +572,7 @@ Added events: `ai_action{airline, personality, action}` (sampled), `rival_ranked
 POST /auth/guest | /auth/apple | /auth/google | /auth/email/start | /auth/email/verify
 POST /auth/refresh            DELETE /account
 GET  /saves                   GET /saves/{id} (meta + presigned download)   DELETE /saves/{id}
-POST /saves/{id}/upload-url   PUT /saves/{id} (commit revision)
+POST /saves/{id}/upload-url   (size cap, signed Content-Length + SHA-256, 5 min, quota)   PUT /saves/{id} (commit revision)
 POST /telemetry               (batch, idempotent by event_id)
 GET  /content/latest          (version check; bundle download later)
 GET  /config?platform=&appVersion=&locale=   (remote config + flags, ETag-cached)
