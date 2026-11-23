@@ -1,5 +1,13 @@
 # Jetstream Tycoon — Game Vision (Phase 1)
 
+> **How to read this document**: it records how the design evolved over Rounds 1–6, so **early sections are historical**. Later rounds override earlier ones.
+> In particular, the original "Go backend (authoritative sim)", "WebSocket pushes state" and "Postgres stores saves / no Redis" are **superseded**:
+> - The simulation runs **on the device** as WASM ([ADR-0002](adr/0002-client-side-deterministic-simulation-wasm.md)); there's no server game loop and no WebSocket.
+> - Save files live in object storage ([ADR-0008](adr/0008-saves-object-storage-optimistic-sync.md)).
+> - Redis is used for rate limits and caching ([ADR-0019](adr/0019-redis-cdn.md)).
+>
+> For the **current** architecture and formulas, always use [`TECH_DESIGN.md`](TECH_DESIGN.md) and the [ADRs](adr/README.md).
+
 A single-player, real-time airline tycoon on a simple 2D world map.
 
 ## Decisions made
@@ -44,6 +52,7 @@ Offers pop up from time to time. You can accept or decline them, and they expire
 First route · 5 airports · connect all continents · 100 planes · $1B net worth.
 
 ## Architecture (for extensibility)
+> ⚠️ Superseded (Round 4+). See the note at the top and `TECH_DESIGN.md`.
 - **Go server**: a fixed-tick simulation loop. A REST API handles actions (buy, upgrade, accept offer), and a WebSocket pushes state and events to the client.
 - **Postgres**: stores saves, schema managed with **golang-migrate**. Redis is not needed at first.
 - **Data-driven content**: territories, plane models, airport levels, events and investments are defined in YAML/JSON files. New content means a new file, not new code.
@@ -212,6 +221,7 @@ First route · 5 airports · connect all continents · 100 planes · $1B net wor
 - Later: Premium economy / First class, defined in content.
 
 ## Landing rights
+> Clarified: lessees use the airport's current level; only the country owner can upgrade above the real-world base level. Owners earn fee shares only at airports they actively serve, and owned countries have daily upkeep (see `TECH_DESIGN.md` §4, §7.0).
 - A cheaper way into foreign markets: **lease landing rights** at one airport in a country you don't own.
   - Cost: an upfront fee (≈5–15% of the country price, scaled by airport size) plus a **yearly lease**.
 - Limitations compared with owning the country:

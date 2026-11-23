@@ -1,6 +1,6 @@
 # ADR-0010: Guest-first accounts with Apple/Google/email linking; JWT + rotating refresh tokens
 
-- **Status**: Accepted
+- **Status**: Accepted (refined by ADR-0022)
 - **Date**: 2026-11-23
 
 ## Context

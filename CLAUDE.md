@@ -28,6 +28,8 @@ migrations/postgres  migrations/clickhouse            web/  mobile/  deploy/
    - No `range` over maps; iterate sorted keys.
    - No `time.Now`, goroutines, `select` or global `math/rand`.
    - Use the RNG stream for the system or AI airline (`rng.For(seed, "<system>", tick)`).
+   - Use only `sim/detmath` for math beyond `+ − × ÷` and `Sqrt`. Use `RoundCents` for float → cents (ADR-0021).
+   - Combine modifiers only through `effects.Apply`, which follows the stacking order in TECH_DESIGN §6.
 2. **Money is `int64` cents.** Floats only for factors; round once.
 3. **All state changes go through commands.** Player, AI and ad rewards all use `sim/command`, with the same validation (ADR-0020).
 4. **Content over code** (ADR-0004): new planes, events, missions and personalities are YAML. Code changes only for new *kinds* of condition, effect or system.
