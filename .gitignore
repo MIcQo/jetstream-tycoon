@@ -7,6 +7,10 @@
 # Node
 node_modules/
 dist/
+.stryker-tmp/
+reports/
+web/.stryker-tmp/
+web/reports/
 # Mobile
 /mobile/ios/App/Pods/
 /mobile/android/.gradle/

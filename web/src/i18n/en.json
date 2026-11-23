@@ -1,0 +1,6 @@
+{
+  "app.title.main": "Jetstream Tycoon",
+  "hud.speed.current": "Speed: {speed}x",
+  "fleet.summary.count": "{count, plural, one {# plane} other {# planes}}",
+  "route.panel.load_factor": "Load factor"
+}
