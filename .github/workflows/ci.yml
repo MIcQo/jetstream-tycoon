@@ -1,0 +1,148 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - "docs/**"
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  GO_VERSION: "1.24.x"
+
+jobs:
+  lint:
+    name: Lint & Sim Determinism Analyzer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Run lint (gofmt, go vet, simlint)
+        run: make lint
+
+  unit:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    needs: [lint]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Run unit tests
+        run: make test
+
+  content-check:
+    name: Content Validation
+    runs-on: ubuntu-latest
+    needs: [lint]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Validate content
+        run: make content-check
+
+  determinism:
+    name: Determinism (${{ matrix.target }})
+    needs: [unit]
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - target: amd64
+            os: ubuntu-latest
+          - target: arm64
+            os: ubuntu-24.04-arm
+          - target: wasm
+            os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Setup Node.js (for wasm target)
+        if: matrix.target == 'wasm'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run native determinism check
+        if: matrix.target != 'wasm'
+        run: |
+          make determinism
+          go run ./cmd/simwasm > hash-${{ matrix.target }}.txt
+      - name: Run WASM determinism check under Node.js
+        if: matrix.target == 'wasm'
+        run: |
+          make wasm
+          GOROOT_DIR="$(go env GOROOT)"
+          if [ -f "$GOROOT_DIR/lib/wasm/wasm_exec_node.js" ]; then
+            WASM_EXEC="$GOROOT_DIR/lib/wasm/wasm_exec_node.js"
+          else
+            WASM_EXEC="$GOROOT_DIR/misc/wasm/wasm_exec_node.js"
+          fi
+          node "$WASM_EXEC" web/public/sim.wasm | tee hash-wasm.txt
+      - name: Upload state hash
+        uses: actions/upload-artifact@v4
+        with:
+          name: determinism-hash-${{ matrix.target }}
+          path: hash-${{ matrix.target }}.txt
+
+  determinism-compare:
+    name: Determinism Cross-Check (amd64 == arm64 == wasm)
+    runs-on: ubuntu-latest
+    needs: [determinism]
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: hashes
+      - name: Compare hashes across architectures
+        run: |
+          H_AMD64="$(tr -d ' \n\r' < hashes/determinism-hash-amd64/hash-amd64.txt)"
+          H_ARM64="$(tr -d ' \n\r' < hashes/determinism-hash-arm64/hash-arm64.txt)"
+          H_WASM="$(tr -d ' \n\r' < hashes/determinism-hash-wasm/hash-wasm.txt)"
+          echo "amd64: $H_AMD64"
+          echo "arm64: $H_ARM64"
+          echo "wasm:  $H_WASM"
+          test -n "$H_AMD64"
+          test "$H_AMD64" = "$H_ARM64"
+          test "$H_AMD64" = "$H_WASM"
+
+  wasm-budget:
+    name: WASM Size Budget
+    runs-on: ubuntu-latest
+    needs: [lint]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Install brotli and binaryen (wasm-opt)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y brotli binaryen
+      - name: Check sim.wasm size budget
+        run: make wasm-size-check
+
+  build:
+    name: Build All Targets
+    runs-on: ubuntu-latest
+    needs: [lint, unit, content-check, determinism-compare, wasm-budget]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Build binaries and WASM
+        run: make build
