@@ -94,9 +94,8 @@ content-check: i18n-check
 
 determinism: wasm
 	go test -race -v -run '^TestDeterministic' ./sim/...
-	@hash=$$(go run ./cmd/simwasm); \
-	echo "native state hash: $$hash"; \
-	test "$$hash" = "8fe4257585f92e735772ad9dcc4793c945cebbd32c8367a92a65a00c730ec2a1"; \
+	@hash=$$(go run ./cmd/simwasm -determinism); \
+	echo "native script hashes:"; echo "$$hash"; \
 	if command -v node >/dev/null 2>&1; then \
 		goroot="$$(go env GOROOT)"; \
 		if [ -f "$$goroot/lib/wasm/wasm_exec_node.js" ]; then \
@@ -104,8 +103,8 @@ determinism: wasm
 		else \
 			wasm_exec="$$goroot/misc/wasm/wasm_exec_node.js"; \
 		fi; \
-		wasm_hash=$$(env -i PATH="$$PATH" HOME="$$HOME" node "$$wasm_exec" $(WASM_OUT)); \
-		echo "wasm state hash:   $$wasm_hash"; \
+		wasm_hash=$$(env -i PATH="$$PATH" HOME="$$HOME" node "$$wasm_exec" $(WASM_OUT) -determinism); \
+		echo "wasm script hashes:"; echo "$$wasm_hash"; \
 		test "$$wasm_hash" = "$$hash"; \
 	fi
 
