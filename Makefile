@@ -1,27 +1,70 @@
-.PHONY: all build lint test sim-test determinism content-check wasm wasm-size-check balance migrate-up migrate-down dev
+.PHONY: all build lint test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts determinism content-check wasm wasm-size-check balance migrate-up migrate-down dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
 WASM_BROTLI_MAX_BYTES := 2621440
+FUZZ_TIME ?= 3s
+MUTATION_THRESHOLD ?= 80
 
-all: lint test content-check determinism wasm-size-check build
+all: lint test test-integration fuzz mutate content-check determinism wasm-size-check build
 
 lint:
 	@test -z "$$(gofmt -l .)" || (echo "gofmt check failed on:" && gofmt -l . && exit 1)
 	go vet ./...
 	go run ./tools/simlint sim
+	@if [ -d web/node_modules ]; then \
+		npm --prefix web run typecheck; \
+	fi
 
-test:
+test: test-go test-ts
+
+test-go:
 	go test -race ./...
+
+test-ts:
+	@if [ -d web/node_modules ]; then \
+		npm --prefix web run test:unit; \
+	fi
 
 sim-test:
 	go test -race ./sim/...
+
+test-integration: test-integration-go test-integration-ts
+
+test-integration-go:
+	go test -race -tags=integration -run "Integration" ./...
+
+test-integration-ts:
+	@if [ -d web/node_modules ]; then \
+		npm --prefix web run test:integration; \
+	fi
+
+fuzz: fuzz-go fuzz-ts
+
+fuzz-go:
+	go test -fuzz=^FuzzRoundCents$$ -fuzztime=$(FUZZ_TIME) ./sim/detmath
+	go test -fuzz=^FuzzStateAdvance$$ -fuzztime=$(FUZZ_TIME) ./sim
+
+fuzz-ts:
+	@if [ -d web/node_modules ]; then \
+		npm --prefix web run test:fuzz; \
+	fi
+
+mutate: mutate-go mutate-ts
+
+mutate-go:
+	go run ./tools/gomutate -threshold=$(MUTATION_THRESHOLD) sim server
+
+mutate-ts:
+	@if [ -d web/node_modules ]; then \
+		npm --prefix web run test:mutate; \
+	fi
 
 content-check:
 	go run ./tools/datagen
 
 determinism: wasm
-	go test -v -run TestDeterministicStateHash ./sim/...
+	go test -race -v -run TestDeterministicStateHash ./sim/...
 	@hash=$$(go run ./cmd/simwasm); \
 	echo "native state hash: $$hash"; \
 	test "$$hash" = "8c94d155a43185c2bf23642b35a9588a72963e6559bf9daad7810b2f70720760"; \
