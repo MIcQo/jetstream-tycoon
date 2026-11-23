@@ -5,6 +5,7 @@ package server_test
 import (
 	"context"
 	"io"
+	"log/slog"
 	"net"
 	"net/http"
 	"strings"
@@ -65,7 +66,7 @@ func (l *pipeListener) DialContext(ctx context.Context, _, _ string) (net.Conn, 
 
 func TestIntegrationHealthzEndToEnd(t *testing.T) {
 	ln := newPipeListener()
-	srv := &http.Server{Handler: server.NewHandler()}
+	srv := &http.Server{Handler: server.NewHandler(server.NewMetrics(), slog.New(slog.DiscardHandler))}
 	go func() {
 		_ = srv.Serve(ln)
 	}()
