@@ -1,4 +1,4 @@
-.PHONY: all build lint lint-go lint-ts test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
+.PHONY: all build lint lint-go lint-ts vulncheck test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
@@ -16,6 +16,9 @@ lint-go:
 	@test -z "$$(gofmt -l .)" || (echo "gofmt check failed on:" && gofmt -l . && exit 1)
 	go vet ./...
 	go run ./tools/simlint sim
+
+vulncheck:
+	govulncheck ./...
 
 lint-ts:
 	@if [ -d web/node_modules ]; then \
