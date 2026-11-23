@@ -93,6 +93,7 @@ sequenceDiagram
   participant PG as Postgres
   participant OBJ as Object storage
   D->>D: sha256(snapshot) equals last synced? then skip
+  Note over D,PG: First upload: baseRevision=0, commit = INSERT ON CONFLICT DO NOTHING (identical retry 200, else 409/403)
   D->>API: POST /saves/{id}/upload-url (baseRevision=7, sha256, size)
   API->>PG: SELECT revision WHERE id=?
   alt revision is 7
@@ -125,15 +126,18 @@ sequenceDiagram
   S->>Q: Track(event with event_id)
   Note over Q: stored locally, survives offline
   Q->>API: batch of up to 500, gzip
+  API->>API: Redis SET NX batch_id (duplicate: 202, skip)
   API->>API: rate limit (Redis), validate, enrich, drop IP
   API->>MQ: publish persistent message
   MQ-->>API: publisher confirm
   API-->>Q: 202 accepted, delete sent events
   Note over API,Q: RabbitMQ down means 503, client keeps events and retries
   MQ->>I: deliver (prefetch 10k)
+  I->>I: skip batch_id already inserted (Redis)
   I->>CH: INSERT batch every 5 s or 10k (dedup token)
   alt insert ok
     CH-->>I: ok
+    I->>I: mark batch_ids inserted (Redis)
     I->>MQ: ack multiple
   else ClickHouse down
     I->>MQ: nack + requeue, backoff
@@ -166,12 +170,31 @@ erDiagram
   users ||--o{ refresh_tokens : has
   devices ||--o{ refresh_tokens : "issued to"
   users ||--o{ saves : owns
+  users ||--o{ user_aliases : "merged from"
+  users ||--o{ deletion_jobs : requests
   devices ||--o{ saves : "last written by"
 
   users {
     uuid id PK
     timestamptz created_at
     timestamptz deleted_at
+    uuid merged_into FK
+  }
+  user_aliases {
+    uuid alias PK
+    uuid canonical FK
+    timestamptz merged_at
+  }
+  deletion_jobs {
+    uuid id PK
+    uuid user_id
+    timestamptz requested_at
+    boolean storage_done
+    boolean clickhouse_done
+    boolean sentry_done
+    boolean postgres_done
+    int attempts
+    text last_error
   }
   identities {
     text provider PK
@@ -202,7 +225,7 @@ erDiagram
     int schema_version
     text content_version
     jsonb summary "day, cash, net worth"
-    text blob_key "object storage key"
+    text blob_key "saves/{save_id}/{revision}"
     int blob_size
     bytea blob_sha256
     uuid device_id FK
@@ -361,7 +384,8 @@ erDiagram
   AIRPORT {
     string iata PK
     string iso2 FK
-    int level
+    int baseLevel "real-world, from datagen"
+    int level "above base only by owner"
   }
   LANDING_RIGHT {
     string airlineId PK

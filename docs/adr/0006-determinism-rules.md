@@ -1,6 +1,6 @@
 # ADR-0006: Strict determinism in the simulation
 
-- **Status**: Accepted
+- **Status**: Accepted (refined by ADR-0021)
 - **Date**: 2026-11-23
 
 ## Context

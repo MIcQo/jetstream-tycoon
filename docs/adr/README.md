@@ -24,3 +24,5 @@ Decisions are recorded in Nygard format (see `template.md` and ADR-0001). The cu
 | [0018](0018-ads-monetization.md) | Free-to-play monetization with AdMob rewarded ads; rewards as simulation commands | Accepted |
 | [0019](0019-redis-cdn.md) | Redis for rate limiting and caching; CDN for static and cacheable endpoints | Accepted |
 | [0020](0020-ai-airlines.md) | AI airlines as full simulation entities driven by utility AI through the player's command path | Accepted |
+| [0021](0021-deterministic-math-and-modifier-stacking.md) | Deterministic math library, rounding and modifier stacking order | Accepted |
+| [0022](0022-save-keys-account-merge-deletion.md) | Per-save object keys, account merge on sign-in, and outbox-based account deletion | Accepted |

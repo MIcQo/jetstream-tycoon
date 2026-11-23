@@ -1,6 +1,6 @@
 # ADR-0008: Save files in object storage, synced with optimistic locking and presigned URLs
 
-- **Status**: Accepted
+- **Status**: Accepted (refined by ADR-0022)
 - **Date**: 2026-11-23
 
 ## Context

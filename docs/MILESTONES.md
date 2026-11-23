@@ -30,12 +30,15 @@ Each milestone has a goal, its scope (issues), exit criteria and the owning agen
 | 0.10 | Capacitor shell (iOS/Android) running the web build; platform adapter interfaces + web stubs | mobile | mobile | M |
 | 0.11 | `cmd/server` skeleton: chi router, `/healthz`, `/metrics` (internal port), config, Sentry, graceful shutdown | server | backend | S |
 | 0.12 | Sentry wiring: web/Capacitor SDK + WASM panic recovery hook + server; release naming | infra | devops | S |
+| 0.14 | `sim/detmath` (Pow/Exp/Log ports, RoundCents, Finite, Irwin–Hall normal) + bit-exact test vectors across amd64/arm64/wasm (ADR-0021) | sim | sim | M |
+| 0.15 | Measure the real WASM size (with `expr`) and the instantiate time on a low-end Android WebView; set CI budgets | sim | sim | S |
 | 0.13 | CI pipeline: lint → unit → content-check → determinism (amd64, arm64, wasm) → wasm size budget → build | infra | devops | M |
 
 **Exit criteria**:
 - `make dev` starts the infrastructure, the server and the web app.
 - The browser shows ticks advancing from sim.wasm.
 - CI is green, the determinism job runs, and a map-range in `sim/` fails lint.
+- `detmath` vectors are bit-identical on all 3 targets, and the WASM size and instantiate budgets are measured and enforced.
 
 ## M1 — World data
 **Goal**: real countries and airports as validated, versioned content.

@@ -1,6 +1,6 @@
 # ADR-0005: A single effects/modifier system for all bonuses and penalties
 
-- **Status**: Accepted
+- **Status**: Accepted (refined by ADR-0021)
 - **Date**: 2026-11-23
 
 ## Context
