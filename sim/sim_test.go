@@ -4,28 +4,38 @@ import (
 	"testing"
 
 	"github.com/MIcQo/jetstream-tycoon/sim"
+	"github.com/MIcQo/jetstream-tycoon/sim/command"
 )
 
-const expectedGoldenHash = "8c94d155a43185c2bf23642b35a9588a72963e6559bf9daad7810b2f70720760"
+// expectedGoldenHash is the state hash after the scripted game below. Update it
+// only for intentional behaviour changes, and say why in the PR (ADR-0006).
+const expectedGoldenHash = "8fe4257585f92e735772ad9dcc4793c945cebbd32c8367a92a65a00c730ec2a1"
+
+func scriptedGame(seed uint64) string {
+	e := sim.NewGame(seed)
+	e.Advance(24)
+	e.Enqueue(command.SetSpeed{Speed: 4})
+	e.Advance(24 * 6)
+	return e.State.Hash()
+}
 
 func TestDeterministicStateHash(t *testing.T) {
-	s1 := sim.New(42)
-	if s1.Version != 1 || s1.Seed != 42 || s1.Tick != 0 || s1.CashCents != 100_000_00 {
-		t.Fatalf("unexpected initial state: %+v", s1)
+	h1, h2 := scriptedGame(42), scriptedGame(42)
+	if h1 != h2 {
+		t.Fatalf("non-deterministic hash: %s != %s", h1, h2)
 	}
-	s1.Advance(24)
-	if s1.Tick != 24 || s1.CashCents <= 100_000_00 {
-		t.Fatalf("unexpected state after 24 ticks: %+v", s1)
+	if h1 != expectedGoldenHash {
+		t.Fatalf("golden hash mismatch: got %s, want %s", h1, expectedGoldenHash)
 	}
+	if scriptedGame(43) == h1 {
+		t.Fatal("different seeds produced the same state")
+	}
+}
 
-	s2 := sim.New(42)
-	s2.Advance(24)
-
-	if s1.Hash() != s2.Hash() {
-		t.Fatalf("non-deterministic hash: %s != %s", s1.Hash(), s2.Hash())
-	}
-	if s1.Hash() != expectedGoldenHash {
-		t.Fatalf("golden hash mismatch: got %s, want %s", s1.Hash(), expectedGoldenHash)
+func TestSystemsOrder(t *testing.T) {
+	systems := sim.Systems()
+	if len(systems) != 1 || systems[0].Name() != "ledger" {
+		t.Fatalf("systems = %v", systems)
 	}
 }
 
@@ -36,17 +46,17 @@ func FuzzStateAdvance(f *testing.F) {
 
 	f.Fuzz(func(t *testing.T, seed uint64, steps uint8) {
 		ticks := int(steps)
-		a := sim.New(seed)
+		a := sim.NewGame(seed)
 		a.Advance(ticks)
 
-		b := sim.New(seed)
+		b := sim.NewGame(seed)
 		b.Advance(ticks)
 
-		if a.Tick != int64(ticks) {
-			t.Fatalf("Tick = %d, want %d", a.Tick, ticks)
+		if a.State.Tick != int64(ticks) {
+			t.Fatalf("Tick = %d, want %d", a.State.Tick, ticks)
 		}
-		if a.Hash() != b.Hash() {
-			t.Fatalf("hash mismatch for seed=%d ticks=%d: %s != %s", seed, ticks, a.Hash(), b.Hash())
+		if a.State.Hash() != b.State.Hash() {
+			t.Fatalf("hash mismatch for seed=%d ticks=%d", seed, ticks)
 		}
 	})
 }

@@ -1,5 +1,8 @@
 {
   "milestone.first_route.title": "First Route",
   "milestone.first_route.description": "Open your first commercial flight route.",
-  "event.fuel_spike.title": "Fuel Price Spike"
+  "event.fuel_spike.title": "Fuel Price Spike",
+  "notifications.day.started": "Day {day} has started.",
+  "errors.cmd.invalid_speed": "Game speed must be paused, 1×, 2× or 4×.",
+  "errors.cmd.unknown": "That action isn't possible right now."
 }
