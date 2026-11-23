@@ -17,7 +17,19 @@ export function createController(
   let seq = 0;
   let view: SimView | undefined;
 
-  return {
+  // Any failure inside the simulation is reported to the UI instead of throwing
+  // out of a message handler or timer.
+  const guarded =
+    <A extends unknown[]>(fn: (...args: A) => void) =>
+    (...args: A) => {
+      try {
+        fn(...args);
+      } catch {
+        post({ kind: "error", errorKey: "errors.sim.internal" });
+      }
+    };
+
+  const controller: Controller = {
     handle(msg) {
       if (msg.kind === "start") {
         view = bridge.newGame(msg.seed);
@@ -45,4 +57,5 @@ export function createController(
       post({ kind: "update", seq, view, notifications: res.notifications });
     },
   };
+  return { handle: guarded(controller.handle), pulse: guarded(controller.pulse) };
 }

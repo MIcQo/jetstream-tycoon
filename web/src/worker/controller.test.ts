@@ -79,3 +79,27 @@ describe("createController", () => {
     expect(posted).toEqual([{ kind: "error", errorKey: "errors.sim.not_started" }]);
   });
 });
+
+describe("createController failures", () => {
+  it("reports simulation errors instead of throwing", () => {
+    const { bridge } = fakeBridge();
+    const failing = {
+      ...bridge,
+      advance: () => {
+        throw new Error("boom");
+      },
+      newGame: () => {
+        throw new Error("boom");
+      },
+    };
+    const posted: FromWorker[] = [];
+    const c = createController(failing, (m) => posted.push(m));
+    expect(() => c.handle({ kind: "start", seed: 1 })).not.toThrow();
+    expect(posted).toEqual([{ kind: "error", errorKey: "errors.sim.internal" }]);
+
+    const ok = createController({ ...bridge, advance: failing.advance }, (m) => posted.push(m));
+    ok.handle({ kind: "start", seed: 1 });
+    expect(() => ok.pulse(10)).not.toThrow();
+    expect(posted.at(-1)).toEqual({ kind: "error", errorKey: "errors.sim.internal" });
+  });
+});

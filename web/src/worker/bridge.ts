@@ -24,14 +24,27 @@ export interface SimBridge {
   command(cmd: { type: string } & Record<string, unknown>): CommandResult;
 }
 
+/** Thrown when sim.wasm answers `{"error": "..."}` (bad request, or a recovered panic). */
+export class SimError extends Error {
+  override name = "SimError";
+}
+
+function parse<T>(json: string): T {
+  const value = JSON.parse(json) as T | { error: string };
+  if (typeof value === "object" && value !== null && "error" in value) {
+    throw new SimError(value.error);
+  }
+  return value as T;
+}
+
 /** Wraps the raw JSON API with parsing and typing. */
 export function jsonBridge(raw: RawSimApi): SimBridge {
   return {
-    newGame: (seed) => JSON.parse(raw.newGame(JSON.stringify({ seed }))) as SimView,
+    newGame: (seed) => parse<SimView>(raw.newGame(JSON.stringify({ seed }))),
     advance: (ticks) => {
-      const res = JSON.parse(raw.advance(ticks)) as Partial<AdvanceResult> & { view: SimView };
+      const res = parse<Partial<AdvanceResult> & { view: SimView }>(raw.advance(ticks));
       return { view: res.view, notifications: res.notifications ?? [] };
     },
-    command: (cmd) => JSON.parse(raw.command(JSON.stringify(cmd))) as CommandResult,
+    command: (cmd) => parse<CommandResult>(raw.command(JSON.stringify(cmd))),
   };
 }
