@@ -1,0 +1,21 @@
+{
+  "name": "jetstream-tycoon-mobile",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Capacitor shell that packages web/dist for iOS and Android (ADR-0003).",
+  "scripts": {
+    "build:web": "make -C .. wasm && npm --prefix ../web run build",
+    "sync": "npm run build:web && cap sync",
+    "open:ios": "cap open ios",
+    "open:android": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/core": "8.6.0",
+    "@capacitor/ios": "8.6.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.0"
+  }
+}

@@ -21,3 +21,4 @@ web/reports/
 .claude/settings.local.json
 # Balance outputs
 /out/
+/web/public/wasm_exec.js

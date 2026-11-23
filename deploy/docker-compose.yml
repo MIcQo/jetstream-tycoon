@@ -1,0 +1,139 @@
+# Local development infrastructure for Jetstream Tycoon (TECH_DESIGN §1, §21).
+# Credentials here are for local development only; production uses CI/secret stores.
+# Usage: make dev  (or: docker compose -f deploy/docker-compose.yml up -d)
+name: jetstream
+
+x-healthcheck: &healthcheck
+  interval: 5s
+  timeout: 5s
+  retries: 20
+
+services:
+  postgres:
+    image: postgres:16.6-alpine
+    environment:
+      POSTGRES_USER: jetstream
+      POSTGRES_PASSWORD: jetstream
+      POSTGRES_DB: jetstream
+    ports: ["5432:5432"]
+    volumes: [postgres-data:/var/lib/postgresql/data]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD-SHELL", "pg_isready -U jetstream -d jetstream"]
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.8-alpine
+    environment:
+      CLICKHOUSE_DB: default
+      CLICKHOUSE_PASSWORD: jetstream
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+    ports: ["8123:8123", "9000:9000"]
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse
+      - ./clickhouse/prometheus.xml:/etc/clickhouse-server/config.d/prometheus.xml:ro
+    ulimits:
+      nofile: { soft: 262144, hard: 262144 }
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD-SHELL", "clickhouse-client --password jetstream --query 'SELECT 1'"]
+
+  rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    environment:
+      RABBITMQ_DEFAULT_USER: jetstream
+      RABBITMQ_DEFAULT_PASS: jetstream
+    ports: ["5672:5672", "15672:15672", "15692:15692"]
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+      - ./rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins:ro
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+
+  redis:
+    image: redis:7.4-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports: ["6379:6379"]
+    volumes: [redis-data:/data]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "redis-cli", "ping"]
+
+  minio:
+    image: minio/minio:RELEASE.2024-12-18T13-15-44Z
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: jetstream
+      MINIO_ROOT_PASSWORD: jetstream-dev-secret
+      MINIO_PROMETHEUS_AUTH_TYPE: public
+    ports: ["9002:9000", "9001:9001"]
+    volumes: [minio-data:/data]
+    healthcheck:
+      <<: *healthcheck
+      test: ["CMD", "mc", "ready", "local"]
+
+  # One-shot: creates the saves bucket and the 24 h lifecycle rule for staging/ (ADR-0023).
+  minio-init:
+    image: minio/mc:RELEASE.2024-11-21T17-21-54Z
+    depends_on:
+      minio: { condition: service_healthy }
+    volumes: [./minio/init.sh:/init.sh:ro]
+    entrypoint: ["/bin/sh", "/init.sh"]
+    restart: "no"
+
+  postgres_exporter:
+    image: prometheuscommunity/postgres-exporter:v0.16.0
+    environment:
+      DATA_SOURCE_NAME: postgresql://jetstream:jetstream@postgres:5432/jetstream?sslmode=disable
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  redis_exporter:
+    image: oliver006/redis_exporter:v1.66.0-alpine
+    environment:
+      REDIS_ADDR: redis://redis:6379
+    depends_on:
+      redis: { condition: service_healthy }
+
+  node_exporter:
+    image: prom/node-exporter:v1.8.2
+
+  prometheus:
+    image: prom/prometheus:v3.0.1
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.retention.time=15d
+    ports: ["9090:9090"]
+    volumes:
+      - ./prometheus:/etc/prometheus:ro
+      - prometheus-data:/prometheus
+    extra_hosts: ["host.docker.internal:host-gateway"]
+
+  alertmanager:
+    image: prom/alertmanager:v0.27.0
+    command: ["--config.file=/etc/alertmanager/alertmanager.yml"]
+    ports: ["9093:9093"]
+    volumes: [./alertmanager:/etc/alertmanager:ro]
+
+  grafana:
+    image: grafana/grafana:11.4.0
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: jetstream
+      GF_INSTALL_PLUGINS: grafana-clickhouse-datasource 4.6.0
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+    ports: ["3000:3000"]
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana
+    depends_on: [prometheus, clickhouse]
+
+volumes:
+  postgres-data:
+  clickhouse-data:
+  rabbitmq-data:
+  redis-data:
+  minio-data:
+  prometheus-data:
+  grafana-data:

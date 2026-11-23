@@ -2,5 +2,15 @@
   "app.title.main": "Jetstream Tycoon",
   "hud.speed.current": "Speed: {speed}x",
   "fleet.summary.count": "{count, plural, one {# plane} other {# planes}}",
-  "route.panel.load_factor": "Load factor"
+  "route.panel.load_factor": "Load factor",
+  "app.loading.sim": "Loading simulation…",
+  "hud.day.current": "Day {day}",
+  "hud.cash.current": "Cash: {cash}",
+  "hud.speed.label": "Game speed",
+  "hud.speed.pause": "Pause",
+  "errors.sim.load_failed": "The game engine failed to load. Please reload the page.",
+  "errors.sim.not_started": "The game has not started yet.",
+  "errors.cmd.invalid_speed": "Game speed must be paused, 1×, 2× or 4×.",
+  "errors.cmd.unknown": "That action isn't possible right now.",
+  "errors.sim.internal": "The game engine hit an unexpected error. Your last save is safe; please reload."
 }

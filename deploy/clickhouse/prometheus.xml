@@ -1,0 +1,10 @@
+<!-- Exposes ClickHouse metrics for Prometheus on :9363 (TECH_DESIGN §21). -->
+<clickhouse>
+    <prometheus>
+        <endpoint>/metrics</endpoint>
+        <port>9363</port>
+        <metrics>true</metrics>
+        <events>true</events>
+        <asynchronous_metrics>true</asynchronous_metrics>
+    </prometheus>
+</clickhouse>
