@@ -6,7 +6,7 @@ WASM_BROTLI_MAX_BYTES := 2621440
 FUZZ_TIME ?= 3s
 MUTATION_THRESHOLD ?= 80
 POSTGRES_DSN ?= postgres://jetstream:jetstream@localhost:5432/jetstream?sslmode=disable
-CLICKHOUSE_DSN ?= clickhouse://localhost:9000?username=default&database=default&x-multi-statement=true
+CLICKHOUSE_DSN ?= clickhouse://localhost:9000?username=default&password=jetstream&database=default&x-multi-statement=true
 
 all: lint migrations-check i18n-check test test-integration fuzz mutate content-check determinism wasm-size-check build
 

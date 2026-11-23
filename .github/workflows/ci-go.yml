@@ -97,11 +97,12 @@ jobs:
         image: clickhouse/clickhouse-server:24.8-alpine
         env:
           CLICKHOUSE_DB: default
+          CLICKHOUSE_PASSWORD: jetstream
         ports:
           - 9000:9000
           - 8123:8123
         options: >-
-          --health-cmd "clickhouse-client --query 'SELECT 1'"
+          --health-cmd "clickhouse-client --password jetstream --query 'SELECT 1'"
           --health-interval 3s
           --health-timeout 5s
           --health-retries 20
