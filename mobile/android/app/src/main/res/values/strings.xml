@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Jetstream Tycoon</string>
+    <string name="title_activity_main">Jetstream Tycoon</string>
+    <string name="package_name">io.github.micqo.jetstreamtycoon</string>
+    <string name="custom_url_scheme">io.github.micqo.jetstreamtycoon</string>
+</resources>
