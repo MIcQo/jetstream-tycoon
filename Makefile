@@ -1,4 +1,4 @@
-.PHONY: all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
+.PHONY: infra-up infra-down infra-reset infra-config-check all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
@@ -156,5 +156,22 @@ migrate-down: migrations-check
 	migrate -path migrations/postgres -database "$(POSTGRES_DSN)" down -all
 	migrate -path migrations/clickhouse -database "$(CLICKHOUSE_DSN)" down -all
 
-dev:
-	@echo "dev stub"
+COMPOSE := docker compose -f deploy/docker-compose.yml
+
+# Starts local infrastructure, applies migrations, then runs the API server.
+# The web dev server is added to this target in M0.8.
+dev: infra-up migrate-up
+	go run ./cmd/server
+
+infra-up:
+	$(COMPOSE) up -d --wait
+
+infra-down:
+	$(COMPOSE) down
+
+# Destroys local infrastructure data volumes (Postgres, ClickHouse, RabbitMQ, Redis, MinIO, Grafana).
+infra-reset:
+	$(COMPOSE) down -v
+
+infra-config-check:
+	$(COMPOSE) config -q

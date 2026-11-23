@@ -75,6 +75,14 @@ jobs:
       - name: Validate Prometheus config and alert rules
         run: make prom-check
 
+  compose:
+    name: Docker Compose Config Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate deploy/docker-compose.yml
+        run: make infra-config-check
+
   migrations:
     name: Migration Validation (Postgres + ClickHouse)
     runs-on: ubuntu-latest

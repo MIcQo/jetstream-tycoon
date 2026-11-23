@@ -1,0 +1,22 @@
+{
+  "uid": "jt-infra",
+  "title": "Infrastructure",
+  "schemaVersion": 39,
+  "time": { "from": "now-1h", "to": "now" },
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Targets up",
+      "gridPos": { "x": 0, "y": 0, "w": 8, "h": 4 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [{ "expr": "sum(up)", "refId": "A" }]
+    },
+    {
+      "type": "table",
+      "title": "Scrape targets",
+      "gridPos": { "x": 8, "y": 0, "w": 16, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [{ "expr": "up", "refId": "A", "instant": true, "format": "table" }]
+    }
+  ]
+}

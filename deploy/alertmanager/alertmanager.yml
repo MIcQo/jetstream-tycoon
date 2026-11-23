@@ -1,0 +1,10 @@
+# Local development: alerts are visible in the Alertmanager UI (:9093) but not sent anywhere.
+# Production receivers (email/Slack/Telegram) are configured per environment.
+route:
+  receiver: dev-null
+  group_by: [alertname]
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+receivers:
+  - name: dev-null
