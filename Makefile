@@ -1,4 +1,4 @@
-.PHONY: all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
+.PHONY: determinism-wasm-tests all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
@@ -93,7 +93,7 @@ content-check: i18n-check
 	go run ./tools/datagen
 
 determinism: wasm
-	go test -race -v -run TestDeterministicStateHash ./sim/...
+	go test -race -v -run '^TestDeterministic' ./sim/...
 	@hash=$$(go run ./cmd/simwasm); \
 	echo "native state hash: $$hash"; \
 	test "$$hash" = "8c94d155a43185c2bf23642b35a9588a72963e6559bf9daad7810b2f70720760"; \
@@ -108,6 +108,12 @@ determinism: wasm
 		echo "wasm state hash:   $$wasm_hash"; \
 		test "$$wasm_hash" = "$$hash"; \
 	fi
+
+# Runs the deterministic sim tests (detmath bit-exact vectors, state hash) compiled to
+# WASM under Node. A minimal environment avoids the js/wasm argv+env size limit.
+determinism-wasm-tests:
+	env -i PATH="$$PATH" HOME="$$HOME" GOOS=js GOARCH=wasm GOFLAGS= \
+		go test -run '^TestDeterministic' -exec="$$(go env GOROOT)/lib/wasm/go_js_wasm_exec" ./sim/...
 
 wasm:
 	@mkdir -p $(dir $(WASM_OUT))
