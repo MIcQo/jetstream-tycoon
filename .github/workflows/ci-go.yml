@@ -1,4 +1,4 @@
-name: CI
+name: CI (Go & Migrations)
 
 on:
   push:
@@ -20,20 +20,15 @@ env:
 
 jobs:
   lint:
-    name: Lint & Typecheck (Go + TS)
+    name: Go Lint & Sim Determinism Analyzer
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install web dependencies
-        run: npm --prefix web install
-      - name: Run lint (gofmt, go vet, simlint, tsc --noEmit)
-        run: make lint
+      - name: Run Go lint (gofmt, go vet, simlint)
+        run: make lint-go
 
   migrations:
     name: Migration Validation (Postgres + ClickHouse)
@@ -83,7 +78,7 @@ jobs:
           make migrate-up
 
   unit:
-    name: Unit Tests (Go -race + TS Vitest)
+    name: Go Unit Tests (-race)
     runs-on: ubuntu-latest
     needs: [lint]
     steps:
@@ -91,16 +86,11 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install web dependencies
-        run: npm --prefix web install
-      - name: Run Go (-race) and TypeScript unit tests
-        run: make test
+      - name: Run Go unit tests with race detector
+        run: make test-go
 
   integration:
-    name: Integration Tests (Go -tags=integration + TS)
+    name: Go Integration Tests (-race -tags=integration)
     runs-on: ubuntu-latest
     needs: [lint]
     steps:
@@ -108,16 +98,11 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install web dependencies
-        run: npm --prefix web install
-      - name: Run Go (-race -tags=integration) and TypeScript integration tests
-        run: make test-integration
+      - name: Run Go integration tests
+        run: make test-integration-go
 
   fuzz:
-    name: Fuzz & Property Tests (Go -fuzz + TS fast-check)
+    name: Go Fuzz Tests (-fuzz)
     runs-on: ubuntu-latest
     needs: [unit]
     steps:
@@ -125,16 +110,11 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install web dependencies
-        run: npm --prefix web install
-      - name: Run Go fuzz tests and TypeScript fast-check tests
-        run: make fuzz FUZZ_TIME=5s
+      - name: Run Go fuzz tests
+        run: make fuzz-go FUZZ_TIME=5s
 
   mutation:
-    name: Mutation Tests (Go gomutate + TS Stryker)
+    name: Go Mutation Tests (gomutate)
     runs-on: ubuntu-latest
     needs: [unit]
     steps:
@@ -142,13 +122,8 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install web dependencies
-        run: npm --prefix web install
-      - name: Run Go and TypeScript mutation tests
-        run: make mutate
+      - name: Run Go AST mutation tests
+        run: make mutate-go
 
   content-check:
     name: Content Validation
@@ -245,7 +220,7 @@ jobs:
         run: make wasm-size-check
 
   build:
-    name: Build All Targets
+    name: Build Go Binaries & WASM
     runs-on: ubuntu-latest
     needs:
       - lint
