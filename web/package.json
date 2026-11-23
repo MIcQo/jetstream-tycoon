@@ -28,6 +28,8 @@
   "dependencies": {
     "@capacitor/app": "8.1.2",
     "@capacitor/core": "8.6.0",
+    "@sentry/browser": "10.76.2",
+    "@sentry/capacitor": "4.5.0",
     "i18next": "27.0.1",
     "i18next-icu": "2.7.0",
     "intl-messageformat": "12.1.5",

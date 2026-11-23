@@ -2,12 +2,20 @@ import type { TFunction } from "i18next";
 import { useEffect, useMemo, useState } from "preact/hooks";
 
 import { formatMoney, type Locale } from "../i18n/locale";
+import type { ErrorReporter } from "../platform/sentry";
 import type { Lifecycle } from "../platform/types";
 import type { FromWorker, SimView, Speed, ToWorker } from "../worker/protocol";
 
 const SPEEDS: Speed[] = [0, 1, 2, 4];
 
-export function App({ t, locale, lifecycle }: { t: TFunction; locale: Locale; lifecycle: Lifecycle }) {
+export interface AppProps {
+  t: TFunction;
+  locale: Locale;
+  lifecycle: Lifecycle;
+  reporter: ErrorReporter;
+}
+
+export function App({ t, locale, lifecycle, reporter }: AppProps) {
   const [view, setView] = useState<SimView | undefined>();
   const [errorKey, setErrorKey] = useState<string | undefined>();
   const worker = useMemo(
@@ -20,6 +28,11 @@ export function App({ t, locale, lifecycle }: { t: TFunction; locale: Locale; li
       const msg = e.data;
       if (msg.kind === "error") {
         setErrorKey(msg.errorKey);
+        if (msg.report) {
+          reporter.simError(msg.report);
+        }
+      } else if (msg.kind === "simReports") {
+        reporter.simReports(msg.reports);
       } else {
         setView(msg.view);
       }
@@ -33,7 +46,7 @@ export function App({ t, locale, lifecycle }: { t: TFunction; locale: Locale; li
       offBackground();
       worker.terminate();
     };
-  }, [worker, lifecycle]);
+  }, [worker, lifecycle, reporter]);
 
   const send = (msg: ToWorker) => worker.postMessage(msg);
 

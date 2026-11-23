@@ -22,3 +22,4 @@ web/reports/
 # Balance outputs
 /out/
 /web/public/wasm_exec.js
+!.env.example
