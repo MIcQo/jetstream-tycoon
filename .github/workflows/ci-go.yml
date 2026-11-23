@@ -216,7 +216,7 @@ jobs:
         if: matrix.target != 'wasm'
         run: |
           make determinism
-          go run ./cmd/simwasm > hash-${{ matrix.target }}.txt
+          go run ./cmd/simwasm -determinism > hash-${{ matrix.target }}.txt
       - name: Run WASM determinism check under Node.js
         if: matrix.target == 'wasm'
         run: |
@@ -227,7 +227,7 @@ jobs:
           else
             WASM_EXEC="$GOROOT_DIR/misc/wasm/wasm_exec_node.js"
           fi
-          node "$WASM_EXEC" web/public/sim.wasm | tee hash-wasm.txt
+          env -i PATH="$PATH" HOME="$HOME" node "$WASM_EXEC" web/public/sim.wasm -determinism | tee hash-wasm.txt
       - name: Upload state hash
         uses: actions/upload-artifact@v4
         with:

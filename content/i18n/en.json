@@ -4,5 +4,8 @@
   "event.fuel_spike.title": "Fuel Price Spike",
   "notifications.day.started": "Day {day} has started.",
   "errors.cmd.invalid_speed": "Game speed must be paused, 1×, 2× or 4×.",
-  "errors.cmd.unknown": "That action isn't possible right now."
+  "errors.cmd.unknown": "That action isn't possible right now.",
+  "errors.cmd.unknown_type": "That action isn't supported by this version of the game.",
+  "errors.cmd.malformed": "That action could not be understood.",
+  "errors.sim.not_started": "The game has not started yet."
 }
