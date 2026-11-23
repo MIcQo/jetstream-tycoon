@@ -114,9 +114,11 @@ determinism-wasm-tests:
 	env -i PATH="$$PATH" HOME="$$HOME" GOOS=js GOARCH=wasm GOFLAGS= \
 		go test -run '^TestDeterministic' -exec="$$(go env GOROOT)/lib/wasm/go_js_wasm_exec" ./sim/...
 
+# Production sim.wasm uses -tags release: detmath.Finite clamps NaN/±Inf to 0 and
+# reports it instead of panicking (ADR-0021). Tests always run without the tag.
 wasm:
 	@mkdir -p $(dir $(WASM_OUT))
-	GOOS=js GOARCH=wasm go build -trimpath -ldflags="-s -w" -o $(WASM_OUT) ./cmd/simwasm
+	GOOS=js GOARCH=wasm go build -tags release -trimpath -ldflags="-s -w" -o $(WASM_OUT) ./cmd/simwasm
 	@if command -v wasm-opt >/dev/null 2>&1; then \
 		wasm-opt -Oz --all-features $(WASM_OUT) -o $(WASM_OUT); \
 	fi

@@ -3,6 +3,8 @@ package bridge_test
 import (
 	"encoding/json"
 	"errors"
+	"math"
+	"reflect"
 	"strings"
 	"testing"
 
@@ -95,7 +97,7 @@ func TestAdvanceReturnsEmptyArraysNotNull(t *testing.T) {
 	var s bridge.Session
 	must(t)(s.NewGame(`{"seed":1}`))
 	out := must(t)(s.Advance(1))
-	if !strings.Contains(out, `"notifications":[]`) || !strings.Contains(out, `"rejected":[]`) {
+	if !strings.Contains(out, `"notifications":[]`) || !strings.Contains(out, `"rejected":[]`) || !strings.Contains(out, `"reports":[]`) {
 		t.Fatalf("Advance(1) = %s, want empty arrays", out)
 	}
 }
@@ -107,7 +109,36 @@ func TestGuard(t *testing.T) {
 	if got := bridge.Guard(func() (string, error) { return "", errors.New(`bad "input"`) }); got != `{"error":"bad \"input\""}` {
 		t.Errorf("error = %s", got)
 	}
-	if got := bridge.Guard(func() (string, error) { panic("kaboom") }); got != `{"error":"panic: kaboom"}` {
-		t.Errorf("panic = %s", got)
+	got := bridge.Guard(func() (string, error) { panic("kaboom") })
+	var e struct{ Error string }
+	if err := json.Unmarshal([]byte(got), &e); err != nil || !strings.HasPrefix(e.Error, "panic: kaboom\n") ||
+		!strings.Contains(e.Error, "goroutine") || len(e.Error) > 4200 {
+		t.Errorf("panic = %.200s (len %d)", got, len(got))
+	}
+}
+
+func TestReportsAreReturnedOnceAndBounded(t *testing.T) {
+	var s bridge.Session
+	s.ReportNonFinite("before_start", 1) // no game yet: tick 0
+	must(t)(s.NewGame(`{"seed":1}`))
+	first := decode[bridge.AdvanceResult](t, must(t)(s.Advance(3)))
+	if want := []bridge.Report{{Kind: "nonFinite", Context: "before_start", Detail: "1", Tick: 0}}; !reflect.DeepEqual(first.Reports, want) {
+		t.Fatalf("first reports = %+v, want %+v", first.Reports, want)
+	}
+	s.ReportNonFinite("fuel_price", math.Inf(1))
+
+	r := decode[bridge.AdvanceResult](t, must(t)(s.Advance(1)))
+	if want := []bridge.Report{{Kind: "nonFinite", Context: "fuel_price", Detail: "+Inf", Tick: 3}}; !reflect.DeepEqual(r.Reports, want) {
+		t.Fatalf("reports = %+v, want %+v", r.Reports, want)
+	}
+	if again := decode[bridge.AdvanceResult](t, must(t)(s.Advance(1))); len(again.Reports) != 0 {
+		t.Fatalf("reports not cleared: %+v", again.Reports)
+	}
+
+	for i := 0; i < 60; i++ {
+		s.ReportNonFinite("loop", math.NaN())
+	}
+	if n := len(decode[bridge.AdvanceResult](t, must(t)(s.Advance(1))).Reports); n != 50 {
+		t.Fatalf("got %d reports, want the cap of 50", n)
 	}
 }

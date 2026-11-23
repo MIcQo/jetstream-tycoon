@@ -10,6 +10,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"runtime/debug"
 
 	"github.com/MIcQo/jetstream-tycoon/sim"
 	"github.com/MIcQo/jetstream-tycoon/sim/command"
@@ -29,7 +30,23 @@ type AdvanceResult struct {
 	View          View                  `json:"view"`
 	Notifications []engine.Notification `json:"notifications"`
 	Rejected      []engine.Rejection    `json:"rejected"`
+	// Reports are problems the simulation recovered from since the last Advance
+	// (for example a non-finite formula result clamped in a release build). The UI
+	// forwards them to Sentry; they never affect the game state.
+	Reports []Report `json:"reports"`
 }
+
+// Report describes a recovered problem for error reporting.
+type Report struct {
+	Kind    string `json:"kind"`    // "nonFinite"
+	Context string `json:"context"` // where it happened, e.g. the formula name
+	Detail  string `json:"detail"`  // value or message
+	Tick    int64  `json:"tick"`
+}
+
+// maxReports bounds the pending reports so a broken formula can't grow memory
+// without limit between two Advance calls.
+const maxReports = 50
 
 // CommandResult is the response of Command.
 type CommandResult struct {
@@ -42,7 +59,21 @@ var ErrNotStarted = &command.Error{Key: "errors.sim.not_started"}
 
 // Session holds one running game.
 type Session struct {
-	engine *engine.Engine
+	engine  *engine.Engine
+	reports []Report
+}
+
+// ReportNonFinite records a NaN/±Inf that detmath.Finite clamped (release builds).
+// It is wired to detmath.NonFiniteHook by cmd/simwasm.
+func (s *Session) ReportNonFinite(context string, x float64) {
+	if len(s.reports) >= maxReports {
+		return
+	}
+	var tick int64
+	if s.engine != nil {
+		tick = s.engine.State.Tick
+	}
+	s.reports = append(s.reports, Report{Kind: "nonFinite", Context: context, Detail: fmt.Sprint(x), Tick: tick})
 }
 
 // NewGame starts a new game from `{"seed": n}` and returns the initial view.
@@ -73,6 +104,11 @@ func (s *Session) Advance(ticks int) (string, error) {
 	if res.Rejected == nil {
 		res.Rejected = []engine.Rejection{}
 	}
+	res.Reports = s.reports
+	if res.Reports == nil {
+		res.Reports = []Report{}
+	}
+	s.reports = nil
 	return marshal(res)
 }
 
@@ -104,7 +140,7 @@ func (s *Session) view() View {
 func Guard(call func() (string, error)) (out string) {
 	defer func() {
 		if r := recover(); r != nil {
-			out = errorJSON(fmt.Sprintf("panic: %v", r))
+			out = errorJSON(fmt.Sprintf("panic: %v\n%s", r, truncate(debug.Stack(), maxStackBytes)))
 		}
 	}()
 	res, err := call()
@@ -112,6 +148,16 @@ func Guard(call func() (string, error)) (out string) {
 		return errorJSON(err.Error())
 	}
 	return res
+}
+
+// maxStackBytes keeps panic reports small enough for Sentry and postMessage.
+const maxStackBytes = 4096
+
+func truncate(b []byte, n int) []byte {
+	if len(b) > n {
+		return b[:n]
+	}
+	return b
 }
 
 func errorJSON(msg string) string {
