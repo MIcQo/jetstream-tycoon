@@ -20,7 +20,7 @@ func main() {
 		Handler:           server.NewHandler(),
 		ReadHeaderTimeout: 5 * time.Second,
 	}
-	log.Printf("server listening on %s", addr)
+	log.Println("server starting")
 	if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 		log.Fatal(err)
 	}

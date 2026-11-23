@@ -1,4 +1,4 @@
-.PHONY: all build lint lint-go lint-ts vulncheck test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
+.PHONY: all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
@@ -8,7 +8,7 @@ MUTATION_THRESHOLD ?= 80
 POSTGRES_DSN ?= postgres://jetstream:jetstream@localhost:5432/jetstream?sslmode=disable
 CLICKHOUSE_DSN ?= clickhouse://localhost:9000?username=default&database=default&x-multi-statement=true
 
-all: lint migrations-check test test-integration fuzz mutate content-check determinism wasm-size-check build
+all: lint migrations-check i18n-check test test-integration fuzz mutate content-check determinism wasm-size-check build
 
 lint: lint-go lint-ts
 
@@ -16,6 +16,12 @@ lint-go:
 	@test -z "$$(gofmt -l .)" || (echo "gofmt check failed on:" && gofmt -l . && exit 1)
 	go vet ./...
 	go run ./tools/simlint sim
+	@if command -v golangci-lint >/dev/null 2>&1; then \
+		golangci-lint run ./...; \
+	fi
+
+deadcode:
+	deadcode -test ./...
 
 vulncheck:
 	govulncheck ./...
@@ -23,7 +29,18 @@ vulncheck:
 lint-ts:
 	@if [ -d web/node_modules ]; then \
 		npm --prefix web run typecheck; \
+		npm --prefix web run lint; \
 	fi
+
+audit-ts:
+	npm --prefix web audit --audit-level=high
+
+i18n-check:
+	go run ./tools/i18ncheck
+
+prom-check:
+	promtool check config deploy/prometheus/prometheus.yml
+	promtool check rules deploy/prometheus/rules/*.yml
 
 migrations-check:
 	go run ./tools/migrationcheck
@@ -72,7 +89,7 @@ mutate-ts:
 		npm --prefix web run test:mutate; \
 	fi
 
-content-check:
+content-check: i18n-check
 	go run ./tools/datagen
 
 determinism: wasm

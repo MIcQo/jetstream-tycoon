@@ -1,0 +1,32 @@
+groups:
+  - name: jetstream_tycoon_alerts
+    rules:
+      - alert: ApiHighErrorRate
+        expr: >
+          sum(rate(http_requests_total{status=~"5.."}[5m]))
+          /
+          clamp_min(sum(rate(http_requests_total[5m])), 1) > 0.02
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "API 5xx error rate exceeds 2% over 5 minutes"
+          runbook_url: "docs/runbooks/ApiHighErrorRate.md"
+
+      - alert: TelemetryIngestorLagHigh
+        expr: ingestor_lag_seconds > 300
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Telemetry ingestor lag exceeds 300 seconds"
+          runbook_url: "docs/runbooks/TelemetryIngestorLagHigh.md"
+
+      - alert: TargetDown
+        expr: up == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Prometheus target {{ $labels.job }} ({{ $labels.instance }}) is down"
+          runbook_url: "docs/runbooks/TargetDown.md"

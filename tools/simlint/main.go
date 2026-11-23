@@ -34,6 +34,10 @@ var forbiddenImports = map[string]string{
 	"time":         "time is forbidden in sim/ (use tick count, ADR-0006)",
 	"math/rand":    "math/rand is forbidden in sim/ (use per-system PCG stream, ADR-0006)",
 	"math/rand/v2": "math/rand/v2 is forbidden in sim/ (use per-system PCG stream, ADR-0006)",
+	"os":           "os is forbidden in sim/ (pure simulation without I/O, ADR-0002)",
+	"net":          "net is forbidden in sim/ (pure simulation without I/O, ADR-0002)",
+	"net/http":     "net/http is forbidden in sim/ (pure simulation without I/O, ADR-0002)",
+	"database/sql": "database/sql is forbidden in sim/ (pure simulation without I/O, ADR-0002)",
 }
 
 func main() {
@@ -134,6 +138,10 @@ func InspectFile(fset *token.FileSet, f *ast.File, info *types.Info) []string {
 		if msg, bad := forbiddenImports[path]; bad {
 			pos := fset.Position(imp.Pos())
 			issues = append(issues, fmt.Sprintf("%s: %s", pos, msg))
+		}
+		if strings.HasPrefix(path, "github.com/MIcQo/jetstream-tycoon/server") {
+			pos := fset.Position(imp.Pos())
+			issues = append(issues, fmt.Sprintf("%s: sim/ must not import server/ packages (%s)", pos, path))
 		}
 		if path == "math" {
 			name := "math"

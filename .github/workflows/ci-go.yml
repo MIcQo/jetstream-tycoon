@@ -1,4 +1,4 @@
-name: CI (Go & Migrations)
+name: CI (Go & Infra)
 
 on:
   push:
@@ -20,15 +20,32 @@ env:
 
 jobs:
   lint:
-    name: Go Lint & Sim Determinism Analyzer
+    name: Go Lint (gofmt, go vet, simlint, golangci-lint)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-      - name: Run Go lint (gofmt, go vet, simlint)
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v7
+        with:
+          version: v2.1.6
+      - name: Run gofmt, go vet, and simlint
         run: make lint-go
+
+  deadcode:
+    name: Go Deadcode Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Install deadcode
+        run: go install golang.org/x/tools/cmd/deadcode@latest
+      - name: Run deadcode check
+        run: make deadcode
 
   vulncheck:
     name: Go Vulnerability Scan (govulncheck)
@@ -42,6 +59,18 @@ jobs:
         run: go install golang.org/x/vuln/cmd/govulncheck@latest
       - name: Run govulncheck
         run: make vulncheck
+
+  prometheus:
+    name: Prometheus Config & Alert Rules Check (promtool)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install promtool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y prometheus
+      - name: Validate Prometheus config and alert rules
+        run: make prom-check
 
   migrations:
     name: Migration Validation (Postgres + ClickHouse)
@@ -139,7 +168,7 @@ jobs:
         run: make mutate-go
 
   content-check:
-    name: Content Validation
+    name: Content & i18n Validation
     runs-on: ubuntu-latest
     needs: [lint]
     steps:
@@ -147,7 +176,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-      - name: Validate content
+      - name: Validate content and i18n catalogs
         run: make content-check
 
   determinism:
@@ -237,7 +266,9 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - lint
+      - deadcode
       - vulncheck
+      - prometheus
       - migrations
       - unit
       - integration

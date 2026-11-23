@@ -71,7 +71,9 @@ func main() {
 		fmt.Fprintf(os.Stderr, "gomutate temp dir: %v\n", err)
 		os.Exit(2)
 	}
-	defer os.RemoveAll(tmpDir)
+	defer func() {
+		_ = os.RemoveAll(tmpDir)
+	}()
 
 	killed := 0
 	for i, m := range mutants {

@@ -16,10 +16,11 @@ permissions:
 
 env:
   NODE_VERSION: "22"
+  GO_VERSION: "1.24.x"
 
 jobs:
   lint:
-    name: TS Typecheck (tsc --noEmit)
+    name: TS Typecheck & ESLint (no-explicit-any, platform boundary)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,8 +29,32 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install web dependencies
         run: npm --prefix web install
-      - name: Run TypeScript typecheck
+      - name: Run TypeScript typecheck and ESLint
         run: make lint-ts
+
+  audit:
+    name: npm Vulnerability Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install web dependencies (generate package-lock)
+        run: npm --prefix web install --package-lock-only
+      - name: Run npm audit
+        run: make audit-ts
+
+  i18n:
+    name: i18n Key Parity & en-XA Pseudo-Locale Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Validate i18n catalogs and en-XA pseudo-locale
+        run: make i18n-check
 
   unit:
     name: TS Unit Tests (Vitest)
