@@ -1,0 +1,18 @@
+<script src="wasm_exec.js"></script>
+<script>
+window.bench = async () => {
+  const bytes = await (await fetch('sim.wasm')).arrayBuffer();
+  const t0 = performance.now();
+  const mod = await WebAssembly.compile(bytes);
+  const t1 = performance.now();
+  const go = new Go();
+  const inst = await WebAssembly.instantiate(mod, go.importObject);
+  go.run(inst);
+  const t2 = performance.now();
+  jetstreamSim.newGame('{"seed":1}');
+  const t3 = performance.now();
+  for (let d = 0; d < 30; d++) jetstreamSim.advance(24);
+  const t4 = performance.now();
+  return { compileMs: t1 - t0, instantiateRunMs: t2 - t1, newGameMs: t3 - t2, dayAvgMs: (t4 - t3) / 30 };
+};
+</script>
