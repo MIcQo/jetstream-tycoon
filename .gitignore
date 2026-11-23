@@ -1,0 +1,19 @@
+# Go
+/bin/
+*.test
+*.out
+# WASM build
+/web/public/sim.wasm
+# Node
+node_modules/
+dist/
+# Mobile
+/mobile/ios/App/Pods/
+/mobile/android/.gradle/
+/mobile/android/app/build/
+# Env & secrets
+.env
+.env.*
+.claude/settings.local.json
+# Balance outputs
+/out/
