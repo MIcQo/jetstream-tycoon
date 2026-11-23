@@ -5,7 +5,7 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ["src/**/*.ts"],
+    files: ["src/**/*.ts", "src/**/*.tsx"],
     rules: {
       "@typescript-eslint/no-explicit-any": "error",
       "no-restricted-imports": [
@@ -23,7 +23,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ["src/platform/**/*.ts"],
+    files: ["src/platform/**/*.ts", "src/platform/**/*.tsx"],
     rules: {
       "no-restricted-imports": "off",
     },
