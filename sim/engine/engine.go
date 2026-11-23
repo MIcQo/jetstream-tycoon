@@ -71,11 +71,13 @@ func (e *Engine) Enqueue(c command.Command) {
 	e.queue = append(e.queue, c)
 }
 
-// Advance runs n ticks.
+// Advance applies queued commands at the current tick boundary, then runs n ticks.
+// Advance(0) applies commands without advancing time, so a paused game still
+// responds to the player.
 func (e *Engine) Advance(n int) Output {
 	var out Output
+	e.applyQueued(&out)
 	for i := 0; i < n; i++ {
-		e.applyQueued(&out)
 		e.State.Tick++
 		dayStart := e.State.Tick%state.TicksPerDay == 0
 		for _, sys := range e.systems {

@@ -82,6 +82,12 @@ func TestCommandsApplyAtTickBoundaryInOrder(t *testing.T) {
 		t.Fatalf("rejected = %+v, want %+v", out.Rejected, wantRejected)
 	}
 
+	// Advance(0) applies commands without running a tick (paused game).
+	e.Enqueue(command.SetSpeed{Speed: 0})
+	if paused := e.Advance(0); len(paused.Rejected) != 0 || e.State.Speed != 0 || e.State.Tick != 2 {
+		t.Fatalf("Advance(0): speed=%d tick=%d rejected=%v", e.State.Speed, e.State.Tick, paused.Rejected)
+	}
+
 	// The queue is emptied: advancing again rejects nothing.
 	if again := e.Advance(1); len(again.Rejected) != 0 {
 		t.Fatalf("queue not cleared: %+v", again.Rejected)
