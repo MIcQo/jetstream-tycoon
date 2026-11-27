@@ -241,7 +241,8 @@ func TestCheckFindsProblems(t *testing.T) {
 	_ = writeCandidates(filepath.Join(dir, "candidates.json"), nil)
 	err := check(dir)
 	for _, want := range []string{"want at least 200", `bad or duplicate iso2 "zz"`, "not sorted", "zz has no name", "AA label out of range", "QQ is not in countries.json", "QQ has a malformed path",
-		"AA has missing or negative stats", "AA profile outside", "AA has unknown hemisphere", "AA has no source for population"} {
+		"AA has missing or negative stats", "AA profile outside", "AA has unknown hemisphere", "AA has no source for population",
+		"AA wealth 0 outside [0.3, 3]"} {
 		if err == nil || !strings.Contains(err.Error(), want) {
 			t.Errorf("check error missing %q: %v", want, err)
 		}
