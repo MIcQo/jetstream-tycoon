@@ -290,6 +290,7 @@ jobs:
       - deadcode
       - vulncheck
       - prometheus
+      - compose
       - migrations
       - unit
       - integration
