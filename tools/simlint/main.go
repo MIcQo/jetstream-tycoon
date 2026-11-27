@@ -2,7 +2,7 @@
 //   - No range over maps
 //   - No goroutines (go statements) or select statements
 //   - No imports of time, math/rand, or math/rand/v2
-//   - No math.* calls beyond Sqrt, Floor, Abs, Min, Max, IsNaN, IsInf, Float64bits, Float64frombits
+//   - No math.* calls beyond Sqrt, Floor, Abs, Min, Max, IsNaN, IsInf, Float64bits, Float64frombits, Inf, NaN
 package main
 
 import (
@@ -28,6 +28,9 @@ var allowedMathFuncs = map[string]bool{
 	"IsInf":           true,
 	"Float64bits":     true,
 	"Float64frombits": true,
+	// Inf and NaN only construct fixed bit patterns, so they are deterministic.
+	"Inf": true,
+	"NaN": true,
 }
 
 var forbiddenImports = map[string]string{

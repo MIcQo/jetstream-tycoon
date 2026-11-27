@@ -225,6 +225,9 @@ jobs:
         run: |
           make determinism
           go run ./cmd/simwasm -determinism > hash-${{ matrix.target }}.txt
+      - name: Run deterministic sim tests compiled to WASM under Node.js
+        if: matrix.target == 'wasm'
+        run: make determinism-wasm-tests
       - name: Run WASM determinism check under Node.js
         if: matrix.target == 'wasm'
         run: |
