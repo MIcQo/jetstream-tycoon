@@ -185,3 +185,39 @@ func TestCheckAirportsFindsProblems(t *testing.T) {
 		t.Error("missing files accepted")
 	}
 }
+
+func TestMatchCityStaysInTheAirportsCountry(t *testing.T) {
+	places := []place{
+		{iso: "GG", id: "ne:1", name: "St Peter Port", pop: 18_000, lat: 49.46, lon: -2.54},
+		{iso: "", id: "ne:2", name: "Unknown country", pop: 1_000_000, lat: 49.30, lon: -2.30},
+	}
+	jersey := rawAirport{ident: "EGJJ", iso: "JE", municipality: "Saint Helier", lat: 49.21, lon: -2.20}
+	if c := matchCity(jersey, places); c.Name != "Unknown country" {
+		t.Errorf("places without a country code may still match: got %q", c.Name)
+	}
+	if c := matchCity(jersey, places[:1]); c.Matched || c.Name != "Saint Helier" {
+		t.Errorf("Jersey matched a Guernsey place: %+v", c)
+	}
+	guernsey := rawAirport{ident: "EGJB", iso: "GG", lat: 49.43, lon: -2.60}
+	if c := matchCity(guernsey, places[:1]); c.Name != "St Peter Port" {
+		t.Errorf("Guernsey: %+v", c)
+	}
+	if placeISO(Feature{Props: map[string]any{"ISO_A2": "-99"}}) != "" || placeISO(Feature{Props: map[string]any{"ISO_A2": "GG"}}) != "GG" {
+		t.Error("placeISO")
+	}
+}
+
+func TestSelectAirportsIsSortedAndStable(t *testing.T) {
+	playable := map[string]bool{"A": true, "B": true, "C": true}
+	rows := []rawAirport{
+		{iata: "ZZZ", typ: "medium_airport", sched: "yes", iso: "C"},
+		{iata: "MMM", typ: "large_airport", sched: "yes", iso: "B"},
+		{iata: "AAA", typ: "medium_airport", sched: "yes", iso: "A"},
+	}
+	for i := 0; i < 20; i++ { // map iteration order varies between runs
+		got := selectAirports(rows, nil, playable)
+		if len(got) != 3 || got[0].iata != "AAA" || got[1].iata != "MMM" || got[2].iata != "ZZZ" {
+			t.Fatalf("run %d: %v", i, got)
+		}
+	}
+}

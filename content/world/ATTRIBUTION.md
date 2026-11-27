@@ -18,5 +18,5 @@ Notes:
 - Each airport serves the populated place within 80 km with the highest `pop / (1 + (d / 25 km)²)`, so secondary airports join their metro (Gatwick → London). Airports with no place in range, and small places, use a 50,000 population floor.
 - Country stats use the World Bank's most recent value (tourism: latest year up to 2019, before the pandemic collapse). Missing population and GDP fall back to Natural Earth estimates (`POP_EST`, `GDP_MD`; `-99` means no data). Missing tourism is estimated from the subregion's median arrivals per resident. `stats.sources` records the origin of every value.
 - `business` and `tourism` are percentile ranks (0–1) of GDP per capita and of arrivals per resident. `climate` is a coarse zone from the label latitude.
-- World names: one catalog per locale (`zh`/`zht` become `zh-Hans`/`zh-Hant`), keys `country.<iso2>.name` and `city.<id>.name`. A missing translation (49 airport-only cities with no Natural Earth match) falls back to English, so every catalog has the same keys.
+- World names: one catalog per locale (`zh`/`zht` become `zh-Hans`/`zh-Hant`), keys `country.<iso2>.name` and `city.<id>.name`. A missing translation (the 60 airport cities with no Natural Earth match) falls back to English, so every catalog has the same keys.
 - Borders follow Natural Earth's de facto policy and imply no political position.

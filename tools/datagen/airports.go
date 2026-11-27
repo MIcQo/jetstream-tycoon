@@ -53,6 +53,7 @@ const (
 )
 
 type place struct {
+	iso      string // ISO2 of the place's country, "" when Natural Earth has none
 	id       string
 	name     string
 	names    map[string]string // localized names by language code
@@ -129,19 +130,34 @@ func selectAirports(rows []rawAirport, places []place, playable map[string]bool)
 			}
 		}
 	}
-	for iso, r := range bestMedium {
+	for _, iso := range sortedKeys(bestMedium) {
 		if !hasLarge[iso] {
-			out = append(out, r)
+			out = append(out, bestMedium[iso])
 		}
 	}
+	// Process airports in IATA order so city attributes never depend on map order.
+	sort.Slice(out, func(i, j int) bool { return out[i].iata < out[j].iata })
 	return out
 }
 
-// matchCity returns the Natural Earth place within cityMatchKm with the highest
-// gravity score, or a city built from the airport's own municipality.
+// placeISO returns the place's ISO2 code, or "" when Natural Earth has none ("-99").
+func placeISO(f Feature) string {
+	if c := f.str("ISO_A2"); len(c) == 2 && c != "-9" {
+		return c
+	}
+	return ""
+}
+
+// matchCity returns the Natural Earth place in the airport's own country within
+// cityMatchKm with the highest gravity score, or a city built from the airport's
+// own municipality. Restricting to the same country keeps, for example, Jersey's
+// airport from serving a town in Guernsey.
 func matchCity(r rawAirport, places []place) City {
 	best, bestScore := -1, 0.0
 	for i, p := range places {
+		if p.iso != "" && p.iso != r.iso {
+			continue
+		}
 		d := haversineKm(r.lat, r.lon, p.lat, p.lon)
 		if d > cityMatchKm {
 			continue
@@ -185,6 +201,7 @@ func readPlaces(path string) ([]place, error) {
 	for _, f := range feats {
 		out = append(out, place{
 			id:    "ne:" + strconv.FormatInt(int64(f.num("NE_ID")), 10),
+			iso:   placeISO(f),
 			name:  f.str("NAME"),
 			names: localizedNames(f),
 			pop:   int64(f.num("POP_MAX")),
