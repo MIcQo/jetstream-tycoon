@@ -173,6 +173,9 @@ func checkStats(c Country) []error {
 	if s.Business < 0 || s.Business > 1 || s.Tourism < 0 || s.Tourism > 1 {
 		errs = append(errs, fmt.Errorf("countries.json: %s profile outside [0, 1]", c.ISO2))
 	}
+	if s.Wealth < minWealth || s.Wealth > maxWealth {
+		errs = append(errs, fmt.Errorf("countries.json: %s wealth %v outside [%v, %v]", c.ISO2, s.Wealth, minWealth, maxWealth))
+	}
 	if !hemispheres[s.Hemisphere] || !climates[s.Climate] {
 		errs = append(errs, fmt.Errorf("countries.json: %s has unknown hemisphere or climate", c.ISO2))
 	}
