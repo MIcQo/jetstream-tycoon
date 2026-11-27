@@ -56,6 +56,7 @@ func check(dir string) error {
 		if c.Label[0] < -180 || c.Label[0] > 180 || c.Label[1] < -90 || c.Label[1] > 90 {
 			errs = append(errs, fmt.Errorf("countries.json: %s label out of range", c.ISO2))
 		}
+		errs = append(errs, checkStats(c)...)
 	}
 	for _, lvl := range mapLevels {
 		var m WorldMap
@@ -138,4 +139,30 @@ func readJSON(path string, v any) error {
 		return fmt.Errorf("%s: %w", path, err)
 	}
 	return nil
+}
+
+var (
+	hemispheres = map[string]bool{"north": true, "south": true}
+	climates    = map[string]bool{"tropical": true, "subtropical": true, "temperate": true, "cold": true}
+)
+
+func checkStats(c Country) []error {
+	s := c.Stats
+	var errs []error
+	// Population 0 is allowed: some territories are uninhabited (e.g. Heard Island).
+	if s.Population < 0 || s.GDPPerCapitaUSD < 0 || s.TourismArrivals < 0 {
+		errs = append(errs, fmt.Errorf("countries.json: %s has missing or negative stats", c.ISO2))
+	}
+	if s.Business < 0 || s.Business > 1 || s.Tourism < 0 || s.Tourism > 1 {
+		errs = append(errs, fmt.Errorf("countries.json: %s profile outside [0, 1]", c.ISO2))
+	}
+	if !hemispheres[s.Hemisphere] || !climates[s.Climate] {
+		errs = append(errs, fmt.Errorf("countries.json: %s has unknown hemisphere or climate", c.ISO2))
+	}
+	for _, k := range []string{"population", "gdpPerCapita", "tourism"} {
+		if s.Sources[k] == "" {
+			errs = append(errs, fmt.Errorf("countries.json: %s has no source for %s", c.ISO2, k))
+		}
+	}
+	return errs
 }

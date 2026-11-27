@@ -229,7 +229,8 @@ func TestCheckCommittedWorldData(t *testing.T) {
 
 func TestCheckFindsProblems(t *testing.T) {
 	dir := t.TempDir()
-	countries := []Country{{ISO2: "zz"}, {ISO2: "AA", Name: "A", Continent: "X", Label: [2]float64{200, 0}}}
+	countries := []Country{{ISO2: "zz"}, {ISO2: "AA", Name: "A", Continent: "X", Label: [2]float64{200, 0},
+		Stats: Stats{Population: -1, Business: 2, Hemisphere: "up", Climate: "polar"}}}
 	_ = writeJSON(filepath.Join(dir, "countries.json"), countries)
 	for _, l := range mapLevels {
 		_ = writeJSON(filepath.Join(dir, "map", l.file), WorldMap{Countries: map[string]string{"QQ": "bogus"}})
@@ -237,7 +238,8 @@ func TestCheckFindsProblems(t *testing.T) {
 	_ = writeJSON(filepath.Join(dir, "airports.json"), []Airport{})
 	_ = writeJSON(filepath.Join(dir, "cities.json"), []City{})
 	err := check(dir)
-	for _, want := range []string{"want at least 200", `bad or duplicate iso2 "zz"`, "not sorted", "zz has no name", "AA label out of range", "QQ is not in countries.json", "QQ has a malformed path"} {
+	for _, want := range []string{"want at least 200", `bad or duplicate iso2 "zz"`, "not sorted", "zz has no name", "AA label out of range", "QQ is not in countries.json", "QQ has a malformed path",
+		"AA has missing or negative stats", "AA profile outside", "AA has unknown hemisphere", "AA has no source for population"} {
 		if err == nil || !strings.Contains(err.Error(), want) {
 			t.Errorf("check error missing %q: %v", want, err)
 		}

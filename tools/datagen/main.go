@@ -4,6 +4,7 @@
 //	go run ./tools/datagen fetch   # download sources into the cache, verifying SHA-256
 //	go run ./tools/datagen build   # fetch if needed, then regenerate content/world
 //	go run ./tools/datagen check   # validate committed content/world (no network; CI)
+//	go run ./tools/datagen worldbank # refresh the committed World Bank snapshot
 //
 // Raw downloads live in tools/datagen/.cache (git-ignored). Outputs are deterministic,
 // so a rebuild from the same sources produces identical files.
@@ -12,6 +13,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"time"
 )
 
 const (
@@ -34,6 +36,8 @@ func main() {
 		}
 	case "check":
 		err = check(worldDir)
+	case "worldbank":
+		err = refreshWorldBank("https://api.worldbank.org/v2", cacheDir, worldBankSnapshot)
 	default:
 		err = fmt.Errorf("unknown command %q (want fetch, build or check)", cmd)
 	}
@@ -48,6 +52,11 @@ func build(cache, out string) error {
 	if err != nil {
 		return err
 	}
+	var wb WorldBank
+	if err := readJSON(worldBankSnapshot, &wb); err != nil {
+		return fmt.Errorf("world bank snapshot (run `datagen worldbank`): %w", err)
+	}
+	applyStats(countries, wb)
 	if err := writeJSON(out+"/countries.json", countries); err != nil {
 		return err
 	}
@@ -73,4 +82,24 @@ func build(cache, out string) error {
 	fmt.Printf("datagen: %d countries, %d airports, %d cities, %d map levels written to %s\n",
 		len(countries), len(airports), len(cities), len(maps), out)
 	return nil
+}
+
+// refreshWorldBank fetches the indicators for the playable countries and writes
+// the committed snapshot.
+func refreshWorldBank(baseURL, cache, out string) error {
+	if err := fetchAll(cache, sources); err != nil {
+		return err
+	}
+	countries, _, err := buildCountries(cache)
+	if err != nil {
+		return err
+	}
+	wb, err := fetchWorldBank(baseURL, countries, time.Now())
+	if err != nil {
+		return err
+	}
+	for _, ind := range sortedKeys(wb.Indicators) {
+		fmt.Printf("datagen worldbank: %s: %d countries\n", ind, len(wb.Indicators[ind]))
+	}
+	return writeJSON(out, wb)
 }

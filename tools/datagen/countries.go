@@ -17,6 +17,11 @@ type Country struct {
 	Region    string     `json:"region"`
 	Subregion string     `json:"subregion"`
 	Label     [2]float64 `json:"label"` // lon, lat of the label point
+	Stats     Stats      `json:"stats"`
+
+	// Natural Earth estimates, used only as fallbacks for missing World Bank data.
+	nePop         float64
+	neGDPMillions float64
 }
 
 // WorldMap is one detail level of the pre-projected map (content/world/map/*.json).
@@ -98,13 +103,15 @@ func buildCountries(cache string) ([]Country, []WorldMap, error) {
 			m.Countries[iso] = frame.svgPath(polys)
 			if i == len(mapLevels)-1 { // the most detailed level defines the country list
 				countries = append(countries, Country{
-					ISO2:      iso,
-					ISO3:      primary.str("ISO_A3_EH"),
-					Name:      primary.str("NAME"),
-					Continent: primary.str("CONTINENT"),
-					Region:    primary.str("REGION_UN"),
-					Subregion: primary.str("SUBREGION"),
-					Label:     [2]float64{round6(primary.num("LABEL_X")), round6(primary.num("LABEL_Y"))},
+					ISO2:          iso,
+					ISO3:          primary.str("ISO_A3_EH"),
+					Name:          primary.str("NAME"),
+					Continent:     primary.str("CONTINENT"),
+					Region:        primary.str("REGION_UN"),
+					Subregion:     primary.str("SUBREGION"),
+					Label:         [2]float64{round6(primary.num("LABEL_X")), round6(primary.num("LABEL_Y"))},
+					nePop:         primary.num("POP_EST"),
+					neGDPMillions: primary.num("GDP_MD"),
 				})
 			}
 		}

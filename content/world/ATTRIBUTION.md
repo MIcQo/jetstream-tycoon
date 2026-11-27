@@ -8,10 +8,13 @@
 | Country shapes, codes, regions, label points (`countries.json`, `map/*.json`) | [Natural Earth](https://www.naturalearthdata.com/) v5.1.2, 1:110m and 1:50m Admin 0 – Countries | Public domain |
 | Airports (`airports.json`) | [OurAirports](https://ourairports.com/data/), data repository commit `a9426f77` | Public domain |
 | Cities and populations (`cities.json`) | Natural Earth v5.1.2, 1:10m Populated Places (`POP_MAX`) | Public domain |
+| Country population, GDP per capita (current US$), international tourism arrivals (`countries.json` → `stats`) | [World Bank World Development Indicators](https://data.worldbank.org/) (`SP.POP.TOTL`, `NY.GDP.PCAP.CD`, `ST.INT.ARVL`), snapshot in `tools/datagen/data/worldbank.json` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — © World Bank |
 
 Notes:
 - Country codes use Natural Earth's `ISO_A2_EH` (it fills in codes such as France and Norway). Features without a code (e.g. Somaliland, N. Cyprus) are drawn under `other` but are not playable.
 - Features sharing a code are merged (e.g. Australia's Indian Ocean Territories into `AU`).
 - Airports: every scheduled `large_airport` with an IATA code (base level 3), plus, for each country without one, the scheduled `medium_airport` serving its largest city (base level 2).
 - Each airport serves the populated place within 80 km with the highest `pop / (1 + (d / 25 km)²)`, so secondary airports join their metro (Gatwick → London). Airports with no place in range, and small places, use a 50,000 population floor.
+- Country stats use the World Bank's most recent value (tourism: latest year up to 2019, before the pandemic collapse). Missing population and GDP fall back to Natural Earth estimates (`POP_EST`, `GDP_MD`; `-99` means no data). Missing tourism is estimated from the subregion's median arrivals per resident. `stats.sources` records the origin of every value.
+- `business` and `tourism` are percentile ranks (0–1) of GDP per capita and of arrivals per resident. `climate` is a coarse zone from the label latitude.
 - Borders follow Natural Earth's de facto policy and imply no political position.

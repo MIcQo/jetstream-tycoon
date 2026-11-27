@@ -9,7 +9,21 @@
   "label": [
    1.539409,
    42.547643
-  ]
+  ],
+  "stats": {
+   "population": 82904,
+   "gdpPerCapitaUsd": 54292,
+   "tourismArrivals": 8235000,
+   "business": 0.86,
+   "tourism": 1,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AE",
@@ -21,7 +35,21 @@
   "label": [
    54.547256,
    23.466285
-  ]
+  ],
+  "stats": {
+   "population": 11513149,
+   "gdpPerCapitaUsd": 50274,
+   "tourismArrivals": 25282000,
+   "business": 0.852,
+   "tourism": 0.763,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AF",
@@ -33,7 +61,21 @@
   "label": [
    66.496586,
    34.164262
-  ]
+  ],
+  "stats": {
+   "population": 43844111,
+   "gdpPerCapitaUsd": 417,
+   "tourismArrivals": 2928439,
+   "business": 0.021,
+   "tourism": 0.212,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "AG",
@@ -45,7 +87,21 @@
   "label": [
    -61.790612,
    17.352249
-  ]
+  ],
+  "stats": {
+   "population": 94209,
+   "gdpPerCapitaUsd": 24819,
+   "tourismArrivals": 1035000,
+   "business": 0.678,
+   "tourism": 0.945,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AI",
@@ -57,7 +113,21 @@
   "label": [
    -63.026361,
    18.242979
-  ]
+  ],
+  "stats": {
+   "population": 14731,
+   "gdpPerCapitaUsd": 11880,
+   "tourismArrivals": 99761,
+   "business": 0.534,
+   "tourism": 0.898,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "AL",
@@ -69,7 +139,21 @@
   "label": [
    20.11384,
    40.654855
-  ]
+  ],
+  "stats": {
+   "population": 2349580,
+   "gdpPerCapitaUsd": 12998,
+   "tourismArrivals": 6406000,
+   "business": 0.551,
+   "tourism": 0.792,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AM",
@@ -81,7 +165,21 @@
   "label": [
    44.800564,
    40.459077
-  ]
+  ],
+  "stats": {
+   "population": 3086700,
+   "gdpPerCapitaUsd": 9474,
+   "tourismArrivals": 1894000,
+   "business": 0.492,
+   "tourism": 0.551,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AO",
@@ -93,7 +191,21 @@
   "label": [
    17.984249,
    -12.182762
-  ]
+  ],
+  "stats": {
+   "population": 39040039,
+   "gdpPerCapitaUsd": 3129,
+   "tourismArrivals": 218000,
+   "business": 0.254,
+   "tourism": 0.021,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AQ",
@@ -105,7 +217,21 @@
   "label": [
    35.885455,
    -79.843222
-  ]
+  ],
+  "stats": {
+   "population": 4490,
+   "gdpPerCapitaUsd": 200000,
+   "tourismArrivals": 2170,
+   "business": 0.992,
+   "tourism": 0.492,
+   "hemisphere": "south",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "AR",
@@ -117,7 +243,21 @@
   "label": [
    -64.173331,
    -33.501159
-  ]
+  ],
+  "stats": {
+   "population": 45851378,
+   "gdpPerCapitaUsd": 14898,
+   "tourismArrivals": 7399000,
+   "business": 0.597,
+   "tourism": 0.326,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AS",
@@ -129,7 +269,21 @@
   "label": [
    -170.747153,
    -14.32671
-  ]
+  ],
+  "stats": {
+   "population": 46029,
+   "gdpPerCapitaUsd": 18017,
+   "tourismArrivals": 19200,
+   "business": 0.619,
+   "tourism": 0.462,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AT",
@@ -141,7 +295,21 @@
   "label": [
    14.130515,
    47.518859
-  ]
+  ],
+  "stats": {
+   "population": 9208163,
+   "gdpPerCapitaUsd": 62930,
+   "tourismArrivals": 31884000,
+   "business": 0.907,
+   "tourism": 0.835,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AU",
@@ -153,7 +321,21 @@
   "label": [
    134.04972,
    -24.129522
-  ]
+  ],
+  "stats": {
+   "population": 27614411,
+   "gdpPerCapitaUsd": 65130,
+   "tourismArrivals": 9466000,
+   "business": 0.915,
+   "tourism": 0.411,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AW",
@@ -165,7 +347,21 @@
   "label": [
    -69.972795,
    12.5174
-  ]
+  ],
+  "stats": {
+   "population": 108785,
+   "gdpPerCapitaUsd": 38591,
+   "tourismArrivals": 1951000,
+   "business": 0.788,
+   "tourism": 0.962,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "AX",
@@ -177,7 +373,21 @@
   "label": [
    19.869671,
    60.156467
-  ]
+  ],
+  "stats": {
+   "population": 29884,
+   "gdpPerCapitaUsd": 52302,
+   "tourismArrivals": 61646,
+   "business": 0.856,
+   "tourism": 0.746,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "AZ",
@@ -189,7 +399,21 @@
   "label": [
    47.210994,
    40.402387
-  ]
+  ],
+  "stats": {
+   "population": 10246996,
+   "gdpPerCapitaUsd": 7411,
+   "tourismArrivals": 3170000,
+   "business": 0.445,
+   "tourism": 0.394,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BA",
@@ -201,7 +425,21 @@
   "label": [
    18.06841,
    44.091051
-  ]
+  ],
+  "stats": {
+   "population": 3140095,
+   "gdpPerCapitaUsd": 10382,
+   "tourismArrivals": 1198000,
+   "business": 0.513,
+   "tourism": 0.436,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BB",
@@ -213,7 +451,21 @@
   "label": [
    -59.568966,
    13.163709
-  ]
+  ],
+  "stats": {
+   "population": 282623,
+   "gdpPerCapitaUsd": 28365,
+   "tourismArrivals": 966000,
+   "business": 0.712,
+   "tourism": 0.831,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BD",
@@ -225,7 +477,21 @@
   "label": [
    89.684963,
    24.214956
-  ]
+  ],
+  "stats": {
+   "population": 175686899,
+   "gdpPerCapitaUsd": 2597,
+   "tourismArrivals": 323000,
+   "business": 0.216,
+   "tourism": 0.004,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BE",
@@ -237,7 +503,21 @@
   "label": [
    4.800448,
    50.785392
-  ]
+  ],
+  "stats": {
+   "population": 11941781,
+   "gdpPerCapitaUsd": 60750,
+   "tourismArrivals": 9343000,
+   "business": 0.903,
+   "tourism": 0.623,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BF",
@@ -249,7 +529,21 @@
   "label": [
    -1.36388,
    12.673048
-  ]
+  ],
+  "stats": {
+   "population": 24074580,
+   "gdpPerCapitaUsd": 1148,
+   "tourismArrivals": 143000,
+   "business": 0.106,
+   "tourism": 0.025,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BG",
@@ -261,7 +555,21 @@
   "label": [
    25.15709,
    42.508785
-  ]
+  ],
+  "stats": {
+   "population": 6433302,
+   "gdpPerCapitaUsd": 20328,
+   "tourismArrivals": 12552000,
+   "business": 0.653,
+   "tourism": 0.725,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BH",
@@ -273,7 +581,21 @@
   "label": [
    50.554816,
    26.055972
-  ]
+  ],
+  "stats": {
+   "population": 1600366,
+   "gdpPerCapitaUsd": 30597,
+   "tourismArrivals": 11061000,
+   "business": 0.729,
+   "tourism": 0.915,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BI",
@@ -285,7 +607,21 @@
   "label": [
    29.917086,
    -3.332836
-  ]
+  ],
+  "stats": {
+   "population": 14390003,
+   "gdpPerCapitaUsd": 234,
+   "tourismArrivals": 299000,
+   "business": 0.017,
+   "tourism": 0.093,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
  },
  {
   "iso2": "BJ",
@@ -297,7 +633,21 @@
   "label": [
    2.352018,
    10.324775
-  ]
+  ],
+  "stats": {
+   "population": 14814460,
+   "gdpPerCapitaUsd": 1658,
+   "tourismArrivals": 337000,
+   "business": 0.169,
+   "tourism": 0.106,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BL",
@@ -309,7 +659,21 @@
   "label": [
    -62.833193,
    17.901987
-  ]
+  ],
+  "stats": {
+   "population": 9961,
+   "gdpPerCapitaUsd": 25600,
+   "tourismArrivals": 67458,
+   "business": 0.691,
+   "tourism": 0.911,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "BM",
@@ -321,7 +685,21 @@
   "label": [
    -64.763573,
    32.296592
-  ]
+  ],
+  "stats": {
+   "population": 64555,
+   "gdpPerCapitaUsd": 142250,
+   "tourismArrivals": 805000,
+   "business": 0.983,
+   "tourism": 0.953,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BN",
@@ -333,7 +711,21 @@
   "label": [
    114.551943,
    4.448298
-  ]
+  ],
+  "stats": {
+   "population": 466330,
+   "gdpPerCapitaUsd": 32235,
+   "tourismArrivals": 4449000,
+   "business": 0.737,
+   "tourism": 0.936,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BO",
@@ -345,7 +737,21 @@
   "label": [
    -64.593433,
    -16.666015
-  ]
+  ],
+  "stats": {
+   "population": 12581843,
+   "gdpPerCapitaUsd": 5148,
+   "tourismArrivals": 1239000,
+   "business": 0.347,
+   "tourism": 0.258,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BR",
@@ -357,7 +763,21 @@
   "label": [
    -49.55945,
    -12.098687
-  ]
+  ],
+  "stats": {
+   "population": 212812405,
+   "gdpPerCapitaUsd": 10713,
+   "tourismArrivals": 6353000,
+   "business": 0.521,
+   "tourism": 0.136,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BS",
@@ -369,7 +789,21 @@
   "label": [
    -77.146688,
    26.401789
-  ]
+  ],
+  "stats": {
+   "population": 403033,
+   "gdpPerCapitaUsd": 39455,
+   "tourismArrivals": 7250000,
+   "business": 0.797,
+   "tourism": 0.966,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BT",
@@ -381,7 +815,21 @@
   "label": [
    90.040294,
    27.536685
-  ]
+  ],
+  "stats": {
+   "population": 796682,
+   "gdpPerCapitaUsd": 4493,
+   "tourismArrivals": 316000,
+   "business": 0.318,
+   "tourism": 0.445,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BW",
@@ -393,7 +841,21 @@
   "label": [
    24.179216,
    -22.102634
-  ]
+  ],
+  "stats": {
+   "population": 2562122,
+   "gdpPerCapitaUsd": 7778,
+   "tourismArrivals": 1830000,
+   "business": 0.449,
+   "tourism": 0.576,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
  },
  {
   "iso2": "BY",
@@ -405,7 +867,21 @@
   "label": [
    28.417701,
    53.821888
-  ]
+  ],
+  "stats": {
+   "population": 9085991,
+   "gdpPerCapitaUsd": 10279,
+   "tourismArrivals": 11832000,
+   "business": 0.508,
+   "tourism": 0.691,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "BZ",
@@ -417,7 +893,21 @@
   "label": [
    -88.712962,
    17.202068
-  ]
+  ],
+  "stats": {
+   "population": 422924,
+   "gdpPerCapitaUsd": 7865,
+   "tourismArrivals": 1674000,
+   "business": 0.453,
+   "tourism": 0.847,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CA",
@@ -429,7 +919,21 @@
   "label": [
    -101.9107,
    60.324287
-  ]
+  ],
+  "stats": {
+   "population": 41651653,
+   "gdpPerCapitaUsd": 55698,
+   "tourismArrivals": 32430000,
+   "business": 0.869,
+   "tourism": 0.614,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CD",
@@ -441,7 +945,21 @@
   "label": [
    23.458829,
    -1.858167
-  ]
+  ],
+  "stats": {
+   "population": 112832473,
+   "gdpPerCapitaUsd": 807,
+   "tourismArrivals": 351000,
+   "business": 0.059,
+   "tourism": 0.008,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2016"
+   }
+  }
  },
  {
   "iso2": "CF",
@@ -453,7 +971,21 @@
   "label": [
    20.906897,
    6.989681
-  ]
+  ],
+  "stats": {
+   "population": 5513282,
+   "gdpPerCapitaUsd": 556,
+   "tourismArrivals": 87000,
+   "business": 0.025,
+   "tourism": 0.068,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CG",
@@ -465,7 +997,21 @@
   "label": [
    15.9005,
    0.142331
-  ]
+  ],
+  "stats": {
+   "population": 6484437,
+   "gdpPerCapitaUsd": 2515,
+   "tourismArrivals": 158000,
+   "business": 0.208,
+   "tourism": 0.127,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
  },
  {
   "iso2": "CH",
@@ -477,7 +1023,21 @@
   "label": [
    7.463965,
    46.719114
-  ]
+  ],
+  "stats": {
+   "population": 9092436,
+   "gdpPerCapitaUsd": 114769,
+   "tourismArrivals": 11818000,
+   "business": 0.975,
+   "tourism": 0.686,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CI",
@@ -489,7 +1049,21 @@
   "label": [
    -5.568618,
    7.49139
-  ]
+  ],
+  "stats": {
+   "population": 32711547,
+   "gdpPerCapitaUsd": 3050,
+   "tourismArrivals": 2070000,
+   "business": 0.242,
+   "tourism": 0.208,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CK",
@@ -501,7 +1075,21 @@
   "label": [
    -159.785675,
    -21.215993
-  ]
+  ],
+  "stats": {
+   "population": 17459,
+   "gdpPerCapitaUsd": 13976,
+   "tourismArrivals": 14409,
+   "business": 0.568,
+   "tourism": 0.627,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "CL",
@@ -513,7 +1101,21 @@
   "label": [
    -72.318871,
    -38.151771
-  ]
+  ],
+  "stats": {
+   "population": 19859921,
+   "gdpPerCapitaUsd": 17995,
+   "tourismArrivals": 5431000,
+   "business": 0.614,
+   "tourism": 0.373,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CM",
@@ -525,7 +1127,21 @@
   "label": [
    12.473488,
    4.585041
-  ]
+  ],
+  "stats": {
+   "population": 29879337,
+   "gdpPerCapitaUsd": 1972,
+   "tourismArrivals": 1021000,
+   "business": 0.182,
+   "tourism": 0.144,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CN",
@@ -537,7 +1153,21 @@
   "label": [
    106.337289,
    32.498178
-  ]
+  ],
+  "stats": {
+   "population": 1406585000,
+   "gdpPerCapitaUsd": 13862,
+   "tourismArrivals": 162538000,
+   "business": 0.559,
+   "tourism": 0.292,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CO",
@@ -549,7 +1179,21 @@
   "label": [
    -73.174347,
    3.373111
-  ]
+  ],
+  "stats": {
+   "population": 53425635,
+   "gdpPerCapitaUsd": 8562,
+   "tourismArrivals": 4531000,
+   "business": 0.479,
+   "tourism": 0.237,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CR",
@@ -561,7 +1205,21 @@
   "label": [
    -84.077922,
    10.0651
-  ]
+  ],
+  "stats": {
+   "population": 5152950,
+   "gdpPerCapitaUsd": 19970,
+   "tourismArrivals": 3366000,
+   "business": 0.648,
+   "tourism": 0.564,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CU",
@@ -573,7 +1231,21 @@
   "label": [
    -77.975855,
    21.334024
-  ]
+  ],
+  "stats": {
+   "population": 10937203,
+   "gdpPerCapitaUsd": 9605,
+   "tourismArrivals": 4276000,
+   "business": 0.496,
+   "tourism": 0.441,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2020",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CV",
@@ -585,7 +1257,21 @@
   "label": [
    -23.639434,
    15.074761
-  ]
+  ],
+  "stats": {
+   "population": 527326,
+   "gdpPerCapitaUsd": 5796,
+   "tourismArrivals": 758000,
+   "business": 0.369,
+   "tourism": 0.695,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CW",
@@ -597,7 +1283,21 @@
   "label": [
    -68.920578,
    12.145039
-  ]
+  ],
+  "stats": {
+   "population": 156263,
+   "gdpPerCapitaUsd": 22833,
+   "tourismArrivals": 1293000,
+   "business": 0.669,
+   "tourism": 0.928,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CY",
@@ -609,7 +1309,21 @@
   "label": [
    33.084182,
    34.913329
-  ]
+  ],
+  "stats": {
+   "population": 1370754,
+   "gdpPerCapitaUsd": 41783,
+   "tourismArrivals": 4117000,
+   "business": 0.809,
+   "tourism": 0.805,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "CZ",
@@ -621,7 +1335,21 @@
   "label": [
    15.377555,
    49.882364
-  ]
+  ],
+  "stats": {
+   "population": 10886878,
+   "gdpPerCapitaUsd": 35917,
+   "tourismArrivals": 37202000,
+   "business": 0.767,
+   "tourism": 0.826,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "DE",
@@ -633,7 +1361,21 @@
   "label": [
    9.678348,
    50.961733
-  ]
+  ],
+  "stats": {
+   "population": 83491249,
+   "gdpPerCapitaUsd": 60496,
+   "tourismArrivals": 39563000,
+   "business": 0.898,
+   "tourism": 0.483,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "DJ",
@@ -645,7 +1387,21 @@
   "label": [
    42.498825,
    11.976343
-  ]
+  ],
+  "stats": {
+   "population": 1184076,
+   "gdpPerCapitaUsd": 3906,
+   "tourismArrivals": 63000,
+   "business": 0.28,
+   "tourism": 0.191,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2013"
+   }
+  }
  },
  {
   "iso2": "DK",
@@ -657,7 +1413,21 @@
   "label": [
    9.018163,
    55.966965
-  ]
+  ],
+  "stats": {
+   "population": 6009169,
+   "gdpPerCapitaUsd": 76970,
+   "tourismArrivals": 33093000,
+   "business": 0.936,
+   "tourism": 0.877,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "DM",
@@ -669,7 +1439,21 @@
   "label": [
    -61.344958,
    15.458829
-  ]
+  ],
+  "stats": {
+   "population": 65871,
+   "gdpPerCapitaUsd": 10989,
+   "tourismArrivals": 322000,
+   "business": 0.525,
+   "tourism": 0.869,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "DO",
@@ -681,7 +1465,21 @@
   "label": [
    -70.653998,
    19.104137
-  ]
+  ],
+  "stats": {
+   "population": 11520487,
+   "gdpPerCapitaUsd": 11059,
+   "tourismArrivals": 7550000,
+   "business": 0.53,
+   "tourism": 0.568,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "DZ",
@@ -693,7 +1491,21 @@
   "label": [
    2.808241,
    27.397406
-  ]
+  ],
+  "stats": {
+   "population": 47435312,
+   "gdpPerCapitaUsd": 6051,
+   "tourismArrivals": 2371000,
+   "business": 0.386,
+   "tourism": 0.178,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "EC",
@@ -705,7 +1517,21 @@
   "label": [
    -78.188375,
    -1.259076
-  ]
+  ],
+  "stats": {
+   "population": 18289896,
+   "gdpPerCapitaUsd": 7125,
+   "tourismArrivals": 2108000,
+   "business": 0.441,
+   "tourism": 0.288,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "EE",
@@ -717,7 +1543,21 @@
   "label": [
    25.867126,
    58.724865
-  ]
+  ],
+  "stats": {
+   "population": 1366475,
+   "gdpPerCapitaUsd": 34418,
+   "tourismArrivals": 6103000,
+   "business": 0.754,
+   "tourism": 0.856,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "EG",
@@ -729,7 +1569,21 @@
   "label": [
    29.445837,
    26.186173
-  ]
+  ],
+  "stats": {
+   "population": 118365995,
+   "gdpPerCapitaUsd": 3086,
+   "tourismArrivals": 13026000,
+   "business": 0.25,
+   "tourism": 0.275,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "EH",
@@ -741,7 +1595,21 @@
   "label": [
    -12.630304,
    23.967592
-  ]
+  ],
+  "stats": {
+   "population": 603253,
+   "gdpPerCapitaUsd": 1504,
+   "tourismArrivals": 66387,
+   "business": 0.148,
+   "tourism": 0.271,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "ER",
@@ -753,7 +1621,21 @@
   "label": [
    38.285566,
    15.787401
-  ]
+  ],
+  "stats": {
+   "population": 3607003,
+   "gdpPerCapitaUsd": 689,
+   "tourismArrivals": 142000,
+   "business": 0.051,
+   "tourism": 0.161,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2011",
+    "population": "wb:2025",
+    "tourism": "wb:2016"
+   }
+  }
  },
  {
   "iso2": "ES",
@@ -765,7 +1647,21 @@
   "label": [
    -3.464718,
    40.090953
-  ]
+  ],
+  "stats": {
+   "population": 49355143,
+   "gdpPerCapitaUsd": 38627,
+   "tourismArrivals": 126170000,
+   "business": 0.792,
+   "tourism": 0.78,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "ET",
@@ -777,7 +1673,21 @@
   "label": [
    39.0886,
    8.032795
-  ]
+  ],
+  "stats": {
+   "population": 135472051,
+   "gdpPerCapitaUsd": 933,
+   "tourismArrivals": 812000,
+   "business": 0.076,
+   "tourism": 0.03,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "FI",
@@ -789,7 +1699,21 @@
   "label": [
    27.276449,
    63.252361
-  ]
+  ],
+  "stats": {
+   "population": 5646436,
+   "gdpPerCapitaUsd": 56149,
+   "tourismArrivals": 3290000,
+   "business": 0.873,
+   "tourism": 0.534,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "FJ",
@@ -801,7 +1725,21 @@
   "label": [
    177.975427,
    -17.826099
-  ]
+  ],
+  "stats": {
+   "population": 933154,
+   "gdpPerCapitaUsd": 6642,
+   "tourismArrivals": 969000,
+   "business": 0.419,
+   "tourism": 0.661,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "FK",
@@ -813,7 +1751,21 @@
   "label": [
    -58.738602,
    -51.608913
-  ]
+  ],
+  "stats": {
+   "population": 3398,
+   "gdpPerCapitaUsd": 82990,
+   "tourismArrivals": 533,
+   "business": 0.941,
+   "tourism": 0.318,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "FM",
@@ -825,7 +1777,21 @@
   "label": [
    158.234019,
    6.887553
-  ]
+  ],
+  "stats": {
+   "population": 113683,
+   "gdpPerCapitaUsd": 4414,
+   "tourismArrivals": 18000,
+   "business": 0.309,
+   "tourism": 0.322,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "FO",
@@ -837,7 +1803,21 @@
   "label": [
    -7.058429,
    62.185604
-  ]
+  ],
+  "stats": {
+   "population": 54900,
+   "gdpPerCapitaUsd": 74175,
+   "tourismArrivals": 113250,
+   "business": 0.928,
+   "tourism": 0.737,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "FR",
@@ -849,7 +1829,21 @@
   "label": [
    2.552275,
    46.696113
-  ]
+  ],
+  "stats": {
+   "population": 68720337,
+   "gdpPerCapitaUsd": 48986,
+   "tourismArrivals": 217877000,
+   "business": 0.843,
+   "tourism": 0.814,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GA",
@@ -861,7 +1855,21 @@
   "label": [
    11.835939,
    -0.437739
-  ]
+  ],
+  "stats": {
+   "population": 2593130,
+   "gdpPerCapitaUsd": 8263,
+   "tourismArrivals": 40920,
+   "business": 0.47,
+   "tourism": 0.072,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "GB",
@@ -873,7 +1881,21 @@
   "label": [
    -2.116346,
    54.402739
-  ]
+  ],
+  "stats": {
+   "population": 69487000,
+   "gdpPerCapitaUsd": 57602,
+   "tourismArrivals": 40857000,
+   "business": 0.881,
+   "tourism": 0.538,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GD",
@@ -885,7 +1907,21 @@
   "label": [
    -61.680461,
    12.113156
-  ]
+  ],
+  "stats": {
+   "population": 117303,
+   "gdpPerCapitaUsd": 12107,
+   "tourismArrivals": 526000,
+   "business": 0.538,
+   "tourism": 0.86,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GE",
@@ -897,7 +1933,21 @@
   "label": [
    43.735724,
    41.870087
-  ]
+  ],
+  "stats": {
+   "population": 3935766,
+   "gdpPerCapitaUsd": 9692,
+   "tourismArrivals": 7726000,
+   "business": 0.504,
+   "tourism": 0.729,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GG",
@@ -909,7 +1959,21 @@
   "label": [
    -2.561736,
    49.463533
-  ]
+  ],
+  "stats": {
+   "population": 62792,
+   "gdpPerCapitaUsd": 55182,
+   "tourismArrivals": 129530,
+   "business": 0.864,
+   "tourism": 0.742,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "GH",
@@ -921,7 +1985,21 @@
   "label": [
    -1.036941,
    7.717639
-  ]
+  ],
+  "stats": {
+   "population": 35064272,
+   "gdpPerCapitaUsd": 3257,
+   "tourismArrivals": 897000,
+   "business": 0.267,
+   "tourism": 0.131,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2015"
+   }
+  }
  },
  {
   "iso2": "GL",
@@ -933,7 +2011,21 @@
   "label": [
    -39.335251,
    74.319387
-  ]
+  ],
+  "stats": {
+   "population": 56831,
+   "gdpPerCapitaUsd": 58499,
+   "tourismArrivals": 44249,
+   "business": 0.886,
+   "tourism": 0.619,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2023",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "GM",
@@ -945,7 +2037,21 @@
   "label": [
    -14.998318,
    13.641721
-  ]
+  ],
+  "stats": {
+   "population": 2822093,
+   "gdpPerCapitaUsd": 919,
+   "tourismArrivals": 620000,
+   "business": 0.072,
+   "tourism": 0.36,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GN",
@@ -957,7 +2063,21 @@
   "label": [
    -10.016402,
    10.618516
-  ]
+  ],
+  "stats": {
+   "population": 15099727,
+   "gdpPerCapitaUsd": 1877,
+   "tourismArrivals": 99000,
+   "business": 0.174,
+   "tourism": 0.034,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
  },
  {
   "iso2": "GQ",
@@ -969,7 +2089,21 @@
   "label": [
    8.9902,
    2.333
-  ]
+  ],
+  "stats": {
+   "population": 1938431,
+   "gdpPerCapitaUsd": 6615,
+   "tourismArrivals": 30589,
+   "business": 0.415,
+   "tourism": 0.076,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "GR",
@@ -981,7 +2115,21 @@
   "label": [
    21.72568,
    39.492763
-  ]
+  ],
+  "stats": {
+   "population": 10413962,
+   "gdpPerCapitaUsd": 26948,
+   "tourismArrivals": 34005000,
+   "business": 0.703,
+   "tourism": 0.822,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GS",
@@ -993,7 +2141,21 @@
   "label": [
    -31.063179,
    -55.683402
-  ]
+  ],
+  "stats": {
+   "population": 30,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 14,
+   "business": 0.006,
+   "tourism": 0.479,
+   "hemisphere": "south",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "GT",
@@ -1005,7 +2167,21 @@
   "label": [
    -90.497134,
    14.982133
-  ]
+  ],
+  "stats": {
+   "population": 18687881,
+   "gdpPerCapitaUsd": 6598,
+   "tourismArrivals": 2560000,
+   "business": 0.409,
+   "tourism": 0.305,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GU",
@@ -1017,7 +2193,21 @@
   "label": [
    144.703614,
    13.354173
-  ]
+  ],
+  "stats": {
+   "population": 168999,
+   "gdpPerCapitaUsd": 41833,
+   "tourismArrivals": 1667000,
+   "business": 0.814,
+   "tourism": 0.941,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GW",
@@ -1029,7 +2219,21 @@
   "label": [
    -14.52413,
    12.163712
-  ]
+  ],
+  "stats": {
+   "population": 2249515,
+   "gdpPerCapitaUsd": 1124,
+   "tourismArrivals": 52400,
+   "business": 0.1,
+   "tourism": 0.123,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "GY",
@@ -1041,7 +2245,21 @@
   "label": [
    -58.942643,
    5.124317
-  ]
+  ],
+  "stats": {
+   "population": 835986,
+   "gdpPerCapitaUsd": 32414,
+   "tourismArrivals": 315000,
+   "business": 0.746,
+   "tourism": 0.428,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "HK",
@@ -1053,7 +2271,21 @@
   "label": [
    114.097769,
    22.448829
-  ]
+  ],
+  "stats": {
+   "population": 7498900,
+   "gdpPerCapitaUsd": 56983,
+   "tourismArrivals": 55913000,
+   "business": 0.877,
+   "tourism": 0.919,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "HM",
@@ -1065,7 +2297,21 @@
   "label": [
    73.50521,
    -53.103462
-  ]
+  ],
+  "stats": {
+   "population": 0,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 0,
+   "business": 0.006,
+   "tourism": 0,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "HN",
@@ -1077,7 +2323,21 @@
   "label": [
    -86.887604,
    14.794801
-  ]
+  ],
+  "stats": {
+   "population": 11005850,
+   "gdpPerCapitaUsd": 3598,
+   "tourismArrivals": 2315000,
+   "business": 0.275,
+   "tourism": 0.356,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "HR",
@@ -1089,7 +2349,21 @@
   "label": [
    16.37241,
    45.805799
-  ]
+  ],
+  "stats": {
+   "population": 3876200,
+   "gdpPerCapitaUsd": 27104,
+   "tourismArrivals": 60021000,
+   "business": 0.708,
+   "tourism": 0.958,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "HT",
@@ -1101,7 +2375,21 @@
   "label": [
    -72.224051,
    19.263784
-  ]
+  ],
+  "stats": {
+   "population": 11906095,
+   "gdpPerCapitaUsd": 2694,
+   "tourismArrivals": 938000,
+   "business": 0.22,
+   "tourism": 0.229,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "HU",
@@ -1113,7 +2401,21 @@
   "label": [
    19.447867,
    47.086841
-  ]
+  ],
+  "stats": {
+   "population": 9514251,
+   "gdpPerCapitaUsd": 25907,
+   "tourismArrivals": 61397000,
+   "business": 0.695,
+   "tourism": 0.89,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "ID",
@@ -1125,7 +2427,21 @@
   "label": [
    101.892949,
    -0.954404
-  ]
+  ],
+  "stats": {
+   "population": 285721236,
+   "gdpPerCapitaUsd": 5060,
+   "tourismArrivals": 16107000,
+   "business": 0.339,
+   "tourism": 0.195,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "IE",
@@ -1137,7 +2453,21 @@
   "label": [
    -7.798588,
    53.078726
-  ]
+  ],
+  "stats": {
+   "population": 5484367,
+   "gdpPerCapitaUsd": 131592,
+   "tourismArrivals": 10951000,
+   "business": 0.979,
+   "tourism": 0.733,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "IL",
@@ -1149,7 +2479,21 @@
   "label": [
    34.847915,
    30.911148
-  ]
+  ],
+  "stats": {
+   "population": 10122800,
+   "gdpPerCapitaUsd": 60337,
+   "tourismArrivals": 4905000,
+   "business": 0.894,
+   "tourism": 0.504,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "IM",
@@ -1161,7 +2505,21 @@
   "label": [
    -4.530069,
    54.220833
-  ]
+  ],
+  "stats": {
+   "population": 84118,
+   "gdpPerCapitaUsd": 90015,
+   "tourismArrivals": 173523,
+   "business": 0.945,
+   "tourism": 0.754,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2023",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "IN",
@@ -1173,7 +2531,21 @@
   "label": [
    79.358105,
    22.686852
-  ]
+  ],
+  "stats": {
+   "population": 1463865525,
+   "gdpPerCapitaUsd": 2702,
+   "tourismArrivals": 17914000,
+   "business": 0.225,
+   "tourism": 0.055,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "IO",
@@ -1185,7 +2557,21 @@
   "label": [
    71.348349,
    -6.190826
-  ]
+  ],
+  "stats": {
+   "population": 3000,
+   "gdpPerCapitaUsd": 40000,
+   "tourismArrivals": 1450,
+   "business": 0.801,
+   "tourism": 0.496,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "IQ",
@@ -1197,7 +2583,21 @@
   "label": [
    43.26181,
    33.09403
-  ]
+  ],
+  "stats": {
+   "population": 47020774,
+   "gdpPerCapitaUsd": 5410,
+   "tourismArrivals": 892000,
+   "business": 0.36,
+   "tourism": 0.085,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2013"
+   }
+  }
  },
  {
   "iso2": "IR",
@@ -1209,7 +2609,21 @@
   "label": [
    54.931495,
    32.166225
-  ]
+  ],
+  "stats": {
+   "population": 92417681,
+   "gdpPerCapitaUsd": 3924,
+   "tourismArrivals": 9107000,
+   "business": 0.284,
+   "tourism": 0.263,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "IS",
@@ -1221,7 +2635,21 @@
   "label": [
    -18.673711,
    64.779286
-  ]
+  ],
+  "stats": {
+   "population": 392404,
+   "gdpPerCapitaUsd": 98323,
+   "tourismArrivals": 2202000,
+   "business": 0.958,
+   "tourism": 0.881,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "IT",
@@ -1233,7 +2661,21 @@
   "label": [
    11.076907,
    44.732482
-  ]
+  ],
+  "stats": {
+   "population": 58915656,
+   "gdpPerCapitaUsd": 43309,
+   "tourismArrivals": 95399000,
+   "business": 0.822,
+   "tourism": 0.716,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "JE",
@@ -1245,7 +2687,21 @@
   "label": [
    -2.090146,
    49.220808
-  ]
+  ],
+  "stats": {
+   "population": 107800,
+   "gdpPerCapitaUsd": 47124,
+   "tourismArrivals": 222375,
+   "business": 0.831,
+   "tourism": 0.75,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "JM",
@@ -1257,7 +2713,21 @@
   "label": [
    -77.318767,
    18.137124
-  ]
+  ],
+  "stats": {
+   "population": 2837077,
+   "gdpPerCapitaUsd": 8003,
+   "tourismArrivals": 4233000,
+   "business": 0.462,
+   "tourism": 0.699,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "JO",
@@ -1269,7 +2739,21 @@
   "label": [
    36.375991,
    30.805025
-  ]
+  ],
+  "stats": {
+   "population": 11520684,
+   "gdpPerCapitaUsd": 5348,
+   "tourismArrivals": 5361000,
+   "business": 0.356,
+   "tourism": 0.475,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "JP",
@@ -1281,7 +2765,21 @@
   "label": [
    138.44217,
    36.142538
-  ]
+  ],
+  "stats": {
+   "population": 123366734,
+   "gdpPerCapitaUsd": 35951,
+   "tourismArrivals": 31881000,
+   "business": 0.771,
+   "tourism": 0.369,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KE",
@@ -1293,7 +2791,21 @@
   "label": [
    37.907632,
    0.549043
-  ]
+  ],
+  "stats": {
+   "population": 57532493,
+   "gdpPerCapitaUsd": 2363,
+   "tourismArrivals": 2049000,
+   "business": 0.203,
+   "tourism": 0.153,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KG",
@@ -1305,7 +2817,21 @@
   "label": [
    74.532637,
    41.66854
-  ]
+  ],
+  "stats": {
+   "population": 7343064,
+   "gdpPerCapitaUsd": 3081,
+   "tourismArrivals": 8508000,
+   "business": 0.246,
+   "tourism": 0.682,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KH",
@@ -1317,7 +2843,21 @@
   "label": [
    104.50487,
    12.647584
-  ]
+  ],
+  "stats": {
+   "population": 17847982,
+   "gdpPerCapitaUsd": 2872,
+   "tourismArrivals": 6611000,
+   "business": 0.229,
+   "tourism": 0.424,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KI",
@@ -1329,7 +2869,21 @@
   "label": [
    -157.384577,
    1.820437
-  ]
+  ],
+  "stats": {
+   "population": 136488,
+   "gdpPerCapitaUsd": 2559,
+   "tourismArrivals": 12000,
+   "business": 0.212,
+   "tourism": 0.242,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KM",
@@ -1341,7 +2895,21 @@
   "label": [
    43.318094,
    -11.727683
-  ]
+  ],
+  "stats": {
+   "population": 882847,
+   "gdpPerCapitaUsd": 2056,
+   "tourismArrivals": 45099,
+   "business": 0.186,
+   "tourism": 0.182,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KN",
@@ -1353,7 +2921,21 @@
   "label": [
    -62.757975,
    17.336558
-  ]
+  ],
+  "stats": {
+   "population": 46922,
+   "gdpPerCapitaUsd": 25223,
+   "tourismArrivals": 1107000,
+   "business": 0.686,
+   "tourism": 0.975,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KP",
@@ -1365,7 +2947,21 @@
   "label": [
    126.444516,
    39.885252
-  ]
+  ],
+  "stats": {
+   "population": 26571036,
+   "gdpPerCapitaUsd": 1558,
+   "tourismArrivals": 7932451,
+   "business": 0.157,
+   "tourism": 0.386,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "KR",
@@ -1377,7 +2973,21 @@
   "label": [
    128.129504,
    36.384924
-  ]
+  ],
+  "stats": {
+   "population": 51684564,
+   "gdpPerCapitaUsd": 36227,
+   "tourismArrivals": 17503000,
+   "business": 0.775,
+   "tourism": 0.403,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KW",
@@ -1389,7 +2999,21 @@
   "label": [
    47.313999,
    29.413628
-  ]
+  ],
+  "stats": {
+   "population": 4865298,
+   "gdpPerCapitaUsd": 32312,
+   "tourismArrivals": 8565000,
+   "business": 0.742,
+   "tourism": 0.72,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KY",
@@ -1401,7 +3025,21 @@
   "label": [
    -81.24055,
    19.319862
-  ]
+  ],
+  "stats": {
+   "population": 75844,
+   "gdpPerCapitaUsd": 104293,
+   "tourismArrivals": 2334000,
+   "business": 0.966,
+   "tourism": 0.979,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "KZ",
@@ -1413,7 +3051,21 @@
   "label": [
    68.685548,
    49.054149
-  ]
+  ],
+  "stats": {
+   "population": 20843754,
+   "gdpPerCapitaUsd": 14692,
+   "tourismArrivals": 8515000,
+   "business": 0.581,
+   "tourism": 0.449,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LA",
@@ -1425,7 +3077,21 @@
   "label": [
    102.533912,
    19.431821
-  ]
+  ],
+  "stats": {
+   "population": 7873046,
+   "gdpPerCapitaUsd": 2325,
+   "tourismArrivals": 4791000,
+   "business": 0.199,
+   "tourism": 0.547,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LB",
@@ -1437,7 +3103,21 @@
   "label": [
    35.992892,
    34.133368
-  ]
+  ],
+  "stats": {
+   "population": 5849421,
+   "gdpPerCapitaUsd": 4473,
+   "tourismArrivals": 1936000,
+   "business": 0.314,
+   "tourism": 0.398,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LC",
@@ -1449,7 +3129,21 @@
   "label": [
    -60.980094,
    13.892371
-  ]
+  ],
+  "stats": {
+   "population": 180149,
+   "gdpPerCapitaUsd": 14746,
+   "tourismArrivals": 1220000,
+   "business": 0.585,
+   "tourism": 0.894,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LI",
@@ -1461,7 +3155,21 @@
   "label": [
    9.559439,
    47.111405
-  ]
+  ],
+  "stats": {
+   "population": 41024,
+   "gdpPerCapitaUsd": 220167,
+   "tourismArrivals": 98099,
+   "business": 0.996,
+   "tourism": 0.771,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LK",
@@ -1473,7 +3181,21 @@
   "label": [
    80.704823,
    7.581097
-  ]
+  ],
+  "stats": {
+   "population": 21756000,
+   "gdpPerCapitaUsd": 5002,
+   "tourismArrivals": 2027000,
+   "business": 0.335,
+   "tourism": 0.246,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LR",
@@ -1485,7 +3207,21 @@
   "label": [
    -9.460379,
    6.447177
-  ]
+  ],
+  "stats": {
+   "population": 5731206,
+   "gdpPerCapitaUsd": 915,
+   "tourismArrivals": 131938,
+   "business": 0.068,
+   "tourism": 0.119,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "LS",
@@ -1497,7 +3233,21 @@
   "label": [
    28.246639,
    -29.480158
-  ]
+  ],
+  "stats": {
+   "population": 2363325,
+   "gdpPerCapitaUsd": 1089,
+   "tourismArrivals": 1142000,
+   "business": 0.093,
+   "tourism": 0.487,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LT",
@@ -1509,7 +3259,21 @@
   "label": [
    24.089932,
    55.103703
-  ]
+  ],
+  "stats": {
+   "population": 2888774,
+   "gdpPerCapitaUsd": 32959,
+   "tourismArrivals": 6150000,
+   "business": 0.75,
+   "tourism": 0.758,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LU",
@@ -1521,7 +3285,21 @@
   "label": [
    6.07762,
    49.733732
-  ]
+  ],
+  "stats": {
+   "population": 686970,
+   "gdpPerCapitaUsd": 147252,
+   "tourismArrivals": 1041000,
+   "business": 0.987,
+   "tourism": 0.703,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LV",
@@ -1533,7 +3311,21 @@
   "label": [
    25.458723,
    57.066872
-  ]
+  ],
+  "stats": {
+   "population": 1847785,
+   "gdpPerCapitaUsd": 26312,
+   "tourismArrivals": 8342000,
+   "business": 0.699,
+   "tourism": 0.864,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "LY",
@@ -1545,7 +3337,21 @@
   "label": [
    18.011015,
    26.638944
-  ]
+  ],
+  "stats": {
+   "population": 7458555,
+   "gdpPerCapitaUsd": 6449,
+   "tourismArrivals": 820803,
+   "business": 0.394,
+   "tourism": 0.28,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "MA",
@@ -1557,7 +3363,21 @@
   "label": [
    -7.187296,
    31.650723
-  ]
+  ],
+  "stats": {
+   "population": 38430770,
+   "gdpPerCapitaUsd": 4672,
+   "tourismArrivals": 13109000,
+   "business": 0.326,
+   "tourism": 0.407,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MC",
@@ -1569,7 +3389,21 @@
   "label": [
    7.398291,
    43.739652
-  ]
+  ],
+  "stats": {
+   "population": 38341,
+   "gdpPerCapitaUsd": 288002,
+   "tourismArrivals": 363000,
+   "business": 1,
+   "tourism": 0.932,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MD",
@@ -1581,7 +3415,21 @@
   "label": [
    28.487904,
    47.434999
-  ]
+  ],
+  "stats": {
+   "population": 2360527,
+   "gdpPerCapitaUsd": 8622,
+   "tourismArrivals": 174000,
+   "business": 0.483,
+   "tourism": 0.225,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "ME",
@@ -1593,7 +3441,21 @@
   "label": [
    19.143727,
    42.803101
-  ]
+  ],
+  "stats": {
+   "population": 623129,
+   "gdpPerCapitaUsd": 14817,
+   "tourismArrivals": 2510000,
+   "business": 0.593,
+   "tourism": 0.852,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MF",
@@ -1605,7 +3467,21 @@
   "label": [
    -63.049399,
    18.081302
-  ]
+  ],
+  "stats": {
+   "population": 24941,
+   "gdpPerCapitaUsd": 21668,
+   "tourismArrivals": 168905,
+   "business": 0.657,
+   "tourism": 0.903,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2021",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "MG",
@@ -1617,7 +3493,21 @@
   "label": [
    46.704241,
    -18.628288
-  ]
+  ],
+  "stats": {
+   "population": 32740678,
+   "gdpPerCapitaUsd": 599,
+   "tourismArrivals": 486000,
+   "business": 0.03,
+   "tourism": 0.059,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MH",
@@ -1629,7 +3519,21 @@
   "label": [
    171.193609,
    7.082568
-  ]
+  ],
+  "stats": {
+   "population": 36282,
+   "gdpPerCapitaUsd": 8489,
+   "tourismArrivals": 6099,
+   "business": 0.475,
+   "tourism": 0.331,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MK",
@@ -1641,7 +3545,21 @@
   "label": [
    21.555839,
    41.558223
-  ]
+  ],
+  "stats": {
+   "population": 1820909,
+   "gdpPerCapitaUsd": 10490,
+   "tourismArrivals": 758000,
+   "business": 0.517,
+   "tourism": 0.458,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "ML",
@@ -1653,7 +3571,21 @@
   "label": [
    -2.038455,
    18.692713
-  ]
+  ],
+  "stats": {
+   "population": 25198821,
+   "gdpPerCapitaUsd": 1193,
+   "tourismArrivals": 217000,
+   "business": 0.114,
+   "tourism": 0.047,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MM",
@@ -1665,7 +3597,21 @@
   "label": [
    95.804497,
    21.573855
-  ]
+  ],
+  "stats": {
+   "population": 54850648,
+   "gdpPerCapitaUsd": 1489,
+   "tourismArrivals": 4364000,
+   "business": 0.144,
+   "tourism": 0.233,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MN",
@@ -1677,7 +3623,21 @@
   "label": [
    104.150405,
    45.997488
-  ]
+  ],
+  "stats": {
+   "population": 3568978,
+   "gdpPerCapitaUsd": 7108,
+   "tourismArrivals": 637000,
+   "business": 0.436,
+   "tourism": 0.343,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MO",
@@ -1689,7 +3649,21 @@
   "label": [
    113.556038,
    22.129735
-  ]
+  ],
+  "stats": {
+   "population": 685900,
+   "gdpPerCapitaUsd": 75902,
+   "tourismArrivals": 39406000,
+   "business": 0.932,
+   "tourism": 0.996,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MP",
@@ -1701,7 +3675,21 @@
   "label": [
    145.734397,
    15.188188
-  ]
+  ],
+  "stats": {
+   "population": 43541,
+   "gdpPerCapitaUsd": 23786,
+   "tourismArrivals": 487000,
+   "business": 0.674,
+   "tourism": 0.949,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MR",
@@ -1713,7 +3701,21 @@
   "label": [
    -9.740299,
    19.587062
-  ]
+  ],
+  "stats": {
+   "population": 5315065,
+   "gdpPerCapitaUsd": 2198,
+   "tourismArrivals": 122358,
+   "business": 0.195,
+   "tourism": 0.114,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "MS",
@@ -1725,7 +3727,21 @@
   "label": [
    -62.188252,
    16.73717
-  ]
+  ],
+  "stats": {
+   "population": 4649,
+   "gdpPerCapitaUsd": 9464,
+   "tourismArrivals": 31484,
+   "business": 0.487,
+   "tourism": 0.907,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "MT",
@@ -1737,7 +3753,21 @@
   "label": [
    14.433005,
    35.892886
-  ]
+  ],
+  "stats": {
+   "population": 579704,
+   "gdpPerCapitaUsd": 47907,
+   "tourismArrivals": 3519000,
+   "business": 0.839,
+   "tourism": 0.886,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MU",
@@ -1749,7 +3779,21 @@
   "label": [
    57.565848,
    -20.299506
-  ]
+  ],
+  "stats": {
+   "population": 1243741,
+   "gdpPerCapitaUsd": 12991,
+   "tourismArrivals": 1418000,
+   "business": 0.547,
+   "tourism": 0.678,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MV",
@@ -1761,7 +3805,21 @@
   "label": [
    73.507554,
    4.174441
-  ]
+  ],
+  "stats": {
+   "population": 529676,
+   "gdpPerCapitaUsd": 14615,
+   "tourismArrivals": 1703000,
+   "business": 0.572,
+   "tourism": 0.818,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MW",
@@ -1773,7 +3831,21 @@
   "label": [
    33.608082,
    -13.386737
-  ]
+  ],
+  "stats": {
+   "population": 22216120,
+   "gdpPerCapitaUsd": 672,
+   "tourismArrivals": 871000,
+   "business": 0.047,
+   "tourism": 0.157,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
  },
  {
   "iso2": "MX",
@@ -1785,7 +3857,21 @@
   "label": [
    -102.289448,
    23.919988
-  ]
+  ],
+  "stats": {
+   "population": 131946900,
+   "gdpPerCapitaUsd": 13889,
+   "tourismArrivals": 97406000,
+   "business": 0.564,
+   "tourism": 0.597,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MY",
@@ -1797,7 +3883,21 @@
   "label": [
    113.83708,
    2.528667
-  ]
+  ],
+  "stats": {
+   "population": 35977838,
+   "gdpPerCapitaUsd": 13125,
+   "tourismArrivals": 26101000,
+   "business": 0.555,
+   "tourism": 0.589,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "MZ",
@@ -1809,7 +3909,21 @@
   "label": [
    37.83789,
    -13.94323
-  ]
+  ],
+  "stats": {
+   "population": 35631653,
+   "gdpPerCapitaUsd": 627,
+   "tourismArrivals": 2033000,
+   "business": 0.034,
+   "tourism": 0.199,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NA",
@@ -1821,7 +3935,21 @@
   "label": [
    17.108166,
    -20.575298
-  ]
+  ],
+  "stats": {
+   "population": 3092816,
+   "gdpPerCapitaUsd": 4876,
+   "tourismArrivals": 1651000,
+   "business": 0.331,
+   "tourism": 0.513,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NC",
@@ -1833,7 +3961,21 @@
   "label": [
    165.084004,
    -21.064697
-  ]
+  ],
+  "stats": {
+   "population": 295333,
+   "gdpPerCapitaUsd": 29213,
+   "tourismArrivals": 130000,
+   "business": 0.725,
+   "tourism": 0.47,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NE",
@@ -1845,7 +3987,21 @@
   "label": [
    9.504356,
    17.446195
-  ]
+  ],
+  "stats": {
+   "population": 27917831,
+   "gdpPerCapitaUsd": 775,
+   "tourismArrivals": 192000,
+   "business": 0.055,
+   "tourism": 0.038,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NF",
@@ -1857,7 +4013,21 @@
   "label": [
    167.954531,
    -29.033042
-  ]
+  ],
+  "stats": {
+   "population": 2169,
+   "gdpPerCapitaUsd": 14753,
+   "tourismArrivals": 1164,
+   "business": 0.589,
+   "tourism": 0.517,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "NG",
@@ -1869,7 +4039,21 @@
   "label": [
    7.50322,
    9.439799
-  ]
+  ],
+  "stats": {
+   "population": 237527782,
+   "gdpPerCapitaUsd": 1224,
+   "tourismArrivals": 5265000,
+   "business": 0.123,
+   "tourism": 0.102,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2016"
+   }
+  }
  },
  {
   "iso2": "NI",
@@ -1881,7 +4065,21 @@
   "label": [
    -85.069347,
    12.670697
-  ]
+  ],
+  "stats": {
+   "population": 7007502,
+   "gdpPerCapitaUsd": 3173,
+   "tourismArrivals": 1455000,
+   "business": 0.263,
+   "tourism": 0.352,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NL",
@@ -1893,7 +4091,21 @@
   "label": [
    5.61144,
    52.422211
-  ]
+  ],
+  "stats": {
+   "population": 18087633,
+   "gdpPerCapitaUsd": 73684,
+   "tourismArrivals": 20129000,
+   "business": 0.924,
+   "tourism": 0.674,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NO",
@@ -1905,7 +4117,21 @@
   "label": [
    9.679975,
    61.357092
-  ]
+  ],
+  "stats": {
+   "population": 5610870,
+   "gdpPerCapitaUsd": 94594,
+   "tourismArrivals": 5879000,
+   "business": 0.953,
+   "tourism": 0.665,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NP",
@@ -1917,7 +4143,21 @@
   "label": [
    83.639914,
    28.297925
-  ]
+  ],
+  "stats": {
+   "population": 29618118,
+   "gdpPerCapitaUsd": 1536,
+   "tourismArrivals": 1197000,
+   "business": 0.153,
+   "tourism": 0.165,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "NR",
@@ -1929,7 +4169,21 @@
   "label": [
    166.932644,
    -0.520261
-  ]
+  ],
+  "stats": {
+   "population": 12025,
+   "gdpPerCapitaUsd": 14640,
+   "tourismArrivals": 33008,
+   "business": 0.576,
+   "tourism": 0.797,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "NU",
@@ -1941,7 +4195,21 @@
   "label": [
    -169.862565,
    -19.045956
-  ]
+  ],
+  "stats": {
+   "population": 1620,
+   "gdpPerCapitaUsd": 6173,
+   "tourismArrivals": 1337,
+   "business": 0.39,
+   "tourism": 0.631,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "NZ",
@@ -1953,7 +4221,21 @@
   "label": [
    172.787,
    -39.759
-  ]
+  ],
+  "stats": {
+   "population": 5324700,
+   "gdpPerCapitaUsd": 49591,
+   "tourismArrivals": 3888000,
+   "business": 0.847,
+   "tourism": 0.593,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "OM",
@@ -1965,7 +4247,21 @@
   "label": [
    57.336553,
    22.120427
-  ]
+  ],
+  "stats": {
+   "population": 5494691,
+   "gdpPerCapitaUsd": 19947,
+   "tourismArrivals": 3506000,
+   "business": 0.644,
+   "tourism": 0.559,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PA",
@@ -1977,7 +4273,21 @@
   "label": [
    -80.352106,
    8.72198
-  ]
+  ],
+  "stats": {
+   "population": 4571189,
+   "gdpPerCapitaUsd": 19790,
+   "tourismArrivals": 2494000,
+   "business": 0.64,
+   "tourism": 0.521,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PE",
@@ -1989,7 +4299,21 @@
   "label": [
    -72.90016,
    -12.976679
-  ]
+  ],
+  "stats": {
+   "population": 34576665,
+   "gdpPerCapitaUsd": 9684,
+   "tourismArrivals": 5275000,
+   "business": 0.5,
+   "tourism": 0.314,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PF",
@@ -2001,7 +4325,21 @@
   "label": [
    -149.46157,
    -17.628081
-  ]
+  ],
+  "stats": {
+   "population": 282465,
+   "gdpPerCapitaUsd": 22440,
+   "tourismArrivals": 300000,
+   "business": 0.661,
+   "tourism": 0.669,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PG",
@@ -2013,7 +4351,21 @@
   "label": [
    143.910216,
    -5.695285
-  ]
+  ],
+  "stats": {
+   "population": 10762817,
+   "gdpPerCapitaUsd": 3020,
+   "tourismArrivals": 211000,
+   "business": 0.233,
+   "tourism": 0.089,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PH",
@@ -2025,7 +4377,21 @@
   "label": [
    122.465,
    11.198
-  ]
+  ],
+  "stats": {
+   "population": 116786962,
+   "gdpPerCapitaUsd": 4171,
+   "tourismArrivals": 8261000,
+   "business": 0.305,
+   "tourism": 0.216,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PK",
@@ -2037,7 +4403,21 @@
   "label": [
    68.545632,
    29.328389
-  ]
+  ],
+  "stats": {
+   "population": 255219554,
+   "gdpPerCapitaUsd": 1596,
+   "tourismArrivals": 966000,
+   "business": 0.161,
+   "tourism": 0.013,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2012"
+   }
+  }
  },
  {
   "iso2": "PL",
@@ -2049,7 +4429,21 @@
   "label": [
    19.490468,
    51.990316
-  ]
+  ],
+  "stats": {
+   "population": 36435861,
+   "gdpPerCapitaUsd": 28420,
+   "tourismArrivals": 88515000,
+   "business": 0.716,
+   "tourism": 0.775,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PM",
@@ -2061,7 +4455,21 @@
   "label": [
    -56.332352,
    47.040344
-  ]
+  ],
+  "stats": {
+   "population": 5997,
+   "gdpPerCapitaUsd": 35851,
+   "tourismArrivals": 4669,
+   "business": 0.763,
+   "tourism": 0.61,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "PN",
@@ -2073,7 +4481,21 @@
   "label": [
    -128.317536,
    -24.364576
-  ]
+  ],
+  "stats": {
+   "population": 54,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 45,
+   "business": 0.006,
+   "tourism": 0.644,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "PR",
@@ -2085,7 +4507,21 @@
   "label": [
    -66.481065,
    18.234668
-  ]
+  ],
+  "stats": {
+   "population": 3184835,
+   "gdpPerCapitaUsd": 40620,
+   "tourismArrivals": 4931000,
+   "business": 0.805,
+   "tourism": 0.708,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PS",
@@ -2097,7 +4533,21 @@
   "label": [
    35.291341,
    32.047431
-  ]
+  ],
+  "stats": {
+   "population": 5413596,
+   "gdpPerCapitaUsd": 3171,
+   "tourismArrivals": 688000,
+   "business": 0.258,
+   "tourism": 0.297,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PT",
@@ -2109,7 +4559,21 @@
   "label": [
    -8.271754,
    39.606675
-  ]
+  ],
+  "stats": {
+   "population": 10804871,
+   "gdpPerCapitaUsd": 32082,
+   "tourismArrivals": 17283000,
+   "business": 0.733,
+   "tourism": 0.712,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PW",
@@ -2121,7 +4585,21 @@
   "label": [
    134.580157,
    7.518252
-  ]
+  ],
+  "stats": {
+   "population": 17663,
+   "gdpPerCapitaUsd": 19532,
+   "tourismArrivals": 94000,
+   "business": 0.636,
+   "tourism": 0.873,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "PY",
@@ -2133,7 +4611,21 @@
   "label": [
    -60.146394,
    -21.674509
-  ]
+  ],
+  "stats": {
+   "population": 7013078,
+   "gdpPerCapitaUsd": 7027,
+   "tourismArrivals": 4368000,
+   "business": 0.428,
+   "tourism": 0.555,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "QA",
@@ -2145,7 +4637,21 @@
   "label": [
    51.143509,
    25.237383
-  ]
+  ],
+  "stats": {
+   "population": 2972215,
+   "gdpPerCapitaUsd": 72525,
+   "tourismArrivals": 2136500,
+   "business": 0.919,
+   "tourism": 0.585,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "RO",
@@ -2157,7 +4663,21 @@
   "label": [
    24.972624,
    45.733237
-  ]
+  ],
+  "stats": {
+   "population": 19020271,
+   "gdpPerCapitaUsd": 22538,
+   "tourismArrivals": 12815000,
+   "business": 0.665,
+   "tourism": 0.572,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "RS",
@@ -2169,7 +4689,21 @@
   "label": [
    20.787989,
    44.189919
-  ]
+  ],
+  "stats": {
+   "population": 6549143,
+   "gdpPerCapitaUsd": 15262,
+   "tourismArrivals": 1847000,
+   "business": 0.602,
+   "tourism": 0.377,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "RU",
@@ -2181,7 +4715,21 @@
   "label": [
    44.686469,
    58.249357
-  ]
+  ],
+  "stats": {
+   "population": 143513328,
+   "gdpPerCapitaUsd": 17547,
+   "tourismArrivals": 24419000,
+   "business": 0.61,
+   "tourism": 0.335,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "RW",
@@ -2193,7 +4741,21 @@
   "label": [
    30.103894,
    -1.897196
-  ]
+  ],
+  "stats": {
+   "population": 14569341,
+   "gdpPerCapitaUsd": 1124,
+   "tourismArrivals": 1634000,
+   "business": 0.1,
+   "tourism": 0.284,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SA",
@@ -2205,7 +4767,21 @@
   "label": [
    44.6996,
    23.806908
-  ]
+  ],
+  "stats": {
+   "population": 36973555,
+   "gdpPerCapitaUsd": 34537,
+   "tourismArrivals": 20292000,
+   "business": 0.758,
+   "tourism": 0.525,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SB",
@@ -2217,7 +4793,21 @@
   "label": [
    159.170468,
    -8.029548
-  ]
+  ],
+  "stats": {
+   "population": 838645,
+   "gdpPerCapitaUsd": 2086,
+   "tourismArrivals": 28899,
+   "business": 0.191,
+   "tourism": 0.148,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SC",
@@ -2229,7 +4819,21 @@
   "label": [
    55.480175,
    -4.676659
-  ]
+  ],
+  "stats": {
+   "population": 122730,
+   "gdpPerCapitaUsd": 19449,
+   "tourismArrivals": 428000,
+   "business": 0.631,
+   "tourism": 0.839,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SD",
@@ -2241,7 +4845,21 @@
   "label": [
    29.260657,
    16.330746
-  ]
+  ],
+  "stats": {
+   "population": 51662147,
+   "gdpPerCapitaUsd": 1165,
+   "tourismArrivals": 836000,
+   "business": 0.11,
+   "tourism": 0.081,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
  },
  {
   "iso2": "SE",
@@ -2253,7 +4871,21 @@
   "label": [
    19.01705,
    65.85918
-  ]
+  ],
+  "stats": {
+   "population": 10596620,
+   "gdpPerCapitaUsd": 63133,
+   "tourismArrivals": 7616000,
+   "business": 0.911,
+   "tourism": 0.581,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SG",
@@ -2265,7 +4897,21 @@
   "label": [
    103.816925,
    1.366587
-  ]
+  ],
+  "stats": {
+   "population": 6111175,
+   "gdpPerCapitaUsd": 98814,
+   "tourismArrivals": 19116000,
+   "business": 0.962,
+   "tourism": 0.809,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SH",
@@ -2277,7 +4923,21 @@
   "label": [
    -5.71262,
    -15.950487
-  ]
+  ],
+  "stats": {
+   "population": 4534,
+   "gdpPerCapitaUsd": 6837,
+   "tourismArrivals": 104,
+   "business": 0.424,
+   "tourism": 0.11,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "SI",
@@ -2289,7 +4949,21 @@
   "label": [
    14.915312,
    46.06076
-  ]
+  ],
+  "stats": {
+   "population": 2130986,
+   "gdpPerCapitaUsd": 37376,
+   "tourismArrivals": 4702000,
+   "business": 0.78,
+   "tourism": 0.767,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SK",
@@ -2301,7 +4975,21 @@
   "label": [
    19.049868,
    48.734044
-  ]
+  ],
+  "stats": {
+   "population": 5413813,
+   "gdpPerCapitaUsd": 28544,
+   "tourismArrivals": 15299000,
+   "business": 0.72,
+   "tourism": 0.801,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
  },
  {
   "iso2": "SL",
@@ -2313,7 +5001,21 @@
   "label": [
    -11.763677,
    8.617449
-  ]
+  ],
+  "stats": {
+   "population": 8819794,
+   "gdpPerCapitaUsd": 846,
+   "tourismArrivals": 71000,
+   "business": 0.064,
+   "tourism": 0.042,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SM",
@@ -2325,7 +5027,21 @@
   "label": [
    12.441206,
    43.933916
-  ]
+  ],
+  "stats": {
+   "population": 34109,
+   "gdpPerCapitaUsd": 59871,
+   "tourismArrivals": 1904000,
+   "business": 0.89,
+   "tourism": 0.992,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2023",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SN",
@@ -2337,7 +5053,21 @@
   "label": [
    -14.778586,
    15.138125
-  ]
+  ],
+  "stats": {
+   "population": 18931966,
+   "gdpPerCapitaUsd": 1955,
+   "tourismArrivals": 1376000,
+   "business": 0.178,
+   "tourism": 0.22,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
  },
  {
   "iso2": "SO",
@@ -2349,7 +5079,21 @@
   "label": [
    45.19238,
    3.568925
-  ]
+  ],
+  "stats": {
+   "population": 19654739,
+   "gdpPerCapitaUsd": 661,
+   "tourismArrivals": 888900,
+   "business": 0.042,
+   "tourism": 0.169,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "SR",
@@ -2361,7 +5105,21 @@
   "label": [
    -55.91094,
    4.143987
-  ]
+  ],
+  "stats": {
+   "population": 639850,
+   "gdpPerCapitaUsd": 7070,
+   "tourismArrivals": 279000,
+   "business": 0.432,
+   "tourism": 0.466,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
  },
  {
   "iso2": "SS",
@@ -2373,7 +5131,21 @@
   "label": [
    30.390151,
    7.230477
-  ]
+  ],
+  "stats": {
+   "population": 12188788,
+   "gdpPerCapitaUsd": 1080,
+   "tourismArrivals": 551247,
+   "business": 0.089,
+   "tourism": 0.174,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2015",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "ST",
@@ -2385,7 +5157,21 @@
   "label": [
    7.021,
    0.9709
-  ]
+  ],
+  "stats": {
+   "population": 240254,
+   "gdpPerCapitaUsd": 4084,
+   "tourismArrivals": 33400,
+   "business": 0.297,
+   "tourism": 0.309,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
  },
  {
   "iso2": "SV",
@@ -2397,7 +5183,21 @@
   "label": [
    -88.890124,
    13.685371
-  ]
+  ],
+  "stats": {
+   "population": 6365503,
+   "gdpPerCapitaUsd": 5767,
+   "tourismArrivals": 2639000,
+   "business": 0.364,
+   "tourism": 0.453,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SX",
@@ -2409,7 +5209,21 @@
   "label": [
    -63.070133,
    18.04088
-  ]
+  ],
+  "stats": {
+   "population": 43923,
+   "gdpPerCapitaUsd": 42978,
+   "tourismArrivals": 1952000,
+   "business": 0.818,
+   "tourism": 0.987,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SY",
@@ -2421,7 +5235,21 @@
   "label": [
    38.277783,
    35.006636
-  ]
+  ],
+  "stats": {
+   "population": 25620427,
+   "gdpPerCapitaUsd": 1057,
+   "tourismArrivals": 2424000,
+   "business": 0.085,
+   "tourism": 0.25,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "SZ",
@@ -2433,7 +5261,21 @@
   "label": [
    31.467264,
    -26.533676
-  ]
+  ],
+  "stats": {
+   "population": 1256174,
+   "gdpPerCapitaUsd": 4108,
+   "tourismArrivals": 1226000,
+   "business": 0.301,
+   "tourism": 0.653,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TC",
@@ -2445,7 +5287,21 @@
   "label": [
    -71.752704,
    21.81663
-  ]
+  ],
+  "stats": {
+   "population": 46855,
+   "gdpPerCapitaUsd": 37507,
+   "tourismArrivals": 1599000,
+   "business": 0.784,
+   "tourism": 0.983,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TD",
@@ -2457,7 +5313,21 @@
   "label": [
    18.645041,
    15.142959
-  ]
+  ],
+  "stats": {
+   "population": 21003705,
+   "gdpPerCapitaUsd": 1022,
+   "tourismArrivals": 81000,
+   "business": 0.081,
+   "tourism": 0.017,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TF",
@@ -2469,7 +5339,21 @@
   "label": [
    69.122136,
    -49.303721
-  ]
+  ],
+  "stats": {
+   "population": 140,
+   "gdpPerCapitaUsd": 114286,
+   "tourismArrivals": 68,
+   "business": 0.97,
+   "tourism": 0.508,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "TG",
@@ -2481,7 +5365,21 @@
   "label": [
    1.058113,
    8.80722
-  ]
+  ],
+  "stats": {
+   "population": 8591626,
+   "gdpPerCapitaUsd": 1384,
+   "tourismArrivals": 876000,
+   "business": 0.14,
+   "tourism": 0.267,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TH",
@@ -2493,7 +5391,21 @@
   "label": [
    101.073198,
    15.45974
-  ]
+  ],
+  "stats": {
+   "population": 71619863,
+   "gdpPerCapitaUsd": 8057,
+   "tourismArrivals": 39916000,
+   "business": 0.466,
+   "tourism": 0.53,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TJ",
@@ -2505,7 +5417,21 @@
   "label": [
    72.587276,
    38.199835
-  ]
+  ],
+  "stats": {
+   "population": 10786734,
+   "gdpPerCapitaUsd": 1637,
+   "tourismArrivals": 1035000,
+   "business": 0.165,
+   "tourism": 0.254,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
  },
  {
   "iso2": "TL",
@@ -2517,7 +5443,21 @@
   "label": [
    125.854679,
    -8.803705
-  ]
+  ],
+  "stats": {
+   "population": 1418517,
+   "gdpPerCapitaUsd": 1341,
+   "tourismArrivals": 74800,
+   "business": 0.136,
+   "tourism": 0.186,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TM",
@@ -2529,7 +5469,21 @@
   "label": [
    58.676647,
    39.855246
-  ]
+  ],
+  "stats": {
+   "population": 7618847,
+   "gdpPerCapitaUsd": 6540,
+   "tourismArrivals": 2250067,
+   "business": 0.398,
+   "tourism": 0.381,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "TN",
@@ -2541,7 +5495,21 @@
   "label": [
    9.007881,
    33.687263
-  ]
+  ],
+  "stats": {
+   "population": 12348573,
+   "gdpPerCapitaUsd": 4657,
+   "tourismArrivals": 9429000,
+   "business": 0.322,
+   "tourism": 0.602,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TO",
@@ -2553,7 +5521,21 @@
   "label": [
    -175.163014,
    -21.210026
-  ]
+  ],
+  "stats": {
+   "population": 103742,
+   "gdpPerCapitaUsd": 6547,
+   "tourismArrivals": 94000,
+   "business": 0.403,
+   "tourism": 0.648,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TR",
@@ -2565,7 +5547,21 @@
   "label": [
    34.508268,
    39.345388
-  ]
+  ],
+  "stats": {
+   "population": 85878556,
+   "gdpPerCapitaUsd": 18599,
+   "tourismArrivals": 51747000,
+   "business": 0.623,
+   "tourism": 0.542,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TT",
@@ -2577,7 +5573,21 @@
   "label": [
    -60.9184,
    10.9989
-  ]
+  ],
+  "stats": {
+   "population": 1367764,
+   "gdpPerCapitaUsd": 18967,
+   "tourismArrivals": 480000,
+   "business": 0.627,
+   "tourism": 0.415,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TV",
@@ -2589,7 +5599,21 @@
   "label": [
    179.209587,
    -8.513717
-  ]
+  ],
+  "stats": {
+   "population": 9492,
+   "gdpPerCapitaUsd": 6041,
+   "tourismArrivals": 3599,
+   "business": 0.381,
+   "tourism": 0.432,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "TW",
@@ -2601,7 +5625,21 @@
   "label": [
    120.868204,
    23.652408
-  ]
+  ],
+  "stats": {
+   "population": 23568378,
+   "gdpPerCapitaUsd": 47818,
+   "tourismArrivals": 7036045,
+   "business": 0.835,
+   "tourism": 0.39,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "TZ",
@@ -2613,7 +5651,21 @@
   "label": [
    34.959183,
    -6.051866
-  ]
+  ],
+  "stats": {
+   "population": 70545865,
+   "gdpPerCapitaUsd": 1319,
+   "tourismArrivals": 1527000,
+   "business": 0.131,
+   "tourism": 0.097,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "UA",
@@ -2625,7 +5677,21 @@
   "label": [
    32.140865,
    49.724739
-  ]
+  ],
+  "stats": {
+   "population": 38980376,
+   "gdpPerCapitaUsd": 5866,
+   "tourismArrivals": 13710000,
+   "business": 0.373,
+   "tourism": 0.419,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "UG",
@@ -2637,7 +5703,21 @@
   "label": [
    32.948555,
    1.972589
-  ]
+  ],
+  "stats": {
+   "population": 51384894,
+   "gdpPerCapitaUsd": 1206,
+   "tourismArrivals": 1543000,
+   "business": 0.119,
+   "tourism": 0.14,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "US",
@@ -2649,7 +5729,21 @@
   "label": [
    -97.482602,
    39.538479
-  ]
+  ],
+  "stats": {
+   "population": 341784857,
+   "gdpPerCapitaUsd": 90027,
+   "tourismArrivals": 165478000,
+   "business": 0.949,
+   "tourism": 0.5,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "UY",
@@ -2661,7 +5755,21 @@
   "label": [
    -55.966942,
    -32.961127
-  ]
+  ],
+  "stats": {
+   "population": 3384688,
+   "gdpPerCapitaUsd": 25216,
+   "tourismArrivals": 3480000,
+   "business": 0.682,
+   "tourism": 0.657,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "UZ",
@@ -2673,7 +5781,21 @@
   "label": [
    64.005429,
    41.693603
-  ]
+  ],
+  "stats": {
+   "population": 37053428,
+   "gdpPerCapitaUsd": 3968,
+   "tourismArrivals": 6749000,
+   "business": 0.288,
+   "tourism": 0.347,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "VA",
@@ -2685,7 +5807,21 @@
   "label": [
    12.453418,
    41.903323
-  ]
+  ],
+  "stats": {
+   "population": 825,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 2179,
+   "business": 0.006,
+   "tourism": 0.784,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "VC",
@@ -2697,7 +5833,21 @@
   "label": [
    -61.3359,
    13.0879
-  ]
+  ],
+  "stats": {
+   "population": 99924,
+   "gdpPerCapitaUsd": 12562,
+   "tourismArrivals": 392000,
+   "business": 0.542,
+   "tourism": 0.843,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "VE",
@@ -2709,7 +5859,21 @@
   "label": [
    -64.599381,
    7.182476
-  ]
+  ],
+  "stats": {
+   "population": 28516896,
+   "gdpPerCapitaUsd": 3495,
+   "tourismArrivals": 429000,
+   "business": 0.271,
+   "tourism": 0.064,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
  },
  {
   "iso2": "VG",
@@ -2721,7 +5885,21 @@
   "label": [
    -64.63661,
    18.426606
-  ]
+  ],
+  "stats": {
+   "population": 39732,
+   "gdpPerCapitaUsd": 16650,
+   "tourismArrivals": 302399,
+   "business": 0.606,
+   "tourism": 0.924,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "VI",
@@ -2733,7 +5911,21 @@
   "label": [
    -64.779172,
    17.746706
-  ]
+  ],
+  "stats": {
+   "population": 103792,
+   "gdpPerCapitaUsd": 44321,
+   "tourismArrivals": 2074000,
+   "business": 0.826,
+   "tourism": 0.97,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "VN",
@@ -2745,7 +5937,21 @@
   "label": [
    105.387292,
    21.715416
-  ]
+  ],
+  "stats": {
+   "population": 101598527,
+   "gdpPerCapitaUsd": 5066,
+   "tourismArrivals": 18009000,
+   "business": 0.343,
+   "tourism": 0.339,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "VU",
@@ -2757,7 +5963,21 @@
   "label": [
    166.908762,
    -15.37153
-  ]
+  ],
+  "stats": {
+   "population": 335169,
+   "gdpPerCapitaUsd": 4039,
+   "tourismArrivals": 256000,
+   "business": 0.292,
+   "tourism": 0.606,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "WF",
@@ -2769,7 +5989,21 @@
   "label": [
    -178.137436,
    -14.286415
-  ]
+  ],
+  "stats": {
+   "population": 11558,
+   "gdpPerCapitaUsd": 5191,
+   "tourismArrivals": 9539,
+   "business": 0.352,
+   "tourism": 0.636,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "WS",
@@ -2781,7 +6015,21 @@
   "label": [
    -172.438241,
    -13.639139
-  ]
+  ],
+  "stats": {
+   "population": 219306,
+   "gdpPerCapitaUsd": 5873,
+   "tourismArrivals": 181000,
+   "business": 0.377,
+   "tourism": 0.64,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "XK",
@@ -2793,7 +6041,21 @@
   "label": [
    20.860719,
    42.593587
-  ]
+  ],
+  "stats": {
+   "population": 1576876,
+   "gdpPerCapitaUsd": 7899,
+   "tourismArrivals": 4165172,
+   "business": 0.458,
+   "tourism": 0.788,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
  },
  {
   "iso2": "YE",
@@ -2805,7 +6067,21 @@
   "label": [
    45.874383,
    15.328226
-  ]
+  ],
+  "stats": {
+   "population": 41773878,
+   "gdpPerCapitaUsd": 634,
+   "tourismArrivals": 398000,
+   "business": 0.038,
+   "tourism": 0.051,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2018",
+    "population": "wb:2025",
+    "tourism": "wb:2015"
+   }
+  }
  },
  {
   "iso2": "ZA",
@@ -2817,7 +6093,21 @@
   "label": [
    23.665734,
    -29.708776
-  ]
+  ],
+  "stats": {
+   "population": 64747319,
+   "gdpPerCapitaUsd": 6598,
+   "tourismArrivals": 14797000,
+   "business": 0.409,
+   "tourism": 0.364,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "ZM",
@@ -2829,7 +6119,21 @@
   "label": [
    26.395298,
    -14.660804
-  ]
+  ],
+  "stats": {
+   "population": 21913874,
+   "gdpPerCapitaUsd": 1318,
+   "tourismArrivals": 1266000,
+   "business": 0.127,
+   "tourism": 0.203,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  },
  {
   "iso2": "ZW",
@@ -2841,6 +6145,20 @@
   "label": [
    29.925444,
    -18.91164
-  ]
+  ],
+  "stats": {
+   "population": 16950795,
+   "gdpPerCapitaUsd": 3021,
+   "tourismArrivals": 2294000,
+   "business": 0.237,
+   "tourism": 0.301,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
  }
 ]
