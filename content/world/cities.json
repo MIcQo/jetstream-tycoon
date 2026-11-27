@@ -36,6 +36,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159115953",
+  "name": "Maastricht",
+  "iso2": "NL",
+  "pop": 122378,
+  "lat": 50.852997,
+  "lon": 5.677003,
+  "matched": true
+ },
+ {
   "id": "ne:1159116137",
   "name": "Tønsberg",
   "iso2": "NO",
@@ -189,6 +198,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159127429",
+  "name": "Muğla",
+  "iso2": "TR",
+  "pop": 50000,
+  "lat": 37.216371,
+  "lon": 28.363891,
+  "matched": true
+ },
+ {
   "id": "ne:1159127519",
   "name": "Cheongju",
   "iso2": "KR",
@@ -321,6 +339,15 @@
   "pop": 1276757,
   "lat": 51.429973,
   "lon": 6.750017,
+  "matched": true
+ },
+ {
+  "id": "ne:1159130015",
+  "name": "Karlsruhe",
+  "iso2": "DE",
+  "pop": 377487,
+  "lat": 48.999992,
+  "lon": 8.399993,
   "matched": true
  },
  {
@@ -495,15 +522,6 @@
   "matched": true
  },
  {
-  "id": "ne:1159132333",
-  "name": "Liège",
-  "iso2": "NL",
-  "pop": 749110,
-  "lat": 50.629996,
-  "lon": 5.580011,
-  "matched": true
- },
- {
   "id": "ne:1159132499",
   "name": "Lihue",
   "iso2": "US",
@@ -666,6 +684,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159134803",
+  "name": "Victoria Falls",
+  "iso2": "ZW",
+  "pop": 50000,
+  "lat": -17.929618,
+  "lon": 25.840014,
+  "matched": true
+ },
+ {
   "id": "ne:1159134933",
   "name": "Santiago de Compostela",
   "iso2": "ES",
@@ -744,15 +771,6 @@
   "pop": 721018,
   "lat": -3.339604,
   "lon": 37.339984,
-  "matched": true
- },
- {
-  "id": "ne:1159135709",
-  "name": "Basel",
-  "iso2": "FR",
-  "pop": 830000,
-  "lat": 47.580389,
-  "lon": 7.590017,
   "matched": true
  },
  {
@@ -1008,6 +1026,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159138957",
+  "name": "Bitola",
+  "iso2": "MK",
+  "pop": 86528,
+  "lat": 41.039057,
+  "lon": 21.339514,
+  "matched": true
+ },
+ {
   "id": "ne:1159139011",
   "name": "Shahhat",
   "iso2": "LY",
@@ -1199,7 +1226,7 @@
  {
   "id": "ne:1159139563",
   "name": "Al Aqabah",
-  "iso2": "IL",
+  "iso2": "JO",
   "pop": 95048,
   "lat": 29.526995,
   "lon": 35.077693,
@@ -1248,6 +1275,15 @@
   "pop": 146733,
   "lat": 23.041525,
   "lon": -81.577486,
+  "matched": true
+ },
+ {
+  "id": "ne:1159140317",
+  "name": "Calatrava",
+  "iso2": "GQ",
+  "pop": 50000,
+  "lat": 1.116403,
+  "lon": 9.418588,
   "matched": true
  },
  {
@@ -1386,6 +1422,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159140721",
+  "name": "Tanjungpinang",
+  "iso2": "ID",
+  "pop": 226666,
+  "lat": 0.916829,
+  "lon": 104.471442,
+  "matched": true
+ },
+ {
   "id": "ne:1159140729",
   "name": "Hancheng",
   "iso2": "CN",
@@ -1485,15 +1530,6 @@
   "matched": true
  },
  {
-  "id": "ne:1159141927",
-  "name": "Cherbourg",
-  "iso2": "JE",
-  "pop": 60991,
-  "lat": 49.650392,
-  "lon": -1.649987,
-  "matched": true
- },
- {
   "id": "ne:1159141943",
   "name": "Brest",
   "iso2": "FR",
@@ -1536,6 +1572,15 @@
   "pop": 327254,
   "lat": 43.610399,
   "lon": 3.869986,
+  "matched": true
+ },
+ {
+  "id": "ne:1159142057",
+  "name": "Mulhouse",
+  "iso2": "FR",
+  "pop": 215454,
+  "lat": 47.750405,
+  "lon": 7.34998,
   "matched": true
  },
  {
@@ -1674,6 +1719,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159144553",
+  "name": "Brugge",
+  "iso2": "BE",
+  "pop": 146469,
+  "lat": 51.220374,
+  "lon": 3.230025,
+  "matched": true
+ },
+ {
   "id": "ne:1159144665",
   "name": "Kampot",
   "iso2": "KH",
@@ -1797,6 +1851,15 @@
   "pop": 50000,
   "lat": -19.989595,
   "lon": 23.420007,
+  "matched": true
+ },
+ {
+  "id": "ne:1159145197",
+  "name": "Kasane",
+  "iso2": "BW",
+  "pop": 50000,
+  "lat": -17.809573,
+  "lon": 25.150031,
   "matched": true
  },
  {
@@ -2196,6 +2259,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159146479",
+  "name": "Johor Bahru",
+  "iso2": "MY",
+  "pop": 875000,
+  "lat": 1.481971,
+  "lon": 103.728094,
+  "matched": true
+ },
+ {
   "id": "ne:1159146483",
   "name": "Benoni",
   "iso2": "ZA",
@@ -2261,7 +2333,7 @@
  {
   "id": "ne:1159146789",
   "name": "Ciudad Juárez",
-  "iso2": "US",
+  "iso2": "MX",
   "pop": 1343000,
   "lat": 31.692323,
   "lon": -106.491994,
@@ -2531,7 +2603,7 @@
  {
   "id": "ne:1159147227",
   "name": "Lille",
-  "iso2": "BE",
+  "iso2": "FR",
   "pop": 1044000,
   "lat": 50.651915,
   "lon": 3.078062,
@@ -2540,7 +2612,7 @@
  {
   "id": "ne:1159147229",
   "name": "Strasbourg",
-  "iso2": "DE",
+  "iso2": "FR",
   "pop": 439972,
   "lat": 48.579966,
   "lon": 7.750007,
@@ -2853,6 +2925,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159147661",
+  "name": "Windsor",
+  "iso2": "CA",
+  "pop": 319246,
+  "lat": 42.315457,
+  "lon": -83.036853,
+  "matched": true
+ },
+ {
   "id": "ne:1159147673",
   "name": "Akureyri",
   "iso2": "IS",
@@ -2976,15 +3057,6 @@
   "pop": 317954,
   "lat": 6.996432,
   "lon": 100.471428,
-  "matched": true
- },
- {
-  "id": "ne:1159147943",
-  "name": "Melilla",
-  "iso2": "MA",
-  "pop": 141308,
-  "lat": 35.300002,
-  "lon": -2.950011,
   "matched": true
  },
  {
@@ -3156,15 +3228,6 @@
   "pop": 537797,
   "lat": 57.750001,
   "lon": 12.000032,
-  "matched": true
- },
- {
-  "id": "ne:1159148261",
-  "name": "Ad Dakhla",
-  "iso2": "EH",
-  "pop": 89292,
-  "lat": 23.714056,
-  "lon": -15.936811,
   "matched": true
  },
  {
@@ -3474,6 +3537,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159149085",
+  "name": "Macau",
+  "iso2": "MO",
+  "pop": 568700,
+  "lat": 22.202998,
+  "lon": 113.545048,
+  "matched": true
+ },
+ {
   "id": "ne:1159149097",
   "name": "Santa Cruz de Tenerife",
   "iso2": "ES",
@@ -3690,6 +3762,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159149265",
+  "name": "El Paso",
+  "iso2": "US",
+  "pop": 753000,
+  "lat": 31.78193,
+  "lon": -106.511941,
+  "matched": true
+ },
+ {
   "id": "ne:1159149279",
   "name": "Orlando",
   "iso2": "US",
@@ -3818,7 +3899,7 @@
  {
   "id": "ne:1159149361",
   "name": "Livingstone",
-  "iso2": "BW",
+  "iso2": "ZM",
   "pop": 165480,
   "lat": -17.860009,
   "lon": 25.860013,
@@ -4401,12 +4482,12 @@
   "matched": true
  },
  {
-  "id": "ne:1159149741",
-  "name": "Laayoune",
-  "iso2": "EH",
-  "pop": 188084,
-  "lat": 27.149982,
-  "lon": -13.200006,
+  "id": "ne:1159149739",
+  "name": "Malmö",
+  "iso2": "SE",
+  "pop": 269349,
+  "lat": 55.583337,
+  "lon": 13.033302,
   "matched": true
  },
  {
@@ -6957,6 +7038,15 @@
   "matched": true
  },
  {
+  "id": "ne:1159150975",
+  "name": "Amritsar",
+  "iso2": "IN",
+  "pop": 1212000,
+  "lat": 31.641938,
+  "lon": 74.868047,
+  "matched": true
+ },
+ {
   "id": "ne:1159150979",
   "name": "Varanasi",
   "iso2": "IN",
@@ -6990,6 +7080,15 @@
   "pop": 754000,
   "lat": 17.966693,
   "lon": 102.59998,
+  "matched": true
+ },
+ {
+  "id": "ne:1159150993",
+  "name": "Brazzaville",
+  "iso2": "CG",
+  "pop": 1355000,
+  "lat": -4.25724,
+  "lon": 15.282744,
   "matched": true
  },
  {
@@ -7616,7 +7715,7 @@
  {
   "id": "ne:1159151245",
   "name": "Detroit",
-  "iso2": "CA",
+  "iso2": "US",
   "pop": 4101000,
   "lat": 42.331906,
   "lon": -83.082002,
@@ -7715,7 +7814,7 @@
  {
   "id": "ne:1159151271",
   "name": "Zürich",
-  "iso2": "DE",
+  "iso2": "CH",
   "pop": 1108000,
   "lat": 47.381934,
   "lon": 8.548064,
@@ -8732,7 +8831,7 @@
  {
   "id": "ne:1159151539",
   "name": "Kinshasa",
-  "iso2": "CG",
+  "iso2": "CD",
   "pop": 7843000,
   "lat": -4.327778,
   "lon": 15.313026,
@@ -9074,7 +9173,7 @@
  {
   "id": "ne:1159151627",
   "name": "Singapore",
-  "iso2": "ID",
+  "iso2": "SG",
   "pop": 5183700,
   "lat": 1.294979,
   "lon": 103.853875,
@@ -9126,15 +9225,6 @@
   "matched": true
  },
  {
-  "id": "ne:1159151741",
-  "name": "Alofi",
-  "iso2": "NU",
-  "pop": 50000,
-  "lat": -19.065988,
-  "lon": -169.913625,
-  "matched": true
- },
- {
   "id": "ne:1730025037",
   "name": "Amaravati",
   "iso2": "IN",
@@ -9153,6 +9243,15 @@
   "matched": false
  },
  {
+  "id": "oa:EDNY",
+  "name": "Friedrichshafen",
+  "iso2": "DE",
+  "pop": 50000,
+  "lat": 47.671299,
+  "lon": 9.51149,
+  "matched": false
+ },
+ {
   "id": "oa:EFIV",
   "name": "Ivalo",
   "iso2": "FI",
@@ -9168,6 +9267,24 @@
   "pop": 50000,
   "lat": 67.700996,
   "lon": 24.8468,
+  "matched": false
+ },
+ {
+  "id": "oa:EGJA",
+  "name": "Saint Anne",
+  "iso2": "GG",
+  "pop": 50000,
+  "lat": 49.706104,
+  "lon": -2.21472,
+  "matched": false
+ },
+ {
+  "id": "oa:EGJJ",
+  "name": "St. Peter",
+  "iso2": "JE",
+  "pop": 50000,
+  "lat": 49.207901,
+  "lon": -2.19551,
   "matched": false
  },
  {
@@ -9213,6 +9330,33 @@
   "pop": 50000,
   "lat": 32.401895,
   "lon": -6.315905,
+  "matched": false
+ },
+ {
+  "id": "oa:GMMH",
+  "name": "Dakhla",
+  "iso2": "EH",
+  "pop": 50000,
+  "lat": 23.7183,
+  "lon": -15.932,
+  "matched": false
+ },
+ {
+  "id": "oa:GMML",
+  "name": "El Aaiún",
+  "iso2": "EH",
+  "pop": 50000,
+  "lat": 27.142467,
+  "lon": -13.224947,
+  "matched": false
+ },
+ {
+  "id": "oa:GMMW",
+  "name": "Al Aaroui",
+  "iso2": "MA",
+  "pop": 50000,
+  "lat": 34.9888,
+  "lon": -3.02821,
   "matched": false
  },
  {
@@ -9315,6 +9459,15 @@
   "matched": false
  },
  {
+  "id": "oa:LLER",
+  "name": "Eilat",
+  "iso2": "IL",
+  "pop": 50000,
+  "lat": 29.727009,
+  "lon": 35.014116,
+  "matched": false
+ },
+ {
   "id": "oa:MBPV",
   "name": "Providenciales",
   "iso2": "TC",
@@ -9330,6 +9483,15 @@
   "pop": 50000,
   "lat": 24.063041,
   "lon": -74.523233,
+  "matched": false
+ },
+ {
+  "id": "oa:NIUE",
+  "name": "Alofi",
+  "iso2": "NU",
+  "pop": 50000,
+  "lat": -19.080109,
+  "lon": -169.923493,
   "matched": false
  },
  {
@@ -9468,6 +9630,15 @@
   "matched": false
  },
  {
+  "id": "oa:TFFJ",
+  "name": "Gustavia",
+  "iso2": "BL",
+  "pop": 50000,
+  "lat": 17.904398,
+  "lon": -62.843333,
+  "matched": false
+ },
+ {
   "id": "oa:TNCM",
   "name": "Sint Maarten",
   "iso2": "SX",
@@ -9483,6 +9654,15 @@
   "pop": 50000,
   "lat": 18.204773,
   "lon": -63.05383,
+  "matched": false
+ },
+ {
+  "id": "oa:TRPG",
+  "name": "Gerald's Park",
+  "iso2": "MS",
+  "pop": 50000,
+  "lat": 16.791835,
+  "lon": -62.193204,
   "matched": false
  },
  {
@@ -9528,6 +9708,15 @@
   "pop": 50000,
   "lat": 9.54779,
   "lon": 100.061996,
+  "matched": false
+ },
+ {
+  "id": "oa:VVPQ",
+  "name": "Phu Quoc Island",
+  "iso2": "VN",
+  "pop": 50000,
+  "lat": 10.169783,
+  "lon": 103.99353,
   "matched": false
  },
  {
