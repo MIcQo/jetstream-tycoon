@@ -51,11 +51,26 @@ func build(cache, out string) error {
 	if err := writeJSON(out+"/countries.json", countries); err != nil {
 		return err
 	}
+	playable := map[string]bool{}
+	for _, c := range countries {
+		playable[c.ISO2] = true
+	}
+	airports, cities, err := buildAirports(cache, playable)
+	if err != nil {
+		return err
+	}
+	if err := writeJSON(out+"/airports.json", airports); err != nil {
+		return err
+	}
+	if err := writeJSON(out+"/cities.json", cities); err != nil {
+		return err
+	}
 	for _, m := range maps {
 		if err := writeJSON(out+"/map/"+m.File, m); err != nil {
 			return err
 		}
 	}
-	fmt.Printf("datagen: %d countries, %d map levels written to %s\n", len(countries), len(maps), out)
+	fmt.Printf("datagen: %d countries, %d airports, %d cities, %d map levels written to %s\n",
+		len(countries), len(airports), len(cities), len(maps), out)
 	return nil
 }

@@ -6,8 +6,12 @@
 | Data | Source | License |
 |---|---|---|
 | Country shapes, codes, regions, label points (`countries.json`, `map/*.json`) | [Natural Earth](https://www.naturalearthdata.com/) v5.1.2, 1:110m and 1:50m Admin 0 – Countries | Public domain |
+| Airports (`airports.json`) | [OurAirports](https://ourairports.com/data/), data repository commit `a9426f77` | Public domain |
+| Cities and populations (`cities.json`) | Natural Earth v5.1.2, 1:10m Populated Places (`POP_MAX`) | Public domain |
 
 Notes:
 - Country codes use Natural Earth's `ISO_A2_EH` (it fills in codes such as France and Norway). Features without a code (e.g. Somaliland, N. Cyprus) are drawn under `other` but are not playable.
 - Features sharing a code are merged (e.g. Australia's Indian Ocean Territories into `AU`).
+- Airports: every scheduled `large_airport` with an IATA code (base level 3), plus, for each country without one, the scheduled `medium_airport` serving its largest city (base level 2).
+- Each airport serves the populated place within 80 km with the highest `pop / (1 + (d / 25 km)²)`, so secondary airports join their metro (Gatwick → London). Airports with no place in range, and small places, use a 50,000 population floor.
 - Borders follow Natural Earth's de facto policy and imply no political position.

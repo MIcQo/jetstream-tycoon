@@ -71,10 +71,62 @@ func check(dir string) error {
 			}
 		}
 	}
+	airportErrs, nAirports, nCities, err := checkAirports(dir, seen)
+	if err != nil {
+		return err
+	}
+	errs = append(errs, airportErrs...)
 	if len(errs) == 0 {
-		fmt.Printf("datagen check: %d countries, %d map levels OK\n", len(countries), len(mapLevels))
+		fmt.Printf("datagen check: %d countries, %d airports, %d cities, %d map levels OK\n",
+			len(countries), nAirports, nCities, len(mapLevels))
 	}
 	return errors.Join(errs...)
+}
+
+var iataRe = regexp.MustCompile(`^[A-Z0-9]{3}$`)
+
+func checkAirports(dir string, countries map[string]bool) (errs []error, nAirports, nCities int, err error) {
+	var airports []Airport
+	var cities []City
+	if err := readJSON(filepath.Join(dir, "airports.json"), &airports); err != nil {
+		return nil, 0, 0, err
+	}
+	if err := readJSON(filepath.Join(dir, "cities.json"), &cities); err != nil {
+		return nil, 0, 0, err
+	}
+	cityIDs := map[string]bool{}
+	for _, c := range cities {
+		if cityIDs[c.ID] || c.Pop < minCityPop || c.Name == "" {
+			errs = append(errs, fmt.Errorf("cities.json: %s is duplicated, unnamed or below the population floor", c.ID))
+		}
+		cityIDs[c.ID] = true
+	}
+	withAirport := map[string]bool{}
+	for i, a := range airports {
+		if !iataRe.MatchString(a.IATA) {
+			errs = append(errs, fmt.Errorf("airports.json[%d]: bad IATA %q", i, a.IATA))
+		}
+		if i > 0 && airports[i-1].IATA >= a.IATA {
+			errs = append(errs, fmt.Errorf("airports.json: not sorted or duplicate at %s", a.IATA))
+		}
+		if !countries[a.ISO2] {
+			errs = append(errs, fmt.Errorf("airports.json: %s in unknown country %q", a.IATA, a.ISO2))
+		}
+		if !cityIDs[a.CityID] {
+			errs = append(errs, fmt.Errorf("airports.json: %s has unknown city %q", a.IATA, a.CityID))
+		}
+		if a.BaseLevel < 2 || a.BaseLevel > 3 {
+			errs = append(errs, fmt.Errorf("airports.json: %s base level %d out of range", a.IATA, a.BaseLevel))
+		}
+		if a.Lat < -90 || a.Lat > 90 || a.Lon < -180 || a.Lon > 180 {
+			errs = append(errs, fmt.Errorf("airports.json: %s coordinates out of range", a.IATA))
+		}
+		withAirport[a.ISO2] = true
+	}
+	if len(airports) < 900 || len(withAirport) < 200 {
+		errs = append(errs, fmt.Errorf("airports.json: %d airports in %d countries, want at least 900 in 200", len(airports), len(withAirport)))
+	}
+	return errs, len(airports), len(cities), nil
 }
 
 func readJSON(path string, v any) error {

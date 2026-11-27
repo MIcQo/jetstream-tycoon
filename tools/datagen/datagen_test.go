@@ -142,8 +142,10 @@ func TestBuildCountries(t *testing.T) {
 			t.Fatal(err)
 		}
 	}
+	_ = writeJSON(filepath.Join(out, "airports.json"), []Airport{})
+	_ = writeJSON(filepath.Join(out, "cities.json"), []City{})
 	if err := check(out); err == nil || !strings.Contains(err.Error(), "want at least 200") {
-		t.Errorf("check on 2 countries = %v, want the minimum-count error only", err)
+		t.Errorf("check on 2 countries = %v, want the minimum-count error", err)
 	}
 }
 
@@ -232,6 +234,8 @@ func TestCheckFindsProblems(t *testing.T) {
 	for _, l := range mapLevels {
 		_ = writeJSON(filepath.Join(dir, "map", l.file), WorldMap{Countries: map[string]string{"QQ": "bogus"}})
 	}
+	_ = writeJSON(filepath.Join(dir, "airports.json"), []Airport{})
+	_ = writeJSON(filepath.Join(dir, "cities.json"), []City{})
 	err := check(dir)
 	for _, want := range []string{"want at least 200", `bad or duplicate iso2 "zz"`, "not sorted", "zz has no name", "AA label out of range", "QQ is not in countries.json", "QQ has a malformed path"} {
 		if err == nil || !strings.Contains(err.Error(), want) {

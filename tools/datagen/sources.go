@@ -34,6 +34,19 @@ var sources = []Source{
 		SHA256:  "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
 		License: "Natural Earth — public domain",
 	},
+	{
+		File:    "ne_10m_populated_places.geojson",
+		URL:     "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_populated_places.geojson",
+		SHA256:  "9b8e3de09048ef00dfc70357dbb9fa324493f214b5e0ae4daf1aa79a8d10116b",
+		License: "Natural Earth — public domain",
+	},
+	{
+		// Pinned to a commit of the OurAirports data repository (the website file changes nightly).
+		File:    "airports.csv",
+		URL:     "https://raw.githubusercontent.com/davidmegginson/ourairports-data/a9426f7711df70678dfb745ceaa3d8891bf98328/airports.csv",
+		SHA256:  "b6ae8329691c9fc7b89d840e386fe65a9986e125c808cf885ae73e1ecb18aea8",
+		License: "OurAirports — public domain",
+	},
 }
 
 // fetchAll downloads missing sources and verifies every cached file's checksum.

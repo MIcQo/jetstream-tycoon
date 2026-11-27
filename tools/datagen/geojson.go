@@ -60,3 +60,21 @@ func (f Feature) num(key string) float64 {
 	n, _ := f.Props[key].(float64)
 	return n
 }
+
+// parsePoints decodes a FeatureCollection of Point features (properties only are
+// needed; coordinates are also present as properties in Natural Earth places).
+func parsePoints(data []byte) ([]Feature, error) {
+	var fc struct {
+		Features []struct {
+			Properties map[string]any `json:"properties"`
+		} `json:"features"`
+	}
+	if err := json.Unmarshal(data, &fc); err != nil {
+		return nil, err
+	}
+	out := make([]Feature, 0, len(fc.Features))
+	for _, f := range fc.Features {
+		out = append(out, Feature{Props: f.Properties})
+	}
+	return out, nil
+}
