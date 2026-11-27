@@ -4,6 +4,7 @@ package main
 
 import (
 	"bytes"
+	"context"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -15,7 +16,10 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strings"
+	"sync"
+	"time"
 )
 
 type Mutant struct {
@@ -44,6 +48,8 @@ var binarySwap = map[token.Token]token.Token{
 
 func main() {
 	threshold := flag.Float64("threshold", 80.0, "minimum required mutation kill percentage (0-100)")
+	workers := flag.Int("parallel", runtime.NumCPU(), "number of mutants tested concurrently")
+	timeout := flag.Duration("timeout", 90*time.Second, "per-mutant go test timeout; a timeout counts as killed")
 	flag.Parse()
 
 	roots := flag.Args()
@@ -75,14 +81,23 @@ func main() {
 		_ = os.RemoveAll(tmpDir)
 	}()
 
+	fmt.Printf("gomutate: %d mutants, %d workers, %s timeout per mutant\n", len(mutants), *workers, *timeout)
+	results := RunAll(mutants, *workers, func(i int, m Mutant) (bool, error) {
+		return runMutantTest(tmpDir, i, m, *timeout)
+	}, func(done, total int) {
+		if done%10 == 0 || done == total {
+			fmt.Fprintf(os.Stderr, "gomutate: %d/%d mutants tested\n", done, total)
+		}
+	})
+
 	killed := 0
-	for i, m := range mutants {
-		ok, err := runMutantTest(tmpDir, i, m)
-		if err != nil {
-			fmt.Fprintf(os.Stderr, "gomutate run error: %v\n", err)
+	for i, r := range results {
+		m := mutants[i]
+		if r.Err != nil {
+			fmt.Fprintf(os.Stderr, "gomutate run error: %v\n", r.Err)
 			os.Exit(2)
 		}
-		if ok {
+		if r.Killed {
 			killed++
 			fmt.Printf("[KILLED]   %s:%d:%d (%s)\n", m.File, m.Line, m.Col, m.Description)
 		} else {
@@ -95,6 +110,46 @@ func main() {
 	if score < *threshold {
 		os.Exit(1)
 	}
+}
+
+// Result is the outcome of testing one mutant.
+type Result struct {
+	Killed bool
+	Err    error
+}
+
+// RunAll tests mutants with up to workers concurrent runs and returns the results
+// in mutant order, so the report is stable regardless of scheduling. progress is
+// called after each completed mutant.
+func RunAll(mutants []Mutant, workers int, run func(int, Mutant) (bool, error), progress func(done, total int)) []Result {
+	if workers < 1 {
+		workers = 1
+	}
+	results := make([]Result, len(mutants))
+	jobs := make(chan int)
+	var wg sync.WaitGroup
+	var mu sync.Mutex
+	done := 0
+	for w := 0; w < workers; w++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for i := range jobs {
+				killed, err := run(i, mutants[i])
+				results[i] = Result{Killed: killed, Err: err}
+				mu.Lock()
+				done++
+				progress(done, len(mutants))
+				mu.Unlock()
+			}
+		}()
+	}
+	for i := range mutants {
+		jobs <- i
+	}
+	close(jobs)
+	wg.Wait()
+	return results
 }
 
 // CollectMutantsInDir discovers all mutants in non-test Go files under root.
@@ -201,7 +256,10 @@ func GenerateMutants(filename string, src []byte) ([]Mutant, error) {
 	return mutants, nil
 }
 
-func runMutantTest(tmpDir string, idx int, m Mutant) (bool, error) {
+// runMutantTest runs the mutated package's tests. A failing test, a build error or
+// a timeout (for example a mutant that turns a loop into an infinite loop) all mean
+// the mutant was detected, i.e. killed.
+func runMutantTest(tmpDir string, idx int, m Mutant, timeout time.Duration) (bool, error) {
 	absTarget, err := filepath.Abs(m.File)
 	if err != nil {
 		return false, err
@@ -224,7 +282,9 @@ func runMutantTest(tmpDir string, idx int, m Mutant) (bool, error) {
 	}
 
 	pkgDir := "./" + filepath.ToSlash(filepath.Dir(m.File))
-	cmd := exec.Command("go", "test", "-overlay="+overlayFile, pkgDir)
+	ctx, cancel := context.WithTimeout(context.Background(), timeout+30*time.Second) // hard stop if go test hangs while building
+	defer cancel()
+	cmd := exec.CommandContext(ctx, "go", "test", "-count=1", "-failfast", "-timeout="+timeout.String(), "-overlay="+overlayFile, pkgDir)
 	if err := cmd.Run(); err != nil {
 		return true, nil // test failed => mutant killed
 	}
