@@ -74,6 +74,15 @@ func build(cache, out string) error {
 	if err := writeJSON(out+"/cities.json", cities); err != nil {
 		return err
 	}
+	catalogs, fallbacks := buildNames(countries, cities)
+	if err := writeNames(worldI18nDir, catalogs); err != nil {
+		return err
+	}
+	for _, l := range sortedKeys(fallbacks) {
+		if fallbacks[l] > 0 {
+			fmt.Printf("datagen: %s: %d names fall back to English\n", l, fallbacks[l])
+		}
+	}
 	for _, m := range maps {
 		if err := writeJSON(out+"/map/"+m.File, m); err != nil {
 			return err

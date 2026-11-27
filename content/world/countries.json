@@ -80,7 +80,7 @@
  {
   "iso2": "AG",
   "iso3": "ATG",
-  "name": "Antigua and Barb.",
+  "name": "Antigua and Barbuda",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -418,7 +418,7 @@
  {
   "iso2": "BA",
   "iso3": "BIH",
-  "name": "Bosnia and Herz.",
+  "name": "Bosnia and Herzegovina",
   "continent": "Europe",
   "region": "Europe",
   "subregion": "Southern Europe",
@@ -652,7 +652,7 @@
  {
   "iso2": "BL",
   "iso3": "BLM",
-  "name": "St-Barthélemy",
+  "name": "Saint Barthélemy",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -782,7 +782,7 @@
  {
   "iso2": "BS",
   "iso3": "BHS",
-  "name": "Bahamas",
+  "name": "The Bahamas",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -938,7 +938,7 @@
  {
   "iso2": "CD",
   "iso3": "COD",
-  "name": "Dem. Rep. Congo",
+  "name": "Democratic Republic of the Congo",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Middle Africa",
@@ -964,7 +964,7 @@
  {
   "iso2": "CF",
   "iso3": "CAF",
-  "name": "Central African Rep.",
+  "name": "Central African Republic",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Middle Africa",
@@ -990,7 +990,7 @@
  {
   "iso2": "CG",
   "iso3": "COG",
-  "name": "Congo",
+  "name": "Republic of the Congo",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Middle Africa",
@@ -1042,7 +1042,7 @@
  {
   "iso2": "CI",
   "iso3": "CIV",
-  "name": "Côte d'Ivoire",
+  "name": "Ivory Coast",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Western Africa",
@@ -1068,7 +1068,7 @@
  {
   "iso2": "CK",
   "iso3": "COK",
-  "name": "Cook Is.",
+  "name": "Cook Islands",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Polynesia",
@@ -1146,7 +1146,7 @@
  {
   "iso2": "CN",
   "iso3": "CHN",
-  "name": "China",
+  "name": "People's Republic of China",
   "continent": "Asia",
   "region": "Asia",
   "subregion": "Eastern Asia",
@@ -1250,7 +1250,7 @@
  {
   "iso2": "CV",
   "iso3": "CPV",
-  "name": "Cabo Verde",
+  "name": "Cape Verde",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Western Africa",
@@ -1328,7 +1328,7 @@
  {
   "iso2": "CZ",
   "iso3": "CZE",
-  "name": "Czechia",
+  "name": "Czech Republic",
   "continent": "Europe",
   "region": "Europe",
   "subregion": "Eastern Europe",
@@ -1458,7 +1458,7 @@
  {
   "iso2": "DO",
   "iso3": "DOM",
-  "name": "Dominican Rep.",
+  "name": "Dominican Republic",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -1588,7 +1588,7 @@
  {
   "iso2": "EH",
   "iso3": "ESH",
-  "name": "W. Sahara",
+  "name": "Western Sahara",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Northern Africa",
@@ -1744,7 +1744,7 @@
  {
   "iso2": "FK",
   "iso3": "FLK",
-  "name": "Falkland Is.",
+  "name": "Falkland Islands",
   "continent": "South America",
   "region": "Americas",
   "subregion": "South America",
@@ -1770,7 +1770,7 @@
  {
   "iso2": "FM",
   "iso3": "FSM",
-  "name": "Micronesia",
+  "name": "Federated States of Micronesia",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Micronesia",
@@ -1796,7 +1796,7 @@
  {
   "iso2": "FO",
   "iso3": "FRO",
-  "name": "Faeroe Is.",
+  "name": "Faroe Islands",
   "continent": "Europe",
   "region": "Europe",
   "subregion": "Northern Europe",
@@ -2030,7 +2030,7 @@
  {
   "iso2": "GM",
   "iso3": "GMB",
-  "name": "Gambia",
+  "name": "The Gambia",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Western Africa",
@@ -2082,7 +2082,7 @@
  {
   "iso2": "GQ",
   "iso3": "GNQ",
-  "name": "Eq. Guinea",
+  "name": "Equatorial Guinea",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Middle Africa",
@@ -2134,7 +2134,7 @@
  {
   "iso2": "GS",
   "iso3": "SGS",
-  "name": "S. Geo. and the Is.",
+  "name": "South Georgia and the South Sandwich Islands",
   "continent": "Seven seas (open ocean)",
   "region": "Americas",
   "subregion": "Seven seas (open ocean)",
@@ -2290,7 +2290,7 @@
  {
   "iso2": "HM",
   "iso3": "HMD",
-  "name": "Heard I. and McDonald Is.",
+  "name": "Heard Island and McDonald Islands",
   "continent": "Seven seas (open ocean)",
   "region": "Africa",
   "subregion": "Seven seas (open ocean)",
@@ -2550,7 +2550,7 @@
  {
   "iso2": "IO",
   "iso3": "IOT",
-  "name": "Br. Indian Ocean Ter.",
+  "name": "British Indian Ocean Territory",
   "continent": "Seven seas (open ocean)",
   "region": "Africa",
   "subregion": "Seven seas (open ocean)",
@@ -2914,7 +2914,7 @@
  {
   "iso2": "KN",
   "iso3": "KNA",
-  "name": "St. Kitts and Nevis",
+  "name": "Saint Kitts and Nevis",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -3018,7 +3018,7 @@
  {
   "iso2": "KY",
   "iso3": "CYM",
-  "name": "Cayman Is.",
+  "name": "Cayman Islands",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -3460,7 +3460,7 @@
  {
   "iso2": "MF",
   "iso3": "MAF",
-  "name": "St-Martin",
+  "name": "Saint Martin",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -3512,7 +3512,7 @@
  {
   "iso2": "MH",
   "iso3": "MHL",
-  "name": "Marshall Is.",
+  "name": "Marshall Islands",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Micronesia",
@@ -3642,7 +3642,7 @@
  {
   "iso2": "MO",
   "iso3": "MAC",
-  "name": "Macao",
+  "name": "Macau",
   "continent": "Asia",
   "region": "Asia",
   "subregion": "Eastern Asia",
@@ -3668,7 +3668,7 @@
  {
   "iso2": "MP",
   "iso3": "MNP",
-  "name": "N. Mariana Is.",
+  "name": "Northern Mariana Islands",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Micronesia",
@@ -4318,7 +4318,7 @@
  {
   "iso2": "PF",
   "iso3": "PYF",
-  "name": "Fr. Polynesia",
+  "name": "French Polynesia",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Polynesia",
@@ -4448,7 +4448,7 @@
  {
   "iso2": "PM",
   "iso3": "SPM",
-  "name": "St. Pierre and Miquelon",
+  "name": "Saint Pierre and Miquelon",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Northern America",
@@ -4474,7 +4474,7 @@
  {
   "iso2": "PN",
   "iso3": "PCN",
-  "name": "Pitcairn Is.",
+  "name": "Pitcairn Islands",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Polynesia",
@@ -4786,7 +4786,7 @@
  {
   "iso2": "SB",
   "iso3": "SLB",
-  "name": "Solomon Is.",
+  "name": "Solomon Islands",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Melanesia",
@@ -5124,7 +5124,7 @@
  {
   "iso2": "SS",
   "iso3": "SSD",
-  "name": "S. Sudan",
+  "name": "South Sudan",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Eastern Africa",
@@ -5150,7 +5150,7 @@
  {
   "iso2": "ST",
   "iso3": "STP",
-  "name": "São Tomé and Principe",
+  "name": "São Tomé and Príncipe",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Middle Africa",
@@ -5254,7 +5254,7 @@
  {
   "iso2": "SZ",
   "iso3": "SWZ",
-  "name": "eSwatini",
+  "name": "Eswatini",
   "continent": "Africa",
   "region": "Africa",
   "subregion": "Southern Africa",
@@ -5280,7 +5280,7 @@
  {
   "iso2": "TC",
   "iso3": "TCA",
-  "name": "Turks and Caicos Is.",
+  "name": "Turks and Caicos Islands",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -5332,7 +5332,7 @@
  {
   "iso2": "TF",
   "iso3": "ATF",
-  "name": "Fr. S. Antarctic Lands",
+  "name": "French Southern and Antarctic Lands",
   "continent": "Seven seas (open ocean)",
   "region": "Africa",
   "subregion": "Seven seas (open ocean)",
@@ -5436,7 +5436,7 @@
  {
   "iso2": "TL",
   "iso3": "TLS",
-  "name": "Timor-Leste",
+  "name": "East Timor",
   "continent": "Asia",
   "region": "Asia",
   "subregion": "South-Eastern Asia",
@@ -5800,7 +5800,7 @@
  {
   "iso2": "VA",
   "iso3": "VAT",
-  "name": "Vatican",
+  "name": "Vatican City",
   "continent": "Europe",
   "region": "Europe",
   "subregion": "Southern Europe",
@@ -5826,7 +5826,7 @@
  {
   "iso2": "VC",
   "iso3": "VCT",
-  "name": "St. Vin. and Gren.",
+  "name": "Saint Vincent and the Grenadines",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -5878,7 +5878,7 @@
  {
   "iso2": "VG",
   "iso3": "VGB",
-  "name": "British Virgin Is.",
+  "name": "British Virgin Islands",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -5904,7 +5904,7 @@
  {
   "iso2": "VI",
   "iso3": "VIR",
-  "name": "U.S. Virgin Is.",
+  "name": "United States Virgin Islands",
   "continent": "North America",
   "region": "Americas",
   "subregion": "Caribbean",
@@ -5982,7 +5982,7 @@
  {
   "iso2": "WF",
   "iso3": "WLF",
-  "name": "Wallis and Futuna Is.",
+  "name": "Wallis and Futuna",
   "continent": "Oceania",
   "region": "Oceania",
   "subregion": "Polynesia",

@@ -77,6 +77,11 @@ func check(dir string) error {
 		return err
 	}
 	errs = append(errs, airportErrs...)
+	var cities []City
+	if err := readJSON(filepath.Join(dir, "cities.json"), &cities); err != nil {
+		return err
+	}
+	errs = append(errs, checkNames(filepath.Join(dir, "..", "i18n", "world"), countries, cities)...)
 	if len(errs) == 0 {
 		fmt.Printf("datagen check: %d countries, %d airports, %d cities, %d map levels OK\n",
 			len(countries), nAirports, nCities, len(mapLevels))

@@ -35,6 +35,8 @@ type City struct {
 	Lat     float64 `json:"lat"`
 	Lon     float64 `json:"lon"`
 	Matched bool    `json:"matched"` // false: no Natural Earth place within cityMatchKm
+
+	names map[string]string // localized names (see names.go); nil for unmatched cities
 }
 
 const (
@@ -53,6 +55,7 @@ const (
 type place struct {
 	id       string
 	name     string
+	names    map[string]string // localized names by language code
 	pop      int64
 	lat, lon float64
 }
@@ -151,7 +154,7 @@ func matchCity(r rawAirport, places []place) City {
 	}
 	if best >= 0 {
 		p := places[best]
-		return City{ID: p.id, Name: p.name, ISO2: r.iso, Pop: max(p.pop, minCityPop), Lat: round6(p.lat), Lon: round6(p.lon), Matched: true}
+		return City{ID: p.id, Name: p.name, ISO2: r.iso, Pop: max(p.pop, minCityPop), Lat: round6(p.lat), Lon: round6(p.lon), Matched: true, names: p.names}
 	}
 	name := r.municipality
 	if name == "" {
@@ -181,11 +184,12 @@ func readPlaces(path string) ([]place, error) {
 	out := make([]place, 0, len(feats))
 	for _, f := range feats {
 		out = append(out, place{
-			id:   "ne:" + strconv.FormatInt(int64(f.num("NE_ID")), 10),
-			name: f.str("NAME"),
-			pop:  int64(f.num("POP_MAX")),
-			lat:  f.num("LATITUDE"),
-			lon:  f.num("LONGITUDE"),
+			id:    "ne:" + strconv.FormatInt(int64(f.num("NE_ID")), 10),
+			name:  f.str("NAME"),
+			names: localizedNames(f),
+			pop:   int64(f.num("POP_MAX")),
+			lat:   f.num("LATITUDE"),
+			lon:   f.num("LONGITUDE"),
 		})
 	}
 	sort.Slice(out, func(i, j int) bool { return out[i].id < out[j].id })
