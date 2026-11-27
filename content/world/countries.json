@@ -16,6 +16,7 @@
    "tourismArrivals": 8235000,
    "business": 0.86,
    "tourism": 1,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -42,6 +43,7 @@
    "tourismArrivals": 25282000,
    "business": 0.852,
    "tourism": 0.763,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -68,6 +70,7 @@
    "tourismArrivals": 2928439,
    "business": 0.021,
    "tourism": 0.212,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -94,6 +97,7 @@
    "tourismArrivals": 1035000,
    "business": 0.678,
    "tourism": 0.945,
+   "wealth": 2.415,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -120,6 +124,7 @@
    "tourismArrivals": 99761,
    "business": 0.534,
    "tourism": 0.898,
+   "wealth": 1.156,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -146,6 +151,7 @@
    "tourismArrivals": 6406000,
    "business": 0.551,
    "tourism": 0.792,
+   "wealth": 1.265,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -172,6 +178,7 @@
    "tourismArrivals": 1894000,
    "business": 0.492,
    "tourism": 0.551,
+   "wealth": 0.922,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -198,6 +205,7 @@
    "tourismArrivals": 218000,
    "business": 0.254,
    "tourism": 0.021,
+   "wealth": 0.304,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -224,6 +232,7 @@
    "tourismArrivals": 2170,
    "business": 0.992,
    "tourism": 0.492,
+   "wealth": 3,
    "hemisphere": "south",
    "climate": "cold",
    "sources": {
@@ -250,6 +259,7 @@
    "tourismArrivals": 7399000,
    "business": 0.597,
    "tourism": 0.326,
+   "wealth": 1.449,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -276,6 +286,7 @@
    "tourismArrivals": 19200,
    "business": 0.619,
    "tourism": 0.462,
+   "wealth": 1.753,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -302,6 +313,7 @@
    "tourismArrivals": 31884000,
    "business": 0.907,
    "tourism": 0.835,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -328,6 +340,7 @@
    "tourismArrivals": 9466000,
    "business": 0.915,
    "tourism": 0.411,
+   "wealth": 3,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -354,6 +367,7 @@
    "tourismArrivals": 1951000,
    "business": 0.788,
    "tourism": 0.962,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -380,6 +394,7 @@
    "tourismArrivals": 61646,
    "business": 0.856,
    "tourism": 0.746,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -406,6 +421,7 @@
    "tourismArrivals": 3170000,
    "business": 0.445,
    "tourism": 0.394,
+   "wealth": 0.721,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -432,6 +448,7 @@
    "tourismArrivals": 1198000,
    "business": 0.513,
    "tourism": 0.436,
+   "wealth": 1.01,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -458,6 +475,7 @@
    "tourismArrivals": 966000,
    "business": 0.712,
    "tourism": 0.831,
+   "wealth": 2.76,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -484,6 +502,7 @@
    "tourismArrivals": 323000,
    "business": 0.216,
    "tourism": 0.004,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -510,6 +529,7 @@
    "tourismArrivals": 9343000,
    "business": 0.903,
    "tourism": 0.623,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -536,6 +556,7 @@
    "tourismArrivals": 143000,
    "business": 0.106,
    "tourism": 0.025,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -562,6 +583,7 @@
    "tourismArrivals": 12552000,
    "business": 0.653,
    "tourism": 0.725,
+   "wealth": 1.978,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -588,6 +610,7 @@
    "tourismArrivals": 11061000,
    "business": 0.729,
    "tourism": 0.915,
+   "wealth": 2.977,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -614,6 +637,7 @@
    "tourismArrivals": 299000,
    "business": 0.017,
    "tourism": 0.093,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -640,6 +664,7 @@
    "tourismArrivals": 337000,
    "business": 0.169,
    "tourism": 0.106,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -666,6 +691,7 @@
    "tourismArrivals": 67458,
    "business": 0.691,
    "tourism": 0.911,
+   "wealth": 2.491,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -692,6 +718,7 @@
    "tourismArrivals": 805000,
    "business": 0.983,
    "tourism": 0.953,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -718,6 +745,7 @@
    "tourismArrivals": 4449000,
    "business": 0.737,
    "tourism": 0.936,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -744,6 +772,7 @@
    "tourismArrivals": 1239000,
    "business": 0.347,
    "tourism": 0.258,
+   "wealth": 0.501,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -770,6 +799,7 @@
    "tourismArrivals": 6353000,
    "business": 0.521,
    "tourism": 0.136,
+   "wealth": 1.042,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -796,6 +826,7 @@
    "tourismArrivals": 7250000,
    "business": 0.797,
    "tourism": 0.966,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -822,6 +853,7 @@
    "tourismArrivals": 316000,
    "business": 0.318,
    "tourism": 0.445,
+   "wealth": 0.437,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -848,6 +880,7 @@
    "tourismArrivals": 1830000,
    "business": 0.449,
    "tourism": 0.576,
+   "wealth": 0.757,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -874,6 +907,7 @@
    "tourismArrivals": 11832000,
    "business": 0.508,
    "tourism": 0.691,
+   "wealth": 1,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -900,6 +934,7 @@
    "tourismArrivals": 1674000,
    "business": 0.453,
    "tourism": 0.847,
+   "wealth": 0.765,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -926,6 +961,7 @@
    "tourismArrivals": 32430000,
    "business": 0.869,
    "tourism": 0.614,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -952,6 +988,7 @@
    "tourismArrivals": 351000,
    "business": 0.059,
    "tourism": 0.008,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -978,6 +1015,7 @@
    "tourismArrivals": 87000,
    "business": 0.025,
    "tourism": 0.068,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1004,6 +1042,7 @@
    "tourismArrivals": 158000,
    "business": 0.208,
    "tourism": 0.127,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1030,6 +1069,7 @@
    "tourismArrivals": 11818000,
    "business": 0.975,
    "tourism": 0.686,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1056,6 +1096,7 @@
    "tourismArrivals": 2070000,
    "business": 0.242,
    "tourism": 0.208,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1082,6 +1123,7 @@
    "tourismArrivals": 14409,
    "business": 0.568,
    "tourism": 0.627,
+   "wealth": 1.36,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -1108,6 +1150,7 @@
    "tourismArrivals": 5431000,
    "business": 0.614,
    "tourism": 0.373,
+   "wealth": 1.751,
    "hemisphere": "south",
    "climate": "temperate",
    "sources": {
@@ -1134,6 +1177,7 @@
    "tourismArrivals": 1021000,
    "business": 0.182,
    "tourism": 0.144,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1160,6 +1204,7 @@
    "tourismArrivals": 162538000,
    "business": 0.559,
    "tourism": 0.292,
+   "wealth": 1.349,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -1186,6 +1231,7 @@
    "tourismArrivals": 4531000,
    "business": 0.479,
    "tourism": 0.237,
+   "wealth": 0.833,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1212,6 +1258,7 @@
    "tourismArrivals": 3366000,
    "business": 0.648,
    "tourism": 0.564,
+   "wealth": 1.943,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1238,6 +1285,7 @@
    "tourismArrivals": 4276000,
    "business": 0.496,
    "tourism": 0.441,
+   "wealth": 0.934,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1264,6 +1312,7 @@
    "tourismArrivals": 758000,
    "business": 0.369,
    "tourism": 0.695,
+   "wealth": 0.564,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1290,6 +1339,7 @@
    "tourismArrivals": 1293000,
    "business": 0.669,
    "tourism": 0.928,
+   "wealth": 2.221,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1316,6 +1366,7 @@
    "tourismArrivals": 4117000,
    "business": 0.809,
    "tourism": 0.805,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -1342,6 +1393,7 @@
    "tourismArrivals": 37202000,
    "business": 0.767,
    "tourism": 0.826,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1368,6 +1420,7 @@
    "tourismArrivals": 39563000,
    "business": 0.898,
    "tourism": 0.483,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1394,6 +1447,7 @@
    "tourismArrivals": 63000,
    "business": 0.28,
    "tourism": 0.191,
+   "wealth": 0.38,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1420,6 +1474,7 @@
    "tourismArrivals": 33093000,
    "business": 0.936,
    "tourism": 0.877,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -1446,6 +1501,7 @@
    "tourismArrivals": 322000,
    "business": 0.525,
    "tourism": 0.869,
+   "wealth": 1.069,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1472,6 +1528,7 @@
    "tourismArrivals": 7550000,
    "business": 0.53,
    "tourism": 0.568,
+   "wealth": 1.076,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1498,6 +1555,7 @@
    "tourismArrivals": 2371000,
    "business": 0.386,
    "tourism": 0.178,
+   "wealth": 0.589,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -1524,6 +1582,7 @@
    "tourismArrivals": 2108000,
    "business": 0.441,
    "tourism": 0.288,
+   "wealth": 0.693,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -1550,6 +1609,7 @@
    "tourismArrivals": 6103000,
    "business": 0.754,
    "tourism": 0.856,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -1576,6 +1636,7 @@
    "tourismArrivals": 13026000,
    "business": 0.25,
    "tourism": 0.275,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -1602,6 +1663,7 @@
    "tourismArrivals": 66387,
    "business": 0.148,
    "tourism": 0.271,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -1628,6 +1690,7 @@
    "tourismArrivals": 142000,
    "business": 0.051,
    "tourism": 0.161,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1654,6 +1717,7 @@
    "tourismArrivals": 126170000,
    "business": 0.792,
    "tourism": 0.78,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1680,6 +1744,7 @@
    "tourismArrivals": 812000,
    "business": 0.076,
    "tourism": 0.03,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1706,6 +1771,7 @@
    "tourismArrivals": 3290000,
    "business": 0.873,
    "tourism": 0.534,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -1732,6 +1798,7 @@
    "tourismArrivals": 969000,
    "business": 0.419,
    "tourism": 0.661,
+   "wealth": 0.646,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -1758,6 +1825,7 @@
    "tourismArrivals": 533,
    "business": 0.941,
    "tourism": 0.318,
+   "wealth": 3,
    "hemisphere": "south",
    "climate": "temperate",
    "sources": {
@@ -1784,6 +1852,7 @@
    "tourismArrivals": 18000,
    "business": 0.309,
    "tourism": 0.322,
+   "wealth": 0.429,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1810,6 +1879,7 @@
    "tourismArrivals": 113250,
    "business": 0.928,
    "tourism": 0.737,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -1836,6 +1906,7 @@
    "tourismArrivals": 217877000,
    "business": 0.843,
    "tourism": 0.814,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1862,6 +1933,7 @@
    "tourismArrivals": 40920,
    "business": 0.47,
    "tourism": 0.072,
+   "wealth": 0.804,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -1888,6 +1960,7 @@
    "tourismArrivals": 40857000,
    "business": 0.881,
    "tourism": 0.538,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1914,6 +1987,7 @@
    "tourismArrivals": 526000,
    "business": 0.538,
    "tourism": 0.86,
+   "wealth": 1.178,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -1940,6 +2014,7 @@
    "tourismArrivals": 7726000,
    "business": 0.504,
    "tourism": 0.729,
+   "wealth": 0.943,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1966,6 +2041,7 @@
    "tourismArrivals": 129530,
    "business": 0.864,
    "tourism": 0.742,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -1992,6 +2068,7 @@
    "tourismArrivals": 897000,
    "business": 0.267,
    "tourism": 0.131,
+   "wealth": 0.317,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2018,6 +2095,7 @@
    "tourismArrivals": 44249,
    "business": 0.886,
    "tourism": 0.619,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -2044,6 +2122,7 @@
    "tourismArrivals": 620000,
    "business": 0.072,
    "tourism": 0.36,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2070,6 +2149,7 @@
    "tourismArrivals": 99000,
    "business": 0.174,
    "tourism": 0.034,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2096,6 +2176,7 @@
    "tourismArrivals": 30589,
    "business": 0.415,
    "tourism": 0.076,
+   "wealth": 0.644,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2122,6 +2203,7 @@
    "tourismArrivals": 34005000,
    "business": 0.703,
    "tourism": 0.822,
+   "wealth": 2.622,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2148,6 +2230,7 @@
    "tourismArrivals": 14,
    "business": 0.006,
    "tourism": 0.479,
+   "wealth": 1,
    "hemisphere": "south",
    "climate": "cold",
    "sources": {
@@ -2174,6 +2257,7 @@
    "tourismArrivals": 2560000,
    "business": 0.409,
    "tourism": 0.305,
+   "wealth": 0.642,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2200,6 +2284,7 @@
    "tourismArrivals": 1667000,
    "business": 0.814,
    "tourism": 0.941,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2226,6 +2311,7 @@
    "tourismArrivals": 52400,
    "business": 0.1,
    "tourism": 0.123,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2252,6 +2338,7 @@
    "tourismArrivals": 315000,
    "business": 0.746,
    "tourism": 0.428,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2278,6 +2365,7 @@
    "tourismArrivals": 55913000,
    "business": 0.877,
    "tourism": 0.919,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2304,6 +2392,7 @@
    "tourismArrivals": 0,
    "business": 0.006,
    "tourism": 0,
+   "wealth": 1,
    "hemisphere": "south",
    "climate": "temperate",
    "sources": {
@@ -2330,6 +2419,7 @@
    "tourismArrivals": 2315000,
    "business": 0.275,
    "tourism": 0.356,
+   "wealth": 0.35,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2356,6 +2446,7 @@
    "tourismArrivals": 60021000,
    "business": 0.708,
    "tourism": 0.958,
+   "wealth": 2.637,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2382,6 +2473,7 @@
    "tourismArrivals": 938000,
    "business": 0.22,
    "tourism": 0.229,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2408,6 +2500,7 @@
    "tourismArrivals": 61397000,
    "business": 0.695,
    "tourism": 0.89,
+   "wealth": 2.52,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2434,6 +2527,7 @@
    "tourismArrivals": 16107000,
    "business": 0.339,
    "tourism": 0.195,
+   "wealth": 0.492,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -2460,6 +2554,7 @@
    "tourismArrivals": 10951000,
    "business": 0.979,
    "tourism": 0.733,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2486,6 +2581,7 @@
    "tourismArrivals": 4905000,
    "business": 0.894,
    "tourism": 0.504,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -2512,6 +2608,7 @@
    "tourismArrivals": 173523,
    "business": 0.945,
    "tourism": 0.754,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2538,6 +2635,7 @@
    "tourismArrivals": 17914000,
    "business": 0.225,
    "tourism": 0.055,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2564,6 +2662,7 @@
    "tourismArrivals": 1450,
    "business": 0.801,
    "tourism": 0.496,
+   "wealth": 3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -2590,6 +2689,7 @@
    "tourismArrivals": 892000,
    "business": 0.36,
    "tourism": 0.085,
+   "wealth": 0.526,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -2616,6 +2716,7 @@
    "tourismArrivals": 9107000,
    "business": 0.284,
    "tourism": 0.263,
+   "wealth": 0.382,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -2642,6 +2743,7 @@
    "tourismArrivals": 2202000,
    "business": 0.958,
    "tourism": 0.881,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -2668,6 +2770,7 @@
    "tourismArrivals": 95399000,
    "business": 0.822,
    "tourism": 0.716,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2694,6 +2797,7 @@
    "tourismArrivals": 222375,
    "business": 0.831,
    "tourism": 0.75,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2720,6 +2824,7 @@
    "tourismArrivals": 4233000,
    "business": 0.462,
    "tourism": 0.699,
+   "wealth": 0.779,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2746,6 +2851,7 @@
    "tourismArrivals": 5361000,
    "business": 0.356,
    "tourism": 0.475,
+   "wealth": 0.52,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -2772,6 +2878,7 @@
    "tourismArrivals": 31881000,
    "business": 0.771,
    "tourism": 0.369,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2798,6 +2905,7 @@
    "tourismArrivals": 2049000,
    "business": 0.203,
    "tourism": 0.153,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2824,6 +2932,7 @@
    "tourismArrivals": 8508000,
    "business": 0.246,
    "tourism": 0.682,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2850,6 +2959,7 @@
    "tourismArrivals": 6611000,
    "business": 0.229,
    "tourism": 0.424,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2876,6 +2986,7 @@
    "tourismArrivals": 12000,
    "business": 0.212,
    "tourism": 0.242,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2902,6 +3013,7 @@
    "tourismArrivals": 45099,
    "business": 0.186,
    "tourism": 0.182,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -2928,6 +3040,7 @@
    "tourismArrivals": 1107000,
    "business": 0.686,
    "tourism": 0.975,
+   "wealth": 2.454,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -2954,6 +3067,7 @@
    "tourismArrivals": 7932451,
    "business": 0.157,
    "tourism": 0.386,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -2980,6 +3094,7 @@
    "tourismArrivals": 17503000,
    "business": 0.775,
    "tourism": 0.403,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3006,6 +3121,7 @@
    "tourismArrivals": 8565000,
    "business": 0.742,
    "tourism": 0.72,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -3032,6 +3148,7 @@
    "tourismArrivals": 2334000,
    "business": 0.966,
    "tourism": 0.979,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3058,6 +3175,7 @@
    "tourismArrivals": 8515000,
    "business": 0.581,
    "tourism": 0.449,
+   "wealth": 1.429,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3084,6 +3202,7 @@
    "tourismArrivals": 4791000,
    "business": 0.199,
    "tourism": 0.547,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3110,6 +3229,7 @@
    "tourismArrivals": 1936000,
    "business": 0.314,
    "tourism": 0.398,
+   "wealth": 0.435,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -3136,6 +3256,7 @@
    "tourismArrivals": 1220000,
    "business": 0.585,
    "tourism": 0.894,
+   "wealth": 1.435,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3162,6 +3283,7 @@
    "tourismArrivals": 98099,
    "business": 0.996,
    "tourism": 0.771,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3188,6 +3310,7 @@
    "tourismArrivals": 2027000,
    "business": 0.335,
    "tourism": 0.246,
+   "wealth": 0.487,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3214,6 +3337,7 @@
    "tourismArrivals": 131938,
    "business": 0.068,
    "tourism": 0.119,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3240,6 +3364,7 @@
    "tourismArrivals": 1142000,
    "business": 0.093,
    "tourism": 0.487,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -3266,6 +3391,7 @@
    "tourismArrivals": 6150000,
    "business": 0.75,
    "tourism": 0.758,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -3292,6 +3418,7 @@
    "tourismArrivals": 1041000,
    "business": 0.987,
    "tourism": 0.703,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3318,6 +3445,7 @@
    "tourismArrivals": 8342000,
    "business": 0.699,
    "tourism": 0.864,
+   "wealth": 2.56,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -3344,6 +3472,7 @@
    "tourismArrivals": 820803,
    "business": 0.394,
    "tourism": 0.28,
+   "wealth": 0.627,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -3370,6 +3499,7 @@
    "tourismArrivals": 13109000,
    "business": 0.326,
    "tourism": 0.407,
+   "wealth": 0.455,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -3396,6 +3526,7 @@
    "tourismArrivals": 363000,
    "business": 1,
    "tourism": 0.932,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3422,6 +3553,7 @@
    "tourismArrivals": 174000,
    "business": 0.483,
    "tourism": 0.225,
+   "wealth": 0.839,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3448,6 +3580,7 @@
    "tourismArrivals": 2510000,
    "business": 0.593,
    "tourism": 0.852,
+   "wealth": 1.441,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3474,6 +3607,7 @@
    "tourismArrivals": 168905,
    "business": 0.657,
    "tourism": 0.903,
+   "wealth": 2.108,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3500,6 +3634,7 @@
    "tourismArrivals": 486000,
    "business": 0.03,
    "tourism": 0.059,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -3526,6 +3661,7 @@
    "tourismArrivals": 6099,
    "business": 0.475,
    "tourism": 0.331,
+   "wealth": 0.826,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3552,6 +3688,7 @@
    "tourismArrivals": 758000,
    "business": 0.517,
    "tourism": 0.458,
+   "wealth": 1.021,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3578,6 +3715,7 @@
    "tourismArrivals": 217000,
    "business": 0.114,
    "tourism": 0.047,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3604,6 +3742,7 @@
    "tourismArrivals": 4364000,
    "business": 0.144,
    "tourism": 0.233,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3630,6 +3769,7 @@
    "tourismArrivals": 637000,
    "business": 0.436,
    "tourism": 0.343,
+   "wealth": 0.692,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3656,6 +3796,7 @@
    "tourismArrivals": 39406000,
    "business": 0.932,
    "tourism": 0.996,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3682,6 +3823,7 @@
    "tourismArrivals": 487000,
    "business": 0.674,
    "tourism": 0.949,
+   "wealth": 2.314,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3708,6 +3850,7 @@
    "tourismArrivals": 122358,
    "business": 0.195,
    "tourism": 0.114,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3734,6 +3877,7 @@
    "tourismArrivals": 31484,
    "business": 0.487,
    "tourism": 0.907,
+   "wealth": 0.921,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3760,6 +3904,7 @@
    "tourismArrivals": 3519000,
    "business": 0.839,
    "tourism": 0.886,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -3786,6 +3931,7 @@
    "tourismArrivals": 1418000,
    "business": 0.547,
    "tourism": 0.678,
+   "wealth": 1.264,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -3812,6 +3958,7 @@
    "tourismArrivals": 1703000,
    "business": 0.572,
    "tourism": 0.818,
+   "wealth": 1.422,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3838,6 +3985,7 @@
    "tourismArrivals": 871000,
    "business": 0.047,
    "tourism": 0.157,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -3864,6 +4012,7 @@
    "tourismArrivals": 97406000,
    "business": 0.564,
    "tourism": 0.597,
+   "wealth": 1.351,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -3890,6 +4039,7 @@
    "tourismArrivals": 26101000,
    "business": 0.555,
    "tourism": 0.589,
+   "wealth": 1.277,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -3916,6 +4066,7 @@
    "tourismArrivals": 2033000,
    "business": 0.034,
    "tourism": 0.199,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -3942,6 +4093,7 @@
    "tourismArrivals": 1651000,
    "business": 0.331,
    "tourism": 0.513,
+   "wealth": 0.474,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -3968,6 +4120,7 @@
    "tourismArrivals": 130000,
    "business": 0.725,
    "tourism": 0.47,
+   "wealth": 2.842,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -3994,6 +4147,7 @@
    "tourismArrivals": 192000,
    "business": 0.055,
    "tourism": 0.038,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4020,6 +4174,7 @@
    "tourismArrivals": 1164,
    "business": 0.589,
    "tourism": 0.517,
+   "wealth": 1.435,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -4046,6 +4201,7 @@
    "tourismArrivals": 5265000,
    "business": 0.123,
    "tourism": 0.102,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4072,6 +4228,7 @@
    "tourismArrivals": 1455000,
    "business": 0.263,
    "tourism": 0.352,
+   "wealth": 0.309,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4098,6 +4255,7 @@
    "tourismArrivals": 20129000,
    "business": 0.924,
    "tourism": 0.674,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -4124,6 +4282,7 @@
    "tourismArrivals": 5879000,
    "business": 0.953,
    "tourism": 0.665,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -4150,6 +4309,7 @@
    "tourismArrivals": 1197000,
    "business": 0.153,
    "tourism": 0.165,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -4176,6 +4336,7 @@
    "tourismArrivals": 33008,
    "business": 0.576,
    "tourism": 0.797,
+   "wealth": 1.424,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4202,6 +4363,7 @@
    "tourismArrivals": 1337,
    "business": 0.39,
    "tourism": 0.631,
+   "wealth": 0.601,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4228,6 +4390,7 @@
    "tourismArrivals": 3888000,
    "business": 0.847,
    "tourism": 0.593,
+   "wealth": 3,
    "hemisphere": "south",
    "climate": "temperate",
    "sources": {
@@ -4254,6 +4417,7 @@
    "tourismArrivals": 3506000,
    "business": 0.644,
    "tourism": 0.559,
+   "wealth": 1.941,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4280,6 +4444,7 @@
    "tourismArrivals": 2494000,
    "business": 0.64,
    "tourism": 0.521,
+   "wealth": 1.925,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4306,6 +4471,7 @@
    "tourismArrivals": 5275000,
    "business": 0.5,
    "tourism": 0.314,
+   "wealth": 0.942,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4332,6 +4498,7 @@
    "tourismArrivals": 300000,
    "business": 0.661,
    "tourism": 0.669,
+   "wealth": 2.183,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4358,6 +4525,7 @@
    "tourismArrivals": 211000,
    "business": 0.233,
    "tourism": 0.089,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4384,6 +4552,7 @@
    "tourismArrivals": 8261000,
    "business": 0.305,
    "tourism": 0.216,
+   "wealth": 0.406,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4410,6 +4579,7 @@
    "tourismArrivals": 966000,
    "business": 0.161,
    "tourism": 0.013,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -4436,6 +4606,7 @@
    "tourismArrivals": 88515000,
    "business": 0.716,
    "tourism": 0.775,
+   "wealth": 2.765,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -4462,6 +4633,7 @@
    "tourismArrivals": 4669,
    "business": 0.763,
    "tourism": 0.61,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -4488,6 +4660,7 @@
    "tourismArrivals": 45,
    "business": 0.006,
    "tourism": 0.644,
+   "wealth": 1,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -4514,6 +4687,7 @@
    "tourismArrivals": 4931000,
    "business": 0.805,
    "tourism": 0.708,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4540,6 +4714,7 @@
    "tourismArrivals": 688000,
    "business": 0.258,
    "tourism": 0.297,
+   "wealth": 0.308,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -4566,6 +4741,7 @@
    "tourismArrivals": 17283000,
    "business": 0.733,
    "tourism": 0.712,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -4592,6 +4768,7 @@
    "tourismArrivals": 94000,
    "business": 0.636,
    "tourism": 0.873,
+   "wealth": 1.9,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4618,6 +4795,7 @@
    "tourismArrivals": 4368000,
    "business": 0.428,
    "tourism": 0.555,
+   "wealth": 0.684,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4644,6 +4822,7 @@
    "tourismArrivals": 2136500,
    "business": 0.919,
    "tourism": 0.585,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -4670,6 +4849,7 @@
    "tourismArrivals": 12815000,
    "business": 0.665,
    "tourism": 0.572,
+   "wealth": 2.193,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -4696,6 +4876,7 @@
    "tourismArrivals": 1847000,
    "business": 0.602,
    "tourism": 0.377,
+   "wealth": 1.485,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -4722,6 +4903,7 @@
    "tourismArrivals": 24419000,
    "business": 0.61,
    "tourism": 0.335,
+   "wealth": 1.707,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -4748,6 +4930,7 @@
    "tourismArrivals": 1634000,
    "business": 0.1,
    "tourism": 0.284,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4774,6 +4957,7 @@
    "tourismArrivals": 20292000,
    "business": 0.758,
    "tourism": 0.525,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -4800,6 +4984,7 @@
    "tourismArrivals": 28899,
    "business": 0.191,
    "tourism": 0.148,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4826,6 +5011,7 @@
    "tourismArrivals": 428000,
    "business": 0.631,
    "tourism": 0.839,
+   "wealth": 1.892,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4852,6 +5038,7 @@
    "tourismArrivals": 836000,
    "business": 0.11,
    "tourism": 0.081,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4878,6 +5065,7 @@
    "tourismArrivals": 7616000,
    "business": 0.911,
    "tourism": 0.581,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "cold",
    "sources": {
@@ -4904,6 +5092,7 @@
    "tourismArrivals": 19116000,
    "business": 0.962,
    "tourism": 0.809,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -4930,6 +5119,7 @@
    "tourismArrivals": 104,
    "business": 0.424,
    "tourism": 0.11,
+   "wealth": 0.665,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -4956,6 +5146,7 @@
    "tourismArrivals": 4702000,
    "business": 0.78,
    "tourism": 0.767,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -4982,6 +5173,7 @@
    "tourismArrivals": 15299000,
    "business": 0.72,
    "tourism": 0.801,
+   "wealth": 2.777,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5008,6 +5200,7 @@
    "tourismArrivals": 71000,
    "business": 0.064,
    "tourism": 0.042,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5034,6 +5227,7 @@
    "tourismArrivals": 1904000,
    "business": 0.89,
    "tourism": 0.992,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5060,6 +5254,7 @@
    "tourismArrivals": 1376000,
    "business": 0.178,
    "tourism": 0.22,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5086,6 +5281,7 @@
    "tourismArrivals": 888900,
    "business": 0.042,
    "tourism": 0.169,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5112,6 +5308,7 @@
    "tourismArrivals": 279000,
    "business": 0.432,
    "tourism": 0.466,
+   "wealth": 0.688,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5138,6 +5335,7 @@
    "tourismArrivals": 551247,
    "business": 0.089,
    "tourism": 0.174,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5164,6 +5362,7 @@
    "tourismArrivals": 33400,
    "business": 0.297,
    "tourism": 0.309,
+   "wealth": 0.397,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5190,6 +5389,7 @@
    "tourismArrivals": 2639000,
    "business": 0.364,
    "tourism": 0.453,
+   "wealth": 0.561,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5216,6 +5416,7 @@
    "tourismArrivals": 1952000,
    "business": 0.818,
    "tourism": 0.987,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5242,6 +5443,7 @@
    "tourismArrivals": 2424000,
    "business": 0.085,
    "tourism": 0.25,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5268,6 +5470,7 @@
    "tourismArrivals": 1226000,
    "business": 0.301,
    "tourism": 0.653,
+   "wealth": 0.4,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -5294,6 +5497,7 @@
    "tourismArrivals": 1599000,
    "business": 0.784,
    "tourism": 0.983,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5320,6 +5524,7 @@
    "tourismArrivals": 81000,
    "business": 0.081,
    "tourism": 0.017,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5346,6 +5551,7 @@
    "tourismArrivals": 68,
    "business": 0.97,
    "tourism": 0.508,
+   "wealth": 3,
    "hemisphere": "south",
    "climate": "temperate",
    "sources": {
@@ -5372,6 +5578,7 @@
    "tourismArrivals": 876000,
    "business": 0.14,
    "tourism": 0.267,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5398,6 +5605,7 @@
    "tourismArrivals": 39916000,
    "business": 0.466,
    "tourism": 0.53,
+   "wealth": 0.784,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5424,6 +5632,7 @@
    "tourismArrivals": 1035000,
    "business": 0.165,
    "tourism": 0.254,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5450,6 +5659,7 @@
    "tourismArrivals": 74800,
    "business": 0.136,
    "tourism": 0.186,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -5476,6 +5686,7 @@
    "tourismArrivals": 2250067,
    "business": 0.398,
    "tourism": 0.381,
+   "wealth": 0.636,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5502,6 +5713,7 @@
    "tourismArrivals": 9429000,
    "business": 0.322,
    "tourism": 0.602,
+   "wealth": 0.453,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -5528,6 +5740,7 @@
    "tourismArrivals": 94000,
    "business": 0.403,
    "tourism": 0.648,
+   "wealth": 0.637,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -5554,6 +5767,7 @@
    "tourismArrivals": 51747000,
    "business": 0.623,
    "tourism": 0.542,
+   "wealth": 1.809,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5580,6 +5794,7 @@
    "tourismArrivals": 480000,
    "business": 0.627,
    "tourism": 0.415,
+   "wealth": 1.845,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5606,6 +5821,7 @@
    "tourismArrivals": 3599,
    "business": 0.381,
    "tourism": 0.432,
+   "wealth": 0.588,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -5632,6 +5848,7 @@
    "tourismArrivals": 7036045,
    "business": 0.835,
    "tourism": 0.39,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "subtropical",
    "sources": {
@@ -5658,6 +5875,7 @@
    "tourismArrivals": 1527000,
    "business": 0.131,
    "tourism": 0.097,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -5684,6 +5902,7 @@
    "tourismArrivals": 13710000,
    "business": 0.373,
    "tourism": 0.419,
+   "wealth": 0.571,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5710,6 +5929,7 @@
    "tourismArrivals": 1543000,
    "business": 0.119,
    "tourism": 0.14,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5736,6 +5956,7 @@
    "tourismArrivals": 165478000,
    "business": 0.949,
    "tourism": 0.5,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5762,6 +5983,7 @@
    "tourismArrivals": 3480000,
    "business": 0.682,
    "tourism": 0.657,
+   "wealth": 2.453,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -5788,6 +6010,7 @@
    "tourismArrivals": 6749000,
    "business": 0.288,
    "tourism": 0.347,
+   "wealth": 0.386,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5814,6 +6037,7 @@
    "tourismArrivals": 2179,
    "business": 0.006,
    "tourism": 0.784,
+   "wealth": 1,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -5840,6 +6064,7 @@
    "tourismArrivals": 392000,
    "business": 0.542,
    "tourism": 0.843,
+   "wealth": 1.222,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5866,6 +6091,7 @@
    "tourismArrivals": 429000,
    "business": 0.271,
    "tourism": 0.064,
+   "wealth": 0.34,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5892,6 +6118,7 @@
    "tourismArrivals": 302399,
    "business": 0.606,
    "tourism": 0.924,
+   "wealth": 1.62,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5918,6 +6145,7 @@
    "tourismArrivals": 2074000,
    "business": 0.826,
    "tourism": 0.97,
+   "wealth": 3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5944,6 +6172,7 @@
    "tourismArrivals": 18009000,
    "business": 0.343,
    "tourism": 0.339,
+   "wealth": 0.493,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -5970,6 +6199,7 @@
    "tourismArrivals": 256000,
    "business": 0.292,
    "tourism": 0.606,
+   "wealth": 0.393,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -5996,6 +6226,7 @@
    "tourismArrivals": 9539,
    "business": 0.352,
    "tourism": 0.636,
+   "wealth": 0.505,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -6022,6 +6253,7 @@
    "tourismArrivals": 181000,
    "business": 0.377,
    "tourism": 0.64,
+   "wealth": 0.571,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -6048,6 +6280,7 @@
    "tourismArrivals": 4165172,
    "business": 0.458,
    "tourism": 0.788,
+   "wealth": 0.768,
    "hemisphere": "north",
    "climate": "temperate",
    "sources": {
@@ -6074,6 +6307,7 @@
    "tourismArrivals": 398000,
    "business": 0.038,
    "tourism": 0.051,
+   "wealth": 0.3,
    "hemisphere": "north",
    "climate": "tropical",
    "sources": {
@@ -6100,6 +6334,7 @@
    "tourismArrivals": 14797000,
    "business": 0.409,
    "tourism": 0.364,
+   "wealth": 0.642,
    "hemisphere": "south",
    "climate": "subtropical",
    "sources": {
@@ -6126,6 +6361,7 @@
    "tourismArrivals": 1266000,
    "business": 0.127,
    "tourism": 0.203,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {
@@ -6152,6 +6388,7 @@
    "tourismArrivals": 2294000,
    "business": 0.237,
    "tourism": 0.301,
+   "wealth": 0.3,
    "hemisphere": "south",
    "climate": "tropical",
    "sources": {

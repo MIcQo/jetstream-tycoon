@@ -47,6 +47,12 @@ var sources = []Source{
 		SHA256:  "b6ae8329691c9fc7b89d840e386fe65a9986e125c808cf885ae73e1ecb18aea8",
 		License: "OurAirports — public domain",
 	},
+	{
+		File:    "runways.csv",
+		URL:     "https://raw.githubusercontent.com/davidmegginson/ourairports-data/a9426f7711df70678dfb745ceaa3d8891bf98328/runways.csv",
+		SHA256:  "5948888ea0b0c55a6b39a31d059f9e4a2fdb8fb1ae0ebd72b43ddd210893b9cd",
+		License: "OurAirports — public domain",
+	},
 }
 
 // fetchAll downloads missing sources and verifies every cached file's checksum.

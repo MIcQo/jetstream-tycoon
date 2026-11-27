@@ -6,7 +6,7 @@
 | Data | Source | License |
 |---|---|---|
 | Country shapes, codes, regions, label points (`countries.json`, `map/*.json`) | [Natural Earth](https://www.naturalearthdata.com/) v5.1.2, 1:110m and 1:50m Admin 0 – Countries | Public domain |
-| Airports (`airports.json`) | [OurAirports](https://ourairports.com/data/), data repository commit `a9426f77` | Public domain |
+| Airports, runway lengths (`airports.json`) | [OurAirports](https://ourairports.com/data/) `airports.csv` and `runways.csv`, data repository commit `a9426f77` | Public domain |
 | Cities and populations (`cities.json`) | Natural Earth v5.1.2, 1:10m Populated Places (`POP_MAX`) | Public domain |
 | Country and city names in 26 languages (`content/i18n/world/*.json`) | Natural Earth v5.1.2 `NAME_xx` fields (countries and populated places) | Public domain |
 | Country population, GDP per capita (current US$), international tourism arrivals (`countries.json` → `stats`) | [World Bank World Development Indicators](https://data.worldbank.org/) (`SP.POP.TOTL`, `NY.GDP.PCAP.CD`, `ST.INT.ARVL`), snapshot in `tools/datagen/data/worldbank.json` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — © World Bank |
@@ -19,4 +19,6 @@ Notes:
 - Country stats use the World Bank's most recent value (tourism: latest year up to 2019, before the pandemic collapse). Missing population and GDP fall back to Natural Earth estimates (`POP_EST`, `GDP_MD`; `-99` means no data). Missing tourism is estimated from the subregion's median arrivals per resident. `stats.sources` records the origin of every value.
 - `business` and `tourism` are percentile ranks (0–1) of GDP per capita and of arrivals per resident. `climate` is a coarse zone from the label latitude.
 - World names: one catalog per locale (`zh`/`zht` become `zh-Hans`/`zh-Hant`), keys `country.<iso2>.name` and `city.<id>.name`. A missing translation (the 60 airport cities with no Natural Earth match) falls back to English, so every catalog has the same keys.
+- `candidates.json`: for each airport, its 30 best destinations by `popFactor_A · popFactor_B / km^0.8 · mean wealth` (TECH_DESIGN §7.0). Each destination city appears once, as its main hub (longest open runway, then closest to the centre). 10 slots are reserved for destinations ≥ 3,000 km, and pairs in the same city or under 100 km are excluded. Stored as `[iata, km, km^0.8]`.
+- `popFactor` = city population^0.5 and `wealth` = GDP per capita ÷ world median, clamped to [0.3, 3], are precomputed so the simulation needs no transcendental math for static data (ADR-0021).
 - Borders follow Natural Earth's de facto policy and imply no political position.

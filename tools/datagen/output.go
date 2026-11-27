@@ -5,13 +5,14 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"math"
 	"os"
 	"path/filepath"
 	"regexp"
 )
 
-// writeJSON writes v as JSON with sorted map keys and a trailing newline, so
-// regenerating unchanged data produces byte-identical files.
+// writeJSON writes v as indented JSON with sorted map keys and a trailing newline,
+// so regenerating unchanged data produces byte-identical, reviewable files.
 func writeJSON(path string, v any) error {
 	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
 		return err
@@ -82,6 +83,11 @@ func check(dir string) error {
 		return err
 	}
 	errs = append(errs, checkNames(filepath.Join(dir, "..", "i18n", "world"), countries, cities)...)
+	candErrs, err := checkCandidates(dir, cities)
+	if err != nil {
+		return err
+	}
+	errs = append(errs, candErrs...)
 	if len(errs) == 0 {
 		fmt.Printf("datagen check: %d countries, %d airports, %d cities, %d map levels OK\n",
 			len(countries), nAirports, nCities, len(mapLevels))
@@ -102,6 +108,9 @@ func checkAirports(dir string, countries map[string]bool) (errs []error, nAirpor
 	}
 	cityIDs := map[string]bool{}
 	for _, c := range cities {
+		if math.Abs(c.PopFactor-math.Sqrt(float64(c.Pop))) > 0.001 {
+			errs = append(errs, fmt.Errorf("cities.json: %s popFactor %v is not sqrt(pop)", c.ID, c.PopFactor))
+		}
 		if cityIDs[c.ID] || c.Pop < minCityPop || c.Name == "" {
 			errs = append(errs, fmt.Errorf("cities.json: %s is duplicated, unnamed or below the population floor", c.ID))
 		}
@@ -123,6 +132,9 @@ func checkAirports(dir string, countries map[string]bool) (errs []error, nAirpor
 		}
 		if a.BaseLevel < 2 || a.BaseLevel > 3 {
 			errs = append(errs, fmt.Errorf("airports.json: %s base level %d out of range", a.IATA, a.BaseLevel))
+		}
+		if a.RunwayFt <= 0 {
+			errs = append(errs, fmt.Errorf("airports.json: %s has no runway length", a.IATA))
 		}
 		if a.Lat < -90 || a.Lat > 90 || a.Lon < -180 || a.Lon > 180 {
 			errs = append(errs, fmt.Errorf("airports.json: %s coordinates out of range", a.IATA))
@@ -170,4 +182,40 @@ func checkStats(c Country) []error {
 		}
 	}
 	return errs
+}
+
+// checkCandidates verifies every airport has candidates that exist, are not
+// itself, respect the distance limits and carry a correct km^0.8 factor.
+func checkCandidates(dir string, cities []City) ([]error, error) {
+	var airports []Airport
+	if err := readJSON(filepath.Join(dir, "airports.json"), &airports); err != nil {
+		return nil, err
+	}
+	var cands map[string][]Candidate
+	if err := readJSON(filepath.Join(dir, "candidates.json"), &cands); err != nil {
+		return nil, err
+	}
+	known := map[string]bool{}
+	for _, a := range airports {
+		known[a.IATA] = true
+	}
+	var errs []error
+	if len(cands) != len(airports) {
+		errs = append(errs, fmt.Errorf("candidates.json: %d airports, airports.json has %d", len(cands), len(airports)))
+	}
+	for _, from := range sortedKeys(cands) {
+		list := cands[from]
+		if !known[from] || len(list) == 0 || len(list) > candidatesPerAirport {
+			errs = append(errs, fmt.Errorf("candidates.json: %s is unknown or has %d candidates", from, len(list)))
+			continue
+		}
+		for _, c := range list {
+			want := math.Pow(float64(c.Km), distExponent)
+			if !known[c.To] || c.To == from || c.Km < minRouteKm || math.Abs(c.DistFactor-want) > 0.0005 {
+				errs = append(errs, fmt.Errorf("candidates.json: %s → %s is invalid (km %d, distFactor %v)", from, c.To, c.Km, c.DistFactor))
+				break
+			}
+		}
+	}
+	return errs, nil
 }

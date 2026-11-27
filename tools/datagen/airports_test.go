@@ -129,6 +129,7 @@ func TestBuildAirports(t *testing.T) {
 		}
 	}
 	write("airports.csv", testCSV)
+	write("runways.csv", "\"airport_ident\",\"length_ft\",\"closed\"\n\"EGLL\",12802,0\n")
 	write("ne_10m_populated_places.geojson", places)
 	airports, cities, err := buildAirports(cache, map[string]bool{"GB": true, "MV": true})
 	if err != nil {
@@ -138,7 +139,7 @@ func TestBuildAirports(t *testing.T) {
 		t.Fatalf("airports = %+v", airports)
 	}
 	lhr, med := airports[0], airports[1]
-	if lhr.Size != "large" || lhr.BaseLevel != 3 || lhr.ICAO != "EGLL" || lhr.CityID != "ne:1" {
+	if lhr.Size != "large" || lhr.BaseLevel != 3 || lhr.ICAO != "EGLL" || lhr.CityID != "ne:1" || lhr.RunwayFt != 12802 {
 		t.Errorf("LHR = %+v", lhr)
 	}
 	if med.Size != "medium" || med.BaseLevel != 2 || med.ICAO != "XMED" || med.CityID != "ne:2" {

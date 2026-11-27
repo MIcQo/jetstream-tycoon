@@ -57,6 +57,7 @@ func build(cache, out string) error {
 		return fmt.Errorf("world bank snapshot (run `datagen worldbank`): %w", err)
 	}
 	applyStats(countries, wb)
+	applyWealth(countries)
 	if err := writeJSON(out+"/countries.json", countries); err != nil {
 		return err
 	}
@@ -66,6 +67,14 @@ func build(cache, out string) error {
 	}
 	airports, cities, err := buildAirports(cache, playable)
 	if err != nil {
+		return err
+	}
+	applyPopFactors(cities)
+	candidates, err := buildCandidates(airports, cities, countries)
+	if err != nil {
+		return err
+	}
+	if err := writeCandidates(out+"/candidates.json", candidates); err != nil {
 		return err
 	}
 	if err := writeJSON(out+"/airports.json", airports); err != nil {

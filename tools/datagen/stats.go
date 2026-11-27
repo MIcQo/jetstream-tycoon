@@ -14,8 +14,10 @@ type Stats struct {
 	TourismArrivals int64   `json:"tourismArrivals"`
 	// Business and Tourism are percentile ranks in [0, 1] of GDP per capita and of
 	// tourist arrivals per resident across all countries.
-	Business   float64 `json:"business"`
-	Tourism    float64 `json:"tourism"`
+	Business float64 `json:"business"`
+	Tourism  float64 `json:"tourism"`
+	// Wealth is GDP per capita / world median, clamped to [0.3, 3] (TECH_DESIGN §7.0).
+	Wealth     float64 `json:"wealth"`
 	Hemisphere string  `json:"hemisphere"` // "north" or "south" (label latitude)
 	Climate    string  `json:"climate"`    // tropical, subtropical, temperate, cold
 	// Sources says where each value came from, e.g. "wb:2024", "ne", "estimate".

@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"errors"
 	"fmt"
 	"io"
 	"math"
@@ -22,19 +23,24 @@ type Airport struct {
 	Lon       float64 `json:"lon"`
 	Size      string  `json:"size"`      // "large" or "medium" (OurAirports type)
 	BaseLevel int     `json:"baseLevel"` // real-world level (TECH_DESIGN §4): large 3, medium 2
+	// RunwayFt is the longest open runway; it identifies a city's main hub
+	// (JFK 14,511 ft vs LGA 7,003 ft) and can later limit aircraft size.
+	RunwayFt int `json:"runwayFt"`
 }
 
 // City is the population centre an airport serves (content/world/cities.json).
 // Airports matched to the same place share a city, so demand can be split
 // between them (e.g. LHR and LGW).
 type City struct {
-	ID      string  `json:"id"` // "ne:<NE_ID>" or "oa:<airport ident>" when unmatched
-	Name    string  `json:"name"`
-	ISO2    string  `json:"iso2"`
-	Pop     int64   `json:"pop"`
-	Lat     float64 `json:"lat"`
-	Lon     float64 `json:"lon"`
-	Matched bool    `json:"matched"` // false: no Natural Earth place within cityMatchKm
+	ID   string `json:"id"` // "ne:<NE_ID>" or "oa:<airport ident>" when unmatched
+	Name string `json:"name"`
+	ISO2 string `json:"iso2"`
+	Pop  int64  `json:"pop"`
+	// PopFactor is Pop^0.5, precomputed for the demand formula (ADR-0021).
+	PopFactor float64 `json:"popFactor"`
+	Lat       float64 `json:"lat"`
+	Lon       float64 `json:"lon"`
+	Matched   bool    `json:"matched"` // false: no Natural Earth place within cityMatchKm
 
 	names map[string]string // localized names (see names.go); nil for unmatched cities
 }
@@ -76,6 +82,10 @@ func buildAirports(cache string, playable map[string]bool) ([]Airport, []City, e
 	if err != nil {
 		return nil, nil, err
 	}
+	runways, err := readRunways(filepath.Join(cache, "runways.csv"))
+	if err != nil {
+		return nil, nil, err
+	}
 	picked := selectAirports(rows, places, playable)
 
 	cities := map[string]City{}
@@ -96,6 +106,7 @@ func buildAirports(cache string, playable map[string]bool) ([]Airport, []City, e
 		airports = append(airports, Airport{
 			IATA: r.iata, ICAO: icao, Name: r.name, ISO2: r.iso, CityID: city.ID,
 			Lat: round6(r.lat), Lon: round6(r.lon), Size: size, BaseLevel: level,
+			RunwayFt: runways[r.ident],
 		})
 	}
 	sort.Slice(airports, func(i, j int) bool { return airports[i].IATA < airports[j].IATA })
@@ -240,7 +251,7 @@ func parseAirportsCSV(r io.Reader) ([]rawAirport, error) {
 	var out []rawAirport
 	for line := 2; ; line++ {
 		rec, err := cr.Read()
-		if err == io.EOF {
+		if errors.Is(err, io.EOF) {
 			return out, nil
 		}
 		if err != nil {
@@ -257,5 +268,52 @@ func parseAirportsCSV(r io.Reader) ([]rawAirport, error) {
 			sched: rec[col["scheduled_service"]], icao: rec[col["icao_code"]],
 			iata: rec[col["iata_code"]], lat: lat, lon: lon,
 		})
+	}
+}
+
+// readRunways returns the longest open runway (feet) per airport ident.
+func readRunways(path string) (map[string]int, error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return nil, err
+	}
+	defer func() { _ = f.Close() }()
+	return parseRunwaysCSV(f)
+}
+
+func parseRunwaysCSV(r io.Reader) (map[string]int, error) {
+	cr := csv.NewReader(r)
+	header, err := cr.Read()
+	if err != nil {
+		return nil, fmt.Errorf("runways.csv header: %w", err)
+	}
+	col := map[string]int{}
+	for i, h := range header {
+		col[h] = i
+	}
+	for _, need := range []string{"airport_ident", "length_ft", "closed"} {
+		if _, ok := col[need]; !ok {
+			return nil, fmt.Errorf("runways.csv: missing column %q", need)
+		}
+	}
+	out := map[string]int{}
+	for line := 2; ; line++ {
+		rec, err := cr.Read()
+		if errors.Is(err, io.EOF) {
+			return out, nil
+		}
+		if err != nil {
+			return nil, fmt.Errorf("runways.csv line %d: %w", line, err)
+		}
+		if rec[col["closed"]] == "1" {
+			continue
+		}
+		length, err := strconv.Atoi(rec[col["length_ft"]])
+		if err != nil {
+			continue // some runways have no recorded length
+		}
+		if id := rec[col["airport_ident"]]; length > out[id] {
+			out[id] = length
+		}
 	}
 }

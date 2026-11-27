@@ -4,6 +4,7 @@
   "name": "Nevşehir",
   "iso2": "TR",
   "pop": 75527,
+  "popFactor": 274.822,
   "lat": 38.624004,
   "lon": 34.723999,
   "matched": true
@@ -13,6 +14,7 @@
   "name": "Nyköping",
   "iso2": "SE",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 58.763997,
   "lon": 17.015005,
   "matched": true
@@ -22,6 +24,7 @@
   "name": "Krabi",
   "iso2": "TH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 8.052003,
   "lon": 98.911999,
   "matched": true
@@ -31,6 +34,7 @@
   "name": "Manzini",
   "iso2": "SZ",
   "pop": 110537,
+  "popFactor": 332.471,
   "lat": -26.495001,
   "lon": 31.388005,
   "matched": true
@@ -40,6 +44,7 @@
   "name": "Maastricht",
   "iso2": "NL",
   "pop": 122378,
+  "popFactor": 349.826,
   "lat": 50.852997,
   "lon": 5.677003,
   "matched": true
@@ -49,6 +54,7 @@
   "name": "Tønsberg",
   "iso2": "NO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 59.264001,
   "lon": 10.421002,
   "matched": true
@@ -58,6 +64,7 @@
   "name": "Bhairawa",
   "iso2": "NP",
   "pop": 63367,
+  "popFactor": 251.728,
   "lat": 27.533304,
   "lon": 83.3833,
   "matched": true
@@ -67,6 +74,7 @@
   "name": "Higuey",
   "iso2": "DO",
   "pop": 123787,
+  "popFactor": 351.834,
   "lat": 18.615996,
   "lon": -68.707998,
   "matched": true
@@ -76,6 +84,7 @@
   "name": "Vejle",
   "iso2": "DK",
   "pop": 51177,
+  "popFactor": 226.223,
   "lat": 55.709001,
   "lon": 9.534997,
   "matched": true
@@ -85,6 +94,7 @@
   "name": "Jijel",
   "iso2": "DZ",
   "pop": 148000,
+  "popFactor": 384.708,
   "lat": 36.821997,
   "lon": 5.766004,
   "matched": true
@@ -94,6 +104,7 @@
   "name": "Paphos",
   "iso2": "CY",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 34.755915,
   "lon": 32.422457,
   "matched": true
@@ -103,6 +114,7 @@
   "name": "Sakakah",
   "iso2": "SA",
   "pop": 128332,
+  "popFactor": 358.235,
   "lat": 29.999997,
   "lon": 40.133305,
   "matched": true
@@ -112,6 +124,7 @@
   "name": "Awasa",
   "iso2": "ET",
   "pop": 133097,
+  "popFactor": 364.825,
   "lat": 7.059996,
   "lon": 38.476999,
   "matched": true
@@ -121,6 +134,7 @@
   "name": "Mangyshlak",
   "iso2": "KZ",
   "pop": 147443,
+  "popFactor": 383.983,
   "lat": 43.690455,
   "lon": 51.141736,
   "matched": true
@@ -130,6 +144,7 @@
   "name": "Panaji",
   "iso2": "IN",
   "pop": 65586,
+  "popFactor": 256.098,
   "lat": 15.491997,
   "lon": 73.818001,
   "matched": true
@@ -139,6 +154,7 @@
   "name": "San Andrés",
   "iso2": "CO",
   "pop": 58257,
+  "popFactor": 241.365,
   "lat": 12.562137,
   "lon": -81.690327,
   "matched": true
@@ -148,6 +164,7 @@
   "name": "Västerås",
   "iso2": "SE",
   "pop": 107194,
+  "popFactor": 327.405,
   "lat": 59.630015,
   "lon": 16.540013,
   "matched": true
@@ -157,6 +174,7 @@
   "name": "Sharjah",
   "iso2": "AE",
   "pop": 1103027,
+  "popFactor": 1050.251,
   "lat": 25.371383,
   "lon": 55.406478,
   "matched": true
@@ -166,6 +184,7 @@
   "name": "Qurghonteppa",
   "iso2": "TJ",
   "pop": 311574,
+  "popFactor": 558.188,
   "lat": 37.837315,
   "lon": 68.771347,
   "matched": true
@@ -175,6 +194,7 @@
   "name": "Gijón",
   "iso2": "ES",
   "pop": 335972,
+  "popFactor": 579.631,
   "lat": 43.530016,
   "lon": -5.67,
   "matched": true
@@ -184,6 +204,7 @@
   "name": "Bristol",
   "iso2": "GB",
   "pop": 553528,
+  "popFactor": 743.995,
   "lat": 51.449998,
   "lon": -2.583316,
   "matched": true
@@ -193,6 +214,7 @@
   "name": "Aydın",
   "iso2": "TR",
   "pop": 198857,
+  "popFactor": 445.934,
   "lat": 37.849975,
   "lon": 27.850021,
   "matched": true
@@ -202,6 +224,7 @@
   "name": "Muğla",
   "iso2": "TR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 37.216371,
   "lon": 28.363891,
   "matched": true
@@ -211,6 +234,7 @@
   "name": "Cheongju",
   "iso2": "KR",
   "pop": 775096,
+  "popFactor": 880.395,
   "lat": 36.643899,
   "lon": 127.501199,
   "matched": true
@@ -220,6 +244,7 @@
   "name": "Oradea",
   "iso2": "RO",
   "pop": 213830,
+  "popFactor": 462.418,
   "lat": 47.049982,
   "lon": 21.919995,
   "matched": true
@@ -229,6 +254,7 @@
   "name": "Sibiu",
   "iso2": "RO",
   "pop": 155565,
+  "popFactor": 394.417,
   "lat": 45.797113,
   "lon": 24.137121,
   "matched": true
@@ -238,6 +264,7 @@
   "name": "Suceava",
   "iso2": "RO",
   "pop": 105796,
+  "popFactor": 325.263,
   "lat": 47.637698,
   "lon": 26.259317,
   "matched": true
@@ -247,6 +274,7 @@
   "name": "Encarnación",
   "iso2": "PY",
   "pop": 357119,
+  "popFactor": 597.594,
   "lat": -27.347185,
   "lon": -55.873919,
   "matched": true
@@ -256,6 +284,7 @@
   "name": "Yanbu al Bahr",
   "iso2": "SA",
   "pop": 267590,
+  "popFactor": 517.291,
   "lat": 24.094277,
   "lon": 38.049295,
   "matched": true
@@ -265,6 +294,7 @@
   "name": "At Taif",
   "iso2": "SA",
   "pop": 657282,
+  "popFactor": 810.729,
   "lat": 21.262228,
   "lon": 40.382279,
   "matched": true
@@ -274,6 +304,7 @@
   "name": "Eindhoven",
   "iso2": "NL",
   "pop": 398053,
+  "popFactor": 630.914,
   "lat": 51.429973,
   "lon": 5.500015,
   "matched": true
@@ -283,6 +314,7 @@
   "name": "Pyatigorsk",
   "iso2": "RU",
   "pop": 142865,
+  "popFactor": 377.975,
   "lat": 44.079957,
   "lon": 43.090021,
   "matched": true
@@ -292,6 +324,7 @@
   "name": "Loreto",
   "iso2": "MX",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 26.013333,
   "lon": -111.351664,
   "matched": true
@@ -301,6 +334,7 @@
   "name": "Treviso",
   "iso2": "IT",
   "pop": 177309,
+  "popFactor": 421.081,
   "lat": 45.670015,
   "lon": 12.240018,
   "matched": true
@@ -310,6 +344,7 @@
   "name": "Salinas",
   "iso2": "EC",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -2.200035,
   "lon": -80.980003,
   "matched": true
@@ -319,6 +354,7 @@
   "name": "Bielefeld",
   "iso2": "DE",
   "pop": 331906,
+  "popFactor": 576.113,
   "lat": 52.029988,
   "lon": 8.530011,
   "matched": true
@@ -328,6 +364,7 @@
   "name": "Dortmund",
   "iso2": "DE",
   "pop": 588462,
+  "popFactor": 767.113,
   "lat": 51.529967,
   "lon": 7.450026,
   "matched": true
@@ -337,6 +374,7 @@
   "name": "Duisburg",
   "iso2": "DE",
   "pop": 1276757,
+  "popFactor": 1129.937,
   "lat": 51.429973,
   "lon": 6.750017,
   "matched": true
@@ -346,6 +384,7 @@
   "name": "Karlsruhe",
   "iso2": "DE",
   "pop": 377487,
+  "popFactor": 614.4,
   "lat": 48.999992,
   "lon": 8.399993,
   "matched": true
@@ -355,6 +394,7 @@
   "name": "Kassel",
   "iso2": "DE",
   "pop": 289924,
+  "popFactor": 538.446,
   "lat": 51.300007,
   "lon": 9.50003,
   "matched": true
@@ -364,6 +404,7 @@
   "name": "Erfurt",
   "iso2": "DE",
   "pop": 203254,
+  "popFactor": 450.837,
   "lat": 50.970053,
   "lon": 11.029962,
   "matched": true
@@ -373,6 +414,7 @@
   "name": "Rijeka",
   "iso2": "HR",
   "pop": 170992,
+  "popFactor": 413.512,
   "lat": 45.329984,
   "lon": 14.450012,
   "matched": true
@@ -382,6 +424,7 @@
   "name": "Augsburg",
   "iso2": "DE",
   "pop": 358989,
+  "popFactor": 599.157,
   "lat": 48.350006,
   "lon": 10.899996,
   "matched": true
@@ -391,6 +434,7 @@
   "name": "České Budějovice",
   "iso2": "CZ",
   "pop": 98851,
+  "popFactor": 314.406,
   "lat": 48.980019,
   "lon": 14.460037,
   "matched": true
@@ -400,6 +444,7 @@
   "name": "Okayama",
   "iso2": "JP",
   "pop": 866092,
+  "popFactor": 930.641,
   "lat": 34.67203,
   "lon": 133.917087,
   "matched": true
@@ -409,6 +454,7 @@
   "name": "Takamatsu",
   "iso2": "JP",
   "pop": 334223,
+  "popFactor": 578.12,
   "lat": 34.344737,
   "lon": 134.044779,
   "matched": true
@@ -418,6 +464,7 @@
   "name": "Tokushima",
   "iso2": "JP",
   "pop": 443760,
+  "popFactor": 666.153,
   "lat": 34.06739,
   "lon": 134.5525,
   "matched": true
@@ -427,6 +474,7 @@
   "name": "Hisar",
   "iso2": "IN",
   "pop": 544829,
+  "popFactor": 738.125,
   "lat": 29.169988,
   "lon": 75.725031,
   "matched": true
@@ -436,6 +484,7 @@
   "name": "Clermont-Ferrand",
   "iso2": "FR",
   "pop": 233050,
+  "popFactor": 482.753,
   "lat": 45.779982,
   "lon": 3.080008,
   "matched": true
@@ -445,6 +494,7 @@
   "name": "Hania",
   "iso2": "GR",
   "pop": 78728,
+  "popFactor": 280.585,
   "lat": 35.512211,
   "lon": 24.015578,
   "matched": true
@@ -454,6 +504,7 @@
   "name": "Kavala",
   "iso2": "GR",
   "pop": 59240,
+  "popFactor": 243.393,
   "lat": 40.941211,
   "lon": 24.40176,
   "matched": true
@@ -463,6 +514,7 @@
   "name": "Kutaisi",
   "iso2": "GE",
   "pop": 183945,
+  "popFactor": 428.888,
   "lat": 42.249991,
   "lon": 42.729991,
   "matched": true
@@ -472,6 +524,7 @@
   "name": "Gyumri",
   "iso2": "AM",
   "pop": 148381,
+  "popFactor": 385.203,
   "lat": 40.789434,
   "lon": 43.847494,
   "matched": true
@@ -481,6 +534,7 @@
   "name": "Ganca",
   "iso2": "AZ",
   "pop": 303268,
+  "popFactor": 550.698,
   "lat": 40.684996,
   "lon": 46.350028,
   "matched": true
@@ -490,6 +544,7 @@
   "name": "Uyuni",
   "iso2": "BO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -20.460006,
   "lon": -66.829988,
   "matched": true
@@ -499,6 +554,7 @@
   "name": "Plovdiv",
   "iso2": "BG",
   "pop": 340494,
+  "popFactor": 583.519,
   "lat": 42.153976,
   "lon": 24.753982,
   "matched": true
@@ -508,6 +564,7 @@
   "name": "Sylhet",
   "iso2": "BD",
   "pop": 237000,
+  "popFactor": 486.826,
   "lat": 24.903556,
   "lon": 91.873606,
   "matched": true
@@ -517,6 +574,7 @@
   "name": "Sunshine Coast",
   "iso2": "AU",
   "pop": 71043,
+  "popFactor": 266.539,
   "lat": -26.679988,
   "lon": 153.050027,
   "matched": true
@@ -526,6 +584,7 @@
   "name": "Lihue",
   "iso2": "US",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 21.981512,
   "lon": -159.371006,
   "matched": true
@@ -535,6 +594,7 @@
   "name": "Wailuku",
   "iso2": "US",
   "pop": 52148,
+  "popFactor": 228.359,
   "lat": 20.891475,
   "lon": -156.504721,
   "matched": true
@@ -544,6 +604,7 @@
   "name": "Irvine",
   "iso2": "US",
   "pop": 3010232,
+  "popFactor": 1735.002,
   "lat": 33.680411,
   "lon": -117.82995,
   "matched": true
@@ -553,6 +614,7 @@
   "name": "Palm Springs",
   "iso2": "US",
   "pop": 390115,
+  "popFactor": 624.592,
   "lat": 33.777356,
   "lon": -116.533053,
   "matched": true
@@ -562,6 +624,7 @@
   "name": "Barcelona",
   "iso2": "VE",
   "pop": 600954,
+  "popFactor": 775.212,
   "lat": 10.130375,
   "lon": -64.720014,
   "matched": true
@@ -571,6 +634,7 @@
   "name": "Porlamar",
   "iso2": "VE",
   "pop": 196934,
+  "popFactor": 443.772,
   "lat": 10.960376,
   "lon": -63.849989,
   "matched": true
@@ -580,6 +644,7 @@
   "name": "Grand Rapids",
   "iso2": "US",
   "pop": 535829,
+  "popFactor": 732.003,
   "lat": 42.96372,
   "lon": -85.669949,
   "matched": true
@@ -589,6 +654,7 @@
   "name": "Málaga",
   "iso2": "ES",
   "pop": 550058,
+  "popFactor": 741.659,
   "lat": 36.720406,
   "lon": -4.419999,
   "matched": true
@@ -598,6 +664,7 @@
   "name": "Zarzis",
   "iso2": "TN",
   "pop": 159161,
+  "popFactor": 398.95,
   "lat": 33.510395,
   "lon": 11.099984,
   "matched": true
@@ -607,6 +674,7 @@
   "name": "Tarragona",
   "iso2": "ES",
   "pop": 126291,
+  "popFactor": 355.374,
   "lat": 41.12037,
   "lon": 1.249991,
   "matched": true
@@ -616,6 +684,7 @@
   "name": "Visby",
   "iso2": "SE",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 57.633651,
   "lon": 18.300009,
   "matched": true
@@ -625,6 +694,7 @@
   "name": "Saywun",
   "iso2": "YE",
   "pop": 68747,
+  "popFactor": 262.196,
   "lat": 15.942992,
   "lon": 48.787347,
   "matched": true
@@ -634,6 +704,7 @@
   "name": "Al Fujayrah",
   "iso2": "AE",
   "pop": 94163,
+  "popFactor": 306.86,
   "lat": 25.123439,
   "lon": 56.337481,
   "matched": true
@@ -643,6 +714,7 @@
   "name": "Al Ayn",
   "iso2": "AE",
   "pop": 408733,
+  "popFactor": 639.322,
   "lat": 24.230471,
   "lon": 55.739998,
   "matched": true
@@ -652,6 +724,7 @@
   "name": "Kulob",
   "iso2": "TJ",
   "pop": 115164,
+  "popFactor": 339.358,
   "lat": 37.92116,
   "lon": 69.77573,
   "matched": true
@@ -661,6 +734,7 @@
   "name": "Chiang Rai",
   "iso2": "TH",
   "pop": 117127,
+  "popFactor": 342.238,
   "lat": 19.911871,
   "lon": 99.826454,
   "matched": true
@@ -670,6 +744,7 @@
   "name": "Si Racha",
   "iso2": "TH",
   "pop": 178916,
+  "popFactor": 422.985,
   "lat": 13.159028,
   "lon": 100.928661,
   "matched": true
@@ -679,6 +754,7 @@
   "name": "Udon Thani",
   "iso2": "TH",
   "pop": 247231,
+  "popFactor": 497.223,
   "lat": 17.404763,
   "lon": 102.789323,
   "matched": true
@@ -688,6 +764,7 @@
   "name": "Victoria Falls",
   "iso2": "ZW",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -17.929618,
   "lon": 25.840014,
   "matched": true
@@ -697,6 +774,7 @@
   "name": "Santiago de Compostela",
   "iso2": "ES",
   "pop": 92430,
+  "popFactor": 304.023,
   "lat": 42.882898,
   "lon": -8.541091,
   "matched": true
@@ -706,6 +784,7 @@
   "name": "Aberdeen",
   "iso2": "GB",
   "pop": 189364,
+  "popFactor": 435.16,
   "lat": 57.170398,
   "lon": -2.079987,
   "matched": true
@@ -715,6 +794,7 @@
   "name": "Balıkesir",
   "iso2": "TR",
   "pop": 261516,
+  "popFactor": 511.386,
   "lat": 39.650382,
   "lon": 27.890018,
   "matched": true
@@ -724,6 +804,7 @@
   "name": "Moratuwa",
   "iso2": "LK",
   "pop": 200000,
+  "popFactor": 447.214,
   "lat": 6.780399,
   "lon": 79.880023,
   "matched": true
@@ -733,6 +814,7 @@
   "name": "Jeju",
   "iso2": "KR",
   "pop": 408364,
+  "popFactor": 639.034,
   "lat": 33.510137,
   "lon": 126.521931,
   "matched": true
@@ -742,6 +824,7 @@
   "name": "Nottingham",
   "iso2": "GB",
   "pop": 825600,
+  "popFactor": 908.625,
   "lat": 52.970344,
   "lon": -1.170017,
   "matched": true
@@ -751,6 +834,7 @@
   "name": "Pécs",
   "iso2": "HU",
   "pop": 186262,
+  "popFactor": 431.581,
   "lat": 46.080429,
   "lon": 18.220014,
   "matched": true
@@ -760,6 +844,7 @@
   "name": "Debrecen",
   "iso2": "HU",
   "pop": 231286,
+  "popFactor": 480.922,
   "lat": 47.53047,
   "lon": 21.630039,
   "matched": true
@@ -769,6 +854,7 @@
   "name": "Moshi",
   "iso2": "TZ",
   "pop": 721018,
+  "popFactor": 849.128,
   "lat": -3.339604,
   "lon": 37.339984,
   "matched": true
@@ -778,6 +864,7 @@
   "name": "Alicante",
   "iso2": "ES",
   "pop": 315863,
+  "popFactor": 562.017,
   "lat": 38.35122,
   "lon": -0.483641,
   "matched": true
@@ -787,6 +874,7 @@
   "name": "Craiova",
   "iso2": "RO",
   "pop": 304142,
+  "popFactor": 551.491,
   "lat": 44.326272,
   "lon": 23.825874,
   "matched": true
@@ -796,6 +884,7 @@
   "name": "Timișoara",
   "iso2": "RO",
   "pop": 315053,
+  "popFactor": 561.296,
   "lat": 45.758821,
   "lon": 21.223448,
   "matched": true
@@ -805,6 +894,7 @@
   "name": "Brașov",
   "iso2": "RO",
   "pop": 311044,
+  "popFactor": 557.713,
   "lat": 45.647535,
   "lon": 25.60716,
   "matched": true
@@ -814,6 +904,7 @@
   "name": "Bacău",
   "iso2": "RO",
   "pop": 199668,
+  "popFactor": 446.842,
   "lat": 46.578435,
   "lon": 26.919638,
   "matched": true
@@ -823,6 +914,7 @@
   "name": "Faro",
   "iso2": "PT",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 37.01708,
   "lon": -7.933273,
   "matched": true
@@ -832,6 +924,7 @@
   "name": "Buraydah",
   "iso2": "SA",
   "pop": 398581,
+  "popFactor": 631.333,
   "lat": 26.366387,
   "lon": 43.962836,
   "matched": true
@@ -841,6 +934,7 @@
   "name": "Hail",
   "iso2": "SA",
   "pop": 385257,
+  "popFactor": 620.691,
   "lat": 27.523577,
   "lon": 41.70008,
   "matched": true
@@ -850,6 +944,7 @@
   "name": "Groningen",
   "iso2": "NL",
   "pop": 216688,
+  "popFactor": 465.498,
   "lat": 53.220407,
   "lon": 6.580001,
   "matched": true
@@ -859,6 +954,7 @@
   "name": "Ålesund",
   "iso2": "NO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 62.545419,
   "lon": 6.388023,
   "matched": true
@@ -868,6 +964,7 @@
   "name": "Klaipėda",
   "iso2": "LT",
   "pop": 192307,
+  "popFactor": 438.528,
   "lat": 55.720409,
   "lon": 21.119941,
   "matched": true
@@ -877,6 +974,7 @@
   "name": "Kaunas",
   "iso2": "LT",
   "pop": 374643,
+  "popFactor": 612.081,
   "lat": 54.950404,
   "lon": 23.880031,
   "matched": true
@@ -886,6 +984,7 @@
   "name": "Dammam",
   "iso2": "SA",
   "pop": 2054710,
+  "popFactor": 1433.426,
   "lat": 26.430138,
   "lon": 50.097725,
   "matched": true
@@ -895,6 +994,7 @@
   "name": "Hafar al Batin",
   "iso2": "SA",
   "pop": 249194,
+  "popFactor": 499.193,
   "lat": 28.433651,
   "lon": 45.960078,
   "matched": true
@@ -904,6 +1004,7 @@
   "name": "Gwadar",
   "iso2": "PK",
   "pop": 51901,
+  "popFactor": 227.818,
   "lat": 25.138968,
   "lon": 62.328588,
   "matched": true
@@ -913,6 +1014,7 @@
   "name": "Balykchy",
   "iso2": "KG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 42.456025,
   "lon": 76.185365,
   "matched": true
@@ -922,6 +1024,7 @@
   "name": "Osh",
   "iso2": "KG",
   "pop": 391277,
+  "popFactor": 625.521,
   "lat": 40.540405,
   "lon": 72.790017,
   "matched": true
@@ -931,6 +1034,7 @@
   "name": "Alor Setar",
   "iso2": "MY",
   "pop": 336475,
+  "popFactor": 580.065,
   "lat": 6.113308,
   "lon": 100.372933,
   "matched": true
@@ -940,6 +1044,7 @@
   "name": "Mbombela",
   "iso2": "ZA",
   "pop": 348138,
+  "popFactor": 590.032,
   "lat": -25.469622,
   "lon": 30.980011,
   "matched": true
@@ -949,6 +1054,7 @@
   "name": "Saransk",
   "iso2": "RU",
   "pop": 303394,
+  "popFactor": 550.812,
   "lat": 54.170374,
   "lon": 45.180022,
   "matched": true
@@ -958,6 +1064,7 @@
   "name": "Sokcho",
   "iso2": "KR",
   "pop": 85430,
+  "popFactor": 292.284,
   "lat": 38.208713,
   "lon": 128.591158,
   "matched": true
@@ -967,6 +1074,7 @@
   "name": "Puerto Vallarta",
   "iso2": "MX",
   "pop": 187134,
+  "popFactor": 432.59,
   "lat": 20.677096,
   "lon": -105.244982,
   "matched": true
@@ -976,6 +1084,7 @@
   "name": "Morelia",
   "iso2": "MX",
   "pop": 644306,
+  "popFactor": 802.687,
   "lat": 19.733381,
   "lon": -101.189493,
   "matched": true
@@ -985,6 +1094,7 @@
   "name": "Pochutla",
   "iso2": "MX",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 15.730395,
   "lon": -96.469988,
   "matched": true
@@ -994,6 +1104,7 @@
   "name": "Petatlán",
   "iso2": "MX",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 17.520415,
   "lon": -101.270031,
   "matched": true
@@ -1003,6 +1114,7 @@
   "name": "Valladolid",
   "iso2": "MX",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 20.670404,
   "lon": -88.200002,
   "matched": true
@@ -1012,6 +1124,7 @@
   "name": "Awka",
   "iso2": "NG",
   "pop": 500000,
+  "popFactor": 707.107,
   "lat": 6.210434,
   "lon": 7.069997,
   "matched": true
@@ -1021,6 +1134,7 @@
   "name": "Bauchi",
   "iso2": "NG",
   "pop": 316149,
+  "popFactor": 562.271,
   "lat": 10.310364,
   "lon": 9.840009,
   "matched": true
@@ -1030,6 +1144,7 @@
   "name": "Bitola",
   "iso2": "MK",
   "pop": 86528,
+  "popFactor": 294.156,
   "lat": 41.039057,
   "lon": 21.339514,
   "matched": true
@@ -1039,6 +1154,7 @@
   "name": "Shahhat",
   "iso2": "LY",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 32.828137,
   "lon": 21.862169,
   "matched": true
@@ -1048,6 +1164,7 @@
   "name": "Wrocław",
   "iso2": "PL",
   "pop": 634893,
+  "popFactor": 796.802,
   "lat": 51.110432,
   "lon": 17.030009,
   "matched": true
@@ -1057,6 +1174,7 @@
   "name": "Szczecin",
   "iso2": "PL",
   "pop": 407811,
+  "popFactor": 638.601,
   "lat": 53.420394,
   "lon": 14.530007,
   "matched": true
@@ -1066,6 +1184,7 @@
   "name": "Poznań",
   "iso2": "PL",
   "pop": 623997,
+  "popFactor": 789.935,
   "lat": 52.405753,
   "lon": 16.89994,
   "matched": true
@@ -1075,6 +1194,7 @@
   "name": "Katowice",
   "iso2": "PL",
   "pop": 2746000,
+  "popFactor": 1657.106,
   "lat": 50.260381,
   "lon": 19.020017,
   "matched": true
@@ -1084,6 +1204,7 @@
   "name": "Lublin",
   "iso2": "PL",
   "pop": 360044,
+  "popFactor": 600.037,
   "lat": 51.250398,
   "lon": 22.57272,
   "matched": true
@@ -1093,6 +1214,7 @@
   "name": "Rzeszów",
   "iso2": "PL",
   "pop": 245686,
+  "popFactor": 495.667,
   "lat": 50.07047,
   "lon": 22.000042,
   "matched": true
@@ -1102,6 +1224,7 @@
   "name": "Pakxe",
   "iso2": "LA",
   "pop": 102775,
+  "popFactor": 320.585,
   "lat": 15.12206,
   "lon": 105.818337,
   "matched": true
@@ -1111,6 +1234,7 @@
   "name": "Louangphrabang",
   "iso2": "LA",
   "pop": 107142,
+  "popFactor": 327.326,
   "lat": 19.884534,
   "lon": 102.14161,
   "matched": true
@@ -1120,6 +1244,7 @@
   "name": "Mataram",
   "iso2": "ID",
   "pop": 499409,
+  "popFactor": 706.689,
   "lat": -8.579542,
   "lon": 116.13502,
   "matched": true
@@ -1129,6 +1254,7 @@
   "name": "Galway",
   "iso2": "IE",
   "pop": 75594,
+  "popFactor": 274.944,
   "lat": 53.272393,
   "lon": -9.048812,
   "matched": true
@@ -1138,6 +1264,7 @@
   "name": "Ravenna",
   "iso2": "IT",
   "pop": 134631,
+  "popFactor": 366.921,
   "lat": 44.420375,
   "lon": 12.220019,
   "matched": true
@@ -1147,6 +1274,7 @@
   "name": "Bologna",
   "iso2": "IT",
   "pop": 488172,
+  "popFactor": 698.693,
   "lat": 44.500422,
   "lon": 11.340021,
   "matched": true
@@ -1156,6 +1284,7 @@
   "name": "Olbia",
   "iso2": "IT",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 40.914285,
   "lon": 9.515072,
   "matched": true
@@ -1165,6 +1294,7 @@
   "name": "Cagliari",
   "iso2": "IT",
   "pop": 291511,
+  "popFactor": 539.918,
   "lat": 39.222398,
   "lon": 9.103982,
   "matched": true
@@ -1174,6 +1304,7 @@
   "name": "Pisa",
   "iso2": "IT",
   "pop": 203336,
+  "popFactor": 450.928,
   "lat": 43.72047,
   "lon": 10.400026,
   "matched": true
@@ -1183,6 +1314,7 @@
   "name": "Catanzaro",
   "iso2": "IT",
   "pop": 95251,
+  "popFactor": 308.628,
   "lat": 38.900376,
   "lon": 16.60001,
   "matched": true
@@ -1192,6 +1324,7 @@
   "name": "Bari",
   "iso2": "IT",
   "pop": 500577,
+  "popFactor": 707.515,
   "lat": 41.11422,
   "lon": 16.872758,
   "matched": true
@@ -1201,6 +1334,7 @@
   "name": "Brindisi",
   "iso2": "IT",
   "pop": 104437,
+  "popFactor": 323.167,
   "lat": 40.640348,
   "lon": 17.930006,
   "matched": true
@@ -1210,6 +1344,7 @@
   "name": "Pescara",
   "iso2": "IT",
   "pop": 314789,
+  "popFactor": 561.061,
   "lat": 42.455431,
   "lon": 14.218656,
   "matched": true
@@ -1219,6 +1354,7 @@
   "name": "Perugia",
   "iso2": "IT",
   "pop": 149125,
+  "popFactor": 386.167,
   "lat": 43.110378,
   "lon": 12.389983,
   "matched": true
@@ -1228,6 +1364,7 @@
   "name": "Al Aqabah",
   "iso2": "JO",
   "pop": 95048,
+  "popFactor": 308.299,
   "lat": 29.526995,
   "lon": 35.077693,
   "matched": true
@@ -1237,6 +1374,7 @@
   "name": "Trieste",
   "iso2": "IT",
   "pop": 216035,
+  "popFactor": 464.796,
   "lat": 45.650378,
   "lon": 13.800026,
   "matched": true
@@ -1246,6 +1384,7 @@
   "name": "Verona",
   "iso2": "IT",
   "pop": 347459,
+  "popFactor": 589.457,
   "lat": 45.44039,
   "lon": 10.990016,
   "matched": true
@@ -1255,6 +1394,7 @@
   "name": "Liberia",
   "iso2": "CR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 10.633755,
   "lon": -85.433323,
   "matched": true
@@ -1264,6 +1404,7 @@
   "name": "Esmeraldas",
   "iso2": "EC",
   "pop": 173101,
+  "popFactor": 416.054,
   "lat": 0.93042,
   "lon": -79.66998,
   "matched": true
@@ -1273,6 +1414,7 @@
   "name": "Matanzas",
   "iso2": "CU",
   "pop": 146733,
+  "popFactor": 383.057,
   "lat": 23.041525,
   "lon": -81.577486,
   "matched": true
@@ -1282,6 +1424,7 @@
   "name": "Calatrava",
   "iso2": "GQ",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 1.116403,
   "lon": 9.418588,
   "matched": true
@@ -1291,6 +1434,7 @@
   "name": "Dubrovnik",
   "iso2": "HR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 42.660948,
   "lon": 18.091392,
   "matched": true
@@ -1300,6 +1444,7 @@
   "name": "Split",
   "iso2": "HR",
   "pop": 214741,
+  "popFactor": 463.402,
   "lat": 43.520404,
   "lon": 16.469992,
   "matched": true
@@ -1309,6 +1454,7 @@
   "name": "Zadar",
   "iso2": "HR",
   "pop": 71258,
+  "popFactor": 266.942,
   "lat": 44.120135,
   "lon": 15.262262,
   "matched": true
@@ -1318,6 +1464,7 @@
   "name": "Matruh",
   "iso2": "EG",
   "pop": 103470,
+  "popFactor": 321.668,
   "lat": 31.350424,
   "lon": 27.230007,
   "matched": true
@@ -1327,6 +1474,7 @@
   "name": "El Daba",
   "iso2": "EG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 31.033776,
   "lon": 28.433293,
   "matched": true
@@ -1336,6 +1484,7 @@
   "name": "Sohag",
   "iso2": "EG",
   "pop": 600000,
+  "popFactor": 774.597,
   "lat": 26.550407,
   "lon": 31.700018,
   "matched": true
@@ -1345,6 +1494,7 @@
   "name": "El Arish",
   "iso2": "EG",
   "pop": 178651,
+  "popFactor": 422.671,
   "lat": 31.124882,
   "lon": 33.800562,
   "matched": true
@@ -1354,6 +1504,7 @@
   "name": "Münster",
   "iso2": "DE",
   "pop": 270184,
+  "popFactor": 519.792,
   "lat": 51.970405,
   "lon": 7.620041,
   "matched": true
@@ -1363,6 +1514,7 @@
   "name": "Düsseldorf",
   "iso2": "DE",
   "pop": 1220000,
+  "popFactor": 1104.536,
   "lat": 51.220374,
   "lon": 6.779989,
   "matched": true
@@ -1372,6 +1524,7 @@
   "name": "Wiesbaden",
   "iso2": "DE",
   "pop": 617126,
+  "popFactor": 785.574,
   "lat": 50.080392,
   "lon": 8.250028,
   "matched": true
@@ -1381,6 +1534,7 @@
   "name": "Hanover",
   "iso2": "DE",
   "pop": 722490,
+  "popFactor": 849.994,
   "lat": 52.36697,
   "lon": 9.716657,
   "matched": true
@@ -1390,6 +1544,7 @@
   "name": "Pula",
   "iso2": "HR",
   "pop": 61599,
+  "popFactor": 248.191,
   "lat": 44.86872,
   "lon": 13.848085,
   "matched": true
@@ -1399,6 +1554,7 @@
   "name": "Pardubice",
   "iso2": "CZ",
   "pop": 107064,
+  "popFactor": 327.206,
   "lat": 50.04042,
   "lon": 15.760009,
   "matched": true
@@ -1408,6 +1564,7 @@
   "name": "Leipzig",
   "iso2": "DE",
   "pop": 542529,
+  "popFactor": 736.566,
   "lat": 51.335405,
   "lon": 12.409981,
   "matched": true
@@ -1417,6 +1574,7 @@
   "name": "Ostrava",
   "iso2": "CZ",
   "pop": 478963,
+  "popFactor": 692.072,
   "lat": 49.830355,
   "lon": 18.249987,
   "matched": true
@@ -1426,6 +1584,7 @@
   "name": "Tanjungpinang",
   "iso2": "ID",
   "pop": 226666,
+  "popFactor": 476.095,
   "lat": 0.916829,
   "lon": 104.471442,
   "matched": true
@@ -1435,6 +1594,7 @@
   "name": "Hancheng",
   "iso2": "CN",
   "pop": 222135,
+  "popFactor": 471.312,
   "lat": 35.470431,
   "lon": 110.429993,
   "matched": true
@@ -1444,6 +1604,7 @@
   "name": "Lianyungang",
   "iso2": "CN",
   "pop": 715600,
+  "popFactor": 845.931,
   "lat": 34.600432,
   "lon": 119.170028,
   "matched": true
@@ -1453,6 +1614,7 @@
   "name": "Kitakyūshū",
   "iso2": "JP",
   "pop": 997536,
+  "popFactor": 998.767,
   "lat": 33.870399,
   "lon": 130.820015,
   "matched": true
@@ -1462,6 +1624,7 @@
   "name": "Kumamoto",
   "iso2": "JP",
   "pop": 718232,
+  "popFactor": 847.486,
   "lat": 32.800929,
   "lon": 130.700642,
   "matched": true
@@ -1471,6 +1634,7 @@
   "name": "Shizuoka",
   "iso2": "JP",
   "pop": 701561,
+  "popFactor": 837.592,
   "lat": 34.985835,
   "lon": 138.385393,
   "matched": true
@@ -1480,6 +1644,7 @@
   "name": "Mito",
   "iso2": "JP",
   "pop": 353892,
+  "popFactor": 594.888,
   "lat": 36.370427,
   "lon": 140.480045,
   "matched": true
@@ -1489,6 +1654,7 @@
   "name": "Brikama",
   "iso2": "GM",
   "pop": 195136,
+  "popFactor": 441.742,
   "lat": 13.280364,
   "lon": -16.65995,
   "matched": true
@@ -1498,6 +1664,7 @@
   "name": "Tamale",
   "iso2": "GH",
   "pop": 360579,
+  "popFactor": 600.482,
   "lat": 9.40042,
   "lon": -0.839985,
   "matched": true
@@ -1507,6 +1674,7 @@
   "name": "Tirupati",
   "iso2": "IN",
   "pop": 287035,
+  "popFactor": 535.756,
   "lat": 13.650419,
   "lon": 79.42,
   "matched": true
@@ -1516,6 +1684,7 @@
   "name": "Port Blair",
   "iso2": "IN",
   "pop": 127562,
+  "popFactor": 357.158,
   "lat": 11.667026,
   "lon": 92.735983,
   "matched": true
@@ -1525,6 +1694,7 @@
   "name": "Nandi",
   "iso2": "FJ",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -17.7996,
   "lon": 177.416602,
   "matched": true
@@ -1534,6 +1704,7 @@
   "name": "Brest",
   "iso2": "FR",
   "pop": 144899,
+  "popFactor": 380.656,
   "lat": 48.390443,
   "lon": -4.495008,
   "matched": true
@@ -1543,6 +1714,7 @@
   "name": "Nantes",
   "iso2": "FR",
   "pop": 438537,
+  "popFactor": 662.221,
   "lat": 47.210386,
   "lon": -1.590017,
   "matched": true
@@ -1552,6 +1724,7 @@
   "name": "Ajaccio",
   "iso2": "FR",
   "pop": 54364,
+  "popFactor": 233.161,
   "lat": 41.927065,
   "lon": 8.728294,
   "matched": true
@@ -1561,6 +1734,7 @@
   "name": "Bastia",
   "iso2": "FR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 42.703167,
   "lon": 9.450007,
   "matched": true
@@ -1570,6 +1744,7 @@
   "name": "Montpellier",
   "iso2": "FR",
   "pop": 327254,
+  "popFactor": 572.061,
   "lat": 43.610399,
   "lon": 3.869986,
   "matched": true
@@ -1579,6 +1754,7 @@
   "name": "Mulhouse",
   "iso2": "FR",
   "pop": 215454,
+  "popFactor": 464.17,
   "lat": 47.750405,
   "lon": 7.34998,
   "matched": true
@@ -1588,6 +1764,7 @@
   "name": "Kerkira",
   "iso2": "GR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 39.615423,
   "lon": 19.914743,
   "matched": true
@@ -1597,6 +1774,7 @@
   "name": "Pirgos",
   "iso2": "GR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 37.683732,
   "lon": 21.449998,
   "matched": true
@@ -1606,6 +1784,7 @@
   "name": "Kos",
   "iso2": "GR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 36.893729,
   "lon": 27.288815,
   "matched": true
@@ -1615,6 +1794,7 @@
   "name": "Rodos",
   "iso2": "GR",
   "pop": 56969,
+  "popFactor": 238.682,
   "lat": 36.441224,
   "lon": 28.222504,
   "matched": true
@@ -1624,6 +1804,7 @@
   "name": "Jijiga",
   "iso2": "ET",
   "pop": 56821,
+  "popFactor": 238.372,
   "lat": 9.350423,
   "lon": 42.789987,
   "matched": true
@@ -1633,6 +1814,7 @@
   "name": "Kuopio",
   "iso2": "FI",
   "pop": 91900,
+  "popFactor": 303.15,
   "lat": 62.894286,
   "lon": 27.69494,
   "matched": true
@@ -1642,6 +1824,7 @@
   "name": "Lappeenranta",
   "iso2": "FI",
   "pop": 59276,
+  "popFactor": 243.467,
   "lat": 61.067059,
   "lon": 28.183334,
   "matched": true
@@ -1651,6 +1834,7 @@
   "name": "Siliguri",
   "iso2": "IN",
   "pop": 515574,
+  "popFactor": 718.035,
   "lat": 26.720422,
   "lon": 88.455004,
   "matched": true
@@ -1660,6 +1844,7 @@
   "name": "Odense",
   "iso2": "DK",
   "pop": 158222,
+  "popFactor": 397.771,
   "lat": 55.400377,
   "lon": 10.383335,
   "matched": true
@@ -1669,6 +1854,7 @@
   "name": "Aalborg",
   "iso2": "DK",
   "pop": 122219,
+  "popFactor": 349.598,
   "lat": 57.033714,
   "lon": 9.916593,
   "matched": true
@@ -1678,6 +1864,7 @@
   "name": "Foz do Iguaçu",
   "iso2": "BR",
   "pop": 440455,
+  "popFactor": 663.668,
   "lat": -25.523469,
   "lon": -54.52999,
   "matched": true
@@ -1687,6 +1874,7 @@
   "name": "Itajaí",
   "iso2": "BR",
   "pop": 327126,
+  "popFactor": 571.949,
   "lat": -26.899613,
   "lon": -48.680011,
   "matched": true
@@ -1696,6 +1884,7 @@
   "name": "Porto Seguro",
   "iso2": "BR",
   "pop": 123173,
+  "popFactor": 350.96,
   "lat": -16.429606,
   "lon": -39.080028,
   "matched": true
@@ -1705,6 +1894,7 @@
   "name": "Niš",
   "iso2": "RS",
   "pop": 250000,
+  "popFactor": 500,
   "lat": 43.330416,
   "lon": 21.899996,
   "matched": true
@@ -1714,6 +1904,7 @@
   "name": "Belize City",
   "iso2": "BZ",
   "pop": 63028,
+  "popFactor": 251.054,
   "lat": 17.498711,
   "lon": -88.188375,
   "matched": true
@@ -1723,6 +1914,7 @@
   "name": "Brugge",
   "iso2": "BE",
   "pop": 146469,
+  "popFactor": 382.713,
   "lat": 51.220374,
   "lon": 3.230025,
   "matched": true
@@ -1732,6 +1924,7 @@
   "name": "Kampot",
   "iso2": "KH",
   "pop": 50105,
+  "popFactor": 223.841,
   "lat": 10.61709,
   "lon": 104.183346,
   "matched": true
@@ -1741,6 +1934,7 @@
   "name": "Tlimcen",
   "iso2": "DZ",
   "pop": 229777,
+  "popFactor": 479.351,
   "lat": 34.890414,
   "lon": -1.320008,
   "matched": true
@@ -1750,6 +1944,7 @@
   "name": "Djanet",
   "iso2": "DZ",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 24.552906,
   "lon": 9.482253,
   "matched": true
@@ -1759,6 +1954,7 @@
   "name": "Chlef",
   "iso2": "DZ",
   "pop": 449167,
+  "popFactor": 670.199,
   "lat": 36.170414,
   "lon": 1.319961,
   "matched": true
@@ -1768,6 +1964,7 @@
   "name": "Béjaïa",
   "iso2": "DZ",
   "pop": 384937,
+  "popFactor": 620.433,
   "lat": 36.760378,
   "lon": 5.070016,
   "matched": true
@@ -1777,6 +1974,7 @@
   "name": "Mostar",
   "iso2": "BA",
   "pop": 163067,
+  "popFactor": 403.816,
   "lat": 43.350492,
   "lon": 17.820039,
   "matched": true
@@ -1786,6 +1984,7 @@
   "name": "Varna",
   "iso2": "BG",
   "pop": 312770,
+  "popFactor": 559.258,
   "lat": 43.215643,
   "lon": 27.895289,
   "matched": true
@@ -1795,6 +1994,7 @@
   "name": "Graz",
   "iso2": "AT",
   "pop": 263234,
+  "popFactor": 513.063,
   "lat": 47.077758,
   "lon": 15.410005,
   "matched": true
@@ -1804,6 +2004,7 @@
   "name": "Klagenfurt",
   "iso2": "AT",
   "pop": 90610,
+  "popFactor": 301.015,
   "lat": 46.620344,
   "lon": 14.31002,
   "matched": true
@@ -1813,6 +2014,7 @@
   "name": "Linz",
   "iso2": "AT",
   "pop": 349161,
+  "popFactor": 590.898,
   "lat": 48.319233,
   "lon": 14.288781,
   "matched": true
@@ -1822,6 +2024,7 @@
   "name": "Salzburg",
   "iso2": "AT",
   "pop": 206279,
+  "popFactor": 454.179,
   "lat": 47.810478,
   "lon": 13.04002,
   "matched": true
@@ -1831,6 +2034,7 @@
   "name": "Innsbruck",
   "iso2": "AT",
   "pop": 155214,
+  "popFactor": 393.972,
   "lat": 47.280407,
   "lon": 11.409991,
   "matched": true
@@ -1840,6 +2044,7 @@
   "name": "Naxcivan",
   "iso2": "AZ",
   "pop": 94788,
+  "popFactor": 307.877,
   "lat": 39.20922,
   "lon": 45.412205,
   "matched": true
@@ -1849,6 +2054,7 @@
   "name": "Maun",
   "iso2": "BW",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -19.989595,
   "lon": 23.420007,
   "matched": true
@@ -1858,6 +2064,7 @@
   "name": "Kasane",
   "iso2": "BW",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -17.809573,
   "lon": 25.150031,
   "matched": true
@@ -1867,6 +2074,7 @@
   "name": "Tuzla",
   "iso2": "BA",
   "pop": 144334,
+  "popFactor": 379.913,
   "lat": 44.550471,
   "lon": 18.680038,
   "matched": true
@@ -1876,6 +2084,7 @@
   "name": "Banja Luka",
   "iso2": "BA",
   "pop": 221738,
+  "popFactor": 470.891,
   "lat": 44.780405,
   "lon": 17.179974,
   "matched": true
@@ -1885,6 +2094,7 @@
   "name": "Pokhara",
   "iso2": "NP",
   "pop": 200000,
+  "popFactor": 447.214,
   "lat": 28.263996,
   "lon": 83.971999,
   "matched": true
@@ -1894,6 +2104,7 @@
   "name": "Christiansted",
   "iso2": "VI",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 17.750375,
   "lon": -64.749986,
   "matched": true
@@ -1903,6 +2114,7 @@
   "name": "George Town",
   "iso2": "KY",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 19.280437,
   "lon": -81.329982,
   "matched": true
@@ -1912,6 +2124,7 @@
   "name": "Douglas",
   "iso2": "IM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 54.150427,
   "lon": -4.480021,
   "matched": true
@@ -1921,6 +2134,7 @@
   "name": "Neiafu",
   "iso2": "TO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -18.649574,
   "lon": -173.983293,
   "matched": true
@@ -1930,6 +2144,7 @@
   "name": "Arrecife",
   "iso2": "ES",
   "pop": 52944,
+  "popFactor": 230.096,
   "lat": 28.969049,
   "lon": -13.537833,
   "matched": true
@@ -1939,6 +2154,7 @@
   "name": "Koror",
   "iso2": "PW",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 7.345226,
   "lon": 134.469501,
   "matched": true
@@ -1948,6 +2164,7 @@
   "name": "Willemstad",
   "iso2": "CW",
   "pop": 146813,
+  "popFactor": 383.162,
   "lat": 12.20043,
   "lon": -69.019984,
   "matched": true
@@ -1957,6 +2174,7 @@
   "name": "Oranjestad",
   "iso2": "AW",
   "pop": 68775,
+  "popFactor": 262.25,
   "lat": 12.530384,
   "lon": -70.028992,
   "matched": true
@@ -1966,6 +2184,7 @@
   "name": "La Romana",
   "iso2": "DO",
   "pop": 208437,
+  "popFactor": 456.549,
   "lat": 18.417001,
   "lon": -68.966602,
   "matched": true
@@ -1975,6 +2194,7 @@
   "name": "Mindelo",
   "iso2": "CV",
   "pop": 70611,
+  "popFactor": 265.727,
   "lat": 16.883761,
   "lon": -25.000009,
   "matched": true
@@ -1984,6 +2204,7 @@
   "name": "Kailua-Kona",
   "iso2": "US",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 19.652365,
   "lon": -155.983747,
   "matched": true
@@ -1993,6 +2214,7 @@
   "name": "Barquisimeto",
   "iso2": "VE",
   "pop": 1116000,
+  "popFactor": 1056.409,
   "lat": 10.051938,
   "lon": -69.301913,
   "matched": true
@@ -2002,6 +2224,7 @@
   "name": "Hartford",
   "iso2": "US",
   "pop": 913000,
+  "popFactor": 955.51,
   "lat": 41.771966,
   "lon": -72.681913,
   "matched": true
@@ -2011,6 +2234,7 @@
   "name": "Providence",
   "iso2": "US",
   "pop": 1277000,
+  "popFactor": 1130.044,
   "lat": 41.823048,
   "lon": -71.416926,
   "matched": true
@@ -2020,6 +2244,7 @@
   "name": "Birmingham",
   "iso2": "US",
   "pop": 1128047,
+  "popFactor": 1062.096,
   "lat": 33.530006,
   "lon": -86.824995,
   "matched": true
@@ -2029,6 +2254,7 @@
   "name": "Pensacola",
   "iso2": "US",
   "pop": 234384,
+  "popFactor": 484.132,
   "lat": 30.421126,
   "lon": -87.216935,
   "matched": true
@@ -2038,6 +2264,7 @@
   "name": "Greensboro",
   "iso2": "US",
   "pop": 388887,
+  "popFactor": 623.608,
   "lat": 36.070006,
   "lon": -79.800023,
   "matched": true
@@ -2047,6 +2274,7 @@
   "name": "Namangan",
   "iso2": "UZ",
   "pop": 750000,
+  "popFactor": 866.025,
   "lat": 41.000016,
   "lon": 71.669982,
   "matched": true
@@ -2056,6 +2284,7 @@
   "name": "Khujand",
   "iso2": "TJ",
   "pop": 437684,
+  "popFactor": 661.577,
   "lat": 40.289981,
   "lon": 69.619926,
   "matched": true
@@ -2065,6 +2294,7 @@
   "name": "La Ceiba",
   "iso2": "HN",
   "pop": 145926,
+  "popFactor": 382.003,
   "lat": 15.763106,
   "lon": -86.796987,
   "matched": true
@@ -2074,6 +2304,7 @@
   "name": "San Pedro Sula",
   "iso2": "HN",
   "pop": 680091,
+  "popFactor": 824.676,
   "lat": 15.500022,
   "lon": -88.029986,
   "matched": true
@@ -2083,6 +2314,7 @@
   "name": "Murcia",
   "iso2": "ES",
   "pop": 406807,
+  "popFactor": 637.814,
   "lat": 37.979993,
   "lon": -1.129968,
   "matched": true
@@ -2092,6 +2324,7 @@
   "name": "Cap-Haïtien",
   "iso2": "HT",
   "pop": 281487,
+  "popFactor": 530.553,
   "lat": 19.759222,
   "lon": -72.212516,
   "matched": true
@@ -2101,6 +2334,7 @@
   "name": "Edinburgh",
   "iso2": "GB",
   "pop": 504966,
+  "popFactor": 710.61,
   "lat": 55.948328,
   "lon": -3.219091,
   "matched": true
@@ -2110,6 +2344,7 @@
   "name": "Newcastle",
   "iso2": "GB",
   "pop": 882000,
+  "popFactor": 939.149,
   "lat": 55.002321,
   "lon": -1.601936,
   "matched": true
@@ -2119,6 +2354,7 @@
   "name": "Liverpool",
   "iso2": "GB",
   "pop": 811000,
+  "popFactor": 900.555,
   "lat": 53.417948,
   "lon": -2.919944,
   "matched": true
@@ -2128,6 +2364,7 @@
   "name": "Cardiff",
   "iso2": "GB",
   "pop": 861400,
+  "popFactor": 928.116,
   "lat": 51.499995,
   "lon": -3.225008,
   "matched": true
@@ -2137,6 +2374,7 @@
   "name": "Leeds",
   "iso2": "GB",
   "pop": 1529000,
+  "popFactor": 1236.527,
   "lat": 53.831953,
   "lon": -1.581963,
   "matched": true
@@ -2146,6 +2384,7 @@
   "name": "Şanlıurfa",
   "iso2": "TR",
   "pop": 449549,
+  "popFactor": 670.484,
   "lat": 37.169991,
   "lon": 38.794986,
   "matched": true
@@ -2155,6 +2394,7 @@
   "name": "Narvik",
   "iso2": "NO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 68.38315,
   "lon": 17.289993,
   "matched": true
@@ -2164,6 +2404,7 @@
   "name": "Bodø",
   "iso2": "NO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 67.276435,
   "lon": 14.429285,
   "matched": true
@@ -2173,6 +2414,7 @@
   "name": "Chiclayo",
   "iso2": "PE",
   "pop": 596792,
+  "popFactor": 772.523,
   "lat": -6.762909,
   "lon": -79.836585,
   "matched": true
@@ -2182,6 +2424,7 @@
   "name": "Juliaca",
   "iso2": "PE",
   "pop": 245675,
+  "popFactor": 495.656,
   "lat": -15.499998,
   "lon": -70.139967,
   "matched": true
@@ -2191,6 +2434,7 @@
   "name": "Porto",
   "iso2": "PT",
   "pop": 1337000,
+  "popFactor": 1156.287,
   "lat": 41.151952,
   "lon": -8.621947,
   "matched": true
@@ -2200,6 +2444,7 @@
   "name": "Rotterdam",
   "iso2": "NL",
   "pop": 1005000,
+  "popFactor": 1002.497,
   "lat": 51.921915,
   "lon": 4.478029,
   "matched": true
@@ -2209,6 +2454,7 @@
   "name": "Luxembourg",
   "iso2": "LU",
   "pop": 107260,
+  "popFactor": 327.506,
   "lat": 49.61166,
   "lon": 6.130003,
   "matched": true
@@ -2218,6 +2464,7 @@
   "name": "Stavanger",
   "iso2": "NO",
   "pop": 173132,
+  "popFactor": 416.091,
   "lat": 58.970004,
   "lon": 5.680004,
   "matched": true
@@ -2227,6 +2474,7 @@
   "name": "Hofuf",
   "iso2": "SA",
   "pop": 637389,
+  "popFactor": 798.366,
   "lat": 25.348749,
   "lon": 49.585593,
   "matched": true
@@ -2236,6 +2484,7 @@
   "name": "Turbat",
   "iso2": "PK",
   "pop": 147791,
+  "popFactor": 384.436,
   "lat": 25.991784,
   "lon": 63.071799,
   "matched": true
@@ -2245,6 +2494,7 @@
   "name": "Faisalabad",
   "iso2": "PK",
   "pop": 2617000,
+  "popFactor": 1617.714,
   "lat": 31.411927,
   "lon": 73.108051,
   "matched": true
@@ -2254,6 +2504,7 @@
   "name": "Rawalpindi",
   "iso2": "PK",
   "pop": 1858000,
+  "popFactor": 1363.085,
   "lat": 33.601922,
   "lon": 73.038081,
   "matched": true
@@ -2263,6 +2514,7 @@
   "name": "Johor Bahru",
   "iso2": "MY",
   "pop": 875000,
+  "popFactor": 935.414,
   "lat": 1.481971,
   "lon": 103.728094,
   "matched": true
@@ -2272,6 +2524,7 @@
   "name": "Benoni",
   "iso2": "ZA",
   "pop": 2986000,
+  "popFactor": 1728.005,
   "lat": -26.147635,
   "lon": 28.327994,
   "matched": true
@@ -2281,6 +2534,7 @@
   "name": "Nizhenvartovsk",
   "iso2": "RU",
   "pop": 244937,
+  "popFactor": 494.911,
   "lat": 60.934974,
   "lon": 76.580018,
   "matched": true
@@ -2290,6 +2544,7 @@
   "name": "Salalah",
   "iso2": "OM",
   "pop": 203877,
+  "popFactor": 451.527,
   "lat": 17.025458,
   "lon": 54.085215,
   "matched": true
@@ -2299,6 +2554,7 @@
   "name": "Makhachkala",
   "iso2": "RU",
   "pop": 554981,
+  "popFactor": 744.97,
   "lat": 42.980024,
   "lon": 47.499984,
   "matched": true
@@ -2308,6 +2564,7 @@
   "name": "Suhar",
   "iso2": "OM",
   "pop": 151349,
+  "popFactor": 389.036,
   "lat": 24.361973,
   "lon": 56.734419,
   "matched": true
@@ -2317,6 +2574,7 @@
   "name": "Daegu",
   "iso2": "KR",
   "pop": 2460000,
+  "popFactor": 1568.439,
   "lat": 35.868735,
   "lon": 128.605026,
   "matched": true
@@ -2326,6 +2584,7 @@
   "name": "Legazpi",
   "iso2": "PH",
   "pop": 320081,
+  "popFactor": 565.757,
   "lat": 13.169983,
   "lon": 123.750007,
   "matched": true
@@ -2335,6 +2594,7 @@
   "name": "Ciudad Juárez",
   "iso2": "MX",
   "pop": 1343000,
+  "popFactor": 1158.879,
   "lat": 31.692323,
   "lon": -106.491994,
   "matched": true
@@ -2344,6 +2604,7 @@
   "name": "Aguascalientes",
   "iso2": "MX",
   "pop": 869000,
+  "popFactor": 932.202,
   "lat": 21.881406,
   "lon": -102.292359,
   "matched": true
@@ -2353,6 +2614,7 @@
   "name": "Villahermosa",
   "iso2": "MX",
   "pop": 428564,
+  "popFactor": 654.648,
   "lat": 17.999972,
   "lon": -92.899973,
   "matched": true
@@ -2362,6 +2624,7 @@
   "name": "Querétaro",
   "iso2": "MX",
   "pop": 961000,
+  "popFactor": 980.306,
   "lat": 20.631964,
   "lon": -100.381928,
   "matched": true
@@ -2371,6 +2634,7 @@
   "name": "Cork",
   "iso2": "IE",
   "pop": 188907,
+  "popFactor": 434.634,
   "lat": 51.898601,
   "lon": -8.495771,
   "matched": true
@@ -2380,6 +2644,7 @@
   "name": "Turin",
   "iso2": "IT",
   "pop": 1652000,
+  "popFactor": 1285.302,
   "lat": 45.072333,
   "lon": 7.668015,
   "matched": true
@@ -2389,6 +2654,7 @@
   "name": "Denpasar",
   "iso2": "ID",
   "pop": 732344,
+  "popFactor": 855.771,
   "lat": -8.650029,
   "lon": 115.219985,
   "matched": true
@@ -2398,6 +2664,7 @@
   "name": "Nouméa",
   "iso2": "NC",
   "pop": 93060,
+  "popFactor": 305.057,
   "lat": -22.262528,
   "lon": 166.444285,
   "matched": true
@@ -2407,6 +2674,7 @@
   "name": "Camagüey",
   "iso2": "CU",
   "pop": 347562,
+  "popFactor": 589.544,
   "lat": 21.380825,
   "lon": -77.916934,
   "matched": true
@@ -2416,6 +2684,7 @@
   "name": "Holguín",
   "iso2": "CU",
   "pop": 319102,
+  "popFactor": 564.891,
   "lat": 20.887238,
   "lon": -76.263056,
   "matched": true
@@ -2425,6 +2694,7 @@
   "name": "Montego Bay",
   "iso2": "JM",
   "pop": 126008,
+  "popFactor": 354.976,
   "lat": 18.466688,
   "lon": -77.916676,
   "matched": true
@@ -2434,6 +2704,7 @@
   "name": "Santa Clara",
   "iso2": "CU",
   "pop": 250512,
+  "popFactor": 500.512,
   "lat": 22.400014,
   "lon": -79.966654,
   "matched": true
@@ -2443,6 +2714,7 @@
   "name": "Tórshavn",
   "iso2": "FO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 62.030024,
   "lon": -6.820034,
   "matched": true
@@ -2452,6 +2724,7 @@
   "name": "Stuttgart",
   "iso2": "DE",
   "pop": 2944700,
+  "popFactor": 1716.013,
   "lat": 48.77998,
   "lon": 9.199996,
   "matched": true
@@ -2461,6 +2734,7 @@
   "name": "Bremen",
   "iso2": "DE",
   "pop": 724909,
+  "popFactor": 851.416,
   "lat": 53.080002,
   "lon": 8.800021,
   "matched": true
@@ -2470,6 +2744,7 @@
   "name": "Nürnberg",
   "iso2": "DE",
   "pop": 737304,
+  "popFactor": 858.664,
   "lat": 49.449991,
   "lon": 11.079985,
   "matched": true
@@ -2479,6 +2754,7 @@
   "name": "Sanya",
   "iso2": "CN",
   "pop": 362689,
+  "popFactor": 602.237,
   "lat": 18.259105,
   "lon": 109.504032,
   "matched": true
@@ -2488,6 +2764,7 @@
   "name": "Haikou",
   "iso2": "CN",
   "pop": 2046189,
+  "popFactor": 1430.451,
   "lat": 20.050002,
   "lon": 110.320026,
   "matched": true
@@ -2497,6 +2774,7 @@
   "name": "Datong",
   "iso2": "CN",
   "pop": 1873000,
+  "popFactor": 1368.576,
   "lat": 40.081966,
   "lon": 113.298053,
   "matched": true
@@ -2506,6 +2784,7 @@
   "name": "Lijiang",
   "iso2": "CN",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 26.800004,
   "lon": 100.266582,
   "matched": true
@@ -2515,6 +2794,7 @@
   "name": "Luoyang",
   "iso2": "CN",
   "pop": 1715000,
+  "popFactor": 1309.58,
   "lat": 34.681934,
   "lon": 112.468129,
   "matched": true
@@ -2524,6 +2804,7 @@
   "name": "Jinhua",
   "iso2": "CN",
   "pop": 1092852,
+  "popFactor": 1045.396,
   "lat": 29.120043,
   "lon": 119.649999,
   "matched": true
@@ -2533,6 +2814,7 @@
   "name": "Kagoshima",
   "iso2": "JP",
   "pop": 555352,
+  "popFactor": 745.219,
   "lat": 31.585965,
   "lon": 130.561064,
   "matched": true
@@ -2542,6 +2824,7 @@
   "name": "Matsuyama",
   "iso2": "JP",
   "pop": 533541,
+  "popFactor": 730.439,
   "lat": 33.845543,
   "lon": 132.765839,
   "matched": true
@@ -2551,6 +2834,7 @@
   "name": "Kanazawa",
   "iso2": "JP",
   "pop": 551249,
+  "popFactor": 742.461,
   "lat": 36.560002,
   "lon": 136.640021,
   "matched": true
@@ -2560,6 +2844,7 @@
   "name": "Aomori",
   "iso2": "JP",
   "pop": 298394,
+  "popFactor": 546.255,
   "lat": 40.825039,
   "lon": 140.710005,
   "matched": true
@@ -2569,6 +2854,7 @@
   "name": "Niigata",
   "iso2": "JP",
   "pop": 569797,
+  "popFactor": 754.849,
   "lat": 37.919997,
   "lon": 139.04003,
   "matched": true
@@ -2578,6 +2864,7 @@
   "name": "Imphal",
   "iso2": "IN",
   "pop": 264986,
+  "popFactor": 514.768,
   "lat": 24.799971,
   "lon": 93.950017,
   "matched": true
@@ -2587,6 +2874,7 @@
   "name": "Nice",
   "iso2": "FR",
   "pop": 927000,
+  "popFactor": 962.808,
   "lat": 43.716964,
   "lon": 7.263078,
   "matched": true
@@ -2596,6 +2884,7 @@
   "name": "Toulouse",
   "iso2": "FR",
   "pop": 847000,
+  "popFactor": 920.326,
   "lat": 43.621905,
   "lon": 1.447981,
   "matched": true
@@ -2605,6 +2894,7 @@
   "name": "Lille",
   "iso2": "FR",
   "pop": 1044000,
+  "popFactor": 1021.763,
   "lat": 50.651915,
   "lon": 3.078062,
   "matched": true
@@ -2614,6 +2904,7 @@
   "name": "Strasbourg",
   "iso2": "FR",
   "pop": 439972,
+  "popFactor": 663.304,
   "lat": 48.579966,
   "lon": 7.750007,
   "matched": true
@@ -2623,6 +2914,7 @@
   "name": "Temuco",
   "iso2": "CL",
   "pop": 265901,
+  "popFactor": 515.656,
   "lat": -38.730002,
   "lon": -72.579999,
   "matched": true
@@ -2632,6 +2924,7 @@
   "name": "Ilulissat",
   "iso2": "GL",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 69.216665,
   "lon": -51.099967,
   "matched": true
@@ -2641,6 +2934,7 @@
   "name": "Batumi",
   "iso2": "GE",
   "pop": 155542,
+  "popFactor": 394.388,
   "lat": 41.600005,
   "lon": 41.630007,
   "matched": true
@@ -2650,6 +2944,7 @@
   "name": "Irbil",
   "iso2": "IQ",
   "pop": 926000,
+  "popFactor": 962.289,
   "lat": 36.18099,
   "lon": 44.006675,
   "matched": true
@@ -2659,6 +2954,7 @@
   "name": "Turku",
   "iso2": "FI",
   "pop": 175945,
+  "popFactor": 419.458,
   "lat": 60.453867,
   "lon": 22.254962,
   "matched": true
@@ -2668,6 +2964,7 @@
   "name": "Oostanay",
   "iso2": "KZ",
   "pop": 236901,
+  "popFactor": 486.725,
   "lat": 53.220897,
   "lon": 63.628302,
   "matched": true
@@ -2677,6 +2974,7 @@
   "name": "Baykonur",
   "iso2": "KZ",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 45.691357,
   "lon": 63.241349,
   "matched": true
@@ -2686,6 +2984,7 @@
   "name": "Kokshetau",
   "iso2": "KZ",
   "pop": 128873,
+  "popFactor": 358.989,
   "lat": 53.299988,
   "lon": 69.41999,
   "matched": true
@@ -2695,6 +2994,7 @@
   "name": "Zhezqazghan",
   "iso2": "KZ",
   "pop": 104357,
+  "popFactor": 323.043,
   "lat": 47.779989,
   "lon": 67.770013,
   "matched": true
@@ -2704,6 +3004,7 @@
   "name": "Petropavlovsk",
   "iso2": "KZ",
   "pop": 228238,
+  "popFactor": 477.743,
   "lat": 54.879995,
   "lon": 69.220002,
   "matched": true
@@ -2713,6 +3014,7 @@
   "name": "Kerman",
   "iso2": "IR",
   "pop": 577514,
+  "popFactor": 759.943,
   "lat": 30.299997,
   "lon": 57.08002,
   "matched": true
@@ -2722,6 +3024,7 @@
   "name": "Turkistan",
   "iso2": "KZ",
   "pop": 97360,
+  "popFactor": 312.026,
   "lat": 43.301555,
   "lon": 68.254893,
   "matched": true
@@ -2731,6 +3034,7 @@
   "name": "West Palm Beach",
   "iso2": "US",
   "pop": 1250000,
+  "popFactor": 1118.034,
   "lat": 26.74502,
   "lon": -80.123621,
   "matched": true
@@ -2740,6 +3044,7 @@
   "name": "Sarasota",
   "iso2": "US",
   "pop": 589959,
+  "popFactor": 768.088,
   "lat": 27.336121,
   "lon": -82.530787,
   "matched": true
@@ -2749,6 +3054,7 @@
   "name": "Ft. Myers",
   "iso2": "US",
   "pop": 188606,
+  "popFactor": 434.288,
   "lat": 26.640298,
   "lon": -81.860492,
   "matched": true
@@ -2758,6 +3064,7 @@
   "name": "Myrtle Beach",
   "iso2": "US",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 33.688911,
   "lon": -78.886978,
   "matched": true
@@ -2767,6 +3074,7 @@
   "name": "Charleston",
   "iso2": "US",
   "pop": 411940,
+  "popFactor": 641.826,
   "lat": 32.792377,
   "lon": -79.992105,
   "matched": true
@@ -2776,6 +3084,7 @@
   "name": "Louisville",
   "iso2": "US",
   "pop": 948000,
+  "popFactor": 973.653,
   "lat": 38.226963,
   "lon": -85.75065,
   "matched": true
@@ -2785,6 +3094,7 @@
   "name": "Charlotte",
   "iso2": "US",
   "pop": 995000,
+  "popFactor": 997.497,
   "lat": 35.20694,
   "lon": -80.831984,
   "matched": true
@@ -2794,6 +3104,7 @@
   "name": "Columbus",
   "iso2": "US",
   "pop": 1270000,
+  "popFactor": 1126.943,
   "lat": 39.98192,
   "lon": -82.991956,
   "matched": true
@@ -2803,6 +3114,7 @@
   "name": "Albany",
   "iso2": "US",
   "pop": 870716,
+  "popFactor": 933.122,
   "lat": 42.670017,
   "lon": -73.819949,
   "matched": true
@@ -2812,6 +3124,7 @@
   "name": "Portland",
   "iso2": "US",
   "pop": 135866,
+  "popFactor": 368.6,
   "lat": 43.672162,
   "lon": -70.245527,
   "matched": true
@@ -2821,6 +3134,7 @@
   "name": "Al Mukalla",
   "iso2": "YE",
   "pop": 258132,
+  "popFactor": 508.067,
   "lat": 14.541165,
   "lon": 49.125931,
   "matched": true
@@ -2830,6 +3144,7 @@
   "name": "Daşoguz",
   "iso2": "TM",
   "pop": 201424,
+  "popFactor": 448.803,
   "lat": 41.83999,
   "lon": 59.96496,
   "matched": true
@@ -2839,6 +3154,7 @@
   "name": "Urgentch",
   "iso2": "UZ",
   "pop": 150110,
+  "popFactor": 387.44,
   "lat": 41.559981,
   "lon": 60.640009,
   "matched": true
@@ -2848,6 +3164,7 @@
   "name": "Phuket",
   "iso2": "TH",
   "pop": 141618,
+  "popFactor": 376.322,
   "lat": 7.876533,
   "lon": 98.38153,
   "matched": true
@@ -2857,6 +3174,7 @@
   "name": "Nha Trang",
   "iso2": "VN",
   "pop": 411556,
+  "popFactor": 641.526,
   "lat": 12.250039,
   "lon": 109.170018,
   "matched": true
@@ -2866,6 +3184,7 @@
   "name": "Hue",
   "iso2": "VN",
   "pop": 950000,
+  "popFactor": 974.679,
   "lat": 16.469988,
   "lon": 107.580038,
   "matched": true
@@ -2875,6 +3194,7 @@
   "name": "Can Tho",
   "iso2": "VN",
   "pop": 1121000,
+  "popFactor": 1058.773,
   "lat": 10.049993,
   "lon": 105.770019,
   "matched": true
@@ -2884,6 +3204,7 @@
   "name": "Ndola",
   "iso2": "ZM",
   "pop": 396339,
+  "popFactor": 629.555,
   "lat": -12.999944,
   "lon": 28.650024,
   "matched": true
@@ -2893,6 +3214,7 @@
   "name": "Vitória",
   "iso2": "BR",
   "pop": 1704000,
+  "popFactor": 1305.374,
   "lat": -20.322047,
   "lon": -40.367942,
   "matched": true
@@ -2902,6 +3224,7 @@
   "name": "João Pessoa",
   "iso2": "BR",
   "pop": 956000,
+  "popFactor": 977.753,
   "lat": -7.099189,
   "lon": -34.878017,
   "matched": true
@@ -2911,6 +3234,7 @@
   "name": "Kelowna",
   "iso2": "CA",
   "pop": 125109,
+  "popFactor": 353.708,
   "lat": 49.899989,
   "lon": -119.483312,
   "matched": true
@@ -2920,6 +3244,7 @@
   "name": "Hamilton",
   "iso2": "CA",
   "pop": 721053,
+  "popFactor": 849.148,
   "lat": 43.249982,
   "lon": -79.829996,
   "matched": true
@@ -2929,6 +3254,7 @@
   "name": "Windsor",
   "iso2": "CA",
   "pop": 319246,
+  "popFactor": 565.019,
   "lat": 42.315457,
   "lon": -83.036853,
   "matched": true
@@ -2938,6 +3264,7 @@
   "name": "Akureyri",
   "iso2": "IS",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 65.666572,
   "lon": -18.100017,
   "matched": true
@@ -2947,6 +3274,7 @@
   "name": "Cochabamba",
   "iso2": "BO",
   "pop": 1000000,
+  "popFactor": 1000,
   "lat": -17.410011,
   "lon": -66.169977,
   "matched": true
@@ -2956,6 +3284,7 @@
   "name": "San Salvador de Jujuy",
   "iso2": "AR",
   "pop": 305891,
+  "popFactor": 553.074,
   "lat": -24.183344,
   "lon": -65.30003,
   "matched": true
@@ -2965,6 +3294,7 @@
   "name": "Oruro",
   "iso2": "BO",
   "pop": 246501,
+  "popFactor": 496.489,
   "lat": -17.97995,
   "lon": -67.129996,
   "matched": true
@@ -2974,6 +3304,7 @@
   "name": "Eskişehir",
   "iso2": "TR",
   "pop": 514869,
+  "popFactor": 717.544,
   "lat": 39.794999,
   "lon": 30.529961,
   "matched": true
@@ -2983,6 +3314,7 @@
   "name": "Antalya",
   "iso2": "TR",
   "pop": 783000,
+  "popFactor": 884.873,
   "lat": 36.891928,
   "lon": 30.69803,
   "matched": true
@@ -2992,6 +3324,7 @@
   "name": "Kayseri",
   "iso2": "TR",
   "pop": 592840,
+  "popFactor": 769.961,
   "lat": 38.73496,
   "lon": 35.49002,
   "matched": true
@@ -3001,6 +3334,7 @@
   "name": "Toowoomba",
   "iso2": "AU",
   "pop": 92800,
+  "popFactor": 304.631,
   "lat": -27.564533,
   "lon": 151.95552,
   "matched": true
@@ -3010,6 +3344,7 @@
   "name": "Gaziantep",
   "iso2": "TR",
   "pop": 1044000,
+  "popFactor": 1021.763,
   "lat": 37.07693,
   "lon": 37.383048,
   "matched": true
@@ -3019,6 +3354,7 @@
   "name": "Linköping",
   "iso2": "SE",
   "pop": 96732,
+  "popFactor": 311.018,
   "lat": 58.410012,
   "lon": 15.62994,
   "matched": true
@@ -3028,6 +3364,7 @@
   "name": "Kiruna",
   "iso2": "SE",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 67.850005,
   "lon": 20.216637,
   "matched": true
@@ -3037,6 +3374,7 @@
   "name": "Umeå",
   "iso2": "SE",
   "pop": 78197,
+  "popFactor": 279.637,
   "lat": 63.829992,
   "lon": 20.239994,
   "matched": true
@@ -3046,6 +3384,7 @@
   "name": "Cluj-Napoca",
   "iso2": "RO",
   "pop": 316748,
+  "popFactor": 562.804,
   "lat": 46.788422,
   "lon": 23.598446,
   "matched": true
@@ -3055,6 +3394,7 @@
   "name": "Hat Yai",
   "iso2": "TH",
   "pop": 317954,
+  "popFactor": 563.874,
   "lat": 6.996432,
   "lon": 100.471428,
   "matched": true
@@ -3064,6 +3404,7 @@
   "name": "Funchal",
   "iso2": "PT",
   "pop": 204767,
+  "popFactor": 452.512,
   "lat": 32.649983,
   "lon": -16.88004,
   "matched": true
@@ -3073,6 +3414,7 @@
   "name": "Palma",
   "iso2": "ES",
   "pop": 375773,
+  "popFactor": 613.003,
   "lat": 39.574263,
   "lon": 2.654246,
   "matched": true
@@ -3082,6 +3424,7 @@
   "name": "Abha",
   "iso2": "SA",
   "pop": 210886,
+  "popFactor": 459.223,
   "lat": 18.230088,
   "lon": 42.500134,
   "matched": true
@@ -3091,6 +3434,7 @@
   "name": "Kimberley",
   "iso2": "ZA",
   "pop": 165264,
+  "popFactor": 406.527,
   "lat": -28.746838,
   "lon": 24.770002,
   "matched": true
@@ -3100,6 +3444,7 @@
   "name": "Polokwane",
   "iso2": "ZA",
   "pop": 220045,
+  "popFactor": 469.09,
   "lat": -23.890029,
   "lon": 29.450026,
   "matched": true
@@ -3109,6 +3454,7 @@
   "name": "Tangier",
   "iso2": "MA",
   "pop": 750060,
+  "popFactor": 866.06,
   "lat": 35.747287,
   "lon": -5.832704,
   "matched": true
@@ -3118,6 +3464,7 @@
   "name": "Agadir",
   "iso2": "MA",
   "pop": 825467,
+  "popFactor": 908.552,
   "lat": 30.439988,
   "lon": -9.620044,
   "matched": true
@@ -3127,6 +3474,7 @@
   "name": "Boosaaso",
   "iso2": "SO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 11.280021,
   "lon": 49.179985,
   "matched": true
@@ -3136,6 +3484,7 @@
   "name": "Jaffna",
   "iso2": "LK",
   "pop": 250000,
+  "popFactor": 500,
   "lat": 9.675003,
   "lon": 80.005028,
   "matched": true
@@ -3145,6 +3494,7 @@
   "name": "Bacolod",
   "iso2": "PH",
   "pop": 949354,
+  "popFactor": 974.348,
   "lat": 10.631688,
   "lon": 122.981682,
   "matched": true
@@ -3154,6 +3504,7 @@
   "name": "Roxas",
   "iso2": "PH",
   "pop": 102688,
+  "popFactor": 320.45,
   "lat": 11.585274,
   "lon": 122.751101,
   "matched": true
@@ -3163,6 +3514,7 @@
   "name": "Puerto Princesa",
   "iso2": "PH",
   "pop": 157144,
+  "popFactor": 396.414,
   "lat": 9.754268,
   "lon": 118.744384,
   "matched": true
@@ -3172,6 +3524,7 @@
   "name": "Cagayan de Oro",
   "iso2": "PH",
   "pop": 1121561,
+  "popFactor": 1059.038,
   "lat": 8.45084,
   "lon": 124.685299,
   "matched": true
@@ -3181,6 +3534,7 @@
   "name": "Cabo San Lucas",
   "iso2": "MX",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 22.892756,
   "lon": -109.904516,
   "matched": true
@@ -3190,6 +3544,7 @@
   "name": "Cozumel",
   "iso2": "MX",
   "pop": 73934,
+  "popFactor": 271.908,
   "lat": 20.51,
   "lon": -86.95,
   "matched": true
@@ -3199,6 +3554,7 @@
   "name": "Ilorin",
   "iso2": "NG",
   "pop": 771000,
+  "popFactor": 878.066,
   "lat": 8.491956,
   "lon": 4.54805,
   "matched": true
@@ -3208,6 +3564,7 @@
   "name": "Łódź",
   "iso2": "PL",
   "pop": 758000,
+  "popFactor": 870.632,
   "lat": 51.776937,
   "lon": 19.449414,
   "matched": true
@@ -3217,6 +3574,7 @@
   "name": "Zaragoza",
   "iso2": "ES",
   "pop": 649404,
+  "popFactor": 805.856,
   "lat": 41.650002,
   "lon": -0.889982,
   "matched": true
@@ -3226,6 +3584,7 @@
   "name": "Göteborg",
   "iso2": "SE",
   "pop": 537797,
+  "popFactor": 733.346,
   "lat": 57.750001,
   "lon": 12.000032,
   "matched": true
@@ -3235,6 +3594,7 @@
   "name": "Manado",
   "iso2": "ID",
   "pop": 451893,
+  "popFactor": 672.23,
   "lat": 1.480025,
   "lon": 124.849991,
   "matched": true
@@ -3244,6 +3604,7 @@
   "name": "Yogyakarta",
   "iso2": "ID",
   "pop": 636660,
+  "popFactor": 797.91,
   "lat": -7.779953,
   "lon": 110.375009,
   "matched": true
@@ -3253,6 +3614,7 @@
   "name": "Limerick",
   "iso2": "IE",
   "pop": 90054,
+  "popFactor": 300.09,
   "lat": 52.664704,
   "lon": -8.62305,
   "matched": true
@@ -3262,6 +3624,7 @@
   "name": "Genoa",
   "iso2": "IT",
   "pop": 647497,
+  "popFactor": 804.672,
   "lat": 44.409988,
   "lon": 8.930039,
   "matched": true
@@ -3271,6 +3634,7 @@
   "name": "Ipoh",
   "iso2": "MY",
   "pop": 673318,
+  "popFactor": 820.56,
   "lat": 4.599989,
   "lon": 101.064983,
   "matched": true
@@ -3280,6 +3644,7 @@
   "name": "Zhuhai",
   "iso2": "CN",
   "pop": 1023000,
+  "popFactor": 1011.435,
   "lat": 22.27889,
   "lon": 113.565832,
   "matched": true
@@ -3289,6 +3654,7 @@
   "name": "Kota Kinabalu",
   "iso2": "MY",
   "pop": 527671,
+  "popFactor": 726.41,
   "lat": 5.979983,
   "lon": 116.110008,
   "matched": true
@@ -3298,6 +3664,7 @@
   "name": "Kisumu",
   "iso2": "KE",
   "pop": 395615,
+  "popFactor": 628.979,
   "lat": -0.090035,
   "lon": 34.750013,
   "matched": true
@@ -3307,6 +3674,7 @@
   "name": "Andoany",
   "iso2": "MG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -13.400023,
   "lon": 48.266604,
   "matched": true
@@ -3316,6 +3684,7 @@
   "name": "Toamasina",
   "iso2": "MG",
   "pop": 210226,
+  "popFactor": 458.504,
   "lat": -18.181799,
   "lon": 49.404984,
   "matched": true
@@ -3325,6 +3694,7 @@
   "name": "Pontianak",
   "iso2": "ID",
   "pop": 607311,
+  "popFactor": 779.302,
   "lat": -0.029987,
   "lon": 109.319983,
   "matched": true
@@ -3334,6 +3704,7 @@
   "name": "Bata",
   "iso2": "GQ",
   "pop": 173046,
+  "popFactor": 415.988,
   "lat": 1.870001,
   "lon": 9.769987,
   "matched": true
@@ -3343,6 +3714,7 @@
   "name": "Hurghada",
   "iso2": "EG",
   "pop": 157204,
+  "popFactor": 396.49,
   "lat": 27.230003,
   "lon": 33.830018,
   "matched": true
@@ -3352,6 +3724,7 @@
   "name": "Cologne",
   "iso2": "DE",
   "pop": 1004000,
+  "popFactor": 1001.998,
   "lat": 50.93195,
   "lon": 6.948059,
   "matched": true
@@ -3361,6 +3734,7 @@
   "name": "Yancheng",
   "iso2": "CN",
   "pop": 839000,
+  "popFactor": 915.969,
   "lat": 33.387502,
   "lon": 120.123332,
   "matched": true
@@ -3370,6 +3744,7 @@
   "name": "Kumasi",
   "iso2": "GH",
   "pop": 1646000,
+  "popFactor": 1282.965,
   "lat": 6.691937,
   "lon": -1.63196,
   "matched": true
@@ -3379,6 +3754,7 @@
   "name": "Belagavi",
   "iso2": "IN",
   "pop": 608756,
+  "popFactor": 780.228,
   "lat": 15.865012,
   "lon": 74.505002,
   "matched": true
@@ -3388,6 +3764,7 @@
   "name": "Iraklio",
   "iso2": "GR",
   "pop": 137154,
+  "popFactor": 370.343,
   "lat": 35.325013,
   "lon": 25.130497,
   "matched": true
@@ -3397,6 +3774,7 @@
   "name": "Sukhumi",
   "iso2": "GE",
   "pop": 81546,
+  "popFactor": 285.563,
   "lat": 43.020021,
   "lon": 41.020018,
   "matched": true
@@ -3406,6 +3784,7 @@
   "name": "Oulu",
   "iso2": "FI",
   "pop": 136752,
+  "popFactor": 369.8,
   "lat": 64.999998,
   "lon": 25.470011,
   "matched": true
@@ -3415,6 +3794,7 @@
   "name": "Oral",
   "iso2": "KZ",
   "pop": 209788,
+  "popFactor": 458.026,
   "lat": 51.27112,
   "lon": 51.334996,
   "matched": true
@@ -3424,6 +3804,7 @@
   "name": "Abadan",
   "iso2": "IR",
   "pop": 370180,
+  "popFactor": 608.424,
   "lat": 30.330744,
   "lon": 48.279678,
   "matched": true
@@ -3433,6 +3814,7 @@
   "name": "Birjand",
   "iso2": "IR",
   "pop": 324703,
+  "popFactor": 569.827,
   "lat": 32.88002,
   "lon": 59.219941,
   "matched": true
@@ -3442,6 +3824,7 @@
   "name": "Zahedan",
   "iso2": "IR",
   "pop": 598887,
+  "popFactor": 773.878,
   "lat": 29.499994,
   "lon": 60.830023,
   "matched": true
@@ -3451,6 +3834,7 @@
   "name": "Århus",
   "iso2": "DK",
   "pop": 237551,
+  "popFactor": 487.392,
   "lat": 56.157204,
   "lon": 10.210684,
   "matched": true
@@ -3460,6 +3844,7 @@
   "name": "Resistencia",
   "iso2": "AR",
   "pop": 387158,
+  "popFactor": 622.22,
   "lat": -27.459992,
   "lon": -58.990028,
   "matched": true
@@ -3469,6 +3854,7 @@
   "name": "Biskra",
   "iso2": "DZ",
   "pop": 202103,
+  "popFactor": 449.559,
   "lat": 34.859977,
   "lon": 5.730027,
   "matched": true
@@ -3478,6 +3864,7 @@
   "name": "Batna",
   "iso2": "DZ",
   "pop": 280798,
+  "popFactor": 529.904,
   "lat": 35.569959,
   "lon": 6.17,
   "matched": true
@@ -3487,6 +3874,7 @@
   "name": "Burgas",
   "iso2": "BG",
   "pop": 195966,
+  "popFactor": 442.68,
   "lat": 42.5146,
   "lon": 27.474643,
   "matched": true
@@ -3496,6 +3884,7 @@
   "name": "Majuro",
   "iso2": "MH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 7.103004,
   "lon": 171.38,
   "matched": true
@@ -3505,6 +3894,7 @@
   "name": "Agana",
   "iso2": "GU",
   "pop": 122411,
+  "popFactor": 349.873,
   "lat": 13.470016,
   "lon": 144.750017,
   "matched": true
@@ -3514,6 +3904,7 @@
   "name": "Funafuti",
   "iso2": "TV",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -8.516652,
   "lon": 179.216647,
   "matched": true
@@ -3523,6 +3914,7 @@
   "name": "Tarawa",
   "iso2": "KI",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 1.338188,
   "lon": 173.017571,
   "matched": true
@@ -3532,6 +3924,7 @@
   "name": "Moroni",
   "iso2": "KM",
   "pop": 128698,
+  "popFactor": 358.745,
   "lat": -11.704158,
   "lon": 43.240244,
   "matched": true
@@ -3541,6 +3934,7 @@
   "name": "Macau",
   "iso2": "MO",
   "pop": 568700,
+  "popFactor": 754.122,
   "lat": 22.202998,
   "lon": 113.545048,
   "matched": true
@@ -3550,6 +3944,7 @@
   "name": "Santa Cruz de Tenerife",
   "iso2": "ES",
   "pop": 336061,
+  "popFactor": 579.708,
   "lat": 28.469979,
   "lon": -16.250001,
   "matched": true
@@ -3559,6 +3954,7 @@
   "name": "Avarua",
   "iso2": "CK",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -21.196226,
   "lon": -159.785437,
   "matched": true
@@ -3568,6 +3964,7 @@
   "name": "Hualien",
   "iso2": "TW",
   "pop": 350468,
+  "popFactor": 592.003,
   "lat": 23.983742,
   "lon": 121.600009,
   "matched": true
@@ -3577,6 +3974,7 @@
   "name": "Tainan",
   "iso2": "TW",
   "pop": 1876312,
+  "popFactor": 1369.785,
   "lat": 23.000003,
   "lon": 120.200043,
   "matched": true
@@ -3586,6 +3984,7 @@
   "name": "San Bernardino",
   "iso2": "US",
   "pop": 1745000,
+  "popFactor": 1320.984,
   "lat": 34.12233,
   "lon": -117.30198,
   "matched": true
@@ -3595,6 +3994,7 @@
   "name": "Rochester",
   "iso2": "US",
   "pop": 755000,
+  "popFactor": 868.907,
   "lat": 43.172372,
   "lon": -77.621896,
   "matched": true
@@ -3604,6 +4004,7 @@
   "name": "Manchester",
   "iso2": "GB",
   "pop": 2230000,
+  "popFactor": 1493.318,
   "lat": 53.502361,
   "lon": -2.249933,
   "matched": true
@@ -3613,6 +4014,7 @@
   "name": "Gujranwala",
   "iso2": "PK",
   "pop": 1513000,
+  "popFactor": 1230.041,
   "lat": 32.162372,
   "lon": 74.183076,
   "matched": true
@@ -3622,6 +4024,7 @@
   "name": "Xiamen",
   "iso2": "CN",
   "pop": 2519000,
+  "popFactor": 1587.136,
   "lat": 24.451938,
   "lon": 118.078071,
   "matched": true
@@ -3631,6 +4034,7 @@
   "name": "Yantai",
   "iso2": "CN",
   "pop": 2116000,
+  "popFactor": 1454.648,
   "lat": 37.532354,
   "lon": 121.398075,
   "matched": true
@@ -3640,6 +4044,7 @@
   "name": "Wuxi",
   "iso2": "CN",
   "pop": 1749000,
+  "popFactor": 1322.498,
   "lat": 31.581942,
   "lon": 120.298039,
   "matched": true
@@ -3649,6 +4054,7 @@
   "name": "Chandigarh",
   "iso2": "IN",
   "pop": 979000,
+  "popFactor": 989.444,
   "lat": 30.721943,
   "lon": 76.77806,
   "matched": true
@@ -3658,6 +4064,7 @@
   "name": "Nasik",
   "iso2": "IN",
   "pop": 1473000,
+  "popFactor": 1213.672,
   "lat": 20.002365,
   "lon": 73.778036,
   "matched": true
@@ -3667,6 +4074,7 @@
   "name": "Vadodara",
   "iso2": "IN",
   "pop": 1756000,
+  "popFactor": 1325.142,
   "lat": 22.311965,
   "lon": 73.178073,
   "matched": true
@@ -3676,6 +4084,7 @@
   "name": "Rajkot",
   "iso2": "IN",
   "pop": 1260000,
+  "popFactor": 1122.497,
   "lat": 22.311965,
   "lon": 70.798063,
   "matched": true
@@ -3685,6 +4094,7 @@
   "name": "Spokane",
   "iso2": "US",
   "pop": 347705,
+  "popFactor": 589.665,
   "lat": 47.669996,
   "lon": -117.419949,
   "matched": true
@@ -3694,6 +4104,7 @@
   "name": "Tucson",
   "iso2": "US",
   "pop": 823000,
+  "popFactor": 907.193,
   "lat": 32.206943,
   "lon": -110.891932,
   "matched": true
@@ -3703,6 +4114,7 @@
   "name": "Fresno",
   "iso2": "US",
   "pop": 616353,
+  "popFactor": 785.082,
   "lat": 36.747717,
   "lon": -119.772984,
   "matched": true
@@ -3712,6 +4124,7 @@
   "name": "Colorado Springs",
   "iso2": "US",
   "pop": 493654,
+  "popFactor": 702.605,
   "lat": 38.862963,
   "lon": -104.791986,
   "matched": true
@@ -3721,6 +4134,7 @@
   "name": "Reno",
   "iso2": "US",
   "pop": 328585,
+  "popFactor": 573.223,
   "lat": 39.529976,
   "lon": -119.82001,
   "matched": true
@@ -3730,6 +4144,7 @@
   "name": "Albuquerque",
   "iso2": "US",
   "pop": 898642,
+  "popFactor": 947.967,
   "lat": 35.104975,
   "lon": -106.641331,
   "matched": true
@@ -3739,6 +4154,7 @@
   "name": "Kansas City",
   "iso2": "US",
   "pop": 1469000,
+  "popFactor": 1212.023,
   "lat": 39.109034,
   "lon": -94.60604,
   "matched": true
@@ -3748,6 +4164,7 @@
   "name": "Tulsa",
   "iso2": "US",
   "pop": 946962,
+  "popFactor": 973.12,
   "lat": 36.120003,
   "lon": -95.930021,
   "matched": true
@@ -3757,6 +4174,7 @@
   "name": "Austin",
   "iso2": "US",
   "pop": 1161000,
+  "popFactor": 1077.497,
   "lat": 30.268896,
   "lon": -97.744724,
   "matched": true
@@ -3766,6 +4184,7 @@
   "name": "El Paso",
   "iso2": "US",
   "pop": 753000,
+  "popFactor": 867.756,
   "lat": 31.78193,
   "lon": -106.511941,
   "matched": true
@@ -3775,6 +4194,7 @@
   "name": "Orlando",
   "iso2": "US",
   "pop": 1350000,
+  "popFactor": 1161.895,
   "lat": 28.511923,
   "lon": -81.381976,
   "matched": true
@@ -3784,6 +4204,7 @@
   "name": "Jacksonville",
   "iso2": "US",
   "pop": 988000,
+  "popFactor": 993.982,
   "lat": 30.331967,
   "lon": -81.671933,
   "matched": true
@@ -3793,6 +4214,7 @@
   "name": "Savannah",
   "iso2": "US",
   "pop": 180187,
+  "popFactor": 424.484,
   "lat": 32.021106,
   "lon": -81.109995,
   "matched": true
@@ -3802,6 +4224,7 @@
   "name": "Indianapolis",
   "iso2": "US",
   "pop": 1436000,
+  "popFactor": 1198.332,
   "lat": 39.751934,
   "lon": -86.171994,
   "matched": true
@@ -3811,6 +4234,7 @@
   "name": "Knoxville",
   "iso2": "US",
   "pop": 655400,
+  "popFactor": 809.568,
   "lat": 35.970012,
   "lon": -83.92003,
   "matched": true
@@ -3820,6 +4244,7 @@
   "name": "Richmond",
   "iso2": "US",
   "pop": 912000,
+  "popFactor": 954.987,
   "lat": 37.551965,
   "lon": -77.451932,
   "matched": true
@@ -3829,6 +4254,7 @@
   "name": "Baltimore",
   "iso2": "US",
   "pop": 2255000,
+  "popFactor": 1501.666,
   "lat": 39.301936,
   "lon": -76.621931,
   "matched": true
@@ -3838,6 +4264,7 @@
   "name": "Syracuse",
   "iso2": "US",
   "pop": 662577,
+  "popFactor": 813.988,
   "lat": 43.049994,
   "lon": -76.150014,
   "matched": true
@@ -3847,6 +4274,7 @@
   "name": "Port-of-Spain",
   "iso2": "TT",
   "pop": 294934,
+  "popFactor": 543.078,
   "lat": 10.651997,
   "lon": -61.517031,
   "matched": true
@@ -3856,6 +4284,7 @@
   "name": "Bukhara",
   "iso2": "UZ",
   "pop": 319476,
+  "popFactor": 565.222,
   "lat": 39.780012,
   "lon": 64.43001,
   "matched": true
@@ -3865,6 +4294,7 @@
   "name": "Nukus",
   "iso2": "UZ",
   "pop": 230006,
+  "popFactor": 479.589,
   "lat": 42.470003,
   "lon": 59.615007,
   "matched": true
@@ -3874,6 +4304,7 @@
   "name": "Türkmenabat",
   "iso2": "TM",
   "pop": 234817,
+  "popFactor": 484.579,
   "lat": 39.110002,
   "lon": 63.580036,
   "matched": true
@@ -3883,6 +4314,7 @@
   "name": "Haiphong",
   "iso2": "VN",
   "pop": 1969000,
+  "popFactor": 1403.211,
   "lat": 20.831952,
   "lon": 106.678147,
   "matched": true
@@ -3892,6 +4324,7 @@
   "name": "Da Nang",
   "iso2": "VN",
   "pop": 1000000,
+  "popFactor": 1000,
   "lat": 16.060039,
   "lon": 108.249971,
   "matched": true
@@ -3901,6 +4334,7 @@
   "name": "Livingstone",
   "iso2": "ZM",
   "pop": 165480,
+  "popFactor": 406.792,
   "lat": -17.860009,
   "lon": 25.860013,
   "matched": true
@@ -3910,6 +4344,7 @@
   "name": "Douala",
   "iso2": "CM",
   "pop": 1906000,
+  "popFactor": 1380.58,
   "lat": 4.062356,
   "lon": 9.708045,
   "matched": true
@@ -3919,6 +4354,7 @@
   "name": "Birmingham",
   "iso2": "GB",
   "pop": 2285000,
+  "popFactor": 1511.622,
   "lat": 52.47692,
   "lon": -1.921943,
   "matched": true
@@ -3928,6 +4364,7 @@
   "name": "Belfast",
   "iso2": "GB",
   "pop": 450406,
+  "popFactor": 671.123,
   "lat": 54.600012,
   "lon": -5.960034,
   "matched": true
@@ -3937,6 +4374,7 @@
   "name": "İzmir",
   "iso2": "TR",
   "pop": 2587000,
+  "popFactor": 1608.415,
   "lat": 38.438096,
   "lon": 27.149848,
   "matched": true
@@ -3946,6 +4384,7 @@
   "name": "Konya",
   "iso2": "TR",
   "pop": 919000,
+  "popFactor": 958.645,
   "lat": 37.876958,
   "lon": 32.473064,
   "matched": true
@@ -3955,6 +4394,7 @@
   "name": "Adana",
   "iso2": "TR",
   "pop": 1293000,
+  "popFactor": 1137.102,
   "lat": 36.996935,
   "lon": 35.318058,
   "matched": true
@@ -3964,6 +4404,7 @@
   "name": "Kigali",
   "iso2": "RW",
   "pop": 860000,
+  "popFactor": 927.362,
   "lat": -1.951644,
   "lon": 30.058586,
   "matched": true
@@ -3973,6 +4414,7 @@
   "name": "Constanța",
   "iso2": "RO",
   "pop": 303399,
+  "popFactor": 550.817,
   "lat": 44.202662,
   "lon": 28.609974,
   "matched": true
@@ -3982,6 +4424,7 @@
   "name": "Luleå",
   "iso2": "SE",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 65.596635,
   "lon": 22.158378,
   "matched": true
@@ -3991,6 +4434,7 @@
   "name": "Iași",
   "iso2": "RO",
   "pop": 325914,
+  "popFactor": 570.889,
   "lat": 47.168347,
   "lon": 27.574947,
   "matched": true
@@ -4000,6 +4444,7 @@
   "name": "Chiang Mai",
   "iso2": "TH",
   "pop": 397211,
+  "popFactor": 630.247,
   "lat": 18.799975,
   "lon": 98.980046,
   "matched": true
@@ -4009,6 +4454,7 @@
   "name": "Arequipa",
   "iso2": "PE",
   "pop": 815000,
+  "popFactor": 902.774,
   "lat": -16.418048,
   "lon": -71.531957,
   "matched": true
@@ -4018,6 +4464,7 @@
   "name": "Pucallpa",
   "iso2": "PE",
   "pop": 310750,
+  "popFactor": 557.45,
   "lat": -8.368909,
   "lon": -74.534996,
   "matched": true
@@ -4027,6 +4474,7 @@
   "name": "Iquitos",
   "iso2": "PE",
   "pop": 458729,
+  "popFactor": 677.295,
   "lat": -3.750018,
   "lon": -73.25001,
   "matched": true
@@ -4036,6 +4484,7 @@
   "name": "Ciudad del Este",
   "iso2": "PY",
   "pop": 320872,
+  "popFactor": 566.456,
   "lat": -25.5167,
   "lon": -54.616057,
   "matched": true
@@ -4045,6 +4494,7 @@
   "name": "Ponta Delgada",
   "iso2": "PT",
   "pop": 61526,
+  "popFactor": 248.044,
   "lat": 37.748302,
   "lon": -25.666584,
   "matched": true
@@ -4054,6 +4504,7 @@
   "name": "Bilbao",
   "iso2": "ES",
   "pop": 875552,
+  "popFactor": 935.709,
   "lat": 43.249982,
   "lon": -2.929987,
   "matched": true
@@ -4063,6 +4514,7 @@
   "name": "Medina",
   "iso2": "SA",
   "pop": 1010000,
+  "popFactor": 1004.988,
   "lat": 24.501935,
   "lon": 39.578057,
   "matched": true
@@ -4072,6 +4524,7 @@
   "name": "Tabuk",
   "iso2": "SA",
   "pop": 547957,
+  "popFactor": 740.241,
   "lat": 28.383835,
   "lon": 36.554967,
   "matched": true
@@ -4081,6 +4534,7 @@
   "name": "Juba",
   "iso2": "SS",
   "pop": 111975,
+  "popFactor": 334.627,
   "lat": 4.829975,
   "lon": 31.580026,
   "matched": true
@@ -4090,6 +4544,7 @@
   "name": "Kristiansand",
   "iso2": "NO",
   "pop": 63814,
+  "popFactor": 252.614,
   "lat": 58.166642,
   "lon": 8.000018,
   "matched": true
@@ -4099,6 +4554,7 @@
   "name": "Ljubljana",
   "iso2": "SI",
   "pop": 314807,
+  "popFactor": 561.077,
   "lat": 46.055288,
   "lon": 14.514969,
   "matched": true
@@ -4108,6 +4564,7 @@
   "name": "Bratislava",
   "iso2": "SK",
   "pop": 423737,
+  "popFactor": 650.951,
   "lat": 48.150018,
   "lon": 17.116981,
   "matched": true
@@ -4117,6 +4574,7 @@
   "name": "Doha",
   "iso2": "QA",
   "pop": 1450000,
+  "popFactor": 1204.159,
   "lat": 25.286556,
   "lon": 51.532968,
   "matched": true
@@ -4126,6 +4584,7 @@
   "name": "Quetta",
   "iso2": "PK",
   "pop": 768000,
+  "popFactor": 876.356,
   "lat": 30.221948,
   "lon": 67.023048,
   "matched": true
@@ -4135,6 +4594,7 @@
   "name": "George",
   "iso2": "ZA",
   "pop": 174582,
+  "popFactor": 417.83,
   "lat": -33.950035,
   "lon": 22.45004,
   "matched": true
@@ -4144,6 +4604,7 @@
   "name": "Tete",
   "iso2": "MZ",
   "pop": 129316,
+  "popFactor": 359.605,
   "lat": -16.170035,
   "lon": 33.580007,
   "matched": true
@@ -4153,6 +4614,7 @@
   "name": "Nampula",
   "iso2": "MZ",
   "pop": 388526,
+  "popFactor": 623.319,
   "lat": -15.136041,
   "lon": 39.293043,
   "matched": true
@@ -4162,6 +4624,7 @@
   "name": "Lae",
   "iso2": "PG",
   "pop": 131052,
+  "popFactor": 362.011,
   "lat": -6.732988,
   "lon": 146.990035,
   "matched": true
@@ -4171,6 +4634,7 @@
   "name": "Oujda",
   "iso2": "MA",
   "pop": 409391,
+  "popFactor": 639.837,
   "lat": 34.690013,
   "lon": -1.909972,
   "matched": true
@@ -4180,6 +4644,7 @@
   "name": "Podgorica",
   "iso2": "ME",
   "pop": 145850,
+  "popFactor": 381.903,
   "lat": 42.465973,
   "lon": 19.266307,
   "matched": true
@@ -4189,6 +4654,7 @@
   "name": "East London",
   "iso2": "ZA",
   "pop": 338627,
+  "popFactor": 581.917,
   "lat": -32.970043,
   "lon": 27.87002,
   "matched": true
@@ -4198,6 +4664,7 @@
   "name": "Kaliningrad",
   "iso2": "RU",
   "pop": 434954,
+  "popFactor": 659.51,
   "lat": 54.700006,
   "lon": 20.497343,
   "matched": true
@@ -4207,6 +4674,7 @@
   "name": "Yaroslavl",
   "iso2": "RU",
   "pop": 606730,
+  "popFactor": 778.929,
   "lat": 57.619983,
   "lon": 39.870011,
   "matched": true
@@ -4216,6 +4684,7 @@
   "name": "Sochi",
   "iso2": "RU",
   "pop": 327608,
+  "popFactor": 572.371,
   "lat": 43.590012,
   "lon": 39.729967,
   "matched": true
@@ -4225,6 +4694,7 @@
   "name": "Krasnodar",
   "iso2": "RU",
   "pop": 649851,
+  "popFactor": 806.133,
   "lat": 45.019977,
   "lon": 39.000038,
   "matched": true
@@ -4234,6 +4704,7 @@
   "name": "Magnitogorsk",
   "iso2": "RU",
   "pop": 413351,
+  "popFactor": 642.924,
   "lat": 53.422694,
   "lon": 58.980007,
   "matched": true
@@ -4243,6 +4714,7 @@
   "name": "Chelyabinsk",
   "iso2": "RU",
   "pop": 1091000,
+  "popFactor": 1044.509,
   "lat": 55.156937,
   "lon": 61.436722,
   "matched": true
@@ -4252,6 +4724,7 @@
   "name": "Astrakhan",
   "iso2": "RU",
   "pop": 502533,
+  "popFactor": 708.896,
   "lat": 46.348655,
   "lon": 48.054989,
   "matched": true
@@ -4261,6 +4734,7 @@
   "name": "Saratov",
   "iso2": "RU",
   "pop": 843000,
+  "popFactor": 918.15,
   "lat": 51.581936,
   "lon": 46.02805,
   "matched": true
@@ -4270,6 +4744,7 @@
   "name": "Omsk",
   "iso2": "RU",
   "pop": 1135000,
+  "popFactor": 1065.364,
   "lat": 54.991934,
   "lon": 73.398008,
   "matched": true
@@ -4279,6 +4754,7 @@
   "name": "Tyumen",
   "iso2": "RU",
   "pop": 519119,
+  "popFactor": 720.499,
   "lat": 57.140012,
   "lon": 65.529995,
   "matched": true
@@ -4288,6 +4764,7 @@
   "name": "Kemerovo",
   "iso2": "RU",
   "pop": 477090,
+  "popFactor": 690.717,
   "lat": 55.339967,
   "lon": 86.08998,
   "matched": true
@@ -4297,6 +4774,7 @@
   "name": "Grozny",
   "iso2": "RU",
   "pop": 226100,
+  "popFactor": 475.5,
   "lat": 43.318685,
   "lon": 45.698699,
   "matched": true
@@ -4306,6 +4784,7 @@
   "name": "Gwangju",
   "iso2": "KR",
   "pop": 1440000,
+  "popFactor": 1200,
   "lat": 35.172912,
   "lon": 126.908488,
   "matched": true
@@ -4315,6 +4794,7 @@
   "name": "Busan",
   "iso2": "KR",
   "pop": 3480000,
+  "popFactor": 1865.476,
   "lat": 35.096999,
   "lon": 129.008102,
   "matched": true
@@ -4324,6 +4804,7 @@
   "name": "Zamboanga",
   "iso2": "PH",
   "pop": 773000,
+  "popFactor": 879.204,
   "lat": 6.921923,
   "lon": 122.078085,
   "matched": true
@@ -4333,6 +4814,7 @@
   "name": "Laoag",
   "iso2": "PH",
   "pop": 207048,
+  "popFactor": 455.025,
   "lat": 18.198849,
   "lon": 120.59361,
   "matched": true
@@ -4342,6 +4824,7 @@
   "name": "General Santos",
   "iso2": "PH",
   "pop": 950530,
+  "popFactor": 974.951,
   "lat": 6.110827,
   "lon": 125.174726,
   "matched": true
@@ -4351,6 +4834,7 @@
   "name": "Abakan",
   "iso2": "RU",
   "pop": 167289,
+  "popFactor": 409.01,
   "lat": 53.703685,
   "lon": 91.445002,
   "matched": true
@@ -4360,6 +4844,7 @@
   "name": "Norilsk",
   "iso2": "RU",
   "pop": 165873,
+  "popFactor": 407.275,
   "lat": 69.340017,
   "lon": 88.224992,
   "matched": true
@@ -4369,6 +4854,7 @@
   "name": "Ulan-Ude",
   "iso2": "RU",
   "pop": 360278,
+  "popFactor": 600.232,
   "lat": 51.824988,
   "lon": 107.624996,
   "matched": true
@@ -4378,6 +4864,7 @@
   "name": "Yuzhno Sakhalinsk",
   "iso2": "RU",
   "pop": 176484,
+  "popFactor": 420.1,
   "lat": 46.964974,
   "lon": 142.740011,
   "matched": true
@@ -4387,6 +4874,7 @@
   "name": "Culiacán",
   "iso2": "MX",
   "pop": 809000,
+  "popFactor": 899.444,
   "lat": 24.831941,
   "lon": -107.381914,
   "matched": true
@@ -4396,6 +4884,7 @@
   "name": "Hermosillo",
   "iso2": "MX",
   "pop": 595811,
+  "popFactor": 771.888,
   "lat": 29.098881,
   "lon": -110.954065,
   "matched": true
@@ -4405,6 +4894,7 @@
   "name": "Oaxaca",
   "iso2": "MX",
   "pop": 530728,
+  "popFactor": 728.511,
   "lat": 17.08269,
   "lon": -96.66995,
   "matched": true
@@ -4414,6 +4904,7 @@
   "name": "León",
   "iso2": "MX",
   "pop": 1488000,
+  "popFactor": 1219.836,
   "lat": 21.151933,
   "lon": -101.701976,
   "matched": true
@@ -4423,6 +4914,7 @@
   "name": "Maiduguri",
   "iso2": "NG",
   "pop": 896000,
+  "popFactor": 946.573,
   "lat": 11.851906,
   "lon": 13.158067,
   "matched": true
@@ -4432,6 +4924,7 @@
   "name": "Port Harcourt",
   "iso2": "NG",
   "pop": 1020000,
+  "popFactor": 1009.95,
   "lat": 4.811948,
   "lon": 7.008055,
   "matched": true
@@ -4441,6 +4934,7 @@
   "name": "Kaduna",
   "iso2": "NG",
   "pop": 1442000,
+  "popFactor": 1200.833,
   "lat": 10.521961,
   "lon": 7.438055,
   "matched": true
@@ -4450,6 +4944,7 @@
   "name": "Gdańsk",
   "iso2": "PL",
   "pop": 740000,
+  "popFactor": 860.233,
   "lat": 54.359975,
   "lon": 18.64004,
   "matched": true
@@ -4459,6 +4954,7 @@
   "name": "Kraków",
   "iso2": "PL",
   "pop": 756000,
+  "popFactor": 869.483,
   "lat": 50.061925,
   "lon": 19.958066,
   "matched": true
@@ -4468,6 +4964,7 @@
   "name": "Walvis Bay",
   "iso2": "NA",
   "pop": 52058,
+  "popFactor": 228.162,
   "lat": -22.957528,
   "lon": 14.505306,
   "matched": true
@@ -4477,6 +4974,7 @@
   "name": "Mwanza",
   "iso2": "TZ",
   "pop": 493944,
+  "popFactor": 702.811,
   "lat": -2.520015,
   "lon": 32.930021,
   "matched": true
@@ -4486,6 +4984,7 @@
   "name": "Malmö",
   "iso2": "SE",
   "pop": 269349,
+  "popFactor": 518.988,
   "lat": 55.583337,
   "lon": 13.033302,
   "matched": true
@@ -4495,6 +4994,7 @@
   "name": "Ambon",
   "iso2": "ID",
   "pop": 355596,
+  "popFactor": 596.319,
   "lat": -3.716687,
   "lon": 128.20002,
   "matched": true
@@ -4504,6 +5004,7 @@
   "name": "Jayapura",
   "iso2": "ID",
   "pop": 169341,
+  "popFactor": 411.511,
   "lat": -2.532986,
   "lon": 140.69998,
   "matched": true
@@ -4513,6 +5014,7 @@
   "name": "Florence",
   "iso2": "IT",
   "pop": 1500000,
+  "popFactor": 1224.745,
   "lat": 43.780001,
   "lon": 11.25,
   "matched": true
@@ -4522,6 +5024,7 @@
   "name": "Catania",
   "iso2": "IT",
   "pop": 674542,
+  "popFactor": 821.305,
   "lat": 37.499971,
   "lon": 15.079999,
   "matched": true
@@ -4531,6 +5034,7 @@
   "name": "Pristina",
   "iso2": "XK",
   "pop": 465186,
+  "popFactor": 682.045,
   "lat": 42.66671,
   "lon": 21.165984,
   "matched": true
@@ -4540,6 +5044,7 @@
   "name": "Eldoret",
   "iso2": "KE",
   "pop": 353381,
+  "popFactor": 594.459,
   "lat": 0.520006,
   "lon": 35.269981,
   "matched": true
@@ -4549,6 +5054,7 @@
   "name": "Banda Aceh",
   "iso2": "ID",
   "pop": 513698,
+  "popFactor": 716.727,
   "lat": 5.549983,
   "lon": 95.320011,
   "matched": true
@@ -4558,6 +5064,7 @@
   "name": "George Town",
   "iso2": "MY",
   "pop": 2500000,
+  "popFactor": 1581.139,
   "lat": 5.413613,
   "lon": 100.329368,
   "matched": true
@@ -4567,6 +5074,7 @@
   "name": "Dunhuang",
   "iso2": "CN",
   "pop": 140094,
+  "popFactor": 374.291,
   "lat": 40.142678,
   "lon": 94.662015,
   "matched": true
@@ -4576,6 +5084,7 @@
   "name": "Quanzhou",
   "iso2": "CN",
   "pop": 1463000,
+  "popFactor": 1209.545,
   "lat": 24.901962,
   "lon": 118.578041,
   "matched": true
@@ -4585,6 +5094,7 @@
   "name": "Hefei",
   "iso2": "CN",
   "pop": 2035000,
+  "popFactor": 1426.534,
   "lat": 31.851977,
   "lon": 117.278068,
   "matched": true
@@ -4594,6 +5104,7 @@
   "name": "Zhanjiang",
   "iso2": "CN",
   "pop": 1590000,
+  "popFactor": 1260.952,
   "lat": 21.20193,
   "lon": 110.378076,
   "matched": true
@@ -4603,6 +5114,7 @@
   "name": "Balikpapan",
   "iso2": "ID",
   "pop": 445905,
+  "popFactor": 667.761,
   "lat": -1.250015,
   "lon": 116.830016,
   "matched": true
@@ -4612,6 +5124,7 @@
   "name": "Kuching",
   "iso2": "MY",
   "pop": 570407,
+  "popFactor": 755.253,
   "lat": 1.52997,
   "lon": 110.329999,
   "matched": true
@@ -4621,6 +5134,7 @@
   "name": "Mahajanga",
   "iso2": "MG",
   "pop": 154657,
+  "popFactor": 393.265,
   "lat": -15.670014,
   "lon": 46.345016,
   "matched": true
@@ -4630,6 +5144,7 @@
   "name": "Surakarta",
   "iso2": "ID",
   "pop": 555308,
+  "popFactor": 745.19,
   "lat": -7.564979,
   "lon": 110.825008,
   "matched": true
@@ -4639,6 +5154,7 @@
   "name": "Santiago de Cuba",
   "iso2": "CU",
   "pop": 555865,
+  "popFactor": 745.564,
   "lat": 20.025017,
   "lon": -75.821326,
   "matched": true
@@ -4648,6 +5164,7 @@
   "name": "Santiago",
   "iso2": "DO",
   "pop": 1550753,
+  "popFactor": 1245.292,
   "lat": 19.50001,
   "lon": -70.670012,
   "matched": true
@@ -4657,6 +5174,7 @@
   "name": "Barranquilla",
   "iso2": "CO",
   "pop": 1798000,
+  "popFactor": 1340.895,
   "lat": 10.961935,
   "lon": -74.801913,
   "matched": true
@@ -4666,6 +5184,7 @@
   "name": "Roseau",
   "iso2": "DM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 15.301016,
   "lon": -61.387013,
   "matched": true
@@ -4675,6 +5194,7 @@
   "name": "Bur Said",
   "iso2": "EG",
   "pop": 623864,
+  "popFactor": 789.851,
   "lat": 31.25999,
   "lon": 32.290008,
   "matched": true
@@ -4684,6 +5204,7 @@
   "name": "Aswan",
   "iso2": "EG",
   "pop": 313442,
+  "popFactor": 559.859,
   "lat": 24.087508,
   "lon": 32.898912,
   "matched": true
@@ -4693,6 +5214,7 @@
   "name": "Asyut",
   "iso2": "EG",
   "pop": 420585,
+  "popFactor": 648.525,
   "lat": 27.18998,
   "lon": 31.179947,
   "matched": true
@@ -4702,6 +5224,7 @@
   "name": "Kisangani",
   "iso2": "CD",
   "pop": 578470,
+  "popFactor": 760.572,
   "lat": 0.520006,
   "lon": 25.22,
   "matched": true
@@ -4711,6 +5234,7 @@
   "name": "Djibouti",
   "iso2": "DJ",
   "pop": 923000,
+  "popFactor": 960.729,
   "lat": 11.595015,
   "lon": 43.148002,
   "matched": true
@@ -4720,6 +5244,7 @@
   "name": "Dresden",
   "iso2": "DE",
   "pop": 617515,
+  "popFactor": 785.821,
   "lat": 51.049971,
   "lon": 13.750003,
   "matched": true
@@ -4729,6 +5254,7 @@
   "name": "Xigaze",
   "iso2": "CN",
   "pop": 80000,
+  "popFactor": 282.843,
   "lat": 29.250009,
   "lon": 88.88335,
   "matched": true
@@ -4738,6 +5264,7 @@
   "name": "Shijiazhuang",
   "iso2": "CN",
   "pop": 2417000,
+  "popFactor": 1554.67,
   "lat": 38.051961,
   "lon": 114.478033,
   "matched": true
@@ -4747,6 +5274,7 @@
   "name": "Dalian",
   "iso2": "CN",
   "pop": 3167000,
+  "popFactor": 1779.607,
   "lat": 38.924784,
   "lon": 121.627885,
   "matched": true
@@ -4756,6 +5284,7 @@
   "name": "Qingdao",
   "iso2": "CN",
   "pop": 2866000,
+  "popFactor": 1692.926,
   "lat": 36.091925,
   "lon": 120.328063,
   "matched": true
@@ -4765,6 +5294,7 @@
   "name": "Huaiyin",
   "iso2": "CN",
   "pop": 1264000,
+  "popFactor": 1124.278,
   "lat": 33.581949,
   "lon": 119.028039,
   "matched": true
@@ -4774,6 +5304,7 @@
   "name": "Wenzhou",
   "iso2": "CN",
   "pop": 2350000,
+  "popFactor": 1532.971,
   "lat": 28.021927,
   "lon": 120.648147,
   "matched": true
@@ -4783,6 +5314,7 @@
   "name": "Ningbo",
   "iso2": "CN",
   "pop": 1923000,
+  "popFactor": 1386.723,
   "lat": 29.881917,
   "lon": 121.548092,
   "matched": true
@@ -4792,6 +5324,7 @@
   "name": "Fukuoka",
   "iso2": "JP",
   "pop": 2792000,
+  "popFactor": 1670.928,
   "lat": 33.596961,
   "lon": 130.408068,
   "matched": true
@@ -4801,6 +5334,7 @@
   "name": "Miyazaki",
   "iso2": "JP",
   "pop": 324384,
+  "popFactor": 569.547,
   "lat": 31.918244,
   "lon": 131.418376,
   "matched": true
@@ -4810,6 +5344,7 @@
   "name": "Naha",
   "iso2": "JP",
   "pop": 905238,
+  "popFactor": 951.44,
   "lat": 26.207172,
   "lon": 127.672972,
   "matched": true
@@ -4819,6 +5354,7 @@
   "name": "Kōchi",
   "iso2": "JP",
   "pop": 335570,
+  "popFactor": 579.284,
   "lat": 33.562433,
   "lon": 133.537523,
   "matched": true
@@ -4828,6 +5364,7 @@
   "name": "Hohhot",
   "iso2": "CN",
   "pop": 1726000,
+  "popFactor": 1313.773,
   "lat": 40.821921,
   "lon": 111.65805,
   "matched": true
@@ -4837,6 +5374,7 @@
   "name": "Hailar",
   "iso2": "CN",
   "pop": 231171,
+  "popFactor": 480.802,
   "lat": 49.19998,
   "lon": 119.700022,
   "matched": true
@@ -4846,6 +5384,7 @@
   "name": "Nagoya",
   "iso2": "JP",
   "pop": 3230000,
+  "popFactor": 1797.22,
   "lat": 35.156943,
   "lon": 136.913046,
   "matched": true
@@ -4855,6 +5394,7 @@
   "name": "Hakodate",
   "iso2": "JP",
   "pop": 302984,
+  "popFactor": 550.44,
   "lat": 41.79498,
   "lon": 140.739978,
   "matched": true
@@ -4864,6 +5404,7 @@
   "name": "Sendai",
   "iso2": "JP",
   "pop": 2250000,
+  "popFactor": 1500,
   "lat": 38.289052,
   "lon": 141.019772,
   "matched": true
@@ -4873,6 +5414,7 @@
   "name": "Goma",
   "iso2": "CD",
   "pop": 144124,
+  "popFactor": 379.637,
   "lat": -1.678799,
   "lon": 29.221787,
   "matched": true
@@ -4882,6 +5424,7 @@
   "name": "Blantyre",
   "iso2": "MW",
   "pop": 584877,
+  "popFactor": 764.773,
   "lat": -15.790007,
   "lon": 34.989947,
   "matched": true
@@ -4891,6 +5434,7 @@
   "name": "Srinagar",
   "iso2": "IN",
   "pop": 1140000,
+  "popFactor": 1067.708,
   "lat": 34.101917,
   "lon": 74.813064,
   "matched": true
@@ -4900,6 +5444,7 @@
   "name": "Thiruvananthapuram",
   "iso2": "IN",
   "pop": 954000,
+  "popFactor": 976.729,
   "lat": 8.50193,
   "lon": 76.948075,
   "matched": true
@@ -4909,6 +5454,7 @@
   "name": "Kochi",
   "iso2": "IN",
   "pop": 1519000,
+  "popFactor": 1232.477,
   "lat": 10.016953,
   "lon": 76.22197,
   "matched": true
@@ -4918,6 +5464,7 @@
   "name": "Mangaluru",
   "iso2": "IN",
   "pop": 776632,
+  "popFactor": 881.267,
   "lat": 12.900025,
   "lon": 74.849994,
   "matched": true
@@ -4927,6 +5474,7 @@
   "name": "Guwahati",
   "iso2": "IN",
   "pop": 983000,
+  "popFactor": 991.464,
   "lat": 26.161963,
   "lon": 91.768049,
   "matched": true
@@ -4936,6 +5484,7 @@
   "name": "Bordeaux",
   "iso2": "FR",
   "pop": 803000,
+  "popFactor": 896.103,
   "lat": 44.851959,
   "lon": -0.596959,
   "matched": true
@@ -4945,6 +5494,7 @@
   "name": "Marseille",
   "iso2": "FR",
   "pop": 1400000,
+  "popFactor": 1183.216,
   "lat": 43.291925,
   "lon": 5.373064,
   "matched": true
@@ -4954,6 +5504,7 @@
   "name": "Nouadhibou",
   "iso2": "MR",
   "pop": 86738,
+  "popFactor": 294.513,
   "lat": 20.900002,
   "lon": -17.056024,
   "matched": true
@@ -4963,6 +5514,7 @@
   "name": "Skopje",
   "iso2": "MK",
   "pop": 494087,
+  "popFactor": 702.913,
   "lat": 42.000006,
   "lon": 21.433462,
   "matched": true
@@ -4972,6 +5524,7 @@
   "name": "Kirkuk",
   "iso2": "IQ",
   "pop": 601433,
+  "popFactor": 775.521,
   "lat": 35.472239,
   "lon": 44.392267,
   "matched": true
@@ -4981,6 +5534,7 @@
   "name": "Najaf",
   "iso2": "IQ",
   "pop": 665552,
+  "popFactor": 815.814,
   "lat": 32.000332,
   "lon": 44.335371,
   "matched": true
@@ -4990,6 +5544,7 @@
   "name": "Dire Dawa",
   "iso2": "ET",
   "pop": 252279,
+  "popFactor": 502.274,
   "lat": 9.589995,
   "lon": 41.860018,
   "matched": true
@@ -4999,6 +5554,7 @@
   "name": "Rovaniemi",
   "iso2": "FI",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 66.500035,
   "lon": 25.715939,
   "matched": true
@@ -5008,6 +5564,7 @@
   "name": "Vaasa",
   "iso2": "FI",
   "pop": 57014,
+  "popFactor": 238.776,
   "lat": 63.099984,
   "lon": 21.600015,
   "matched": true
@@ -5017,6 +5574,7 @@
   "name": "Tampere",
   "iso2": "FI",
   "pop": 259279,
+  "popFactor": 509.194,
   "lat": 61.500005,
   "lon": 23.750013,
   "matched": true
@@ -5026,6 +5584,7 @@
   "name": "Aqtobe",
   "iso2": "KZ",
   "pop": 262457,
+  "popFactor": 512.306,
   "lat": 50.280018,
   "lon": 57.169988,
   "matched": true
@@ -5035,6 +5594,7 @@
   "name": "Qyzylorda",
   "iso2": "KZ",
   "pop": 300000,
+  "popFactor": 547.723,
   "lat": 44.800016,
   "lon": 65.464986,
   "matched": true
@@ -5044,6 +5604,7 @@
   "name": "Atyrau",
   "iso2": "KZ",
   "pop": 182753,
+  "popFactor": 427.496,
   "lat": 47.112692,
   "lon": 51.920024,
   "matched": true
@@ -5053,6 +5614,7 @@
   "name": "Pavlodar",
   "iso2": "KZ",
   "pop": 329002,
+  "popFactor": 573.587,
   "lat": 52.299998,
   "lon": 76.950021,
   "matched": true
@@ -5062,6 +5624,7 @@
   "name": "Semey",
   "iso2": "KZ",
   "pop": 311353,
+  "popFactor": 557.99,
   "lat": 50.434995,
   "lon": 80.275038,
   "matched": true
@@ -5071,6 +5634,7 @@
   "name": "Oskemen",
   "iso2": "KZ",
   "pop": 319067,
+  "popFactor": 564.86,
   "lat": 49.990035,
   "lon": 82.614947,
   "matched": true
@@ -5080,6 +5644,7 @@
   "name": "Ahvaz",
   "iso2": "IR",
   "pop": 996000,
+  "popFactor": 997.998,
   "lat": 31.281935,
   "lon": 48.718067,
   "matched": true
@@ -5089,6 +5654,7 @@
   "name": "Basra",
   "iso2": "IQ",
   "pop": 870000,
+  "popFactor": 932.738,
   "lat": 30.51547,
   "lon": 47.811611,
   "matched": true
@@ -5098,6 +5664,7 @@
   "name": "Bandar-e-Abbas",
   "iso2": "IR",
   "pop": 461499,
+  "popFactor": 679.337,
   "lat": 27.20406,
   "lon": 56.272136,
   "matched": true
@@ -5107,6 +5674,7 @@
   "name": "Tabriz",
   "iso2": "IR",
   "pop": 1413000,
+  "popFactor": 1188.697,
   "lat": 38.088237,
   "lon": 46.2993,
   "matched": true
@@ -5116,6 +5684,7 @@
   "name": "Ludhiana",
   "iso2": "IN",
   "pop": 1649000,
+  "popFactor": 1284.134,
   "lat": 30.929708,
   "lon": 75.870312,
   "matched": true
@@ -5125,6 +5694,7 @@
   "name": "Shymkent",
   "iso2": "KZ",
   "pop": 465392,
+  "popFactor": 682.196,
   "lat": 42.320012,
   "lon": 69.595018,
   "matched": true
@@ -5134,6 +5704,7 @@
   "name": "Taraz",
   "iso2": "KZ",
   "pop": 358153,
+  "popFactor": 598.459,
   "lat": 42.899977,
   "lon": 71.364987,
   "matched": true
@@ -5143,6 +5714,7 @@
   "name": "Lucknow",
   "iso2": "IN",
   "pop": 2695000,
+  "popFactor": 1641.646,
   "lat": 26.856985,
   "lon": 80.913053,
   "matched": true
@@ -5152,6 +5724,7 @@
   "name": "Indore",
   "iso2": "IN",
   "pop": 2026000,
+  "popFactor": 1423.376,
   "lat": 22.717005,
   "lon": 75.863077,
   "matched": true
@@ -5161,6 +5734,7 @@
   "name": "Tiruchirappalli",
   "iso2": "IN",
   "pop": 951000,
+  "popFactor": 975.192,
   "lat": 10.811944,
   "lon": 78.688021,
   "matched": true
@@ -5170,6 +5744,7 @@
   "name": "Pointe-Noire",
   "iso2": "CG",
   "pop": 659084,
+  "popFactor": 811.84,
   "lat": -4.770007,
   "lon": 11.880039,
   "matched": true
@@ -5179,6 +5754,7 @@
   "name": "Rio Branco",
   "iso2": "BR",
   "pop": 257642,
+  "popFactor": 507.584,
   "lat": -9.966589,
   "lon": -67.800007,
   "matched": true
@@ -5188,6 +5764,7 @@
   "name": "São Luís",
   "iso2": "BR",
   "pop": 1038000,
+  "popFactor": 1018.823,
   "lat": -2.514039,
   "lon": -44.267937,
   "matched": true
@@ -5197,6 +5774,7 @@
   "name": "Porto Velho",
   "iso2": "BR",
   "pop": 306180,
+  "popFactor": 553.335,
   "lat": -8.750023,
   "lon": -63.900012,
   "matched": true
@@ -5206,6 +5784,7 @@
   "name": "Belo Horizonte",
   "iso2": "BR",
   "pop": 5575000,
+  "popFactor": 2361.144,
   "lat": -19.91308,
   "lon": -43.91695,
   "matched": true
@@ -5215,6 +5794,7 @@
   "name": "Cuiabá",
   "iso2": "BR",
   "pop": 806000,
+  "popFactor": 897.775,
   "lat": -15.567661,
   "lon": -56.086931,
   "matched": true
@@ -5224,6 +5804,7 @@
   "name": "Maceió",
   "iso2": "BR",
   "pop": 1186000,
+  "popFactor": 1089.036,
   "lat": -9.61805,
   "lon": -35.73192,
   "matched": true
@@ -5233,6 +5814,7 @@
   "name": "Natal",
   "iso2": "BR",
   "pop": 1088000,
+  "popFactor": 1043.072,
   "lat": -5.778077,
   "lon": -35.24195,
   "matched": true
@@ -5242,6 +5824,7 @@
   "name": "Venice",
   "iso2": "IT",
   "pop": 270816,
+  "popFactor": 520.4,
   "lat": 45.438659,
   "lon": 12.334999,
   "matched": true
@@ -5251,6 +5834,7 @@
   "name": "Neuquén",
   "iso2": "AR",
   "pop": 242092,
+  "popFactor": 492.028,
   "lat": -38.95004,
   "lon": -68.059991,
   "matched": true
@@ -5260,6 +5844,7 @@
   "name": "Bariloche",
   "iso2": "AR",
   "pop": 95394,
+  "popFactor": 308.859,
   "lat": -41.149957,
   "lon": -71.3,
   "matched": true
@@ -5269,6 +5854,7 @@
   "name": "Salta",
   "iso2": "AR",
   "pop": 512686,
+  "popFactor": 716.021,
   "lat": -24.783359,
   "lon": -65.416638,
   "matched": true
@@ -5278,6 +5864,7 @@
   "name": "Tucumán",
   "iso2": "AR",
   "pop": 830000,
+  "popFactor": 911.043,
   "lat": -26.814054,
   "lon": -65.21857,
   "matched": true
@@ -5287,6 +5874,7 @@
   "name": "Rosario",
   "iso2": "AR",
   "pop": 1203000,
+  "popFactor": 1096.814,
   "lat": -32.949184,
   "lon": -60.668254,
   "matched": true
@@ -5296,6 +5884,7 @@
   "name": "Campinas",
   "iso2": "BR",
   "pop": 2791000,
+  "popFactor": 1670.629,
   "lat": -22.898066,
   "lon": -47.101976,
   "matched": true
@@ -5305,6 +5894,7 @@
   "name": "Garoua",
   "iso2": "CM",
   "pop": 436899,
+  "popFactor": 660.983,
   "lat": 9.300012,
   "lon": 13.390025,
   "matched": true
@@ -5314,6 +5904,7 @@
   "name": "Herat",
   "iso2": "AF",
   "pop": 481009,
+  "popFactor": 693.548,
   "lat": 34.330009,
   "lon": 62.169993,
   "matched": true
@@ -5323,6 +5914,7 @@
   "name": "Mazar-i-Sharif",
   "iso2": "AF",
   "pop": 458151,
+  "popFactor": 676.869,
   "lat": 36.699994,
   "lon": 67.100028,
   "matched": true
@@ -5332,6 +5924,7 @@
   "name": "Siem Reap",
   "iso2": "KH",
   "pop": 109398,
+  "popFactor": 330.754,
   "lat": 13.366638,
   "lon": 103.850033,
   "matched": true
@@ -5341,6 +5934,7 @@
   "name": "Bridgetown",
   "iso2": "BB",
   "pop": 191152,
+  "popFactor": 437.209,
   "lat": 13.102003,
   "lon": -59.616527,
   "matched": true
@@ -5350,6 +5944,7 @@
   "name": "Annaba",
   "iso2": "DZ",
   "pop": 503524,
+  "popFactor": 709.594,
   "lat": 36.920006,
   "lon": 7.759981,
   "matched": true
@@ -5359,6 +5954,7 @@
   "name": "Constantine",
   "iso2": "DZ",
   "pop": 605179,
+  "popFactor": 777.933,
   "lat": 36.359989,
   "lon": 6.599948,
   "matched": true
@@ -5368,6 +5964,7 @@
   "name": "Brest",
   "iso2": "BY",
   "pop": 300715,
+  "popFactor": 548.375,
   "lat": 52.099984,
   "lon": 23.69999,
   "matched": true
@@ -5377,6 +5974,7 @@
   "name": "Francistown",
   "iso2": "BW",
   "pop": 89979,
+  "popFactor": 299.965,
   "lat": -21.17004,
   "lon": 27.500016,
   "matched": true
@@ -5386,6 +5984,7 @@
   "name": "Broome",
   "iso2": "AU",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -17.961771,
   "lon": 122.230768,
   "matched": true
@@ -5395,6 +5994,7 @@
   "name": "Port Hedland",
   "iso2": "AU",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -20.310402,
   "lon": 118.606032,
   "matched": true
@@ -5404,6 +6004,7 @@
   "name": "Cairns",
   "iso2": "AU",
   "pop": 154225,
+  "popFactor": 392.715,
   "lat": -16.88784,
   "lon": 145.763331,
   "matched": true
@@ -5413,6 +6014,7 @@
   "name": "Gold Coast",
   "iso2": "AU",
   "pop": 527660,
+  "popFactor": 726.402,
   "lat": -28.081504,
   "lon": 153.448246,
   "matched": true
@@ -5422,6 +6024,7 @@
   "name": "Bobo Dioulasso",
   "iso2": "BF",
   "pop": 360106,
+  "popFactor": 600.088,
   "lat": 11.179975,
   "lon": -4.289981,
   "matched": true
@@ -5431,6 +6034,7 @@
   "name": "Mandalay",
   "iso2": "MM",
   "pop": 1300000,
+  "popFactor": 1140.175,
   "lat": 21.971934,
   "lon": 96.083083,
   "matched": true
@@ -5440,6 +6044,7 @@
   "name": "Bujumbura",
   "iso2": "BI",
   "pop": 331700,
+  "popFactor": 575.934,
   "lat": -3.376087,
   "lon": 29.360006,
   "matched": true
@@ -5449,6 +6054,7 @@
   "name": "Pago Pago",
   "iso2": "AS",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -14.276611,
   "lon": -170.706645,
   "matched": true
@@ -5458,6 +6064,7 @@
   "name": "Kingstown",
   "iso2": "VC",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 13.148279,
   "lon": -61.212062,
   "matched": true
@@ -5467,6 +6074,7 @@
   "name": "Castries",
   "iso2": "LC",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 14.001974,
   "lon": -61.000008,
   "matched": true
@@ -5476,6 +6084,7 @@
   "name": "Basseterre",
   "iso2": "KN",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 17.302031,
   "lon": -62.717009,
   "matched": true
@@ -5485,6 +6094,7 @@
   "name": "Las Palmas",
   "iso2": "ES",
   "pop": 378495,
+  "popFactor": 615.219,
   "lat": 28.099976,
   "lon": -15.429999,
   "matched": true
@@ -5494,6 +6104,7 @@
   "name": "Port Louis",
   "iso2": "MU",
   "pop": 595491,
+  "popFactor": 771.681,
   "lat": -20.166639,
   "lon": 57.499994,
   "matched": true
@@ -5503,6 +6114,7 @@
   "name": "Saint George's",
   "iso2": "GD",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 12.052633,
   "lon": -61.741643,
   "matched": true
@@ -5512,6 +6124,7 @@
   "name": "Papeete",
   "iso2": "PF",
   "pop": 131695,
+  "popFactor": 362.898,
   "lat": -17.533363,
   "lon": -149.566669,
   "matched": true
@@ -5521,6 +6134,7 @@
   "name": "Manama",
   "iso2": "BH",
   "pop": 563920,
+  "popFactor": 750.946,
   "lat": 26.236136,
   "lon": 50.583052,
   "matched": true
@@ -5530,6 +6144,7 @@
   "name": "Freeport",
   "iso2": "BS",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 26.533276,
   "lon": -78.700013,
   "matched": true
@@ -5539,6 +6154,7 @@
   "name": "Saint John's",
   "iso2": "AG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 17.118037,
   "lon": -61.850034,
   "matched": true
@@ -5548,6 +6164,7 @@
   "name": "Magong",
   "iso2": "TW",
   "pop": 56435,
+  "popFactor": 237.561,
   "lat": 23.566667,
   "lon": 119.583333,
   "matched": true
@@ -5557,6 +6174,7 @@
   "name": "Taichung",
   "iso2": "TW",
   "pop": 2629323,
+  "popFactor": 1621.519,
   "lat": 24.152078,
   "lon": 120.681667,
   "matched": true
@@ -5566,6 +6184,7 @@
   "name": "Kozhikode",
   "iso2": "IN",
   "pop": 953000,
+  "popFactor": 976.217,
   "lat": 11.252382,
   "lon": 75.768044,
   "matched": true
@@ -5575,6 +6194,7 @@
   "name": "Bhubaneswar",
   "iso2": "IN",
   "pop": 844000,
+  "popFactor": 918.695,
   "lat": 20.272374,
   "lon": 85.825415,
   "matched": true
@@ -5584,6 +6204,7 @@
   "name": "Montevideo",
   "iso2": "UY",
   "pop": 1513000,
+  "popFactor": 1230.041,
   "lat": -34.856096,
   "lon": -56.172998,
   "matched": true
@@ -5593,6 +6214,7 @@
   "name": "Boise",
   "iso2": "US",
   "pop": 338071,
+  "popFactor": 581.439,
   "lat": 43.60859,
   "lon": -116.22749,
   "matched": true
@@ -5602,6 +6224,7 @@
   "name": "San Jose",
   "iso2": "US",
   "pop": 1668000,
+  "popFactor": 1291.511,
   "lat": 37.301929,
   "lon": -121.851935,
   "matched": true
@@ -5611,6 +6234,7 @@
   "name": "Sacramento",
   "iso2": "US",
   "pop": 1604000,
+  "popFactor": 1266.491,
   "lat": 38.576967,
   "lon": -121.471984,
   "matched": true
@@ -5620,6 +6244,7 @@
   "name": "Las Vegas",
   "iso2": "US",
   "pop": 1823000,
+  "popFactor": 1350.185,
   "lat": 36.211944,
   "lon": -115.221952,
   "matched": true
@@ -5629,6 +6254,7 @@
   "name": "Portland",
   "iso2": "US",
   "pop": 1875000,
+  "popFactor": 1369.306,
   "lat": 45.52197,
   "lon": -122.681936,
   "matched": true
@@ -5638,6 +6264,7 @@
   "name": "Salt Lake City",
   "iso2": "US",
   "pop": 966000,
+  "popFactor": 982.853,
   "lat": 40.776962,
   "lon": -111.931998,
   "matched": true
@@ -5647,6 +6274,7 @@
   "name": "Des Moines",
   "iso2": "US",
   "pop": 380655,
+  "popFactor": 616.972,
   "lat": 41.57998,
   "lon": -93.619981,
   "matched": true
@@ -5656,6 +6284,7 @@
   "name": "Omaha",
   "iso2": "US",
   "pop": 877110,
+  "popFactor": 936.542,
   "lat": 41.240001,
   "lon": -96.00999,
   "matched": true
@@ -5665,6 +6294,7 @@
   "name": "Oklahoma City",
   "iso2": "US",
   "pop": 788000,
+  "popFactor": 887.694,
   "lat": 35.471989,
   "lon": -97.520629,
   "matched": true
@@ -5674,6 +6304,7 @@
   "name": "San Antonio",
   "iso2": "US",
   "pop": 1473000,
+  "popFactor": 1213.672,
   "lat": 29.489279,
   "lon": -98.509251,
   "matched": true
@@ -5683,6 +6314,7 @@
   "name": "Valencia",
   "iso2": "VE",
   "pop": 1770000,
+  "popFactor": 1330.413,
   "lat": 10.231927,
   "lon": -67.981967,
   "matched": true
@@ -5692,6 +6324,7 @@
   "name": "Raleigh",
   "iso2": "US",
   "pop": 1163515,
+  "popFactor": 1078.664,
   "lat": 35.818781,
   "lon": -78.644693,
   "matched": true
@@ -5701,6 +6334,7 @@
   "name": "Cleveland",
   "iso2": "US",
   "pop": 1890000,
+  "popFactor": 1374.773,
   "lat": 41.471933,
   "lon": -81.696944,
   "matched": true
@@ -5710,6 +6344,7 @@
   "name": "Cincinnati",
   "iso2": "US",
   "pop": 1636000,
+  "popFactor": 1279.062,
   "lat": 39.163831,
   "lon": -84.458869,
   "matched": true
@@ -5719,6 +6354,7 @@
   "name": "Nashville",
   "iso2": "US",
   "pop": 877000,
+  "popFactor": 936.483,
   "lat": 36.17192,
   "lon": -86.781931,
   "matched": true
@@ -5728,6 +6364,7 @@
   "name": "Memphis",
   "iso2": "US",
   "pop": 1081000,
+  "popFactor": 1039.711,
   "lat": 35.121933,
   "lon": -90.001941,
   "matched": true
@@ -5737,6 +6374,7 @@
   "name": "Norfolk",
   "iso2": "US",
   "pop": 1047869,
+  "popFactor": 1023.655,
   "lat": 36.849959,
   "lon": -76.280006,
   "matched": true
@@ -5746,6 +6384,7 @@
   "name": "Milwaukee",
   "iso2": "US",
   "pop": 1388000,
+  "popFactor": 1178.134,
   "lat": 43.054601,
   "lon": -87.921913,
   "matched": true
@@ -5755,6 +6394,7 @@
   "name": "Buffalo",
   "iso2": "US",
   "pop": 1016000,
+  "popFactor": 1007.968,
   "lat": 42.881924,
   "lon": -78.881948,
   "matched": true
@@ -5764,6 +6404,7 @@
   "name": "Pittsburgh",
   "iso2": "US",
   "pop": 1838000,
+  "popFactor": 1355.729,
   "lat": 40.431945,
   "lon": -80.001931,
   "matched": true
@@ -5773,6 +6414,7 @@
   "name": "Ciudad Guayana",
   "iso2": "VE",
   "pop": 746535,
+  "popFactor": 864.023,
   "lat": 8.370018,
   "lon": -62.619987,
   "matched": true
@@ -5782,6 +6424,7 @@
   "name": "Lomé",
   "iso2": "TG",
   "pop": 1452000,
+  "popFactor": 1204.99,
   "lat": 6.133883,
   "lon": 1.220811,
   "matched": true
@@ -5791,6 +6434,7 @@
   "name": "Tunis",
   "iso2": "TN",
   "pop": 2412500,
+  "popFactor": 1553.222,
   "lat": 36.802778,
   "lon": 10.179678,
   "matched": true
@@ -5800,6 +6444,7 @@
   "name": "Abu Dhabi",
   "iso2": "AE",
   "pop": 603492,
+  "popFactor": 776.847,
   "lat": 24.466684,
   "lon": 54.366593,
   "matched": true
@@ -5809,6 +6454,7 @@
   "name": "Ashgabat",
   "iso2": "TM",
   "pop": 727700,
+  "popFactor": 853.053,
   "lat": 37.949995,
   "lon": 58.383299,
   "matched": true
@@ -5818,6 +6464,7 @@
   "name": "Samarkand",
   "iso2": "UZ",
   "pop": 708000,
+  "popFactor": 841.427,
   "lat": 39.670019,
   "lon": 66.944999,
   "matched": true
@@ -5827,6 +6474,7 @@
   "name": "Lusaka",
   "iso2": "ZM",
   "pop": 1328000,
+  "popFactor": 1152.389,
   "lat": -15.414698,
   "lon": 28.281382,
   "matched": true
@@ -5836,6 +6484,7 @@
   "name": "Harare",
   "iso2": "ZW",
   "pop": 1572000,
+  "popFactor": 1253.794,
   "lat": -17.815844,
   "lon": 31.042764,
   "matched": true
@@ -5845,6 +6494,7 @@
   "name": "Bulawayo",
   "iso2": "ZW",
   "pop": 699385,
+  "popFactor": 836.292,
   "lat": -20.169998,
   "lon": 28.580002,
   "matched": true
@@ -5854,6 +6504,7 @@
   "name": "Dili",
   "iso2": "TL",
   "pop": 234331,
+  "popFactor": 484.077,
   "lat": -8.559388,
   "lon": 125.579456,
   "matched": true
@@ -5863,6 +6514,7 @@
   "name": "Port Vila",
   "iso2": "VU",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -17.73335,
   "lon": 168.316641,
   "matched": true
@@ -5872,6 +6524,7 @@
   "name": "Tegucigalpa",
   "iso2": "HN",
   "pop": 946000,
+  "popFactor": 972.625,
   "lat": 14.103991,
   "lon": -87.219475,
   "matched": true
@@ -5881,6 +6534,7 @@
   "name": "Georgetown",
   "iso2": "GY",
   "pop": 264350,
+  "popFactor": 514.15,
   "lat": 6.801974,
   "lon": -58.167029,
   "matched": true
@@ -5890,6 +6544,7 @@
   "name": "Reykjavík",
   "iso2": "IS",
   "pop": 166212,
+  "popFactor": 407.691,
   "lat": 64.150024,
   "lon": -21.950015,
   "matched": true
@@ -5899,6 +6554,7 @@
   "name": "Port-au-Prince",
   "iso2": "HT",
   "pop": 1998000,
+  "popFactor": 1413.506,
   "lat": 18.542971,
   "lon": -72.33798,
   "matched": true
@@ -5908,6 +6564,7 @@
   "name": "Glasgow",
   "iso2": "GB",
   "pop": 1160000,
+  "popFactor": 1077.033,
   "lat": 55.876351,
   "lon": -4.252653,
   "matched": true
@@ -5917,6 +6574,7 @@
   "name": "Kampala",
   "iso2": "UG",
   "pop": 1420000,
+  "popFactor": 1191.638,
   "lat": 0.318605,
   "lon": 32.581378,
   "matched": true
@@ -5926,6 +6584,7 @@
   "name": "Aden",
   "iso2": "YE",
   "pop": 1000000,
+  "popFactor": 1000,
   "lat": 12.779723,
   "lon": 45.00949,
   "matched": true
@@ -5935,6 +6594,7 @@
   "name": "Paramaribo",
   "iso2": "SR",
   "pop": 254169,
+  "popFactor": 504.152,
   "lat": 5.83503,
   "lon": -55.167031,
   "matched": true
@@ -5944,6 +6604,7 @@
   "name": "Seville",
   "iso2": "ES",
   "pop": 1212045,
+  "popFactor": 1100.929,
   "lat": 37.405015,
   "lon": -5.980007,
   "matched": true
@@ -5953,6 +6614,7 @@
   "name": "Niamey",
   "iso2": "NE",
   "pop": 915000,
+  "popFactor": 956.556,
   "lat": 13.518652,
   "lon": 2.11471,
   "matched": true
@@ -5962,6 +6624,7 @@
   "name": "Port Sudan",
   "iso2": "SD",
   "pop": 489725,
+  "popFactor": 699.804,
   "lat": 19.615791,
   "lon": 37.216426,
   "matched": true
@@ -5971,6 +6634,7 @@
   "name": "Dushanbe",
   "iso2": "TJ",
   "pop": 1086244,
+  "popFactor": 1042.23,
   "lat": 38.560035,
   "lon": 68.773879,
   "matched": true
@@ -5980,6 +6644,7 @@
   "name": "Cusco",
   "iso2": "PE",
   "pop": 361182,
+  "popFactor": 600.984,
   "lat": -13.525029,
   "lon": -71.972155,
   "matched": true
@@ -5989,6 +6654,7 @@
   "name": "Trujillo",
   "iso2": "PE",
   "pop": 765171,
+  "popFactor": 874.741,
   "lat": -8.120035,
   "lon": -79.019968,
   "matched": true
@@ -5998,6 +6664,7 @@
   "name": "Asunción",
   "iso2": "PY",
   "pop": 1870000,
+  "popFactor": 1367.479,
   "lat": -25.294457,
   "lon": -57.643451,
   "matched": true
@@ -6007,6 +6674,7 @@
   "name": "Managua",
   "iso2": "NI",
   "pop": 920000,
+  "popFactor": 959.166,
   "lat": 12.154962,
   "lon": -86.270438,
   "matched": true
@@ -6016,6 +6684,7 @@
   "name": "Freetown",
   "iso2": "SL",
   "pop": 827000,
+  "popFactor": 909.395,
   "lat": 8.471957,
   "lon": -13.236162,
   "matched": true
@@ -6025,6 +6694,7 @@
   "name": "Tromsø",
   "iso2": "NO",
   "pop": 52436,
+  "popFactor": 228.989,
   "lat": 69.635076,
   "lon": 18.992025,
   "matched": true
@@ -6034,6 +6704,7 @@
   "name": "Trondheim",
   "iso2": "NO",
   "pop": 147139,
+  "popFactor": 383.587,
   "lat": 63.416658,
   "lon": 10.416666,
   "matched": true
@@ -6043,6 +6714,7 @@
   "name": "Bergen",
   "iso2": "NO",
   "pop": 213585,
+  "popFactor": 462.153,
   "lat": 60.391002,
   "lon": 5.324522,
   "matched": true
@@ -6052,6 +6724,7 @@
   "name": "Multan",
   "iso2": "PK",
   "pop": 1522000,
+  "popFactor": 1233.694,
   "lat": 30.201923,
   "lon": 71.453062,
   "matched": true
@@ -6061,6 +6734,7 @@
   "name": "Peshawar",
   "iso2": "PK",
   "pop": 1303000,
+  "popFactor": 1141.49,
   "lat": 34.006962,
   "lon": 71.533057,
   "matched": true
@@ -6070,6 +6744,7 @@
   "name": "Kathmandu",
   "iso2": "NP",
   "pop": 895000,
+  "popFactor": 946.044,
   "lat": 27.718638,
   "lon": 85.314696,
   "matched": true
@@ -6079,6 +6754,7 @@
   "name": "Bloemfontein",
   "iso2": "ZA",
   "pop": 463064,
+  "popFactor": 680.488,
   "lat": -29.119994,
   "lon": 26.229913,
   "matched": true
@@ -6088,6 +6764,7 @@
   "name": "Port Moresby",
   "iso2": "PG",
   "pop": 283733,
+  "popFactor": 532.666,
   "lat": -9.464708,
   "lon": 147.192504,
   "matched": true
@@ -6097,6 +6774,7 @@
   "name": "Honiara",
   "iso2": "SB",
   "pop": 76328,
+  "popFactor": 276.275,
   "lat": -9.437994,
   "lon": 159.949766,
   "matched": true
@@ -6106,6 +6784,7 @@
   "name": "Panama City",
   "iso2": "PA",
   "pop": 1281000,
+  "popFactor": 1131.813,
   "lat": 8.969963,
   "lon": -79.534983,
   "matched": true
@@ -6115,6 +6794,7 @@
   "name": "Fez",
   "iso2": "MA",
   "pop": 1002000,
+  "popFactor": 1001,
   "lat": 34.056546,
   "lon": -5.002323,
   "matched": true
@@ -6124,6 +6804,7 @@
   "name": "Rabat",
   "iso2": "MA",
   "pop": 1705000,
+  "popFactor": 1305.756,
   "lat": 34.025307,
   "lon": -6.836408,
   "matched": true
@@ -6133,6 +6814,7 @@
   "name": "Marrakesh",
   "iso2": "MA",
   "pop": 872000,
+  "popFactor": 933.809,
   "lat": 31.631939,
   "lon": -8.001933,
   "matched": true
@@ -6142,6 +6824,7 @@
   "name": "Chișinău",
   "iso2": "MD",
   "pop": 688134,
+  "popFactor": 829.538,
   "lat": 47.005024,
   "lon": 28.857711,
   "matched": true
@@ -6151,6 +6834,7 @@
   "name": "Beira",
   "iso2": "MZ",
   "pop": 530604,
+  "popFactor": 728.426,
   "lat": -19.820045,
   "lon": 34.870006,
   "matched": true
@@ -6160,6 +6844,7 @@
   "name": "Port Elizabeth",
   "iso2": "ZA",
   "pop": 1021000,
+  "popFactor": 1010.445,
   "lat": -33.968088,
   "lon": 25.598083,
   "matched": true
@@ -6169,6 +6854,7 @@
   "name": "Maputo",
   "iso2": "MZ",
   "pop": 1446000,
+  "popFactor": 1202.497,
   "lat": -25.953332,
   "lon": 32.587217,
   "matched": true
@@ -6178,6 +6864,7 @@
   "name": "Tomsk",
   "iso2": "RU",
   "pop": 535479,
+  "popFactor": 731.764,
   "lat": 56.494987,
   "lon": 84.975009,
   "matched": true
@@ -6187,6 +6874,7 @@
   "name": "Murmansk",
   "iso2": "RU",
   "pop": 319263,
+  "popFactor": 565.034,
   "lat": 68.969988,
   "lon": 33.100036,
   "matched": true
@@ -6196,6 +6884,7 @@
   "name": "Nizhny Novgorod",
   "iso2": "RU",
   "pop": 1278000,
+  "popFactor": 1130.487,
   "lat": 56.334953,
   "lon": 43.998149,
   "matched": true
@@ -6205,6 +6894,7 @@
   "name": "Volgograd",
   "iso2": "RU",
   "pop": 984000,
+  "popFactor": 991.968,
   "lat": 48.711956,
   "lon": 44.498015,
   "matched": true
@@ -6214,6 +6904,7 @@
   "name": "Ufa",
   "iso2": "RU",
   "pop": 1018000,
+  "popFactor": 1008.96,
   "lat": 54.791921,
   "lon": 56.038085,
   "matched": true
@@ -6223,6 +6914,7 @@
   "name": "Yekaterinburg",
   "iso2": "RU",
   "pop": 1313000,
+  "popFactor": 1145.862,
   "lat": 56.851976,
   "lon": 60.598014,
   "matched": true
@@ -6232,6 +6924,7 @@
   "name": "Samara",
   "iso2": "RU",
   "pop": 1137000,
+  "popFactor": 1066.302,
   "lat": 53.196953,
   "lon": 50.149349,
   "matched": true
@@ -6241,6 +6934,7 @@
   "name": "Kazan",
   "iso2": "RU",
   "pop": 1115000,
+  "popFactor": 1055.936,
   "lat": 55.751888,
   "lon": 49.124399,
   "matched": true
@@ -6250,6 +6944,7 @@
   "name": "Surgut",
   "iso2": "RU",
   "pop": 400000,
+  "popFactor": 632.456,
   "lat": 61.259942,
   "lon": 73.425017,
   "matched": true
@@ -6259,6 +6954,7 @@
   "name": "Barnaul",
   "iso2": "RU",
   "pop": 599579,
+  "popFactor": 774.325,
   "lat": 53.354998,
   "lon": 83.745007,
   "matched": true
@@ -6268,6 +6964,7 @@
   "name": "Novosibirsk",
   "iso2": "RU",
   "pop": 1389000,
+  "popFactor": 1178.558,
   "lat": 55.031906,
   "lon": 82.958096,
   "matched": true
@@ -6277,6 +6974,7 @@
   "name": "Mogadishu",
   "iso2": "SO",
   "pop": 1100000,
+  "popFactor": 1048.809,
   "lat": 2.068627,
   "lon": 45.364732,
   "matched": true
@@ -6286,6 +6984,7 @@
   "name": "Muscat",
   "iso2": "OM",
   "pop": 734697,
+  "popFactor": 857.145,
   "lat": 23.613325,
   "lon": 58.593312,
   "matched": true
@@ -6295,6 +6994,7 @@
   "name": "Colombo",
   "iso2": "LK",
   "pop": 217000,
+  "popFactor": 465.833,
   "lat": 6.931966,
   "lon": 79.857751,
   "matched": true
@@ -6304,6 +7004,7 @@
   "name": "Cebu",
   "iso2": "PH",
   "pop": 815000,
+  "popFactor": 902.774,
   "lat": 10.321922,
   "lon": 123.898129,
   "matched": true
@@ -6313,6 +7014,7 @@
   "name": "Iloilo",
   "iso2": "PH",
   "pop": 387681,
+  "popFactor": 622.64,
   "lat": 10.705043,
   "lon": 122.545016,
   "matched": true
@@ -6322,6 +7024,7 @@
   "name": "Davao",
   "iso2": "PH",
   "pop": 1402000,
+  "popFactor": 1184.061,
   "lat": 7.111963,
   "lon": 125.62805,
   "matched": true
@@ -6331,6 +7034,7 @@
   "name": "Irkutsk",
   "iso2": "RU",
   "pop": 586695,
+  "popFactor": 765.96,
   "lat": 52.319971,
   "lon": 104.245048,
   "matched": true
@@ -6340,6 +7044,7 @@
   "name": "Krasnoyarsk",
   "iso2": "RU",
   "pop": 925000,
+  "popFactor": 961.769,
   "lat": 56.015929,
   "lon": 92.864055,
   "matched": true
@@ -6349,6 +7054,7 @@
   "name": "Chita",
   "iso2": "RU",
   "pop": 308500,
+  "popFactor": 555.428,
   "lat": 52.055026,
   "lon": 113.465002,
   "matched": true
@@ -6358,6 +7064,7 @@
   "name": "Vladivostok",
   "iso2": "RU",
   "pop": 587022,
+  "popFactor": 766.174,
   "lat": 43.130015,
   "lon": 131.910026,
   "matched": true
@@ -6367,6 +7074,7 @@
   "name": "Yakutsk",
   "iso2": "RU",
   "pop": 235600,
+  "popFactor": 485.386,
   "lat": 62.034959,
   "lon": 129.735016,
   "matched": true
@@ -6376,6 +7084,7 @@
   "name": "Tijuana",
   "iso2": "MX",
   "pop": 1553000,
+  "popFactor": 1246.194,
   "lat": 32.501963,
   "lon": -117.081942,
   "matched": true
@@ -6385,6 +7094,7 @@
   "name": "Chihuahua",
   "iso2": "MX",
   "pop": 793000,
+  "popFactor": 890.505,
   "lat": 28.646927,
   "lon": -106.086928,
   "matched": true
@@ -6394,6 +7104,7 @@
   "name": "Mazatlán",
   "iso2": "MX",
   "pop": 368204,
+  "popFactor": 606.798,
   "lat": 23.221101,
   "lon": -106.420001,
   "matched": true
@@ -6403,6 +7114,7 @@
   "name": "Acapulco",
   "iso2": "MX",
   "pop": 715584,
+  "popFactor": 845.922,
   "lat": 16.849991,
   "lon": -99.915979,
   "matched": true
@@ -6412,6 +7124,7 @@
   "name": "Veracruz",
   "iso2": "MX",
   "pop": 578963,
+  "popFactor": 760.896,
   "lat": 19.177342,
   "lon": -96.159981,
   "matched": true
@@ -6421,6 +7134,7 @@
   "name": "Cancún",
   "iso2": "MX",
   "pop": 542043,
+  "popFactor": 736.236,
   "lat": 21.16996,
   "lon": -86.830008,
   "matched": true
@@ -6430,6 +7144,7 @@
   "name": "Mérida",
   "iso2": "MX",
   "pop": 965000,
+  "popFactor": 982.344,
   "lat": 20.968585,
   "lon": -89.618579,
   "matched": true
@@ -6439,6 +7154,7 @@
   "name": "Enugu",
   "iso2": "NG",
   "pop": 688862,
+  "popFactor": 829.977,
   "lat": 6.450031,
   "lon": 7.499997,
   "matched": true
@@ -6448,6 +7164,7 @@
   "name": "Sokoto",
   "iso2": "NG",
   "pop": 732178,
+  "popFactor": 855.674,
   "lat": 13.060016,
   "lon": 5.240031,
   "matched": true
@@ -6457,6 +7174,7 @@
   "name": "Perm",
   "iso2": "RU",
   "pop": 997000,
+  "popFactor": 998.499,
   "lat": 58.001906,
   "lon": 56.248047,
   "matched": true
@@ -6466,6 +7184,7 @@
   "name": "Ulaanbaatar",
   "iso2": "MN",
   "pop": 885000,
+  "popFactor": 940.744,
   "lat": 47.918619,
   "lon": 106.91467,
   "matched": true
@@ -6475,6 +7194,7 @@
   "name": "Windhoek",
   "iso2": "NA",
   "pop": 268132,
+  "popFactor": 517.815,
   "lat": -22.570006,
   "lon": 17.083546,
   "matched": true
@@ -6484,6 +7204,7 @@
   "name": "Valencia",
   "iso2": "ES",
   "pop": 808000,
+  "popFactor": 898.888,
   "lat": 39.486963,
   "lon": -0.401958,
   "matched": true
@@ -6493,6 +7214,7 @@
   "name": "Petropavlovsk-Kamchatsky",
   "iso2": "RU",
   "pop": 187282,
+  "popFactor": 432.761,
   "lat": 53.061992,
   "lon": 158.62302,
   "matched": true
@@ -6502,6 +7224,7 @@
   "name": "Abuja",
   "iso2": "NG",
   "pop": 1576000,
+  "popFactor": 1255.388,
   "lat": 9.085279,
   "lon": 7.531382,
   "matched": true
@@ -6511,6 +7234,7 @@
   "name": "Padang",
   "iso2": "ID",
   "pop": 855000,
+  "popFactor": 924.662,
   "lat": -0.958061,
   "lon": 100.358068,
   "matched": true
@@ -6520,6 +7244,7 @@
   "name": "Bissau",
   "iso2": "GW",
   "pop": 403339,
+  "popFactor": 635.09,
   "lat": 11.865024,
   "lon": -15.598361,
   "matched": true
@@ -6529,6 +7254,7 @@
   "name": "Palermo",
   "iso2": "IT",
   "pop": 863000,
+  "popFactor": 928.978,
   "lat": 38.126969,
   "lon": 13.348081,
   "matched": true
@@ -6538,6 +7264,7 @@
   "name": "Amman",
   "iso2": "JO",
   "pop": 1060000,
+  "popFactor": 1029.563,
   "lat": 31.951971,
   "lon": 35.931354,
   "matched": true
@@ -6547,6 +7274,7 @@
   "name": "Vilnius",
   "iso2": "LT",
   "pop": 542366,
+  "popFactor": 736.455,
   "lat": 54.683366,
   "lon": 25.316635,
   "matched": true
@@ -6556,6 +7284,7 @@
   "name": "Riga",
   "iso2": "LV",
   "pop": 742572,
+  "popFactor": 861.726,
   "lat": 56.950024,
   "lon": 24.099965,
   "matched": true
@@ -6565,6 +7294,7 @@
   "name": "Bishkek",
   "iso2": "KG",
   "pop": 837000,
+  "popFactor": 914.877,
   "lat": 42.875025,
   "lon": 74.583258,
   "matched": true
@@ -6574,6 +7304,7 @@
   "name": "Jiayuguan",
   "iso2": "CN",
   "pop": 148279,
+  "popFactor": 385.07,
   "lat": 39.82001,
   "lon": 98.299984,
   "matched": true
@@ -6583,6 +7314,7 @@
   "name": "Xining",
   "iso2": "CN",
   "pop": 1048000,
+  "popFactor": 1023.719,
   "lat": 36.621945,
   "lon": 101.768059,
   "matched": true
@@ -6592,6 +7324,7 @@
   "name": "Guilin",
   "iso2": "CN",
   "pop": 987000,
+  "popFactor": 993.479,
   "lat": 25.281939,
   "lon": 110.278082,
   "matched": true
@@ -6601,6 +7334,7 @@
   "name": "Shantou",
   "iso2": "CN",
   "pop": 1601000,
+  "popFactor": 1265.306,
   "lat": 23.371952,
   "lon": 116.66808,
   "matched": true
@@ -6610,6 +7344,7 @@
   "name": "Mombasa",
   "iso2": "KE",
   "pop": 882000,
+  "popFactor": 939.149,
   "lat": -4.03808,
   "lon": 39.687972,
   "matched": true
@@ -6619,6 +7354,7 @@
   "name": "Maseru",
   "iso2": "LS",
   "pop": 361324,
+  "popFactor": 601.102,
   "lat": -29.316674,
   "lon": 27.483273,
   "matched": true
@@ -6628,6 +7364,7 @@
   "name": "Antananarivo",
   "iso2": "MG",
   "pop": 1697000,
+  "popFactor": 1302.69,
   "lat": -18.914692,
   "lon": 47.514678,
   "matched": true
@@ -6637,6 +7374,7 @@
   "name": "Semarang",
   "iso2": "ID",
   "pop": 1396000,
+  "popFactor": 1181.524,
   "lat": -6.964672,
   "lon": 110.418074,
   "matched": true
@@ -6646,6 +7384,7 @@
   "name": "Bandjarmasin",
   "iso2": "ID",
   "pop": 603576,
+  "popFactor": 776.902,
   "lat": -3.329992,
   "lon": 114.580076,
   "matched": true
@@ -6655,6 +7394,7 @@
   "name": "Makassar",
   "iso2": "ID",
   "pop": 1262000,
+  "popFactor": 1123.388,
   "lat": -5.138013,
   "lon": 119.430082,
   "matched": true
@@ -6664,6 +7404,7 @@
   "name": "Lyon",
   "iso2": "FR",
   "pop": 1423000,
+  "popFactor": 1192.896,
   "lat": 45.771954,
   "lon": 4.828085,
   "matched": true
@@ -6673,6 +7414,7 @@
   "name": "Quito",
   "iso2": "EC",
   "pop": 1701000,
+  "popFactor": 1304.224,
   "lat": -0.213042,
   "lon": -78.501997,
   "matched": true
@@ -6682,6 +7424,7 @@
   "name": "San José",
   "iso2": "CR",
   "pop": 1284000,
+  "popFactor": 1133.137,
   "lat": 9.936958,
   "lon": -84.085997,
   "matched": true
@@ -6691,6 +7434,7 @@
   "name": "San Salvador",
   "iso2": "SV",
   "pop": 1433000,
+  "popFactor": 1197.08,
   "lat": 13.711948,
   "lon": -89.204987,
   "matched": true
@@ -6700,6 +7444,7 @@
   "name": "Kingston",
   "iso2": "JM",
   "pop": 937700,
+  "popFactor": 968.349,
   "lat": 17.977077,
   "lon": -76.767434,
   "matched": true
@@ -6709,6 +7454,7 @@
   "name": "Cartagena",
   "iso2": "CO",
   "pop": 887000,
+  "popFactor": 941.807,
   "lat": 10.401684,
   "lon": -75.516339,
   "matched": true
@@ -6718,6 +7464,7 @@
   "name": "N'Djamena",
   "iso2": "TD",
   "pop": 989000,
+  "popFactor": 994.485,
   "lat": 12.115042,
   "lon": 15.047203,
   "matched": true
@@ -6727,6 +7474,7 @@
   "name": "Malabo",
   "iso2": "GQ",
   "pop": 155963,
+  "popFactor": 394.922,
   "lat": 3.750015,
   "lon": 8.783278,
   "matched": true
@@ -6736,6 +7484,7 @@
   "name": "Luxor",
   "iso2": "EG",
   "pop": 609248,
+  "popFactor": 780.543,
   "lat": 25.700019,
   "lon": 32.650038,
   "matched": true
@@ -6745,6 +7494,7 @@
   "name": "Asmara",
   "iso2": "ER",
   "pop": 620802,
+  "popFactor": 787.91,
   "lat": 15.333339,
   "lon": 38.933324,
   "matched": true
@@ -6754,6 +7504,7 @@
   "name": "Zagreb",
   "iso2": "HR",
   "pop": 722526,
+  "popFactor": 850.015,
   "lat": 45.800007,
   "lon": 15.999995,
   "matched": true
@@ -6763,6 +7514,7 @@
   "name": "Tallinn",
   "iso2": "EE",
   "pop": 394024,
+  "popFactor": 627.713,
   "lat": 59.433877,
   "lon": 24.728041,
   "matched": true
@@ -6772,6 +7524,7 @@
   "name": "Lhasa",
   "iso2": "CN",
   "pop": 219599,
+  "popFactor": 468.614,
   "lat": 29.645024,
   "lon": 91.10001,
   "matched": true
@@ -6781,6 +7534,7 @@
   "name": "Kashgar",
   "iso2": "CN",
   "pop": 506640,
+  "popFactor": 711.786,
   "lat": 39.476336,
   "lon": 75.969926,
   "matched": true
@@ -6790,6 +7544,7 @@
   "name": "Yinchuan",
   "iso2": "CN",
   "pop": 991000,
+  "popFactor": 995.49,
   "lat": 38.46992,
   "lon": 106.271092,
   "matched": true
@@ -6799,6 +7554,7 @@
   "name": "Nagasaki",
   "iso2": "JP",
   "pop": 435455,
+  "popFactor": 659.89,
   "lat": 32.764988,
   "lon": 129.885033,
   "matched": true
@@ -6808,6 +7564,7 @@
   "name": "Qiqihar",
   "iso2": "CN",
   "pop": 1641000,
+  "popFactor": 1281.015,
   "lat": 47.346923,
   "lon": 123.988046,
   "matched": true
@@ -6817,6 +7574,7 @@
   "name": "Lubumbashi",
   "iso2": "CD",
   "pop": 1352000,
+  "popFactor": 1162.755,
   "lat": -11.678079,
   "lon": 27.478072,
   "matched": true
@@ -6826,6 +7584,7 @@
   "name": "Lilongwe",
   "iso2": "MW",
   "pop": 646750,
+  "popFactor": 804.208,
   "lat": -13.983295,
   "lon": 33.783302,
   "matched": true
@@ -6835,6 +7594,7 @@
   "name": "Guatemala City",
   "iso2": "GT",
   "pop": 1024000,
+  "popFactor": 1011.929,
   "lat": 14.623081,
   "lon": -90.528911,
   "matched": true
@@ -6844,6 +7604,7 @@
   "name": "Libreville",
   "iso2": "GA",
   "pop": 578156,
+  "popFactor": 760.366,
   "lat": 0.385389,
   "lon": 9.457965,
   "matched": true
@@ -6853,6 +7614,7 @@
   "name": "Vishakhapatnam",
   "iso2": "IN",
   "pop": 1529000,
+  "popFactor": 1236.527,
   "lat": 17.731961,
   "lon": 83.303036,
   "matched": true
@@ -6862,6 +7624,7 @@
   "name": "Suva",
   "iso2": "FJ",
   "pop": 175399,
+  "popFactor": 418.807,
   "lat": -18.133016,
   "lon": 178.441707,
   "matched": true
@@ -6871,6 +7634,7 @@
   "name": "Port-Gentil",
   "iso2": "GA",
   "pop": 116836,
+  "popFactor": 341.813,
   "lat": -0.720022,
   "lon": 8.780022,
   "matched": true
@@ -6880,6 +7644,7 @@
   "name": "Timbuktu",
   "iso2": "ML",
   "pop": 68872,
+  "popFactor": 262.435,
   "lat": 16.766585,
   "lon": -3.016597,
   "matched": true
@@ -6889,6 +7654,7 @@
   "name": "Punta Arenas",
   "iso2": "CL",
   "pop": 117430,
+  "popFactor": 342.681,
   "lat": -53.164986,
   "lon": -70.939996,
   "matched": true
@@ -6898,6 +7664,7 @@
   "name": "Iquique",
   "iso2": "CL",
   "pop": 227499,
+  "popFactor": 476.969,
   "lat": -20.249993,
   "lon": -70.129968,
   "matched": true
@@ -6907,6 +7674,7 @@
   "name": "Antofagasta",
   "iso2": "CL",
   "pop": 309832,
+  "popFactor": 556.626,
   "lat": -23.649992,
   "lon": -70.400003,
   "matched": true
@@ -6916,6 +7684,7 @@
   "name": "Concepción",
   "iso2": "CL",
   "pop": 889725,
+  "popFactor": 943.252,
   "lat": -36.830014,
   "lon": -73.050022,
   "matched": true
@@ -6925,6 +7694,7 @@
   "name": "Puerto Montt",
   "iso2": "CL",
   "pop": 174629,
+  "popFactor": 417.886,
   "lat": -41.469989,
   "lon": -72.929978,
   "matched": true
@@ -6934,6 +7704,7 @@
   "name": "Nuuk",
   "iso2": "GL",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 64.198282,
   "lon": -51.732659,
   "matched": true
@@ -6943,6 +7714,7 @@
   "name": "Nouakchott",
   "iso2": "MR",
   "pop": 742144,
+  "popFactor": 861.478,
   "lat": 18.086427,
   "lon": -15.97534,
   "matched": true
@@ -6952,6 +7724,7 @@
   "name": "Bamako",
   "iso2": "ML",
   "pop": 1494000,
+  "popFactor": 1222.293,
   "lat": 12.651961,
   "lon": -8.001985,
   "matched": true
@@ -6961,6 +7734,7 @@
   "name": "Banghazi",
   "iso2": "LY",
   "pop": 1180000,
+  "popFactor": 1086.278,
   "lat": 32.118679,
   "lon": 20.064777,
   "matched": true
@@ -6970,6 +7744,7 @@
   "name": "Thessaloniki",
   "iso2": "GR",
   "pop": 828000,
+  "popFactor": 909.945,
   "lat": 40.698052,
   "lon": 22.883055,
   "matched": true
@@ -6979,6 +7754,7 @@
   "name": "Beirut",
   "iso2": "LB",
   "pop": 1846000,
+  "popFactor": 1358.676,
   "lat": 33.873921,
   "lon": 35.507762,
   "matched": true
@@ -6988,6 +7764,7 @@
   "name": "Tbilisi",
   "iso2": "GE",
   "pop": 1100000,
+  "popFactor": 1048.809,
   "lat": 41.726956,
   "lon": 44.78885,
   "matched": true
@@ -6997,6 +7774,7 @@
   "name": "Nur-Sultan",
   "iso2": "KZ",
   "pop": 345604,
+  "popFactor": 587.881,
   "lat": 51.181125,
   "lon": 71.427774,
   "matched": true
@@ -7006,6 +7784,7 @@
   "name": "Qaraghandy",
   "iso2": "KZ",
   "pop": 451800,
+  "popFactor": 672.161,
   "lat": 49.884977,
   "lon": 73.11501,
   "matched": true
@@ -7015,6 +7794,7 @@
   "name": "Almaty",
   "iso2": "KZ",
   "pop": 1209000,
+  "popFactor": 1099.545,
   "lat": 43.326936,
   "lon": 76.91309,
   "matched": true
@@ -7024,6 +7804,7 @@
   "name": "Isfahan",
   "iso2": "IR",
   "pop": 1628000,
+  "popFactor": 1275.931,
   "lat": 32.701951,
   "lon": 51.698092,
   "matched": true
@@ -7033,6 +7814,7 @@
   "name": "Shiraz",
   "iso2": "IR",
   "pop": 1240000,
+  "popFactor": 1113.553,
   "lat": 29.631906,
   "lon": 52.568065,
   "matched": true
@@ -7042,6 +7824,7 @@
   "name": "Amritsar",
   "iso2": "IN",
   "pop": 1212000,
+  "popFactor": 1100.909,
   "lat": 31.641938,
   "lon": 74.868047,
   "matched": true
@@ -7051,6 +7834,7 @@
   "name": "Varanasi",
   "iso2": "IN",
   "pop": 1352000,
+  "popFactor": 1162.755,
   "lat": 25.331936,
   "lon": 82.998094,
   "matched": true
@@ -7060,6 +7844,7 @@
   "name": "Bhopal",
   "iso2": "IN",
   "pop": 1727000,
+  "popFactor": 1314.154,
   "lat": 23.251934,
   "lon": 77.408047,
   "matched": true
@@ -7069,6 +7854,7 @@
   "name": "Coimbatore",
   "iso2": "IN",
   "pop": 1696000,
+  "popFactor": 1302.306,
   "lat": 11.001906,
   "lon": 76.948075,
   "matched": true
@@ -7078,6 +7864,7 @@
   "name": "Vientiane",
   "iso2": "LA",
   "pop": 754000,
+  "popFactor": 868.332,
   "lat": 17.966693,
   "lon": 102.59998,
   "matched": true
@@ -7087,6 +7874,7 @@
   "name": "Brazzaville",
   "iso2": "CG",
   "pop": 1355000,
+  "popFactor": 1164.045,
   "lat": -4.25724,
   "lon": 15.282744,
   "matched": true
@@ -7096,6 +7884,7 @@
   "name": "Conakry",
   "iso2": "GN",
   "pop": 1494000,
+  "popFactor": 1222.293,
   "lat": 9.533469,
   "lon": -13.682181,
   "matched": true
@@ -7105,6 +7894,7 @@
   "name": "Manaus",
   "iso2": "BR",
   "pop": 1753000,
+  "popFactor": 1324.009,
   "lat": -3.098086,
   "lon": -60.001963,
   "matched": true
@@ -7114,6 +7904,7 @@
   "name": "Florianópolis",
   "iso2": "BR",
   "pop": 1023000,
+  "popFactor": 1011.435,
   "lat": -27.578039,
   "lon": -48.521966,
   "matched": true
@@ -7123,6 +7914,7 @@
   "name": "Winnipeg",
   "iso2": "CA",
   "pop": 632063,
+  "popFactor": 795.024,
   "lat": 49.882988,
   "lon": -97.165992,
   "matched": true
@@ -7132,6 +7924,7 @@
   "name": "Saskatoon",
   "iso2": "CA",
   "pop": 198958,
+  "popFactor": 446.047,
   "lat": 52.170031,
   "lon": -106.669985,
   "matched": true
@@ -7141,6 +7934,7 @@
   "name": "Calgary",
   "iso2": "CA",
   "pop": 1110000,
+  "popFactor": 1053.565,
   "lat": 51.084938,
   "lon": -114.081944,
   "matched": true
@@ -7150,6 +7944,7 @@
   "name": "Boa Vista",
   "iso2": "BR",
   "pop": 235150,
+  "popFactor": 484.923,
   "lat": 2.816093,
   "lon": -60.665998,
   "matched": true
@@ -7159,6 +7954,7 @@
   "name": "Ottawa",
   "iso2": "CA",
   "pop": 1145000,
+  "popFactor": 1070.047,
   "lat": 45.418643,
   "lon": -75.701961,
   "matched": true
@@ -7168,6 +7964,7 @@
   "name": "Québec",
   "iso2": "CA",
   "pop": 624177,
+  "popFactor": 790.049,
   "lat": 46.839969,
   "lon": -71.24561,
   "matched": true
@@ -7177,6 +7974,7 @@
   "name": "Halifax",
   "iso2": "CA",
   "pop": 359111,
+  "popFactor": 599.259,
   "lat": 44.650025,
   "lon": -63.600005,
   "matched": true
@@ -7186,6 +7984,7 @@
   "name": "St. John's",
   "iso2": "CA",
   "pop": 131469,
+  "popFactor": 362.587,
   "lat": 47.584988,
   "lon": -52.681007,
   "matched": true
@@ -7195,6 +7994,7 @@
   "name": "Belgrade",
   "iso2": "RS",
   "pop": 1099000,
+  "popFactor": 1048.332,
   "lat": 44.820591,
   "lon": 20.466045,
   "matched": true
@@ -7204,6 +8004,7 @@
   "name": "Bandar Seri Begawan",
   "iso2": "BN",
   "pop": 296500,
+  "popFactor": 544.518,
   "lat": 4.883331,
   "lon": 114.933284,
   "matched": true
@@ -7213,6 +8014,7 @@
   "name": "Río Gallegos",
   "iso2": "AR",
   "pop": 85700,
+  "popFactor": 292.746,
   "lat": -51.633297,
   "lon": -69.216587,
   "matched": true
@@ -7222,6 +8024,7 @@
   "name": "Comodoro Rivadavia",
   "iso2": "AR",
   "pop": 140850,
+  "popFactor": 375.3,
   "lat": -45.870031,
   "lon": -67.499999,
   "matched": true
@@ -7231,6 +8034,7 @@
   "name": "Mendoza",
   "iso2": "AR",
   "pop": 893000,
+  "popFactor": 944.987,
   "lat": -32.881384,
   "lon": -68.818557,
   "matched": true
@@ -7240,6 +8044,7 @@
   "name": "Sucre",
   "iso2": "BO",
   "pop": 224838,
+  "popFactor": 474.171,
   "lat": -19.040971,
   "lon": -65.259516,
   "matched": true
@@ -7249,6 +8054,7 @@
   "name": "Córdoba",
   "iso2": "AR",
   "pop": 1452000,
+  "popFactor": 1204.99,
   "lat": -31.398012,
   "lon": -64.18424,
   "matched": true
@@ -7258,6 +8064,7 @@
   "name": "Bangui",
   "iso2": "CF",
   "pop": 831925,
+  "popFactor": 912.099,
   "lat": 4.366644,
   "lon": 18.558288,
   "matched": true
@@ -7267,6 +8074,7 @@
   "name": "Yaoundé",
   "iso2": "CM",
   "pop": 1611000,
+  "popFactor": 1269.252,
   "lat": 3.868647,
   "lon": 11.514705,
   "matched": true
@@ -7276,6 +8084,7 @@
   "name": "Tirana",
   "iso2": "AL",
   "pop": 895350,
+  "popFactor": 946.229,
   "lat": 41.327541,
   "lon": 19.818883,
   "matched": true
@@ -7285,6 +8094,7 @@
   "name": "Yerevan",
   "iso2": "AM",
   "pop": 1102000,
+  "popFactor": 1049.762,
   "lat": 40.183097,
   "lon": 44.511606,
   "matched": true
@@ -7294,6 +8104,7 @@
   "name": "Baku",
   "iso2": "AZ",
   "pop": 2122300,
+  "popFactor": 1456.812,
   "lat": 40.397218,
   "lon": 49.860271,
   "matched": true
@@ -7303,6 +8114,7 @@
   "name": "Kandahar",
   "iso2": "AF",
   "pop": 715542,
+  "popFactor": 845.897,
   "lat": 31.61002,
   "lon": 65.694946,
   "matched": true
@@ -7312,6 +8124,7 @@
   "name": "Phnom Penh",
   "iso2": "KH",
   "pop": 1466000,
+  "popFactor": 1210.785,
   "lat": 11.551976,
   "lon": 104.914689,
   "matched": true
@@ -7321,6 +8134,7 @@
   "name": "La Paz",
   "iso2": "BO",
   "pop": 1590000,
+  "popFactor": 1260.952,
   "lat": -16.496028,
   "lon": -68.151931,
   "matched": true
@@ -7330,6 +8144,7 @@
   "name": "Santa Cruz",
   "iso2": "BO",
   "pop": 2102998,
+  "popFactor": 1450.172,
   "lat": -17.751972,
   "lon": -63.227942,
   "matched": true
@@ -7339,6 +8154,7 @@
   "name": "Oran",
   "iso2": "DZ",
   "pop": 798000,
+  "popFactor": 893.308,
   "lat": 35.711948,
   "lon": -0.621919,
   "matched": true
@@ -7348,6 +8164,7 @@
   "name": "Cotonou",
   "iso2": "BJ",
   "pop": 762000,
+  "popFactor": 872.926,
   "lat": 6.401954,
   "lon": 2.518045,
   "matched": true
@@ -7357,6 +8174,7 @@
   "name": "Tamanrasset",
   "iso2": "DZ",
   "pop": 76000,
+  "popFactor": 275.681,
   "lat": 22.785003,
   "lon": 5.522805,
   "matched": true
@@ -7366,6 +8184,7 @@
   "name": "Sofia",
   "iso2": "BG",
   "pop": 1185000,
+  "popFactor": 1088.577,
   "lat": 42.685295,
   "lon": 23.314708,
   "matched": true
@@ -7375,6 +8194,7 @@
   "name": "Minsk",
   "iso2": "BY",
   "pop": 1805000,
+  "popFactor": 1343.503,
   "lat": 53.901923,
   "lon": 27.564681,
   "matched": true
@@ -7384,6 +8204,7 @@
   "name": "Thimphu",
   "iso2": "BT",
   "pop": 98676,
+  "popFactor": 314.127,
   "lat": 27.472986,
   "lon": 89.639014,
   "matched": true
@@ -7393,6 +8214,7 @@
   "name": "Gaborone",
   "iso2": "BW",
   "pop": 208411,
+  "popFactor": 456.521,
   "lat": -24.646314,
   "lon": 25.911948,
   "matched": true
@@ -7402,6 +8224,7 @@
   "name": "Darwin",
   "iso2": "AU",
   "pop": 93080,
+  "popFactor": 305.09,
   "lat": -12.425354,
   "lon": 130.850039,
   "matched": true
@@ -7411,6 +8234,7 @@
   "name": "Newcastle",
   "iso2": "AU",
   "pop": 540796,
+  "popFactor": 735.388,
   "lat": -32.845348,
   "lon": 151.815012,
   "matched": true
@@ -7420,6 +8244,7 @@
   "name": "Adelaide",
   "iso2": "AU",
   "pop": 1145000,
+  "popFactor": 1070.047,
   "lat": -34.933042,
   "lon": 138.598059,
   "matched": true
@@ -7429,6 +8254,7 @@
   "name": "Brisbane",
   "iso2": "AU",
   "pop": 1860000,
+  "popFactor": 1363.818,
   "lat": -27.453085,
   "lon": 153.033147,
   "matched": true
@@ -7438,6 +8264,7 @@
   "name": "Hobart",
   "iso2": "AU",
   "pop": 80870,
+  "popFactor": 284.377,
   "lat": -42.850009,
   "lon": 147.29503,
   "matched": true
@@ -7447,6 +8274,7 @@
   "name": "Ouagadougou",
   "iso2": "BF",
   "pop": 1149000,
+  "popFactor": 1071.914,
   "lat": 12.372262,
   "lon": -1.52667,
   "matched": true
@@ -7456,6 +8284,7 @@
   "name": "Sarajevo",
   "iso2": "BA",
   "pop": 696731,
+  "popFactor": 834.704,
   "lat": 43.850022,
   "lon": 18.383002,
   "matched": true
@@ -7465,6 +8294,7 @@
   "name": "Naypyidaw",
   "iso2": "MM",
   "pop": 930000,
+  "popFactor": 964.365,
   "lat": 19.768503,
   "lon": 96.116673,
   "matched": true
@@ -7474,6 +8304,7 @@
   "name": "San Juan",
   "iso2": "PR",
   "pop": 2478905,
+  "popFactor": 1574.454,
   "lat": 18.440023,
   "lon": -66.129979,
   "matched": true
@@ -7483,6 +8314,7 @@
   "name": "Stanley",
   "iso2": "FK",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -51.700011,
   "lon": -57.849968,
   "matched": true
@@ -7492,6 +8324,7 @@
   "name": "Hamilton",
   "iso2": "BM",
   "pop": 52320,
+  "popFactor": 228.736,
   "lat": 32.29419,
   "lon": -64.783937,
   "matched": true
@@ -7501,6 +8334,7 @@
   "name": "Nuku'alofa",
   "iso2": "TO",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -21.138512,
   "lon": -175.220565,
   "matched": true
@@ -7510,6 +8344,7 @@
   "name": "Hargeisa",
   "iso2": "SO",
   "pop": 477876,
+  "popFactor": 691.286,
   "lat": 9.560022,
   "lon": 44.06531,
   "matched": true
@@ -7519,6 +8354,7 @@
   "name": "Victoria",
   "iso2": "SC",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -4.616632,
   "lon": 55.44999,
   "matched": true
@@ -7528,6 +8364,7 @@
   "name": "São Tomé",
   "iso2": "ST",
   "pop": 88219,
+  "popFactor": 297.017,
   "lat": 0.333402,
   "lon": 6.733325,
   "matched": true
@@ -7537,6 +8374,7 @@
   "name": "Apia",
   "iso2": "WS",
   "pop": 61916,
+  "popFactor": 248.829,
   "lat": -13.841545,
   "lon": -171.738642,
   "matched": true
@@ -7546,6 +8384,7 @@
   "name": "Valletta",
   "iso2": "MT",
   "pop": 368250,
+  "popFactor": 606.836,
   "lat": 35.899733,
   "lon": 14.514711,
   "matched": true
@@ -7555,6 +8394,7 @@
   "name": "Malé",
   "iso2": "MV",
   "pop": 112927,
+  "popFactor": 336.046,
   "lat": 4.166708,
   "lon": 73.499948,
   "matched": true
@@ -7564,6 +8404,7 @@
   "name": "Praia",
   "iso2": "CV",
   "pop": 113364,
+  "popFactor": 336.696,
   "lat": 14.916698,
   "lon": -23.516689,
   "matched": true
@@ -7573,6 +8414,7 @@
   "name": "Nassau",
   "iso2": "BS",
   "pop": 227940,
+  "popFactor": 477.431,
   "lat": 25.08339,
   "lon": -77.350044,
   "matched": true
@@ -7582,6 +8424,7 @@
   "name": "Nicosia",
   "iso2": "CY",
   "pop": 224300,
+  "popFactor": 473.603,
   "lat": 35.166677,
   "lon": 33.366635,
   "matched": true
@@ -7591,6 +8434,7 @@
   "name": "Kaohsiung",
   "iso2": "TW",
   "pop": 2769072,
+  "popFactor": 1664.053,
   "lat": 22.633307,
   "lon": 120.266602,
   "matched": true
@@ -7600,6 +8444,7 @@
   "name": "Shenzhen",
   "iso2": "CN",
   "pop": 7581000,
+  "popFactor": 2753.362,
   "lat": 22.554316,
   "lon": 114.120177,
   "matched": true
@@ -7609,6 +8454,7 @@
   "name": "Minneapolis",
   "iso2": "US",
   "pop": 2616000,
+  "popFactor": 1617.405,
   "lat": 44.981925,
   "lon": -93.253732,
   "matched": true
@@ -7618,6 +8464,7 @@
   "name": "Honolulu",
   "iso2": "US",
   "pop": 786000,
+  "popFactor": 886.566,
   "lat": 21.308822,
   "lon": -157.859944,
   "matched": true
@@ -7627,6 +8474,7 @@
   "name": "Seattle",
   "iso2": "US",
   "pop": 3074000,
+  "popFactor": 1753.283,
   "lat": 47.571948,
   "lon": -122.341931,
   "matched": true
@@ -7636,6 +8484,7 @@
   "name": "Phoenix",
   "iso2": "US",
   "pop": 3551000,
+  "popFactor": 1884.41,
   "lat": 33.541926,
   "lon": -112.071938,
   "matched": true
@@ -7645,6 +8494,7 @@
   "name": "San Diego",
   "iso2": "US",
   "pop": 2916000,
+  "popFactor": 1707.63,
   "lat": 32.82197,
   "lon": -117.181936,
   "matched": true
@@ -7654,6 +8504,7 @@
   "name": "St. Louis",
   "iso2": "US",
   "pop": 2199000,
+  "popFactor": 1482.903,
   "lat": 38.636964,
   "lon": -90.241926,
   "matched": true
@@ -7663,6 +8514,7 @@
   "name": "New Orleans",
   "iso2": "US",
   "pop": 785000,
+  "popFactor": 886.002,
   "lat": 29.996948,
   "lon": -90.041913,
   "matched": true
@@ -7672,6 +8524,7 @@
   "name": "Dallas",
   "iso2": "US",
   "pop": 4798000,
+  "popFactor": 2190.434,
   "lat": 32.82197,
   "lon": -96.841963,
   "matched": true
@@ -7681,6 +8534,7 @@
   "name": "Maracaibo",
   "iso2": "VE",
   "pop": 2072000,
+  "popFactor": 1439.444,
   "lat": 10.731923,
   "lon": -71.661924,
   "matched": true
@@ -7690,6 +8544,7 @@
   "name": "Boston",
   "iso2": "US",
   "pop": 4467000,
+  "popFactor": 2113.528,
   "lat": 42.331906,
   "lon": -71.07196,
   "matched": true
@@ -7699,6 +8554,7 @@
   "name": "Tampa",
   "iso2": "US",
   "pop": 2314000,
+  "popFactor": 1521.184,
   "lat": 27.948934,
   "lon": -82.460567,
   "matched": true
@@ -7708,6 +8564,7 @@
   "name": "Philadelphia",
   "iso2": "US",
   "pop": 5492000,
+  "popFactor": 2343.502,
   "lat": 40.001919,
   "lon": -75.171942,
   "matched": true
@@ -7717,6 +8574,7 @@
   "name": "Detroit",
   "iso2": "US",
   "pop": 4101000,
+  "popFactor": 2025.093,
   "lat": 42.331906,
   "lon": -83.082002,
   "matched": true
@@ -7726,6 +8584,7 @@
   "name": "Anchorage",
   "iso2": "US",
   "pop": 260283,
+  "popFactor": 510.179,
   "lat": 61.21997,
   "lon": -149.900215,
   "matched": true
@@ -7735,6 +8594,7 @@
   "name": "Hanoi",
   "iso2": "VN",
   "pop": 4378000,
+  "popFactor": 2092.367,
   "lat": 21.035273,
   "lon": 105.848068,
   "matched": true
@@ -7744,6 +8604,7 @@
   "name": "Ho Chi Minh City",
   "iso2": "VN",
   "pop": 5314000,
+  "popFactor": 2305.211,
   "lat": 10.781971,
   "lon": 106.693081,
   "matched": true
@@ -7753,6 +8614,7 @@
   "name": "Ankara",
   "iso2": "TR",
   "pop": 3716000,
+  "popFactor": 1927.693,
   "lat": 39.929184,
   "lon": 32.862446,
   "matched": true
@@ -7762,6 +8624,7 @@
   "name": "Budapest",
   "iso2": "HU",
   "pop": 1679000,
+  "popFactor": 1295.762,
   "lat": 47.501952,
   "lon": 19.081375,
   "matched": true
@@ -7771,6 +8634,7 @@
   "name": "Sanaa",
   "iso2": "YE",
   "pop": 2008000,
+  "popFactor": 1417.039,
   "lat": 15.356679,
   "lon": 44.204648,
   "matched": true
@@ -7780,6 +8644,7 @@
   "name": "Barcelona",
   "iso2": "ES",
   "pop": 4920000,
+  "popFactor": 2218.107,
   "lat": 41.385245,
   "lon": 2.181425,
   "matched": true
@@ -7789,6 +8654,7 @@
   "name": "Bucharest",
   "iso2": "RO",
   "pop": 1942000,
+  "popFactor": 1393.557,
   "lat": 44.435318,
   "lon": 26.098001,
   "matched": true
@@ -7798,6 +8664,7 @@
   "name": "Aleppo",
   "iso2": "SY",
   "pop": 2738000,
+  "popFactor": 1654.69,
   "lat": 36.231917,
   "lon": 37.168074,
   "matched": true
@@ -7807,6 +8674,7 @@
   "name": "Damascus",
   "iso2": "SY",
   "pop": 2466000,
+  "popFactor": 1570.35,
   "lat": 33.50198,
   "lon": 36.29805,
   "matched": true
@@ -7816,6 +8684,7 @@
   "name": "Zürich",
   "iso2": "CH",
   "pop": 1108000,
+  "popFactor": 1052.616,
   "lat": 47.381934,
   "lon": 8.548064,
   "matched": true
@@ -7825,6 +8694,7 @@
   "name": "Lisbon",
   "iso2": "PT",
   "pop": 2812000,
+  "popFactor": 1676.902,
   "lat": 38.724669,
   "lon": -9.146812,
   "matched": true
@@ -7834,6 +8704,7 @@
   "name": "Khartoum",
   "iso2": "SD",
   "pop": 4754000,
+  "popFactor": 2180.367,
   "lat": 15.590024,
   "lon": 32.532233,
   "matched": true
@@ -7843,6 +8714,7 @@
   "name": "Jeddah",
   "iso2": "SA",
   "pop": 3012000,
+  "popFactor": 1735.511,
   "lat": 21.518835,
   "lon": 39.217252,
   "matched": true
@@ -7852,6 +8724,7 @@
   "name": "Oslo",
   "iso2": "NO",
   "pop": 835000,
+  "popFactor": 913.783,
   "lat": 59.918636,
   "lon": 10.748033,
   "matched": true
@@ -7861,6 +8734,7 @@
   "name": "Lahore",
   "iso2": "PK",
   "pop": 6577000,
+  "popFactor": 2564.566,
   "lat": 31.561917,
   "lon": 74.348079,
   "matched": true
@@ -7870,6 +8744,7 @@
   "name": "Karachi",
   "iso2": "PK",
   "pop": 12130000,
+  "popFactor": 3482.815,
   "lat": 24.871938,
   "lon": 66.988063,
   "matched": true
@@ -7879,6 +8754,7 @@
   "name": "Durban",
   "iso2": "ZA",
   "pop": 2729000,
+  "popFactor": 1651.969,
   "lat": -29.863067,
   "lon": 30.978065,
   "matched": true
@@ -7888,6 +8764,7 @@
   "name": "St.  Petersburg",
   "iso2": "RU",
   "pop": 4553000,
+  "popFactor": 2133.776,
   "lat": 59.94096,
   "lon": 30.314074,
   "matched": true
@@ -7897,6 +8774,7 @@
   "name": "Guadalajara",
   "iso2": "MX",
   "pop": 4198000,
+  "popFactor": 2048.902,
   "lat": 20.671962,
   "lon": -103.33198,
   "matched": true
@@ -7906,6 +8784,7 @@
   "name": "Puebla",
   "iso2": "MX",
   "pop": 2195000,
+  "popFactor": 1481.553,
   "lat": 19.051906,
   "lon": -98.201983,
   "matched": true
@@ -7915,6 +8794,7 @@
   "name": "Kano",
   "iso2": "NG",
   "pop": 3140000,
+  "popFactor": 1772.005,
   "lat": 12.001923,
   "lon": 8.518092,
   "matched": true
@@ -7924,6 +8804,7 @@
   "name": "Warsaw",
   "iso2": "PL",
   "pop": 1707000,
+  "popFactor": 1306.522,
   "lat": 52.251947,
   "lon": 20.998054,
   "matched": true
@@ -7933,6 +8814,7 @@
   "name": "Pyongyang",
   "iso2": "KP",
   "pop": 3300000,
+  "popFactor": 1816.59,
   "lat": 39.021385,
   "lon": 125.752745,
   "matched": true
@@ -7942,6 +8824,7 @@
   "name": "Dar es Salaam",
   "iso2": "TZ",
   "pop": 2930000,
+  "popFactor": 1711.724,
   "lat": -6.798067,
   "lon": 39.266396,
   "matched": true
@@ -7951,6 +8834,7 @@
   "name": "Medan",
   "iso2": "ID",
   "pop": 2115000,
+  "popFactor": 1454.304,
   "lat": 3.58192,
   "lon": 98.648094,
   "matched": true
@@ -7960,6 +8844,7 @@
   "name": "Dublin",
   "iso2": "IE",
   "pop": 1059000,
+  "popFactor": 1029.077,
   "lat": 53.335007,
   "lon": -6.250852,
   "matched": true
@@ -7969,6 +8854,7 @@
   "name": "Monrovia",
   "iso2": "LR",
   "pop": 1041000,
+  "popFactor": 1020.294,
   "lat": 6.314582,
   "lon": -10.79966,
   "matched": true
@@ -7978,6 +8864,7 @@
   "name": "Naples",
   "iso2": "IT",
   "pop": 2250000,
+  "popFactor": 1500,
   "lat": 40.841971,
   "lon": 14.243066,
   "matched": true
@@ -7987,6 +8874,7 @@
   "name": "Milan",
   "iso2": "IT",
   "pop": 2945000,
+  "popFactor": 1716.1,
   "lat": 45.471921,
   "lon": 9.203063,
   "matched": true
@@ -7996,6 +8884,7 @@
   "name": "Kuala Lumpur",
   "iso2": "MY",
   "pop": 1448000,
+  "popFactor": 1203.329,
   "lat": 3.168612,
   "lon": 101.698037,
   "matched": true
@@ -8005,6 +8894,7 @@
   "name": "Lanzhou",
   "iso2": "CN",
   "pop": 2561000,
+  "popFactor": 1600.312,
   "lat": 36.057974,
   "lon": 103.790054,
   "matched": true
@@ -8014,6 +8904,7 @@
   "name": "Nanning",
   "iso2": "CN",
   "pop": 2167000,
+  "popFactor": 1472.073,
   "lat": 22.821934,
   "lon": 108.318099,
   "matched": true
@@ -8023,6 +8914,7 @@
   "name": "Guiyang",
   "iso2": "CN",
   "pop": 3662000,
+  "popFactor": 1913.635,
   "lat": 26.581989,
   "lon": 106.718093,
   "matched": true
@@ -8032,6 +8924,7 @@
   "name": "Chongqing",
   "iso2": "CN",
   "pop": 6461000,
+  "popFactor": 2541.85,
   "lat": 29.566923,
   "lon": 106.593036,
   "matched": true
@@ -8041,6 +8934,7 @@
   "name": "Fuzhou",
   "iso2": "CN",
   "pop": 2606000,
+  "popFactor": 1614.311,
   "lat": 26.081942,
   "lon": 119.2981,
   "matched": true
@@ -8050,6 +8944,7 @@
   "name": "Guangzhou",
   "iso2": "CN",
   "pop": 8829000,
+  "popFactor": 2971.363,
   "lat": 23.146927,
   "lon": 113.323064,
   "matched": true
@@ -8059,6 +8954,7 @@
   "name": "Surabaya",
   "iso2": "ID",
   "pop": 2845000,
+  "popFactor": 1686.713,
   "lat": -7.24729,
   "lon": 112.748887,
   "matched": true
@@ -8068,6 +8964,7 @@
   "name": "Guayaquil",
   "iso2": "EC",
   "pop": 2514000,
+  "popFactor": 1585.56,
   "lat": -2.218088,
   "lon": -79.921988,
   "matched": true
@@ -8077,6 +8974,7 @@
   "name": "Medellín",
   "iso2": "CO",
   "pop": 3297000,
+  "popFactor": 1815.764,
   "lat": 6.276949,
   "lon": -75.576956,
   "matched": true
@@ -8086,6 +8984,7 @@
   "name": "Cali",
   "iso2": "CO",
   "pop": 2254000,
+  "popFactor": 1501.333,
   "lat": 3.401905,
   "lon": -76.501912,
   "matched": true
@@ -8095,6 +8994,7 @@
   "name": "Havana",
   "iso2": "CU",
   "pop": 2174000,
+  "popFactor": 1474.449,
   "lat": 23.133905,
   "lon": -82.366128,
   "matched": true
@@ -8104,6 +9004,7 @@
   "name": "Alexandria",
   "iso2": "EG",
   "pop": 4165000,
+  "popFactor": 2040.833,
   "lat": 31.201965,
   "lon": 29.94805,
   "matched": true
@@ -8113,6 +9014,7 @@
   "name": "Frankfurt",
   "iso2": "DE",
   "pop": 2895000,
+  "popFactor": 1701.47,
   "lat": 50.099977,
   "lon": 8.675015,
   "matched": true
@@ -8122,6 +9024,7 @@
   "name": "Hamburg",
   "iso2": "DE",
   "pop": 1757000,
+  "popFactor": 1325.519,
   "lat": 53.551971,
   "lon": 9.998053,
   "matched": true
@@ -8131,6 +9034,7 @@
   "name": "Munich",
   "iso2": "DE",
   "pop": 1275000,
+  "popFactor": 1129.159,
   "lat": 48.131888,
   "lon": 11.573048,
   "matched": true
@@ -8140,6 +9044,7 @@
   "name": "Prague",
   "iso2": "CZ",
   "pop": 1162000,
+  "popFactor": 1077.961,
   "lat": 50.085283,
   "lon": 14.464034,
   "matched": true
@@ -8149,6 +9054,7 @@
   "name": "Kuwait City",
   "iso2": "KW",
   "pop": 2063000,
+  "popFactor": 1436.315,
   "lat": 29.371664,
   "lon": 47.976355,
   "matched": true
@@ -8158,6 +9064,7 @@
   "name": "Xian",
   "iso2": "CN",
   "pop": 4009000,
+  "popFactor": 2002.249,
   "lat": 34.276971,
   "lon": 108.89305,
   "matched": true
@@ -8167,6 +9074,7 @@
   "name": "Taiyuan",
   "iso2": "CN",
   "pop": 2913000,
+  "popFactor": 1706.751,
   "lat": 37.876958,
   "lon": 112.543112,
   "matched": true
@@ -8176,6 +9084,7 @@
   "name": "Wuhan",
   "iso2": "CN",
   "pop": 7243000,
+  "popFactor": 2691.282,
   "lat": 30.581977,
   "lon": 114.268071,
   "matched": true
@@ -8185,6 +9094,7 @@
   "name": "Changsha",
   "iso2": "CN",
   "pop": 2604000,
+  "popFactor": 1613.691,
   "lat": 28.201916,
   "lon": 112.968047,
   "matched": true
@@ -8194,6 +9104,7 @@
   "name": "Kunming",
   "iso2": "CN",
   "pop": 2931000,
+  "popFactor": 1712.016,
   "lat": 25.071926,
   "lon": 102.678029,
   "matched": true
@@ -8203,6 +9114,7 @@
   "name": "Zhengzhou",
   "iso2": "CN",
   "pop": 2636000,
+  "popFactor": 1623.576,
   "lat": 34.756942,
   "lon": 113.663147,
   "matched": true
@@ -8212,6 +9124,7 @@
   "name": "Shenyeng",
   "iso2": "CN",
   "pop": 4787000,
+  "popFactor": 2187.921,
   "lat": 41.806925,
   "lon": 123.448028,
   "matched": true
@@ -8221,6 +9134,7 @@
   "name": "Jinan",
   "iso2": "CN",
   "pop": 2798000,
+  "popFactor": 1672.722,
   "lat": 36.676928,
   "lon": 116.993073,
   "matched": true
@@ -8230,6 +9144,7 @@
   "name": "Tianjin",
   "iso2": "CN",
   "pop": 7180000,
+  "popFactor": 2679.552,
   "lat": 39.131972,
   "lon": 117.198073,
   "matched": true
@@ -8239,6 +9154,7 @@
   "name": "Nanchang",
   "iso2": "CN",
   "pop": 2350000,
+  "popFactor": 1532.971,
   "lat": 28.681938,
   "lon": 115.87805,
   "matched": true
@@ -8248,6 +9164,7 @@
   "name": "Nanjing",
   "iso2": "CN",
   "pop": 3679000,
+  "popFactor": 1918.072,
   "lat": 32.051965,
   "lon": 118.778029,
   "matched": true
@@ -8257,6 +9174,7 @@
   "name": "Hangzhou",
   "iso2": "CN",
   "pop": 3007000,
+  "popFactor": 1734.07,
   "lat": 30.25192,
   "lon": 120.168073,
   "matched": true
@@ -8266,6 +9184,7 @@
   "name": "Hiroshima",
   "iso2": "JP",
   "pop": 2045000,
+  "popFactor": 1430.035,
   "lat": 34.389781,
   "lon": 132.440967,
   "matched": true
@@ -8275,6 +9194,7 @@
   "name": "Changchun",
   "iso2": "CN",
   "pop": 3183000,
+  "popFactor": 1784.096,
   "lat": 43.866954,
   "lon": 125.338042,
   "matched": true
@@ -8284,6 +9204,7 @@
   "name": "Baotou",
   "iso2": "CN",
   "pop": 2036000,
+  "popFactor": 1426.885,
   "lat": 40.654153,
   "lon": 109.820074,
   "matched": true
@@ -8293,6 +9214,7 @@
   "name": "Harbin",
   "iso2": "CN",
   "pop": 3621000,
+  "popFactor": 1902.893,
   "lat": 45.75193,
   "lon": 126.648039,
   "matched": true
@@ -8302,6 +9224,7 @@
   "name": "Sapporo",
   "iso2": "JP",
   "pop": 2544000,
+  "popFactor": 1594.992,
   "lat": 43.076925,
   "lon": 141.338099,
   "matched": true
@@ -8311,6 +9234,7 @@
   "name": "Santo Domingo",
   "iso2": "DO",
   "pop": 2154000,
+  "popFactor": 1467.651,
   "lat": 18.472019,
   "lon": -69.902031,
   "matched": true
@@ -8320,6 +9244,7 @@
   "name": "Accra",
   "iso2": "GH",
   "pop": 2121000,
+  "popFactor": 1456.365,
   "lat": 5.551981,
   "lon": -0.218662,
   "matched": true
@@ -8329,6 +9254,7 @@
   "name": "Delhi",
   "iso2": "IN",
   "pop": 15926000,
+  "popFactor": 3990.739,
   "lat": 28.671939,
   "lon": 77.228058,
   "matched": true
@@ -8338,6 +9264,7 @@
   "name": "Hyderabad",
   "iso2": "IN",
   "pop": 6376000,
+  "popFactor": 2525.074,
   "lat": 17.401929,
   "lon": 78.478008,
   "matched": true
@@ -8347,6 +9274,7 @@
   "name": "Pune",
   "iso2": "IN",
   "pop": 4672000,
+  "popFactor": 2161.481,
   "lat": 18.531963,
   "lon": 73.848058,
   "matched": true
@@ -8356,6 +9284,7 @@
   "name": "Nagpur",
   "iso2": "IN",
   "pop": 2454000,
+  "popFactor": 1566.525,
   "lat": 21.171906,
   "lon": 79.088048,
   "matched": true
@@ -8365,6 +9294,7 @@
   "name": "Tripoli",
   "iso2": "LY",
   "pop": 2189000,
+  "popFactor": 1479.527,
   "lat": 32.8925,
   "lon": 13.180012,
   "matched": true
@@ -8374,6 +9304,7 @@
   "name": "Tel Aviv",
   "iso2": "IL",
   "pop": 3112000,
+  "popFactor": 1764.086,
   "lat": 32.081937,
   "lon": 34.768066,
   "matched": true
@@ -8383,6 +9314,7 @@
   "name": "Helsinki",
   "iso2": "FI",
   "pop": 1115000,
+  "popFactor": 1055.936,
   "lat": 60.177509,
   "lon": 24.932181,
   "matched": true
@@ -8392,6 +9324,7 @@
   "name": "Mashhad",
   "iso2": "IR",
   "pop": 2469000,
+  "popFactor": 1571.305,
   "lat": 36.271966,
   "lon": 59.568051,
   "matched": true
@@ -8401,6 +9334,7 @@
   "name": "Jaipur",
   "iso2": "IN",
   "pop": 2917000,
+  "popFactor": 1707.923,
   "lat": 26.923079,
   "lon": 75.808042,
   "matched": true
@@ -8410,6 +9344,7 @@
   "name": "Chennai",
   "iso2": "IN",
   "pop": 7163000,
+  "popFactor": 2676.378,
   "lat": 13.091934,
   "lon": 80.278053,
   "matched": true
@@ -8419,6 +9354,7 @@
   "name": "Ahmedabad",
   "iso2": "IN",
   "pop": 5375000,
+  "popFactor": 2318.405,
   "lat": 23.031999,
   "lon": 72.578058,
   "matched": true
@@ -8428,6 +9364,7 @@
   "name": "Surat",
   "iso2": "IN",
   "pop": 3842000,
+  "popFactor": 1960.102,
   "lat": 21.20193,
   "lon": 72.838094,
   "matched": true
@@ -8437,6 +9374,7 @@
   "name": "København",
   "iso2": "DK",
   "pop": 1085000,
+  "popFactor": 1041.633,
   "lat": 55.68051,
   "lon": 12.56154,
   "matched": true
@@ -8446,6 +9384,7 @@
   "name": "Abidjan",
   "iso2": "CI",
   "pop": 3802000,
+  "popFactor": 1949.872,
   "lat": 5.321943,
   "lon": -4.041994,
   "matched": true
@@ -8455,6 +9394,7 @@
   "name": "Belém",
   "iso2": "BR",
   "pop": 2167000,
+  "popFactor": 1472.073,
   "lat": -1.448057,
   "lon": -48.481969,
   "matched": true
@@ -8464,6 +9404,7 @@
   "name": "Brasília",
   "iso2": "BR",
   "pop": 3716996,
+  "popFactor": 1927.951,
   "lat": -15.781394,
   "lon": -47.917998,
   "matched": true
@@ -8473,6 +9414,7 @@
   "name": "Porto Alegre",
   "iso2": "BR",
   "pop": 3917000,
+  "popFactor": 1979.141,
   "lat": -30.048069,
   "lon": -51.201958,
   "matched": true
@@ -8482,6 +9424,7 @@
   "name": "Curitiba",
   "iso2": "BR",
   "pop": 3084000,
+  "popFactor": 1756.132,
   "lat": -25.418067,
   "lon": -49.321944,
   "matched": true
@@ -8491,6 +9434,7 @@
   "name": "Fortaleza",
   "iso2": "BR",
   "pop": 3602319,
+  "popFactor": 1897.978,
   "lat": -3.748072,
   "lon": -38.581927,
   "matched": true
@@ -8500,6 +9444,7 @@
   "name": "Salvador",
   "iso2": "BR",
   "pop": 3484000,
+  "popFactor": 1866.548,
   "lat": -12.968026,
   "lon": -38.481933,
   "matched": true
@@ -8509,6 +9454,7 @@
   "name": "Edmonton",
   "iso2": "CA",
   "pop": 1058000,
+  "popFactor": 1028.591,
   "lat": 53.551971,
   "lon": -113.501928,
   "matched": true
@@ -8518,6 +9464,7 @@
   "name": "Montréal",
   "iso2": "CA",
   "pop": 3678000,
+  "popFactor": 1917.811,
   "lat": 45.501945,
   "lon": -73.585243,
   "matched": true
@@ -8527,6 +9474,7 @@
   "name": "Goiânia",
   "iso2": "BR",
   "pop": 2022000,
+  "popFactor": 1421.97,
   "lat": -16.718081,
   "lon": -49.301971,
   "matched": true
@@ -8536,6 +9484,7 @@
   "name": "Recife",
   "iso2": "BR",
   "pop": 3651000,
+  "popFactor": 1910.759,
   "lat": -8.0737,
   "lon": -34.917551,
   "matched": true
@@ -8545,6 +9494,7 @@
   "name": "Brussels",
   "iso2": "BE",
   "pop": 1743000,
+  "popFactor": 1320.227,
   "lat": 50.835263,
   "lon": 4.331371,
   "matched": true
@@ -8554,6 +9504,7 @@
   "name": "Dhaka",
   "iso2": "BD",
   "pop": 12797394,
+  "popFactor": 3577.345,
   "lat": 23.725006,
   "lon": 90.406634,
   "matched": true
@@ -8563,6 +9514,7 @@
   "name": "Luanda",
   "iso2": "AO",
   "pop": 5172900,
+  "popFactor": 2274.401,
   "lat": -8.83634,
   "lon": 13.232481,
   "matched": true
@@ -8572,6 +9524,7 @@
   "name": "Algiers",
   "iso2": "DZ",
   "pop": 3354000,
+  "popFactor": 1831.393,
   "lat": 36.765011,
   "lon": 3.048607,
   "matched": true
@@ -8581,6 +9534,7 @@
   "name": "Chattogram",
   "iso2": "BD",
   "pop": 4529000,
+  "popFactor": 2128.145,
   "lat": 22.331938,
   "lon": 91.798022,
   "matched": true
@@ -8590,6 +9544,7 @@
   "name": "Perth",
   "iso2": "AU",
   "pop": 1532000,
+  "popFactor": 1237.74,
   "lat": -31.953069,
   "lon": 115.838053,
   "matched": true
@@ -8599,6 +9554,7 @@
   "name": "Yangon",
   "iso2": "MM",
   "pop": 4088000,
+  "popFactor": 2021.88,
   "lat": 16.7853,
   "lon": 96.164732,
   "matched": true
@@ -8608,6 +9564,7 @@
   "name": "San Francisco",
   "iso2": "US",
   "pop": 3450000,
+  "popFactor": 1857.418,
   "lat": 37.769196,
   "lon": -122.417169,
   "matched": true
@@ -8617,6 +9574,7 @@
   "name": "Denver",
   "iso2": "US",
   "pop": 2313000,
+  "popFactor": 1520.855,
   "lat": 39.741134,
   "lon": -104.985962,
   "matched": true
@@ -8626,6 +9584,7 @@
   "name": "Houston",
   "iso2": "US",
   "pop": 4459000,
+  "popFactor": 2111.634,
   "lat": 29.82192,
   "lon": -95.341925,
   "matched": true
@@ -8635,6 +9594,7 @@
   "name": "Miami",
   "iso2": "US",
   "pop": 5585000,
+  "popFactor": 2363.26,
   "lat": 25.789557,
   "lon": -80.226052,
   "matched": true
@@ -8644,6 +9604,7 @@
   "name": "Atlanta",
   "iso2": "US",
   "pop": 4506000,
+  "popFactor": 2122.734,
   "lat": 33.83196,
   "lon": -84.401895,
   "matched": true
@@ -8653,6 +9614,7 @@
   "name": "Chicago",
   "iso2": "US",
   "pop": 8990000,
+  "popFactor": 2998.333,
   "lat": 41.831937,
   "lon": -87.752001,
   "matched": true
@@ -8662,6 +9624,7 @@
   "name": "Caracas",
   "iso2": "VE",
   "pop": 2985000,
+  "popFactor": 1727.715,
   "lat": 10.502944,
   "lon": -66.918983,
   "matched": true
@@ -8671,6 +9634,7 @@
   "name": "Dubai",
   "iso2": "AE",
   "pop": 1379000,
+  "popFactor": 1174.308,
   "lat": 25.231942,
   "lon": 55.278029,
   "matched": true
@@ -8680,6 +9644,7 @@
   "name": "Tashkent",
   "iso2": "UZ",
   "pop": 2184000,
+  "popFactor": 1477.836,
   "lat": 41.313648,
   "lon": 69.292987,
   "matched": true
@@ -8689,6 +9654,7 @@
   "name": "Madrid",
   "iso2": "ES",
   "pop": 5567000,
+  "popFactor": 2359.449,
   "lat": 40.401972,
   "lon": -3.685298,
   "matched": true
@@ -8698,6 +9664,7 @@
   "name": "Geneva",
   "iso2": "CH",
   "pop": 1240000,
+  "popFactor": 1113.553,
   "lat": 46.210008,
   "lon": 6.140028,
   "matched": true
@@ -8707,6 +9674,7 @@
   "name": "Stockholm",
   "iso2": "SE",
   "pop": 1264000,
+  "popFactor": 1124.278,
   "lat": 59.352706,
   "lon": 18.095389,
   "matched": true
@@ -8716,6 +9684,7 @@
   "name": "Bangkok",
   "iso2": "TH",
   "pop": 6704000,
+  "popFactor": 2589.208,
   "lat": 13.751945,
   "lon": 100.514699,
   "matched": true
@@ -8725,6 +9694,7 @@
   "name": "Lima",
   "iso2": "PE",
   "pop": 8012000,
+  "popFactor": 2830.548,
   "lat": -12.046067,
   "lon": -77.052008,
   "matched": true
@@ -8734,6 +9704,7 @@
   "name": "Dakar",
   "iso2": "SN",
   "pop": 2604000,
+  "popFactor": 1613.691,
   "lat": 14.717778,
   "lon": -17.475076,
   "matched": true
@@ -8743,6 +9714,7 @@
   "name": "Johannesburg",
   "iso2": "ZA",
   "pop": 3435000,
+  "popFactor": 1853.375,
   "lat": -26.168099,
   "lon": 28.028064,
   "matched": true
@@ -8752,6 +9724,7 @@
   "name": "Amsterdam",
   "iso2": "NL",
   "pop": 1031000,
+  "popFactor": 1015.382,
   "lat": 52.351915,
   "lon": 4.914694,
   "matched": true
@@ -8761,6 +9734,7 @@
   "name": "Casablanca",
   "iso2": "MA",
   "pop": 3181000,
+  "popFactor": 1783.536,
   "lat": 33.601922,
   "lon": -7.618313,
   "matched": true
@@ -8770,6 +9744,7 @@
   "name": "Seoul",
   "iso2": "KR",
   "pop": 9796000,
+  "popFactor": 3129.856,
   "lat": 37.568295,
   "lon": 126.997785,
   "matched": true
@@ -8779,6 +9754,7 @@
   "name": "Manila",
   "iso2": "PH",
   "pop": 11100000,
+  "popFactor": 3331.666,
   "lat": 14.606105,
   "lon": 120.980271,
   "matched": true
@@ -8788,6 +9764,7 @@
   "name": "Monterrey",
   "iso2": "MX",
   "pop": 3712000,
+  "popFactor": 1926.655,
   "lat": 25.671941,
   "lon": -100.331931,
   "matched": true
@@ -8797,6 +9774,7 @@
   "name": "Berlin",
   "iso2": "DE",
   "pop": 3406000,
+  "popFactor": 1845.535,
   "lat": 52.523765,
   "lon": 13.399603,
   "matched": true
@@ -8806,6 +9784,7 @@
   "name": "Ürümqi",
   "iso2": "CN",
   "pop": 3575000,
+  "popFactor": 1890.767,
   "lat": 43.806958,
   "lon": 87.57306,
   "matched": true
@@ -8815,6 +9794,7 @@
   "name": "Chengdu",
   "iso2": "CN",
   "pop": 4123000,
+  "popFactor": 2030.517,
   "lat": 30.671946,
   "lon": 104.068074,
   "matched": true
@@ -8824,6 +9804,7 @@
   "name": "Ōsaka",
   "iso2": "JP",
   "pop": 11294000,
+  "popFactor": 3360.655,
   "lat": 34.751981,
   "lon": 135.458199,
   "matched": true
@@ -8833,6 +9814,7 @@
   "name": "Kinshasa",
   "iso2": "CD",
   "pop": 7843000,
+  "popFactor": 2800.536,
   "lat": -4.327778,
   "lon": 15.313026,
   "matched": true
@@ -8842,6 +9824,7 @@
   "name": "Bengaluru",
   "iso2": "IN",
   "pop": 6787000,
+  "popFactor": 2605.187,
   "lat": 12.971941,
   "lon": 77.558064,
   "matched": true
@@ -8851,6 +9834,7 @@
   "name": "Athens",
   "iso2": "GR",
   "pop": 3242000,
+  "popFactor": 1800.555,
   "lat": 37.985272,
   "lon": 23.731375,
   "matched": true
@@ -8860,6 +9844,7 @@
   "name": "Baghdad",
   "iso2": "IQ",
   "pop": 5054000,
+  "popFactor": 2248.11,
   "lat": 33.340594,
   "lon": 44.391923,
   "matched": true
@@ -8869,6 +9854,7 @@
   "name": "Addis Ababa",
   "iso2": "ET",
   "pop": 3100000,
+  "popFactor": 1760.682,
   "lat": 9.035256,
   "lon": 38.698059,
   "matched": true
@@ -8878,6 +9864,7 @@
   "name": "Tehran",
   "iso2": "IR",
   "pop": 7873000,
+  "popFactor": 2805.887,
   "lat": 35.673889,
   "lon": 51.422398,
   "matched": true
@@ -8887,6 +9874,7 @@
   "name": "Vancouver",
   "iso2": "CA",
   "pop": 2313328,
+  "popFactor": 1520.963,
   "lat": 49.275362,
   "lon": -123.12359,
   "matched": true
@@ -8896,6 +9884,7 @@
   "name": "Toronto",
   "iso2": "CA",
   "pop": 5213000,
+  "popFactor": 2283.2,
   "lat": 43.701926,
   "lon": -79.421967,
   "matched": true
@@ -8905,6 +9894,7 @@
   "name": "Buenos Aires",
   "iso2": "AR",
   "pop": 12795000,
+  "popFactor": 3577.01,
   "lat": -34.600556,
   "lon": -58.399477,
   "matched": true
@@ -8914,6 +9904,7 @@
   "name": "Kabul",
   "iso2": "AF",
   "pop": 3277000,
+  "popFactor": 1810.249,
   "lat": 34.518636,
   "lon": 69.181314,
   "matched": true
@@ -8923,6 +9914,7 @@
   "name": "Vienna",
   "iso2": "AT",
   "pop": 2400000,
+  "popFactor": 1549.193,
   "lat": 48.201961,
   "lon": 16.364693,
   "matched": true
@@ -8932,6 +9924,7 @@
   "name": "Melbourne",
   "iso2": "AU",
   "pop": 4170000,
+  "popFactor": 2042.058,
   "lat": -37.818086,
   "lon": 144.97307,
   "matched": true
@@ -8941,6 +9934,7 @@
   "name": "Taipei",
   "iso2": "TW",
   "pop": 6900273,
+  "popFactor": 2626.837,
   "lat": 25.035833,
   "lon": 121.568333,
   "matched": true
@@ -8950,6 +9944,7 @@
   "name": "Los Angeles",
   "iso2": "US",
   "pop": 12500000,
+  "popFactor": 3535.534,
   "lat": 33.991924,
   "lon": -118.181926,
   "matched": true
@@ -8959,6 +9954,7 @@
   "name": "Washington,  D.C.",
   "iso2": "US",
   "pop": 4338000,
+  "popFactor": 2082.787,
   "lat": 38.901495,
   "lon": -77.011364,
   "matched": true
@@ -8968,6 +9964,7 @@
   "name": "New York",
   "iso2": "US",
   "pop": 19040000,
+  "popFactor": 4363.485,
   "lat": 40.751925,
   "lon": -73.981963,
   "matched": true
@@ -8977,6 +9974,7 @@
   "name": "London",
   "iso2": "GB",
   "pop": 8567000,
+  "popFactor": 2926.944,
   "lat": 51.501941,
   "lon": -0.118668,
   "matched": true
@@ -8986,6 +9984,7 @@
   "name": "Istanbul",
   "iso2": "TR",
   "pop": 10061000,
+  "popFactor": 3171.908,
   "lat": 41.106942,
   "lon": 29.008056,
   "matched": true
@@ -8995,6 +9994,7 @@
   "name": "Riyadh",
   "iso2": "SA",
   "pop": 4465000,
+  "popFactor": 2113.055,
   "lat": 24.642779,
   "lon": 46.770796,
   "matched": true
@@ -9004,6 +10004,7 @@
   "name": "Cape Town",
   "iso2": "ZA",
   "pop": 3215000,
+  "popFactor": 1793.042,
   "lat": -33.918065,
   "lon": 18.433042,
   "matched": true
@@ -9013,6 +10014,7 @@
   "name": "Moscow",
   "iso2": "RU",
   "pop": 10452000,
+  "popFactor": 3232.955,
   "lat": 55.75411,
   "lon": 37.613577,
   "matched": true
@@ -9022,6 +10024,7 @@
   "name": "Mexico City",
   "iso2": "MX",
   "pop": 19028000,
+  "popFactor": 4362.11,
   "lat": 19.444388,
   "lon": -99.132934,
   "matched": true
@@ -9031,6 +10034,7 @@
   "name": "Lagos",
   "iso2": "NG",
   "pop": 9466000,
+  "popFactor": 3076.687,
   "lat": 6.445208,
   "lon": 3.389585,
   "matched": true
@@ -9040,6 +10044,7 @@
   "name": "Rome",
   "iso2": "IT",
   "pop": 3339000,
+  "popFactor": 1827.293,
   "lat": 41.897902,
   "lon": 12.481313,
   "matched": true
@@ -9049,6 +10054,7 @@
   "name": "Beijing",
   "iso2": "CN",
   "pop": 11106000,
+  "popFactor": 3332.567,
   "lat": 39.930838,
   "lon": 116.38634,
   "matched": true
@@ -9058,6 +10064,7 @@
   "name": "Nairobi",
   "iso2": "KE",
   "pop": 3010000,
+  "popFactor": 1734.935,
   "lat": -1.281401,
   "lon": 36.814711,
   "matched": true
@@ -9067,6 +10074,7 @@
   "name": "Jakarta",
   "iso2": "ID",
   "pop": 9125000,
+  "popFactor": 3020.761,
   "lat": -6.172472,
   "lon": 106.827492,
   "matched": true
@@ -9076,6 +10084,7 @@
   "name": "Bogota",
   "iso2": "CO",
   "pop": 7772000,
+  "popFactor": 2787.831,
   "lat": 4.598369,
   "lon": -74.08529,
   "matched": true
@@ -9085,6 +10094,7 @@
   "name": "Cairo",
   "iso2": "EG",
   "pop": 11893000,
+  "popFactor": 3448.623,
   "lat": 30.051906,
   "lon": 31.248022,
   "matched": true
@@ -9094,6 +10104,7 @@
   "name": "Shanghai",
   "iso2": "CN",
   "pop": 14987000,
+  "popFactor": 3871.305,
   "lat": 31.218398,
   "lon": 121.434559,
   "matched": true
@@ -9103,6 +10114,7 @@
   "name": "Tokyo",
   "iso2": "JP",
   "pop": 35676000,
+  "popFactor": 5972.939,
   "lat": 35.686963,
   "lon": 139.749462,
   "matched": true
@@ -9112,6 +10124,7 @@
   "name": "Mumbai",
   "iso2": "IN",
   "pop": 18978000,
+  "popFactor": 4356.375,
   "lat": 19.018936,
   "lon": 72.855043,
   "matched": true
@@ -9121,6 +10134,7 @@
   "name": "Paris",
   "iso2": "FR",
   "pop": 9904000,
+  "popFactor": 3147.062,
   "lat": 48.868639,
   "lon": 2.33139,
   "matched": true
@@ -9130,6 +10144,7 @@
   "name": "Santiago",
   "iso2": "CL",
   "pop": 5720000,
+  "popFactor": 2391.652,
   "lat": -33.448068,
   "lon": -70.668987,
   "matched": true
@@ -9139,6 +10154,7 @@
   "name": "Kolkata",
   "iso2": "IN",
   "pop": 14787000,
+  "popFactor": 3845.387,
   "lat": 22.496915,
   "lon": 88.32273,
   "matched": true
@@ -9148,6 +10164,7 @@
   "name": "Rio de Janeiro",
   "iso2": "BR",
   "pop": 11748000,
+  "popFactor": 3427.536,
   "lat": -22.923077,
   "lon": -43.226967,
   "matched": true
@@ -9157,6 +10174,7 @@
   "name": "São Paulo",
   "iso2": "BR",
   "pop": 18845000,
+  "popFactor": 4341.083,
   "lat": -23.556734,
   "lon": -46.626966,
   "matched": true
@@ -9166,6 +10184,7 @@
   "name": "Sydney",
   "iso2": "AU",
   "pop": 4630000,
+  "popFactor": 2151.743,
   "lat": -33.918065,
   "lon": 151.183234,
   "matched": true
@@ -9175,6 +10194,7 @@
   "name": "Singapore",
   "iso2": "SG",
   "pop": 5183700,
+  "popFactor": 2276.774,
   "lat": 1.294979,
   "lon": 103.853875,
   "matched": true
@@ -9184,6 +10204,7 @@
   "name": "Hong Kong",
   "iso2": "HK",
   "pop": 7206000,
+  "popFactor": 2684.399,
   "lat": 22.306927,
   "lon": 114.183064,
   "matched": true
@@ -9193,6 +10214,7 @@
   "name": "Queenstown",
   "iso2": "NZ",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -45.022672,
   "lon": 168.725081,
   "matched": true
@@ -9202,6 +10224,7 @@
   "name": "Wellington",
   "iso2": "NZ",
   "pop": 393400,
+  "popFactor": 627.216,
   "lat": -41.299988,
   "lon": 174.783266,
   "matched": true
@@ -9211,6 +10234,7 @@
   "name": "Christchurch",
   "iso2": "NZ",
   "pop": 363200,
+  "popFactor": 602.661,
   "lat": -43.535022,
   "lon": 172.630023,
   "matched": true
@@ -9220,6 +10244,7 @@
   "name": "Auckland",
   "iso2": "NZ",
   "pop": 1377200,
+  "popFactor": 1173.542,
   "lat": -36.848055,
   "lon": 174.763027,
   "matched": true
@@ -9229,6 +10254,7 @@
   "name": "Amaravati",
   "iso2": "IN",
   "pop": 5800000,
+  "popFactor": 2408.319,
   "lat": 16.533658,
   "lon": 80.52432,
   "matched": true
@@ -9238,6 +10264,7 @@
   "name": "Yaren",
   "iso2": "NR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -0.547893,
   "lon": 166.919525,
   "matched": false
@@ -9247,6 +10274,7 @@
   "name": "Friedrichshafen",
   "iso2": "DE",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 47.671299,
   "lon": 9.51149,
   "matched": false
@@ -9256,6 +10284,7 @@
   "name": "Ivalo",
   "iso2": "FI",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 68.6073,
   "lon": 27.4053,
   "matched": false
@@ -9265,6 +10294,7 @@
   "name": "Kittilä",
   "iso2": "FI",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 67.700996,
   "lon": 24.8468,
   "matched": false
@@ -9274,6 +10304,7 @@
   "name": "Saint Anne",
   "iso2": "GG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 49.706104,
   "lon": -2.21472,
   "matched": false
@@ -9283,6 +10314,7 @@
   "name": "St. Peter",
   "iso2": "JE",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 49.207901,
   "lon": -2.19551,
   "matched": false
@@ -9292,6 +10324,7 @@
   "name": "Malung-Sälen",
   "iso2": "SE",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 61.16508,
   "lon": 12.83352,
   "matched": false
@@ -9301,6 +10334,7 @@
   "name": "Cat Hill",
   "iso2": "SH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -7.970179,
   "lon": -14.392744,
   "matched": false
@@ -9310,6 +10344,7 @@
   "name": "Mfuwe",
   "iso2": "ZM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -13.2589,
   "lon": 31.9366,
   "matched": false
@@ -9319,6 +10354,7 @@
   "name": "Zagora",
   "iso2": "MA",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 30.265788,
   "lon": -5.860808,
   "matched": false
@@ -9328,6 +10364,7 @@
   "name": "Oulad Yaich",
   "iso2": "MA",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 32.401895,
   "lon": -6.315905,
   "matched": false
@@ -9337,6 +10374,7 @@
   "name": "Dakhla",
   "iso2": "EH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 23.7183,
   "lon": -15.932,
   "matched": false
@@ -9346,6 +10384,7 @@
   "name": "El Aaiún",
   "iso2": "EH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 27.142467,
   "lon": -13.224947,
   "matched": false
@@ -9355,6 +10394,7 @@
   "name": "Al Aaroui",
   "iso2": "MA",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 34.9888,
   "lon": -3.02821,
   "matched": false
@@ -9364,6 +10404,7 @@
   "name": "Ouarzazate",
   "iso2": "MA",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 30.9391,
   "lon": -6.90943,
   "matched": false
@@ -9373,6 +10414,7 @@
   "name": "Espargos",
   "iso2": "CV",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 16.7414,
   "lon": -22.9494,
   "matched": false
@@ -9382,6 +10424,7 @@
   "name": "Rabil",
   "iso2": "CV",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 16.136499,
   "lon": -22.888901,
   "matched": false
@@ -9391,6 +10434,7 @@
   "name": "Marsa Alam",
   "iso2": "EG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 25.555548,
   "lon": 34.59245,
   "matched": false
@@ -9400,6 +10444,7 @@
   "name": "Sharm El Sheikh",
   "iso2": "EG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 27.977272,
   "lon": 34.394717,
   "matched": false
@@ -9409,6 +10454,7 @@
   "name": "Ta Noun",
   "iso2": "KH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 10.914244,
   "lon": 103.226652,
   "matched": false
@@ -9418,6 +10464,7 @@
   "name": "Ibiza (Eivissa)",
   "iso2": "ES",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 38.872898,
   "lon": 1.37312,
   "matched": false
@@ -9427,6 +10474,7 @@
   "name": "Mahón (Maó)",
   "iso2": "ES",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 39.862598,
   "lon": 4.21865,
   "matched": false
@@ -9436,6 +10484,7 @@
   "name": "Saint-Pierre",
   "iso2": "PM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 46.762651,
   "lon": -56.17499,
   "matched": false
@@ -9445,6 +10494,7 @@
   "name": "Kefallinia Island",
   "iso2": "GR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 38.120098,
   "lon": 20.5005,
   "matched": false
@@ -9454,6 +10504,7 @@
   "name": "Santorini Island",
   "iso2": "GR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 36.400045,
   "lon": 25.478638,
   "matched": false
@@ -9463,6 +10514,7 @@
   "name": "Eilat",
   "iso2": "IL",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 29.727009,
   "lon": 35.014116,
   "matched": false
@@ -9472,6 +10524,7 @@
   "name": "Providenciales",
   "iso2": "TC",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 21.773697,
   "lon": -72.268321,
   "matched": false
@@ -9481,6 +10534,7 @@
   "name": "San Salvador",
   "iso2": "BS",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 24.063041,
   "lon": -74.523233,
   "matched": false
@@ -9490,6 +10544,7 @@
   "name": "Alofi",
   "iso2": "NU",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -19.080109,
   "lon": -169.923493,
   "matched": false
@@ -9499,6 +10554,7 @@
   "name": "Wallis Island",
   "iso2": "WF",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -13.239445,
   "lon": -176.19865,
   "matched": false
@@ -9508,6 +10564,7 @@
   "name": "Al-Ula",
   "iso2": "SA",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 26.483634,
   "lon": 38.117048,
   "matched": false
@@ -9517,6 +10574,7 @@
   "name": "Sharma",
   "iso2": "SA",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 27.924261,
   "lon": 35.29358,
   "matched": false
@@ -9526,6 +10584,7 @@
   "name": "Kish Island",
   "iso2": "IR",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 26.525427,
   "lon": 53.980462,
   "matched": false
@@ -9535,6 +10594,7 @@
   "name": "Duqm",
   "iso2": "OM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 19.501944,
   "lon": 57.634167,
   "matched": false
@@ -9544,6 +10604,7 @@
   "name": "Skardu",
   "iso2": "PK",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 35.33866,
   "lon": 75.538648,
   "matched": false
@@ -9553,6 +10614,7 @@
   "name": "Rota Island",
   "iso2": "MP",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 14.173267,
   "lon": 145.241103,
   "matched": false
@@ -9562,6 +10624,7 @@
   "name": "Kiritimati",
   "iso2": "KI",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 1.986278,
   "lon": -157.350011,
   "matched": false
@@ -9571,6 +10634,7 @@
   "name": "Weno Island",
   "iso2": "FM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 7.46187,
   "lon": 151.843002,
   "matched": false
@@ -9580,6 +10644,7 @@
   "name": "Okat",
   "iso2": "FM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 5.35698,
   "lon": 162.957993,
   "matched": false
@@ -9589,6 +10654,7 @@
   "name": "Yap Island",
   "iso2": "FM",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 9.49891,
   "lon": 138.082993,
   "matched": false
@@ -9598,6 +10664,7 @@
   "name": "Panglao",
   "iso2": "PH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 9.573045,
   "lon": 123.770143,
   "matched": false
@@ -9607,6 +10674,7 @@
   "name": "Hanak",
   "iso2": "SA",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 25.627975,
   "lon": 37.088914,
   "matched": false
@@ -9616,6 +10684,7 @@
   "name": "Isla De Pascua",
   "iso2": "CL",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -27.165411,
   "lon": -109.421027,
   "matched": false
@@ -9625,6 +10694,7 @@
   "name": "Grand Case",
   "iso2": "MF",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 18.100057,
   "lon": -63.047444,
   "matched": false
@@ -9634,6 +10704,7 @@
   "name": "Gustavia",
   "iso2": "BL",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 17.904398,
   "lon": -62.843333,
   "matched": false
@@ -9643,6 +10714,7 @@
   "name": "Sint Maarten",
   "iso2": "SX",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 18.041,
   "lon": -63.108898,
   "matched": false
@@ -9652,6 +10724,7 @@
   "name": "The Valley",
   "iso2": "AI",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 18.204773,
   "lon": -63.05383,
   "matched": false
@@ -9661,6 +10734,7 @@
   "name": "Gerald's Park",
   "iso2": "MS",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 16.791835,
   "lon": -62.193204,
   "matched": false
@@ -9670,6 +10744,7 @@
   "name": "Scarborough",
   "iso2": "TT",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 11.149571,
   "lon": -60.831298,
   "matched": false
@@ -9679,6 +10754,7 @@
   "name": "Beef Island",
   "iso2": "VG",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 18.445492,
   "lon": -64.541707,
   "matched": false
@@ -9688,6 +10764,7 @@
   "name": "Gan",
   "iso2": "MV",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -0.692975,
   "lon": 73.152627,
   "matched": false
@@ -9697,6 +10774,7 @@
   "name": "Haa Dhaalu Atoll",
   "iso2": "MV",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 6.743235,
   "lon": 73.167072,
   "matched": false
@@ -9706,6 +10784,7 @@
   "name": "Na Thon (Ko Samui Island)",
   "iso2": "TH",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 9.54779,
   "lon": 100.061996,
   "matched": false
@@ -9715,6 +10794,7 @@
   "name": "Phu Quoc Island",
   "iso2": "VN",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 10.169783,
   "lon": 103.99353,
   "matched": false
@@ -9724,6 +10804,7 @@
   "name": "Oecussi-Ambeno",
   "iso2": "TL",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -9.198419,
   "lon": 124.337873,
   "matched": false
@@ -9733,6 +10814,7 @@
   "name": "Burnt Pine",
   "iso2": "NF",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": -29.041759,
   "lon": 167.939474,
   "matched": false
@@ -9742,6 +10824,7 @@
   "name": "Ordos",
   "iso2": "CN",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 39.493514,
   "lon": 109.8599,
   "matched": false
@@ -9751,6 +10834,7 @@
   "name": "Zhangjiajie (Yongding)",
   "iso2": "CN",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 29.104749,
   "lon": 110.442786,
   "matched": false
@@ -9760,6 +10844,7 @@
   "name": "Jinghong (Gasa)",
   "iso2": "CN",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 21.974648,
   "lon": 100.762224,
   "matched": false
@@ -9769,6 +10854,7 @@
   "name": "Huangshan",
   "iso2": "CN",
   "pop": 50000,
+  "popFactor": 223.607,
   "lat": 29.733299,
   "lon": 118.255997,
   "matched": false
