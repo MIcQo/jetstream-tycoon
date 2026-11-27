@@ -10,6 +10,8 @@ import (
 	"github.com/getsentry/sentry-go"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+
+	"github.com/MIcQo/jetstream-tycoon/sim/content/bundle"
 )
 
 // NewHandler returns the public API router. Every request is measured by m, and
@@ -23,7 +25,21 @@ func NewHandler(m *Metrics, logger *slog.Logger) http.Handler {
 	r.Get("/healthz", func(w http.ResponseWriter, _ *http.Request) {
 		writeJSON(w, http.StatusOK, `{"status":"ok"}`)
 	})
+	r.Get("/content/latest", contentLatest)
 	return r
+}
+
+// contentLatest reports the content version compiled into this server, so clients
+// can tell whether a newer content bundle exists (TECH_DESIGN §13). The response is
+// the same for everyone and safe for the CDN to cache briefly.
+func contentLatest(w http.ResponseWriter, _ *http.Request) {
+	b, err := bundle.Load()
+	if err != nil {
+		writeJSON(w, http.StatusInternalServerError, `{"error":"content unavailable"}`)
+		return
+	}
+	w.Header().Set("Cache-Control", "public, max-age=60")
+	writeJSON(w, http.StatusOK, fmt.Sprintf(`{"contentVersion":%q}`, b.ContentVersion))
 }
 
 func writeJSON(w http.ResponseWriter, status int, body string) {

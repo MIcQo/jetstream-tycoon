@@ -1,4 +1,4 @@
-.PHONY: datagen determinism-wasm-tests infra-up infra-down infra-reset infra-config-check all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
+.PHONY: content-build datagen determinism-wasm-tests infra-up infra-down infra-reset infra-config-check all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
@@ -91,7 +91,11 @@ mutate-ts:
 
 content-check: i18n-check
 	go run ./tools/datagen check
-	go run ./tools/contentc check
+	go run ./tools/contentc verify
+
+# Recompiles the embedded content bundle (sim/content/bundle/content.json.gz).
+content-build:
+	go run ./tools/contentc build
 
 determinism: wasm
 	go test -race -v -run '^TestDeterministic' ./sim/...

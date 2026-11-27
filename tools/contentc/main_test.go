@@ -1,12 +1,14 @@
 package main
 
 import (
+	"bytes"
 	"os"
 	"path/filepath"
 	"strings"
 	"testing"
 
 	"github.com/MIcQo/jetstream-tycoon/sim/content"
+	"github.com/MIcQo/jetstream-tycoon/sim/content/bundle"
 )
 
 // TestRealContentIsValid checks the committed content, the same as make content-check.
@@ -94,5 +96,87 @@ func TestLoadErrors(t *testing.T) {
 	}
 	if _, _, err := Load(dir); err == nil || !strings.Contains(err.Error(), "countries.json") {
 		t.Errorf("bad countries.json: %v", err)
+	}
+}
+
+func TestBuildIsDeterministicAndVersioned(t *testing.T) {
+	c, _, err := Load("../../content")
+	if err != nil {
+		t.Fatal(err)
+	}
+	w, err := LoadWorld("../../content/world")
+	if err != nil {
+		t.Fatal(err)
+	}
+	gz1, v1, err := Build(c, w)
+	if err != nil {
+		t.Fatal(err)
+	}
+	gz2, v2, _ := Build(c, w)
+	if !bytes.Equal(gz1, gz2) || v1 != v2 {
+		t.Fatal("two builds of the same content differ")
+	}
+	b, err := bundle.Decode(gz1)
+	if err != nil || b.ContentVersion != v1 || len(b.World.Airports) != len(w.Airports) {
+		t.Fatalf("round trip: %v %v", b.ContentVersion, err)
+	}
+	c.Balance.Demand.D0 *= 2
+	if _, v3, _ := Build(c, w); v3 == v1 {
+		t.Error("changing a balance value did not change contentVersion")
+	}
+	// The committed bundle matches the committed content.
+	committed, err := os.ReadFile("../../" + bundlePath)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !bytes.Equal(committed, gz1) {
+		t.Error("committed bundle is stale: run make content-build")
+	}
+}
+
+func TestRunCommands(t *testing.T) {
+	dir := copyContent(t)
+	for _, f := range []string{"airports.json", "cities.json", "candidates.json"} {
+		data, err := os.ReadFile(filepath.Join("../../content/world", f))
+		if err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(filepath.Join(dir, "world", f), data, 0o600); err != nil {
+			t.Fatal(err)
+		}
+	}
+	out := filepath.Join(t.TempDir(), "content.json.gz")
+	if err := run("check", dir, out); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := os.Stat(out); !os.IsNotExist(err) {
+		t.Error("check must not write the bundle")
+	}
+	if err := run("verify", dir, out); err == nil {
+		t.Error("verify without a bundle succeeded")
+	}
+	if err := run("build", dir, out); err != nil {
+		t.Fatal(err)
+	}
+	if err := run("verify", dir, out); err != nil {
+		t.Fatalf("verify after build: %v", err)
+	}
+	// Change the content: the bundle is now stale.
+	path := filepath.Join(dir, "balance.yaml")
+	data, _ := os.ReadFile(path)
+	if err := os.WriteFile(path, []byte(strings.Replace(string(data), "d0: 0.04", "d0: 0.05", 1)), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	if err := run("verify", dir, out); err == nil || !strings.Contains(err.Error(), "stale") {
+		t.Errorf("verify on changed content: %v", err)
+	}
+	if err := run("nope", dir, out); err == nil || !strings.Contains(err.Error(), "unknown command") {
+		t.Errorf("unknown command: %v", err)
+	}
+	if err := os.Remove(filepath.Join(dir, "world", "cities.json")); err != nil {
+		t.Fatal(err)
+	}
+	if err := run("build", dir, out); err == nil {
+		t.Error("build without cities.json succeeded")
 	}
 }

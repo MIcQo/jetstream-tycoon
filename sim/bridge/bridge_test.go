@@ -23,7 +23,7 @@ func decode[T any](t *testing.T, s string) T {
 func TestNewGameAndAdvance(t *testing.T) {
 	var s bridge.Session
 	v := decode[bridge.View](t, must(t)(s.NewGame(`{"seed":42}`)))
-	if v.Tick != 0 || v.Day != 0 || v.Speed != 1 || v.CashCents != 100_000_00 {
+	if v.Tick != 0 || v.Day != 0 || v.Speed != 1 || v.CashCents != 100_000_00 || !strings.HasPrefix(v.ContentVersion, "c") {
 		t.Fatalf("initial view = %+v", v)
 	}
 

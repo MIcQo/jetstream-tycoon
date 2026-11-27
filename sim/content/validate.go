@@ -20,12 +20,17 @@ type Refs struct {
 // content can't silently fall back to a zero value.
 func Decode(data []byte) (Content, error) {
 	var c Content
-	dec := json.NewDecoder(bytes.NewReader(data))
-	dec.DisallowUnknownFields()
-	if err := dec.Decode(&c); err != nil {
+	if err := DecodeInto(data, &c); err != nil {
 		return Content{}, fmt.Errorf("content: %w", err)
 	}
 	return c, nil
+}
+
+// DecodeInto strictly decodes JSON into v (unknown fields are errors).
+func DecodeInto(data []byte, v any) error {
+	dec := json.NewDecoder(bytes.NewReader(data))
+	dec.DisallowUnknownFields()
+	return dec.Decode(v)
 }
 
 var idRe = regexp.MustCompile(`^[a-z][a-z0-9_]*$`)

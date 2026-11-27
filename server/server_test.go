@@ -282,3 +282,14 @@ func TestRunServesUntilCancelled(t *testing.T) {
 		t.Fatalf("Run with cancelled ctx = %v, want nil", err)
 	}
 }
+
+func TestContentLatest(t *testing.T) {
+	rec := httptest.NewRecorder()
+	server.NewHandler(server.NewMetrics(), discard()).ServeHTTP(rec, httptest.NewRequest(http.MethodGet, "/content/latest", nil))
+	if rec.Code != http.StatusOK || rec.Header().Get("Cache-Control") != "public, max-age=60" {
+		t.Fatalf("status %d, cache %q", rec.Code, rec.Header().Get("Cache-Control"))
+	}
+	if body := rec.Body.String(); !strings.HasPrefix(body, `{"contentVersion":"c`) {
+		t.Errorf("body = %s", body)
+	}
+}
