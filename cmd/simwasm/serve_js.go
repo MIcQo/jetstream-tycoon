@@ -6,6 +6,7 @@ import (
 	"syscall/js"
 
 	"github.com/MIcQo/jetstream-tycoon/sim/bridge"
+	"github.com/MIcQo/jetstream-tycoon/sim/detmath"
 )
 
 // serve registers globalThis.jetstreamSim and blocks forever so the Go runtime
@@ -14,6 +15,9 @@ import (
 // and panics into `{"error": "..."}` responses.
 func serve() {
 	var session bridge.Session
+	// Production sim.wasm is built with -tags release, so detmath.Finite clamps
+	// NaN/±Inf to 0 and calls this hook; the report reaches Sentry via the UI.
+	detmath.NonFiniteHook = session.ReportNonFinite
 	api := js.Global().Get("Object").New()
 	api.Set("newGame", js.FuncOf(func(_ js.Value, args []js.Value) any {
 		return bridge.Guard(func() (string, error) { return session.NewGame(args[0].String()) })
