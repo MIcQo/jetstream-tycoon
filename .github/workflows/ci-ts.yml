@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install web dependencies
-        run: npm --prefix web install
+        run: cd web && npm install
       - name: Run TypeScript typecheck and ESLint
         run: make lint-ts
 
@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install web dependencies (generate package-lock)
-        run: npm --prefix web install --package-lock-only
+        run: cd web && npm install --package-lock-only
       - name: Run npm audit
         run: make audit-ts
 
@@ -67,7 +67,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install web dependencies
-        run: npm --prefix web install
+        run: cd web && npm install
       - name: Run TypeScript unit tests
         run: make test-ts
 
@@ -81,7 +81,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install web dependencies
-        run: npm --prefix web install
+        run: cd web && npm install
       - name: Run TypeScript integration tests
         run: make test-integration-ts
 
@@ -95,7 +95,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install web dependencies
-        run: npm --prefix web install
+        run: cd web && npm install
       - name: Run TypeScript fast-check tests
         run: make fuzz-ts
 
@@ -109,6 +109,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install web dependencies
-        run: npm --prefix web install
+        run: cd web && npm install
       - name: Run TypeScript AST mutation tests
         run: make mutate-ts

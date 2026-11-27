@@ -13,7 +13,11 @@ function fakeRaw(calls: string[]): RawSimApi {
     advance: (ticks) => {
       calls.push(`advance ${ticks}`);
       return ticks > 0
-        ? JSON.stringify({ view, notifications: [{ key: "notifications.day.started", params: { day: "1" } }] })
+        ? JSON.stringify({
+            view,
+            notifications: [{ key: "notifications.day.started", params: { day: "1" } }],
+            reports: [{ kind: "nonFinite", context: "c", detail: "NaN", tick: 1 }],
+          })
         : JSON.stringify({ view });
     },
     command: (cmd) => {
@@ -28,8 +32,10 @@ describe("jsonBridge", () => {
     const calls: string[] = [];
     const b = jsonBridge(fakeRaw(calls));
     expect(b.newGame(7)).toEqual(view);
-    expect(b.advance(3).notifications).toEqual([{ key: "notifications.day.started", params: { day: "1" } }]);
-    expect(b.advance(0)).toEqual({ view, notifications: [] });
+    const adv = b.advance(3);
+    expect(adv.notifications).toEqual([{ key: "notifications.day.started", params: { day: "1" } }]);
+    expect(adv.reports).toEqual([{ kind: "nonFinite", context: "c", detail: "NaN", tick: 1 }]);
+    expect(b.advance(0)).toEqual({ view, notifications: [], reports: [] });
     expect(b.command({ type: "setSpeed", speed: 3 })).toEqual({ ok: false, errorKey: "errors.cmd.invalid_speed" });
     expect(calls).toEqual([
       'newGame {"seed":7}',

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import type { AdvanceResult, CommandResult, SimBridge } from "./bridge";
 import { MS_PER_TICK_AT_1X, TickClock } from "./clock";
-import { createController } from "./controller";
+import { createController, RECENT_COMMANDS } from "./controller";
 import type { FromWorker, SimView } from "./protocol";
 
 function fakeBridge(commandResult: CommandResult = { ok: true }) {
@@ -17,7 +17,7 @@ function fakeBridge(commandResult: CommandResult = { ok: true }) {
     advance: (ticks): AdvanceResult => {
       advanced.push(ticks);
       view = { ...view, tick: view.tick + ticks };
-      return { view, notifications: [] };
+      return { view, notifications: [], reports: [] };
     },
     command: (cmd) => {
       commands.push(cmd);
@@ -95,11 +95,86 @@ describe("createController failures", () => {
     const posted: FromWorker[] = [];
     const c = createController(failing, (m) => posted.push(m));
     expect(() => c.handle({ kind: "start", seed: 1 })).not.toThrow();
-    expect(posted).toEqual([{ kind: "error", errorKey: "errors.sim.internal" }]);
+    expect(posted).toEqual([
+      {
+        kind: "error",
+        errorKey: "errors.sim.internal",
+        report: { message: "boom", seed: 1, tick: undefined, recentCommands: [] },
+      },
+    ]);
 
     const ok = createController({ ...bridge, advance: failing.advance }, (m) => posted.push(m));
-    ok.handle({ kind: "start", seed: 1 });
+    ok.handle({ kind: "start", seed: 7 });
+    ok.handle({ kind: "setSpeed", speed: 2 });
     expect(() => ok.pulse(10)).not.toThrow();
-    expect(posted.at(-1)).toEqual({ kind: "error", errorKey: "errors.sim.internal" });
+    expect(posted.at(-1)).toEqual({
+      kind: "error",
+      errorKey: "errors.sim.internal",
+      report: {
+        message: "boom",
+        seed: 7,
+        tick: 0,
+        recentCommands: ['{"atTick":0,"type":"setSpeed","speed":2}'],
+      },
+    });
+  });
+
+  it("reports non-Error throws as strings", () => {
+    const { bridge } = fakeBridge();
+    const posted: FromWorker[] = [];
+    const c = createController(
+      {
+        ...bridge,
+        newGame: () => {
+          throw "plain";
+        },
+      },
+      (m) => posted.push(m),
+    );
+    c.handle({ kind: "start", seed: 1 });
+    expect(posted[0]?.kind === "error" && posted[0].report?.message).toBe("plain");
+  });
+
+  it("keeps only the last RECENT_COMMANDS commands", () => {
+    const { bridge } = fakeBridge();
+    const posted: FromWorker[] = [];
+    const failingAdvance = {
+      ...bridge,
+      advance: () => {
+        throw new Error("x");
+      },
+    };
+    const c = createController(failingAdvance, (m) => posted.push(m));
+    c.handle({ kind: "start", seed: 1 });
+    for (let i = 0; i < RECENT_COMMANDS + 5; i++) {
+      c.handle({ kind: "setSpeed", speed: 1 });
+    }
+    c.pulse(0);
+    const last = posted.at(-1);
+    expect(last?.kind === "error" && last.report?.recentCommands.length).toBe(RECENT_COMMANDS);
+  });
+});
+
+describe("simulation reports", () => {
+  it("forwards recovered-problem reports after the update", () => {
+    const { bridge } = fakeBridge();
+    const report = { kind: "nonFinite", context: "fuel_price", detail: "+Inf", tick: 3 };
+    let withReport = true;
+    const b = {
+      ...bridge,
+      advance: (ticks: number) => {
+        const r = bridge.advance(ticks);
+        const reports = withReport ? [report] : [];
+        withReport = false;
+        return { ...r, reports };
+      },
+    };
+    const posted: FromWorker[] = [];
+    const c = createController(b, (m) => posted.push(m));
+    c.handle({ kind: "start", seed: 1 });
+    c.pulse(0);
+    c.pulse(0);
+    expect(posted.map((m) => m.kind)).toEqual(["init", "update", "simReports", "update"]);
+    expect(posted[2]).toEqual({ kind: "simReports", reports: [report] });
   });
 });
