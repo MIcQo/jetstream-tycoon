@@ -587,7 +587,7 @@ The server is stateless, so it scales horizontally.
 
 ## 14. Frontend and mobile
 - **Map rendering in layers**, all sharing one `d3-geo` projection and pan/zoom transform:
-  1. **SVG base layer**: country shapes from **TopoJSON** (about 80% smaller than GeoJSON). Shapes are pre-projected and simplified by `datagen` into SVG path strings, so there's no projection work at runtime. Two detail levels: world zoom and regional zoom. The layer also has ownership fill plus a **pattern or outline** for owned/leased (colour-blind safe), airport dots. Changes rarely; used for click hit-testing.
+  1. **SVG base layer**: country shapes **pre-projected by `datagen`** (Natural Earth I projection, 1000-unit-wide viewBox) into compact SVG path strings with relative coordinates rounded to 0.1 unit (`content/world/map/world-110m.json` ≈ 27 KB gzip, `world-50m.json` ≈ 134 KB gzip). Because paths are pre-projected, TopoJSON and runtime projection are not needed. Two detail levels: world zoom and regional zoom. The layer also has ownership fill plus a **pattern or outline** for owned/leased (colour-blind safe), airport dots. Changes rarely; used for click hit-testing.
   2. **Canvas overlay**: route arcs (great-circle) and **moving planes**, redrawn with `requestAnimationFrame`.
      - DPR-aware sizing.
      - Viewport culling.

@@ -1,4 +1,4 @@
-.PHONY: determinism-wasm-tests infra-up infra-down infra-reset infra-config-check all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
+.PHONY: datagen determinism-wasm-tests infra-up infra-down infra-reset infra-config-check all build lint lint-go lint-ts deadcode vulncheck audit-ts i18n-check prom-check test test-go test-ts sim-test test-integration test-integration-go test-integration-ts fuzz fuzz-go fuzz-ts mutate mutate-go mutate-ts migrations-check migrate-up migrate-down determinism content-check wasm wasm-size-check balance dev
 
 WASM_OUT := web/public/sim.wasm
 WASM_RAW_MAX_BYTES := 10485760
@@ -151,6 +151,10 @@ build: wasm
 	go build -trimpath -o bin/ingestor ./cmd/ingestor
 	go build -trimpath -o bin/datagen ./tools/datagen
 	go build -trimpath -o bin/balancebot ./tools/balancebot
+
+# Regenerates content/world from pinned, checksummed sources (needs network once).
+datagen:
+	go run ./tools/datagen build
 
 balance:
 	go run ./tools/balancebot

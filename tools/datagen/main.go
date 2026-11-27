@@ -1,8 +1,61 @@
-// Command datagen compiles world data and YAML content into content.json (ADR-0004).
+// Command datagen builds the committed world data in content/world from pinned,
+// checksummed public datasets (TECH_DESIGN §2, M1).
+//
+//	go run ./tools/datagen fetch   # download sources into the cache, verifying SHA-256
+//	go run ./tools/datagen build   # fetch if needed, then regenerate content/world
+//	go run ./tools/datagen check   # validate committed content/world (no network; CI)
+//
+// Raw downloads live in tools/datagen/.cache (git-ignored). Outputs are deterministic,
+// so a rebuild from the same sources produces identical files.
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
+
+const (
+	cacheDir = "tools/datagen/.cache"
+	worldDir = "content/world"
+)
 
 func main() {
-	fmt.Println("datagen stub ready")
+	cmd := "check"
+	if len(os.Args) > 1 {
+		cmd = os.Args[1]
+	}
+	var err error
+	switch cmd {
+	case "fetch":
+		err = fetchAll(cacheDir, sources)
+	case "build":
+		if err = fetchAll(cacheDir, sources); err == nil {
+			err = build(cacheDir, worldDir)
+		}
+	case "check":
+		err = check(worldDir)
+	default:
+		err = fmt.Errorf("unknown command %q (want fetch, build or check)", cmd)
+	}
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "datagen:", err)
+		os.Exit(1)
+	}
+}
+
+func build(cache, out string) error {
+	countries, maps, err := buildCountries(cache)
+	if err != nil {
+		return err
+	}
+	if err := writeJSON(out+"/countries.json", countries); err != nil {
+		return err
+	}
+	for _, m := range maps {
+		if err := writeJSON(out+"/map/"+m.File, m); err != nil {
+			return err
+		}
+	}
+	fmt.Printf("datagen: %d countries, %d map levels written to %s\n", len(countries), len(maps), out)
+	return nil
 }
