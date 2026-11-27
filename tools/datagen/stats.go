@@ -17,7 +17,10 @@ type Stats struct {
 	Business float64 `json:"business"`
 	Tourism  float64 `json:"tourism"`
 	// Wealth is GDP per capita / world median, clamped to [0.3, 3] (TECH_DESIGN §7.0).
-	Wealth     float64 `json:"wealth"`
+	Wealth float64 `json:"wealth"`
+	// PriceBase is pop^0.5 · gdpPerCapita^0.7, precomputed for the country price
+	// k · PriceBase (ADR-0021).
+	PriceBase  float64 `json:"priceBase"`
 	Hemisphere string  `json:"hemisphere"` // "north" or "south" (label latitude)
 	Climate    string  `json:"climate"`    // tropical, subtropical, temperate, cold
 	// Sources says where each value came from, e.g. "wb:2024", "ne", "estimate".

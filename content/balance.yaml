@@ -1,0 +1,84 @@
+# Balance coefficients for the formulas in TECH_DESIGN §7. Money in cents.
+# Tune with the balance bot (make balance) and record the reason in the PR.
+demand:
+  d0: 0.04                     # London–Paris ≈ 10k pax/day across all airlines
+  businessShareMin: 0.05       # business share by business profile (0..1)
+  businessShareMax: 0.20
+  connectFactor: 0.4
+  connectingDiscount: 0.85
+  mediumAirportShare: 0.6
+pricing:
+  refBaseCents: 2500           # ref_eco = ($25 + $0.09/km) · wealthAvg
+  refPerKmCents: 9
+  bizMultiplier: 3.5
+  elasticityEco: 1.5
+  elasticityBiz: 0.8
+  priceFactorMin: 0.1
+  priceFactorMax: 2.0
+service:
+  base: 0.7
+  conditionWeight: 0.3
+  planeLevelWeight: 0.05
+  airportLevelWeight: 0.03
+  businessMultiplier: 2
+reputation:
+  start: 50
+  delayPenalty: 0.2
+  cancelPenalty: 1
+  onTimeTarget: 0.9
+  gainPerPoint: 0.02
+  decayPerDay: 0.005
+flights:
+  turnaroundTicks: 1
+  delayShareOfFailures: 0.7
+  delayRevenueFactor: 0.5
+  conditionReliability: 0.4    # success = reliability · (1 − w + w · condition)
+  cancelRebookShare: 0.5
+aging:
+  conditionDecayPerHour: 0.0002
+  overhaulCostShare: 0.08
+  overhaulDays: 5
+  dailyDepreciation: 0.99964984  # 0.88^(1/365): 12% value loss per year
+  reconfigureTicks: 48
+fuel:
+  meanCentsPerUnit: 80
+  theta: 0.05
+  sigma: 0.02
+  shockChance: 0.01
+  shockMin: 0.2
+  shockMax: 0.6
+  shockDays: 20
+  minFactor: 0.4
+  maxFactor: 3
+countries:
+  priceK: 5000                 # price = k · pop^0.5 · gdpPerCapita^0.7 (UK ≈ $830M)
+  upkeepShare: 0.0005          # per day, of the country price
+  startCashCents: 2000000000       # $20M before size scaling
+  startCashMinCents: 1000000000    # $10M
+  startCashMaxCents: 6000000000    # $60M
+  startCashExponent: 0.3
+  ownerFeeShare: 0.3
+  activeServiceDays: 7
+leases:
+  upfrontShareMin: 0.05
+  upfrontShareMax: 0.15
+  yearlyLeaseShare: 0.3
+  leasedFeeMultiplier: 1.5
+finance:
+  baseRate: 0.04
+  creditTiers:
+    - { minScore: 800, spread: 0.01 }
+    - { minScore: 650, spread: 0.03 }
+    - { minScore: 500, spread: 0.06 }
+    - { minScore: 350, spread: 0.10 }
+    - { minScore: 0,   spread: 0.10, noLoans: true }
+  overdraftRate: 0.25
+  liquidationDays: 14
+  restructurings: 1
+  maxLoanWeeks: 520
+competition:
+  priceAdjust: 0.1
+  undercutShare: 0.6
+  undercutDays: 7
+  undercutMin: 0.05
+  undercutMax: 0.10

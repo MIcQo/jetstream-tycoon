@@ -90,7 +90,8 @@ mutate-ts:
 	fi
 
 content-check: i18n-check
-	go run ./tools/datagen
+	go run ./tools/datagen check
+	go run ./tools/contentc check
 
 determinism: wasm
 	go test -race -v -run '^TestDeterministic' ./sim/...

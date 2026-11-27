@@ -1,0 +1,8 @@
+# Airport levels 1..5 (TECH_DESIGN §4). Real airports start at their base level
+# (large 3, medium 2); only the country owner can upgrade above it.
+# upgradeCostCents is the cost of reaching this level from the one below.
+- { level: 1, paxPerDay: 1500,   routeSlots: 3,  maxPlaneTier: 1, upgradeCostCents: 0,            upkeepDayCents: 50000,   feePerPaxCents: 400,  feePerLandingCents: 15000,  leasedDeparturesCap: 2 }
+- { level: 2, paxPerDay: 6000,   routeSlots: 8,  maxPlaneTier: 2, upgradeCostCents: 400000000,    upkeepDayCents: 200000,  feePerPaxCents: 600,  feePerLandingCents: 30000,  leasedDeparturesCap: 4 }
+- { level: 3, paxPerDay: 20000,  routeSlots: 16, maxPlaneTier: 3, upgradeCostCents: 1500000000,   upkeepDayCents: 600000,  feePerPaxCents: 800,  feePerLandingCents: 60000,  leasedDeparturesCap: 8 }
+- { level: 4, paxPerDay: 50000,  routeSlots: 30, maxPlaneTier: 4, upgradeCostCents: 4500000000,   upkeepDayCents: 1500000, feePerPaxCents: 1000, feePerLandingCents: 100000, leasedDeparturesCap: 14 }
+- { level: 5, paxPerDay: 120000, routeSlots: 60, maxPlaneTier: 5, upgradeCostCents: 12000000000,  upkeepDayCents: 3500000, feePerPaxCents: 1200, feePerLandingCents: 150000, leasedDeparturesCap: 24 }

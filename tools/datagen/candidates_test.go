@@ -40,6 +40,13 @@ func TestApplyWealthAndPopFactors(t *testing.T) {
 			t.Errorf("%s wealth = %v, want %v", c.ISO2, c.Stats.Wealth, want[i])
 		}
 	}
+	// priceBase = pop^0.5 · gdp^0.7: 10,000 people at $1,000 → 100 · 1000^0.7.
+	if got, want := priceBase(Stats{Population: 10_000, GDPPerCapitaUSD: 1_000}), math.Round(100*math.Pow(1000, 0.7)); got != want {
+		t.Errorf("priceBase = %v, want %v", got, want)
+	}
+	if priceBase(Stats{Population: -5, GDPPerCapitaUSD: 1_000}) != 0 || priceBase(Stats{Population: 100}) != 0 {
+		t.Error("priceBase must be 0 without population or GDP")
+	}
 	cities := []City{{Pop: 1_000_000}, {Pop: 50_000}}
 	applyPopFactors(cities)
 	if cities[0].PopFactor != 1000 || cities[1].PopFactor != round3(math.Sqrt(50_000)) {

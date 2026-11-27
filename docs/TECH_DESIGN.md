@@ -185,6 +185,7 @@ type Airline struct {
 - `planes.yaml`, `airport_levels.yaml`, `balance.yaml`
 - `events/*.yaml`: one schema for incidents and investments. Each event has choices; each choice has a cost and outcomes; each outcome has a chance, effects and an optional delayed reveal.
 - Conditions and formulas use `expr-lang/expr`.
+- **Pipeline** (M1): YAML in `content/` (`planes.yaml`, `airport_levels.yaml`, `balance.yaml`, `seasons.yaml`, `holidays.yaml`) is loaded **strictly** by `tools/contentc` (unknown or misspelled fields are errors) and validated by `sim/content.Validate` against the world data (country and region references) and `content/i18n/en.json` (name keys). `sim/content` has the Go types and a strict JSON `Decode`; it has no YAML dependency, because the simulation only reads compiled JSON. `make content-check` runs `datagen check` and `contentc check`.
 - Each content build has a `contentVersion`, which is stored in saves and analytics.
 - Later: the server can serve newer content bundles, so new events ship without an app release.
 

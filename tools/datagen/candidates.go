@@ -22,6 +22,7 @@ const (
 	// formula (TECH_DESIGN §7.0), precomputed here per ADR-0021.
 	distExponent = 0.8
 	popExponent  = 0.5
+	gdpExponent  = 0.7
 	// Wealth is GDP per capita relative to the world median, clamped (TECH_DESIGN §7.0).
 	minWealth = 0.3
 	maxWealth = 3.0
@@ -74,7 +75,13 @@ func applyWealth(countries []Country) {
 			w = math.Min(maxWealth, math.Max(minWealth, g/med))
 		}
 		countries[i].Stats.Wealth = round3(w)
+		countries[i].Stats.PriceBase = priceBase(countries[i].Stats)
 	}
+}
+
+// priceBase is pop^0.5 · gdpPerCapita^0.7, rounded to an integer.
+func priceBase(s Stats) float64 {
+	return math.Round(math.Pow(float64(max(s.Population, 0)), popExponent) * math.Pow(math.Max(s.GDPPerCapitaUSD, 0), gdpExponent))
 }
 
 // applyPopFactors sets cityPop^0.5 on every city.
