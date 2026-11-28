@@ -5,6 +5,7 @@ package engine
 
 import (
 	"github.com/MIcQo/jetstream-tycoon/sim/command"
+	"github.com/MIcQo/jetstream-tycoon/sim/content/bundle"
 	"github.com/MIcQo/jetstream-tycoon/sim/rng"
 	"github.com/MIcQo/jetstream-tycoon/sim/state"
 )
@@ -24,9 +25,10 @@ type Notification struct {
 	Params map[string]string `json:"params,omitempty"`
 }
 
-// TickCtx gives a system access to the state and to deterministic services.
+// TickCtx gives a system access to the state, the content and to deterministic services.
 type TickCtx struct {
 	State         *state.State
+	Data          *bundle.Bundle
 	system        string
 	notifications *[]Notification
 }
@@ -57,13 +59,15 @@ type Output struct {
 // Engine owns the state, the ordered systems and the command queue.
 type Engine struct {
 	State   *state.State
+	Data    *bundle.Bundle
 	systems []System
 	queue   []command.Command
 }
 
-// New creates an engine. Systems run in the given order.
-func New(s *state.State, systems ...System) *Engine {
-	return &Engine{State: s, systems: systems}
+// New creates an engine over a state and the content it was created with.
+// Systems run in the given order.
+func New(s *state.State, data *bundle.Bundle, systems ...System) *Engine {
+	return &Engine{State: s, Data: data, systems: systems}
 }
 
 // Enqueue adds a command to be applied, in FIFO order, at the next tick boundary.
@@ -81,7 +85,7 @@ func (e *Engine) Advance(n int) Output {
 		e.State.Tick++
 		dayStart := e.State.Tick%state.TicksPerDay == 0
 		for _, sys := range e.systems {
-			ctx := &TickCtx{State: e.State, system: sys.Name(), notifications: &out.Notifications}
+			ctx := &TickCtx{State: e.State, Data: e.Data, system: sys.Name(), notifications: &out.Notifications}
 			sys.OnTick(ctx)
 			if dayStart {
 				sys.OnDay(ctx)

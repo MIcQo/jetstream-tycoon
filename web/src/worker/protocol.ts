@@ -8,6 +8,8 @@ export interface SimView {
   day: number;
   speed: Speed;
   cashCents: number;
+  airlineName?: string;
+  homeCountry?: string;
   /** Version of the content compiled into sim.wasm (e.g. "c79fa5ed651d9"). */
   contentVersion?: string;
 }
@@ -36,7 +38,17 @@ export interface SimErrorReport {
   recentCommands: string[];
 }
 
-export type ToWorker = { kind: "start"; seed: number } | { kind: "setSpeed"; speed: Speed };
+export type Difficulty = "easy" | "normal" | "hard";
+
+/** The player's choices for a new game (sim.NewGameParams). */
+export interface NewGameParams {
+  seed: number;
+  airlineName: string;
+  homeCountry: string;
+  difficulty: Difficulty;
+}
+
+export type ToWorker = ({ kind: "start" } & NewGameParams) | { kind: "setSpeed"; speed: Speed };
 
 export type FromWorker =
   | { kind: "init"; seq: number; view: SimView }

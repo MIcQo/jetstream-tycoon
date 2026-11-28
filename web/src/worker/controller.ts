@@ -1,10 +1,13 @@
-import type { SimBridge } from "./bridge";
+import { type SimBridge, SimError } from "./bridge";
 import { TickClock } from "./clock";
 import type { FromWorker, SimView, ToWorker } from "./protocol";
 import { Recent } from "./recent";
 
 /** How many recent commands are attached to an error report (TECH_DESIGN §20). */
 export const RECENT_COMMANDS = 200;
+
+/** Error keys that describe a player mistake rather than a bug (not sent to Sentry). */
+const USER_ERROR = /^errors\.(newgame|cmd)\.[a-z_]+$/;
 
 export interface Controller {
   handle(msg: ToWorker): void;
@@ -31,6 +34,11 @@ export function createController(
       try {
         fn(...args);
       } catch (err) {
+        // Validation errors from sim.wasm carry their own i18n key (e.g. errors.newgame.*).
+        if (err instanceof SimError && USER_ERROR.test(err.message)) {
+          post({ kind: "error", errorKey: err.message });
+          return;
+        }
         post({
           kind: "error",
           errorKey: "errors.sim.internal",
@@ -53,7 +61,12 @@ export function createController(
     handle(msg) {
       if (msg.kind === "start") {
         seed = msg.seed;
-        view = bridge.newGame(msg.seed);
+        view = bridge.newGame({
+          seed: msg.seed,
+          airlineName: msg.airlineName,
+          homeCountry: msg.homeCountry,
+          difficulty: msg.difficulty,
+        });
         seq += 1;
         post({ kind: "init", seq, view });
         return;

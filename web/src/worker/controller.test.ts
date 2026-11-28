@@ -1,17 +1,25 @@
 import { describe, expect, it } from "vitest";
 
-import type { AdvanceResult, CommandResult, SimBridge } from "./bridge";
+import { type AdvanceResult, type CommandResult, type SimBridge, SimError } from "./bridge";
 import { MS_PER_TICK_AT_1X, TickClock } from "./clock";
 import { createController, RECENT_COMMANDS } from "./controller";
-import type { FromWorker, SimView } from "./protocol";
+import type { FromWorker, SimView, ToWorker } from "./protocol";
+
+const start = (seed: number): ToWorker => ({
+  kind: "start",
+  seed,
+  airlineName: "Test Air",
+  homeCountry: "GB",
+  difficulty: "normal",
+});
 
 function fakeBridge(commandResult: CommandResult = { ok: true }) {
   const advanced: number[] = [];
   const commands: unknown[] = [];
   let view: SimView = { tick: 0, day: 0, speed: 1, cashCents: 0 };
   const bridge: SimBridge = {
-    newGame: (seed) => {
-      view = { ...view, cashCents: seed };
+    newGame: (params) => {
+      view = { ...view, cashCents: params.seed };
       return view;
     },
     advance: (ticks): AdvanceResult => {
@@ -36,7 +44,7 @@ describe("createController", () => {
     c.pulse(0); // not started yet: nothing happens
     expect(posted).toEqual([]);
 
-    c.handle({ kind: "start", seed: 99 });
+    c.handle(start(99));
     c.pulse(0);
     c.pulse(MS_PER_TICK_AT_1X * 2);
 
@@ -51,7 +59,7 @@ describe("createController", () => {
     const ok = fakeBridge();
     const posted: FromWorker[] = [];
     const c = createController(ok.bridge, (m) => posted.push(m), new TickClock());
-    c.handle({ kind: "start", seed: 1 });
+    c.handle(start(1));
     c.handle({ kind: "setSpeed", speed: 4 });
     expect(ok.commands).toEqual([{ type: "setSpeed", speed: 4 }]);
     expect(posted.map((m) => m.kind)).toEqual(["init"]);
@@ -59,14 +67,14 @@ describe("createController", () => {
     const rejected = fakeBridge({ ok: false, errorKey: "errors.cmd.invalid_speed" });
     const posted2: FromWorker[] = [];
     const c2 = createController(rejected.bridge, (m) => posted2.push(m));
-    c2.handle({ kind: "start", seed: 1 });
+    c2.handle(start(1));
     c2.handle({ kind: "setSpeed", speed: 2 });
     expect(posted2.at(-1)).toEqual({ kind: "error", errorKey: "errors.cmd.invalid_speed" });
 
     const noKey = fakeBridge({ ok: false });
     const posted3: FromWorker[] = [];
     const c3 = createController(noKey.bridge, (m) => posted3.push(m));
-    c3.handle({ kind: "start", seed: 1 });
+    c3.handle(start(1));
     c3.handle({ kind: "setSpeed", speed: 2 });
     expect(posted3.at(-1)).toEqual({ kind: "error", errorKey: "errors.cmd.unknown" });
   });
@@ -94,7 +102,7 @@ describe("createController failures", () => {
     };
     const posted: FromWorker[] = [];
     const c = createController(failing, (m) => posted.push(m));
-    expect(() => c.handle({ kind: "start", seed: 1 })).not.toThrow();
+    expect(() => c.handle(start(1))).not.toThrow();
     expect(posted).toEqual([
       {
         kind: "error",
@@ -104,7 +112,7 @@ describe("createController failures", () => {
     ]);
 
     const ok = createController({ ...bridge, advance: failing.advance }, (m) => posted.push(m));
-    ok.handle({ kind: "start", seed: 7 });
+    ok.handle(start(7));
     ok.handle({ kind: "setSpeed", speed: 2 });
     expect(() => ok.pulse(10)).not.toThrow();
     expect(posted.at(-1)).toEqual({
@@ -131,7 +139,7 @@ describe("createController failures", () => {
       },
       (m) => posted.push(m),
     );
-    c.handle({ kind: "start", seed: 1 });
+    c.handle(start(1));
     expect(posted[0]?.kind === "error" && posted[0].report?.message).toBe("plain");
   });
 
@@ -145,7 +153,7 @@ describe("createController failures", () => {
       },
     };
     const c = createController(failingAdvance, (m) => posted.push(m));
-    c.handle({ kind: "start", seed: 1 });
+    c.handle(start(1));
     for (let i = 0; i < RECENT_COMMANDS + 5; i++) {
       c.handle({ kind: "setSpeed", speed: 1 });
     }
@@ -171,10 +179,44 @@ describe("simulation reports", () => {
     };
     const posted: FromWorker[] = [];
     const c = createController(b, (m) => posted.push(m));
-    c.handle({ kind: "start", seed: 1 });
+    c.handle(start(1));
     c.pulse(0);
     c.pulse(0);
     expect(posted.map((m) => m.kind)).toEqual(["init", "update", "simReports", "update"]);
     expect(posted[2]).toEqual({ kind: "simReports", reports: [report] });
+  });
+});
+
+describe("validation errors from sim.wasm", () => {
+  it("passes player-facing error keys through without a crash report", () => {
+    const { bridge } = fakeBridge();
+    const posted: FromWorker[] = [];
+    const c = createController(
+      {
+        ...bridge,
+        newGame: () => {
+          throw new SimError("errors.newgame.home_country");
+        },
+      },
+      (m) => posted.push(m),
+    );
+    c.handle(start(1));
+    expect(posted).toEqual([{ kind: "error", errorKey: "errors.newgame.home_country" }]);
+  });
+
+  it("treats other SimErrors as internal failures", () => {
+    const { bridge } = fakeBridge();
+    const posted: FromWorker[] = [];
+    const c = createController(
+      {
+        ...bridge,
+        newGame: () => {
+          throw new SimError("panic: index out of range");
+        },
+      },
+      (m) => posted.push(m),
+    );
+    c.handle(start(1));
+    expect(posted[0]?.kind === "error" && posted[0].errorKey).toBe("errors.sim.internal");
   });
 });

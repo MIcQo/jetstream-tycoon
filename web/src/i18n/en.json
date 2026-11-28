@@ -12,5 +12,8 @@
   "errors.sim.not_started": "The game has not started yet.",
   "errors.cmd.invalid_speed": "Game speed must be paused, 1×, 2× or 4×.",
   "errors.cmd.unknown": "That action isn't possible right now.",
-  "errors.sim.internal": "The game engine hit an unexpected error. Your last save is safe; please reload."
+  "errors.sim.internal": "The game engine hit an unexpected error. Your last save is safe; please reload.",
+  "errors.newgame.airline_name": "Choose an airline name of 1 to 40 characters.",
+  "errors.newgame.home_country": "Choose a home country that has at least one airport.",
+  "errors.newgame.difficulty": "Choose easy, normal or hard difficulty."
 }

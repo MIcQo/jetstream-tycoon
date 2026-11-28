@@ -1,6 +1,11 @@
 {
   "name": "long_run",
-  "seed": 7,
+  "game": {
+    "seed": 7,
+    "airlineName": "Long Haul Co",
+    "homeCountry": "US",
+    "difficulty": "hard"
+  },
   "days": 90,
   "steps": []
 }

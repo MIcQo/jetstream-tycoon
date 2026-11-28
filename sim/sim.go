@@ -3,7 +3,6 @@ package sim
 
 import (
 	"github.com/MIcQo/jetstream-tycoon/sim/engine"
-	"github.com/MIcQo/jetstream-tycoon/sim/state"
 	"github.com/MIcQo/jetstream-tycoon/sim/systems/ledger"
 )
 
@@ -13,9 +12,4 @@ func Systems() []engine.System {
 	return []engine.System{
 		ledger.System{},
 	}
-}
-
-// NewGame creates an engine for a new game with the given seed.
-func NewGame(seed uint64) *engine.Engine {
-	return engine.New(state.New(seed), Systems()...)
 }

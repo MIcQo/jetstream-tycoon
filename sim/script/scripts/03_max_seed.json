@@ -1,6 +1,19 @@
 {
   "name": "max_seed",
-  "seed": 18446744073709551615,
+  "game": {
+    "seed": 18446744073709551615,
+    "airlineName": "Edge Case Air",
+    "homeCountry": "MT",
+    "difficulty": "easy"
+  },
   "days": 3,
-  "steps": [{ "atTick": 5, "command": { "type": "setSpeed", "speed": 0 } }]
+  "steps": [
+    {
+      "atTick": 5,
+      "command": {
+        "type": "setSpeed",
+        "speed": 0
+      }
+    }
+  ]
 }

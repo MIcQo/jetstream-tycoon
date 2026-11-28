@@ -68,11 +68,14 @@ func goldenPath(t *testing.T, name string) string {
 }
 
 func TestRunIsDeterministicAndSensitive(t *testing.T) {
-	s, err := script.Parse([]byte(`{"name":"x","seed":1,"days":2,"steps":[{"atTick":3,"command":{"type":"setSpeed","speed":4}}]}`))
+	s, err := script.Parse([]byte(`{"name":"x","game":{"seed":1,"airlineName":"T","homeCountry":"GB","difficulty":"normal"},"days":2,"steps":[{"atTick":3,"command":{"type":"setSpeed","speed":4}}]}`))
 	if err != nil {
 		t.Fatal(err)
 	}
-	a, _ := script.Run(s)
+	a, err := script.Run(s)
+	if err != nil {
+		t.Fatal(err)
+	}
 	b, _ := script.Run(s)
 	if !reflect.DeepEqual(a, b) || len(a) != 2 {
 		t.Fatalf("runs differ or wrong length: %v vs %v", a, b)
@@ -104,8 +107,15 @@ func TestParseErrors(t *testing.T) {
 }
 
 func TestRunRejectsUndecodableCommand(t *testing.T) {
-	s, _ := script.Parse([]byte(`{"name":"x","seed":1,"days":1,"steps":[{"atTick":0,"command":{"type":"nope"}}]}`))
+	s, _ := script.Parse([]byte(`{"name":"x","game":{"seed":1,"airlineName":"T","homeCountry":"GB","difficulty":"normal"},"days":1,"steps":[{"atTick":0,"command":{"type":"nope"}}]}`))
 	if _, err := script.Run(s); err == nil {
 		t.Fatal("unknown command type did not fail the run")
+	}
+}
+
+func TestRunRejectsInvalidGame(t *testing.T) {
+	s, _ := script.Parse([]byte(`{"name":"x","game":{"seed":1,"airlineName":"","homeCountry":"GB","difficulty":"normal"},"days":1}`))
+	if _, err := script.Run(s); err == nil || !strings.Contains(err.Error(), "new game") {
+		t.Errorf("invalid game params: %v", err)
 	}
 }

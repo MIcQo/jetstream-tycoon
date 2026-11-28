@@ -37,7 +37,14 @@ export function App({ t, locale, lifecycle, reporter }: AppProps) {
         setView(msg.view);
       }
     };
-    worker.postMessage({ kind: "start", seed: 42 } satisfies ToWorker);
+    // Until the new-game screen exists (M2.7), start with default choices.
+    worker.postMessage({
+      kind: "start",
+      seed: 42,
+      airlineName: "Jetstream Air",
+      homeCountry: "GB",
+      difficulty: "normal",
+    } satisfies ToWorker);
     // The game pauses when the app goes to the background; there is no idle progress.
     const offBackground = lifecycle.onBackground(() =>
       worker.postMessage({ kind: "setSpeed", speed: 0 } satisfies ToWorker),
