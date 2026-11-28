@@ -2,8 +2,9 @@
 // Worker as `globalThis.jetstreamSim` (TECH_DESIGN §3). Requests and responses
 // are JSON strings; cmd/simwasm only wires these methods to syscall/js.
 //
-// M0 returns a small full view per call; M2 moves state traffic to MessagePack
-// deltas with tombstones.
+// Advance returns a small JSON summary (view, notifications, reports). Entity
+// state travels as MessagePack: Snapshot for a full view, Delta for the changes
+// since the previous one, with tombstones (delta.go).
 package bridge
 
 import (
@@ -67,6 +68,7 @@ type Session struct {
 	engine         *engine.Engine
 	reports        []Report
 	contentVersion string
+	tracker        Tracker
 }
 
 // ReportNonFinite records a NaN/±Inf that detmath.Finite clamped (release builds).
@@ -100,7 +102,26 @@ func (s *Session) NewGame(requestJSON string) (string, error) {
 	}
 	s.contentVersion = b.ContentVersion
 	s.engine = e
+	s.tracker = Tracker{}
 	return marshal(s.view())
+}
+
+// Snapshot returns the full UI state view as MessagePack and resets the delta
+// baseline. The Worker sends it as `init`, also when the UI detects a gap.
+func (s *Session) Snapshot() ([]byte, error) {
+	if s.engine == nil {
+		return nil, ErrNotStarted
+	}
+	return s.tracker.Snapshot(s.engine.State)
+}
+
+// Delta returns the entities changed since the previous Snapshot or Delta, as
+// MessagePack. The Worker calls it once per UI pulse (about 4 per second).
+func (s *Session) Delta() ([]byte, error) {
+	if s.engine == nil {
+		return nil, ErrNotStarted
+	}
+	return s.tracker.Next(s.engine.State)
 }
 
 // Save encodes the running game (sim/save: gzip MessagePack).
@@ -128,6 +149,7 @@ func (s *Session) Load(data []byte) (string, error) {
 	s.contentVersion = b.ContentVersion
 	s.engine = engine.New(st, &b, sim.Systems()...)
 	s.reports = nil
+	s.tracker = Tracker{}
 	return marshal(s.view())
 }
 
@@ -195,6 +217,20 @@ func Guard(call func() (string, error)) (out string) {
 		return errorJSON(err.Error())
 	}
 	return res
+}
+
+// GuardBytes is Guard for calls that return bytes: it returns the bytes, or
+// errJSON (`{"error": "..."}`) if the call failed or panicked.
+func GuardBytes(call func() ([]byte, error)) (data []byte, errJSON string) {
+	errJSON = Guard(func() (string, error) {
+		var err error
+		data, err = call()
+		return "", err
+	})
+	if errJSON != "" {
+		data = nil
+	}
+	return data, errJSON
 }
 
 // maxStackBytes keeps panic reports small enough for Sentry and postMessage.

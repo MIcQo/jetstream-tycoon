@@ -7,6 +7,10 @@ export interface RawSimApi {
   command(commandJson: string): string;
   /** gzip(MessagePack) save bytes, or a `{"error"}` JSON string. */
   save(): Uint8Array | string;
+  /** Full UI state view (MessagePack); resets the delta baseline. */
+  snapshot(): Uint8Array | string;
+  /** Entities changed since the last snapshot or delta (MessagePack). */
+  delta(): Uint8Array | string;
   /** Replaces the running game with a save; returns the view JSON or `{"error"}`. */
   load(data: Uint8Array): string;
 }
@@ -29,6 +33,8 @@ export interface SimBridge {
   command(cmd: { type: string } & Record<string, unknown>): CommandResult;
   save(): Uint8Array;
   load(data: Uint8Array): SimView;
+  snapshot(): Uint8Array;
+  delta(): Uint8Array;
 }
 
 /** Thrown when sim.wasm answers `{"error": "..."}` (bad request, or a recovered panic). */
@@ -44,6 +50,15 @@ function parse<T>(json: string): T {
   return value as T;
 }
 
+/** Returns bytes from sim.wasm, or throws SimError for an `{"error"}` answer. */
+function bytes(name: string, out: Uint8Array | string): Uint8Array {
+  if (typeof out === "string") {
+    parse<never>(out);
+    throw new SimError(`${name}: unexpected response`);
+  }
+  return out;
+}
+
 /** Wraps the raw JSON API with parsing and typing. */
 export function jsonBridge(raw: RawSimApi): SimBridge {
   return {
@@ -53,14 +68,9 @@ export function jsonBridge(raw: RawSimApi): SimBridge {
       return { view: res.view, notifications: res.notifications ?? [], reports: res.reports ?? [] };
     },
     command: (cmd) => parse<CommandResult>(raw.command(JSON.stringify(cmd))),
-    save: () => {
-      const out = raw.save();
-      if (typeof out === "string") {
-        parse<never>(out);
-        throw new SimError("save: unexpected response");
-      }
-      return out;
-    },
+    save: () => bytes("save", raw.save()),
+    snapshot: () => bytes("snapshot", raw.snapshot()),
+    delta: () => bytes("delta", raw.delta()),
     load: (data) => parse<SimView>(raw.load(data)),
   };
 }

@@ -1,10 +1,11 @@
 import type { TFunction } from "i18next";
-import { useEffect, useMemo, useState } from "preact/hooks";
+import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 
 import { formatMoney, type Locale } from "../i18n/locale";
 import type { ErrorReporter } from "../platform/sentry";
 import type { Lifecycle } from "../platform/types";
 import type { FromWorker, SimView, Speed, ToWorker } from "../worker/protocol";
+import { applyWorld, type World } from "../world";
 
 const SPEEDS: Speed[] = [0, 1, 2, 4];
 
@@ -17,6 +18,8 @@ export interface AppProps {
 
 export function App({ t, locale, lifecycle, reporter }: AppProps) {
   const [view, setView] = useState<SimView | undefined>();
+  // Entity state for the panels and map (M3+), kept in step with the Worker.
+  const world = useRef<World | undefined>(undefined);
   const [errorKey, setErrorKey] = useState<string | undefined>();
   const worker = useMemo(
     () => new Worker(new URL("../worker/sim.worker.ts", import.meta.url), { type: "module" }),
@@ -34,6 +37,14 @@ export function App({ t, locale, lifecycle, reporter }: AppProps) {
       } else if (msg.kind === "simReports") {
         reporter.simReports(msg.reports);
       } else {
+        const res = applyWorld(world.current, msg);
+        if (res.ok) {
+          world.current = res.world;
+        } else if (world.current !== undefined) {
+          // Ask once; updates are ignored until the fresh init arrives.
+          world.current = undefined;
+          worker.postMessage({ kind: "resync" } satisfies ToWorker);
+        }
         setView(msg.view);
       }
     };

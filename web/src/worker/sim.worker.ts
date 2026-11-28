@@ -6,7 +6,7 @@ import { loadWasmBridge } from "./wasm-loader";
 const PULSE_MS = 250;
 
 const ready = loadWasmBridge("/wasm_exec.js", "/sim.wasm").then((bridge) =>
-  createController(bridge, (msg: FromWorker) => self.postMessage(msg)),
+  createController(bridge, (msg: FromWorker, transfer: Transferable[] = []) => self.postMessage(msg, transfer)),
 );
 ready.catch(() => self.postMessage({ kind: "error", errorKey: "errors.sim.load_failed" } satisfies FromWorker));
 

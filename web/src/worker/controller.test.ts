@@ -33,6 +33,8 @@ function fakeBridge(commandResult: CommandResult = { ok: true }) {
     },
     save: () => new Uint8Array(),
     load: () => view,
+    snapshot: () => new Uint8Array([1]),
+    delta: () => new Uint8Array([2]),
   };
   return { bridge, advanced, commands };
 }
@@ -79,6 +81,31 @@ describe("createController", () => {
     c3.handle(start(1));
     c3.handle({ kind: "setSpeed", speed: 2 });
     expect(posted3.at(-1)).toEqual({ kind: "error", errorKey: "errors.cmd.unknown" });
+  });
+
+  it("sends state buffers as transferables and resyncs on request", () => {
+    const { bridge } = fakeBridge();
+    const posted: { msg: FromWorker; transfer: Transferable[] | undefined }[] = [];
+    const c = createController(bridge, (msg, transfer) => posted.push({ msg, transfer }));
+    c.handle(start(1));
+    c.pulse(0);
+    c.handle({ kind: "resync" });
+    expect(posted.map((p) => [p.msg.kind, "buf" in p.msg ? [...p.msg.buf] : []])).toEqual([
+      ["init", [1]],
+      ["update", [2]],
+      ["init", [1]],
+    ]);
+    for (const p of posted) {
+      expect(p.transfer).toEqual(["buf" in p.msg ? p.msg.buf.buffer : undefined]);
+    }
+    expect(posted.map((p) => ("seq" in p.msg ? p.msg.seq : -1))).toEqual([1, 2, 3]);
+  });
+
+  it("rejects a resync before the game starts", () => {
+    const { bridge } = fakeBridge();
+    const posted: FromWorker[] = [];
+    createController(bridge, (m) => posted.push(m)).handle({ kind: "resync" });
+    expect(posted).toEqual([{ kind: "error", errorKey: "errors.sim.not_started" }]);
   });
 
   it("rejects commands before the game starts", () => {

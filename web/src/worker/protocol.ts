@@ -1,5 +1,6 @@
 // Messages between the UI thread and the simulation Worker (TECH_DESIGN §3).
-// M0 sends a small full view; M2 switches updates to the delta envelope (see delta.ts).
+// `init` and `update` carry a small JSON view plus a MessagePack buffer of entity
+// state (a full snapshot or a delta, see src/world.ts), transferred without a copy.
 
 export type Speed = 0 | 1 | 2 | 4;
 
@@ -48,10 +49,14 @@ export interface NewGameParams {
   difficulty: Difficulty;
 }
 
-export type ToWorker = ({ kind: "start" } & NewGameParams) | { kind: "setSpeed"; speed: Speed };
+export type ToWorker =
+  | ({ kind: "start" } & NewGameParams)
+  | { kind: "setSpeed"; speed: Speed }
+  /** The UI saw a sequence gap and needs a fresh full snapshot. */
+  | { kind: "resync" };
 
 export type FromWorker =
-  | { kind: "init"; seq: number; view: SimView }
-  | { kind: "update"; seq: number; view: SimView; notifications: SimNotification[] }
+  | { kind: "init"; seq: number; view: SimView; buf: Uint8Array }
+  | { kind: "update"; seq: number; view: SimView; notifications: SimNotification[]; buf: Uint8Array }
   | { kind: "error"; errorKey: string; report?: SimErrorReport }
   | { kind: "simReports"; reports: SimReport[] };
