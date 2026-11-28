@@ -13,8 +13,8 @@ flowchart LR
     CC[("Config cache<br/>bundled defaults")]
     ADS["AdsService<br/>AdMob plugin"]
     SEN["Sentry SDK"]
-    UI -- commands --> W
-    W -- "deltas max 4/s" --> UI
+    UI -- "commands, resync" --> W
+    W -- "MessagePack deltas, max 4/s (transferred)" --> UI
     W -- snapshots --> SS
     W -- gameplay events --> TQ
     UI -- "product + perf events" --> TQ

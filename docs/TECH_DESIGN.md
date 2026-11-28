@@ -106,24 +106,25 @@ sim.newGame(json{airlineName, homeCountry, difficulty, seed}) → Uint8Array   /
 sim.load(Uint8Array snapshot) → json{ok, error?}                              // on success, the next update is kind "init"
 sim.save() → Uint8Array                                                       // gzip(MessagePack) snapshot → SaveStore
 sim.command(json{type, ...}) → json{ok, errorKey?}
-sim.advance(ticks) → Uint8Array                                               // MessagePack {delta, notifications, prompts, analytics[]}
+sim.snapshot() → Uint8Array                                                   // MessagePack full state view; resets the delta baseline
+sim.advance(ticks) → json{view, notifications, rejected, reports}             // small summary (prompts, analytics[] join later)
+sim.delta() → Uint8Array                                                      // MessagePack: entities changed since the last snapshot/delta
 sim.query(json{type: "routeForecast", routeId, priceEco, priceBiz}) → json{result}
 ```
 Worker → UI messages carry an **uncompressed** MessagePack buffer, always sent with `transfer: [buf]`. The UI never needs a decompressor; gzip is used only between the simulation and `SaveStore` (ADR-0024).
-- **`{kind: "init", buf}`** is sent after `newGame` or a successful `load`, and after any detected sequence gap. It holds the full UI **state view**: every entity the UI renders, without simulation-internal caches.
-- **`{kind: "update", buf}`** is a delta envelope:
+- **`{kind: "init", seq, view, buf}`** is sent after `newGame` or a successful `load`, and when the UI asks with `{kind: "resync"}` after a sequence gap. `buf` (`sim.snapshot()`) holds the full UI **state view**: every entity the UI renders, without simulation-internal caches.
+- **`{kind: "update", seq, view, notifications, buf}`** is sent once per pulse; `buf` (`sim.delta()`) is the delta envelope (`sim/bridge/delta.go`, `web/src/world.ts`):
 ```
-{ seq, tick,
-  changed: { airlines?: {...}, countries?: {...}, airports?: {...}, planes?: {...}, routes?: {...},
-             loans?: {...}, offers?: {...}, modifiers?: {...}, pending?: {...}, missions?: {...},
-             markets?: {...}, landingRights?: {...} },              // ID → full entity (not field diffs)
-  deleted: { planes?: ID[], routes?: ID[], loans?: ID[], offers?: ID[], modifiers?: ID[],
-             pending?: ID[], missions?: ID[], landingRights?: ID[], airlines?: ID[] },  // tombstones
-  flights:  [{planeId, from, to, departTick, arriveTick}],            // for client interpolation
-  notifications: [...], prompts: [...], analytics: [...] }
+{ full, tick,
+  changed: { airlines?, countries?, airports?, landingRights?, planes?, routes?, markets?, loans?,
+             offers?, missions?, pending?, modifiers?, milestones?, world? },  // collection → ID → full entity
+  deleted: { <collection>?: ID[] },                                  // tombstones, sorted
+  flights: [{planeId, from, to, departTick, arriveTick}] }            // changed planes in the air
 ```
-  - Changed entities are sent whole, which keeps the UI merge trivial.
-  - `seq` increases by 1 per message. If the UI sees a gap, it asks for a fresh `init`.
+  - Changed entities are sent whole, which keeps the UI merge trivial. `world` holds the fuel and used-plane markets as one entity.
+  - **Changed-entity tracking** lives in the bridge, not in systems: the `Tracker` keeps a SHA-256 fingerprint of each entity's encoding from the last message and sends the entities whose fingerprint changed. Systems need no dirty flags, so none can be forgotten. Cost: about 4 ms native per pulse on a late-game state (500 planes, 400 routes, 1,000 markets); dirty flags are the fallback if WASM profiling shows it matters.
+  - MessagePack only sorts `map[string]any` keys, so encodings are canonicalised (`save.Marshal`) and map-bearing entities are fingerprinted as JSON.
+  - `seq` increases by 1 per message. If the UI sees a gap, it sends `resync` once and ignores updates until the fresh `init`.
 - **Request priority in the Worker**:
   - Commands and queries are handled **between ticks**, before the next tick runs.
   - `routeForecast` queries are **coalesced**: a newer query for the same route replaces the queued one, so only the latest slider value is evaluated.
@@ -134,7 +135,7 @@ Worker → UI messages carry an **uncompressed** MessagePack buffer, always sent
   - Loaded with `WebAssembly.instantiateStreaming` behind a branded loading screen; cached by the service worker on web and bundled inside the mobile apps.
   - Fallback if size is still a problem: TinyGo, which needs checking against `expr`.
 - **Worker → UI traffic**: the simulation can run at 4x, but the UI gets at most **~4 updates per second**.
-  - Each update is a delta envelope with changed entities and tombstones (see above), sent as a transferable `ArrayBuffer` (MessagePack).
+  - The Worker pulses every 250 ms and posts one update per pulse, however many ticks ran. Each update is a delta envelope with changed entities and tombstones (see above), sent as a transferable `ArrayBuffer` (MessagePack).
   - Plane positions are **not** streamed. The UI receives `{planeId, depart, arrive}` once per flight and interpolates locally.
 - Content is compiled to JSON, so no YAML parser is needed in WASM.
 - **GC and allocations**: Go WASM has a stop-the-world GC, so the hot paths are allocation-free:

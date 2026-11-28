@@ -28,21 +28,10 @@ func serve() {
 	api.Set("command", js.FuncOf(func(_ js.Value, args []js.Value) any {
 		return bridge.Guard(func() (string, error) { return session.Command(args[0].String()), nil })
 	}))
-	// save returns the save bytes as a Uint8Array, or an {"error"} JSON string.
-	api.Set("save", js.FuncOf(func(_ js.Value, _ []js.Value) any {
-		var data []byte
-		out := bridge.Guard(func() (string, error) {
-			var err error
-			data, err = session.Save()
-			return "", err
-		})
-		if out != "" {
-			return out
-		}
-		arr := js.Global().Get("Uint8Array").New(len(data))
-		js.CopyBytesToJS(arr, data)
-		return arr
-	}))
+	// save, snapshot and delta return a Uint8Array, or an {"error"} JSON string.
+	api.Set("save", bytesFunc(session.Save))
+	api.Set("snapshot", bytesFunc(session.Snapshot))
+	api.Set("delta", bytesFunc(session.Delta))
 	// load takes save bytes (Uint8Array) and returns the view JSON or {"error"}.
 	api.Set("load", js.FuncOf(func(_ js.Value, args []js.Value) any {
 		return bridge.Guard(func() (string, error) {
@@ -53,4 +42,18 @@ func serve() {
 	}))
 	js.Global().Set("jetstreamSim", api)
 	select {}
+}
+
+// bytesFunc wraps a bytes-returning call: the result is copied into a new
+// Uint8Array (which the Worker transfers to the UI without another copy).
+func bytesFunc(call func() ([]byte, error)) js.Func {
+	return js.FuncOf(func(_ js.Value, _ []js.Value) any {
+		data, errJSON := bridge.GuardBytes(call)
+		if errJSON != "" {
+			return errJSON
+		}
+		arr := js.Global().Get("Uint8Array").New(len(data))
+		js.CopyBytesToJS(arr, data)
+		return arr
+	})
 }

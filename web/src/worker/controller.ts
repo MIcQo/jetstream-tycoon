@@ -11,14 +11,20 @@ const USER_ERROR = /^errors\.(newgame|cmd)\.[a-z_]+$/;
 
 export interface Controller {
   handle(msg: ToWorker): void;
-  /** Called on a timer (~4×/s); advances due ticks and posts one update. */
+  /**
+   * Called on a timer (~4×/s, the UI update rate); advances due ticks and posts
+   * one update with the entities changed since the previous one.
+   */
   pulse(nowMs: number): void;
 }
+
+/** Posts a message; `transfer` lists buffers handed over without a copy. */
+export type Post = (msg: FromWorker, transfer?: Transferable[]) => void;
 
 /** Owns the simulation inside the Worker and numbers every message (seq). */
 export function createController(
   bridge: SimBridge,
-  post: (msg: FromWorker) => void,
+  post: Post,
   clock: TickClock = new TickClock(),
 ): Controller {
   let seq = 0;
@@ -57,6 +63,12 @@ export function createController(
     return bridge.command(cmd);
   };
 
+  const sendInit = (v: SimView) => {
+    const buf = bridge.snapshot();
+    seq += 1;
+    post({ kind: "init", seq, view: v, buf }, [buf.buffer]);
+  };
+
   const controller: Controller = {
     handle(msg) {
       if (msg.kind === "start") {
@@ -67,12 +79,15 @@ export function createController(
           homeCountry: msg.homeCountry,
           difficulty: msg.difficulty,
         });
-        seq += 1;
-        post({ kind: "init", seq, view });
+        sendInit(view);
         return;
       }
       if (view === undefined) {
         post({ kind: "error", errorKey: "errors.sim.not_started" });
+        return;
+      }
+      if (msg.kind === "resync") {
+        sendInit(view);
         return;
       }
       const res = sendCommand({ type: "setSpeed", speed: msg.speed });
@@ -87,8 +102,9 @@ export function createController(
       // advance(0) still applies queued commands, so a paused game reacts to the player.
       const res = bridge.advance(clock.due(nowMs, view.speed));
       view = res.view;
+      const buf = bridge.delta();
       seq += 1;
-      post({ kind: "update", seq, view, notifications: res.notifications });
+      post({ kind: "update", seq, view, notifications: res.notifications, buf }, [buf.buffer]);
       if (res.reports.length > 0) {
         post({ kind: "simReports", reports: res.reports });
       }

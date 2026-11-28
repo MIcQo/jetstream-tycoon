@@ -28,6 +28,8 @@ function fakeRaw(calls: string[]): RawSimApi {
       return JSON.stringify({ ok: false, errorKey: "errors.cmd.invalid_speed" });
     },
     save: () => new Uint8Array([1, 2, 3]),
+    snapshot: () => new Uint8Array([4]),
+    delta: () => new Uint8Array([5]),
     load: (data) => {
       calls.push(`load ${data.length}`);
       return JSON.stringify(view);
@@ -46,6 +48,8 @@ describe("jsonBridge", () => {
     expect(b.advance(0)).toEqual({ view, notifications: [], reports: [] });
     expect(b.command({ type: "setSpeed", speed: 3 })).toEqual({ ok: false, errorKey: "errors.cmd.invalid_speed" });
     expect(b.save()).toEqual(new Uint8Array([1, 2, 3]));
+    expect(b.snapshot()).toEqual(new Uint8Array([4]));
+    expect(b.delta()).toEqual(new Uint8Array([5]));
     expect(b.load(new Uint8Array([9, 9]))).toEqual(view);
     expect(calls).toEqual([
       'newGame {"seed":7,"airlineName":"A","homeCountry":"GB","difficulty":"normal"}',
@@ -64,6 +68,8 @@ describe("jsonBridge errors", () => {
       advance: () => JSON.stringify({ error: "errors.sim.not_started" }),
       command: () => JSON.stringify({ ok: true }),
       save: () => JSON.stringify({ error: "errors.sim.not_started" }),
+      snapshot: () => JSON.stringify({ error: "errors.sim.not_started" }),
+      delta: () => "{}",
       load: () => JSON.stringify({ error: "save: not a save" }),
     };
     const b = jsonBridge(raw);
@@ -71,16 +77,18 @@ describe("jsonBridge errors", () => {
     expect(() => b.advance(1)).toThrow("errors.sim.not_started");
     expect(b.command({ type: "setSpeed", speed: 1 })).toEqual({ ok: true });
     expect(() => b.save()).toThrow("errors.sim.not_started");
+    expect(() => b.snapshot()).toThrow("errors.sim.not_started");
+    expect(() => b.delta()).toThrow("delta: unexpected response");
     expect(() => b.load(new Uint8Array())).toThrow("save: not a save");
   });
 
   it("rejects a save response that is neither bytes nor an error", () => {
-    const raw: RawSimApi = { newGame: () => "{}", advance: () => "{}", command: () => "{}", save: () => "{}", load: () => "{}" };
+    const raw: RawSimApi = { newGame: () => "{}", advance: () => "{}", command: () => "{}", save: () => "{}", load: () => "{}", snapshot: () => "{}", delta: () => "{}" };
     expect(() => jsonBridge(raw).save()).toThrow("save: unexpected response");
   });
 
   it("does not treat JSON null or primitives as errors", () => {
-    const raw: RawSimApi = { newGame: () => "null", advance: () => "1", command: () => '"x"', save: () => new Uint8Array(), load: () => "null" };
+    const raw: RawSimApi = { newGame: () => "null", advance: () => "1", command: () => '"x"', save: () => new Uint8Array(), load: () => "null", snapshot: () => new Uint8Array(), delta: () => new Uint8Array() };
     const b = jsonBridge(raw);
     expect(b.newGame(game(1))).toBeNull();
     expect(b.command({ type: "t" })).toBe("x");

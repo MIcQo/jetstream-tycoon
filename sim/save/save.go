@@ -60,6 +60,16 @@ func newEncoder(w io.Writer) *msgpack.Encoder {
 	return enc
 }
 
+// Marshal encodes v as MessagePack with the save conventions: JSON field
+// names, sorted map keys and compact integers. The bridge uses it for state
+// traffic to the UI (TECH_DESIGN §3).
+func Marshal(v any) ([]byte, error) { return canonical(v) }
+
+// NewEncoder returns a MessagePack encoder with the save conventions. Like the
+// library, it sorts only map[string]any and map[string]string keys; use Marshal
+// when every map must be sorted.
+func NewEncoder(w io.Writer) *msgpack.Encoder { return newEncoder(w) }
+
 func newDecoder(r io.Reader) *msgpack.Decoder {
 	dec := msgpack.NewDecoder(r)
 	dec.SetCustomStructTag("json") // generic maps decode as map[string]any by default
