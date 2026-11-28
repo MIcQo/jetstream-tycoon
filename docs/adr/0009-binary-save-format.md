@@ -1,6 +1,6 @@
 # ADR-0009: MessagePack + zstd as the save format
 
-- **Status**: Accepted
+- **Status**: Superseded by ADR-0024 (compression only: gzip instead of zstd)
 - **Date**: 2026-11-23
 
 ## Context

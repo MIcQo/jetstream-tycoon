@@ -8,7 +8,7 @@ flowchart LR
   subgraph Device["Device: Web / iOS / Android (Capacitor)"]
     UI["UI thread<br/>Preact panels, SVG map, Canvas planes"]
     W["Web Worker<br/>sim.wasm (Go)"]
-    SS[("SaveStore<br/>zstd MessagePack")]
+    SS[("SaveStore<br/>gzip MessagePack")]
     TQ[("TelemetryQueue<br/>durable, offline-safe")]
     CC[("Config cache<br/>bundled defaults")]
     ADS["AdsService<br/>AdMob plugin"]
@@ -329,7 +329,7 @@ erDiagram
 ```
 
 ## 8. Save state model
-The game state is stored as one zstd-compressed MessagePack snapshot in object storage. The Postgres row in `saves` points to it. Plane models come from content files, not from the save.
+The game state is stored as one gzip-compressed MessagePack snapshot in object storage. The Postgres row in `saves` points to it. Plane models come from content files, not from the save.
 
 ```mermaid
 erDiagram

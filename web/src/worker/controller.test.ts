@@ -31,6 +31,8 @@ function fakeBridge(commandResult: CommandResult = { ok: true }) {
       commands.push(cmd);
       return commandResult;
     },
+    save: () => new Uint8Array(),
+    load: () => view,
   };
   return { bridge, advanced, commands };
 }

@@ -9,6 +9,8 @@ import (
 	"testing"
 
 	"github.com/MIcQo/jetstream-tycoon/sim/bridge"
+	"github.com/MIcQo/jetstream-tycoon/sim/save"
+	"github.com/MIcQo/jetstream-tycoon/sim/state"
 )
 
 func decode[T any](t *testing.T, s string) T {
@@ -153,5 +155,42 @@ func TestNewGameValidationErrorKeys(t *testing.T) {
 	}
 	if _, err := s.Advance(1); !errors.Is(err, bridge.ErrNotStarted) {
 		t.Error("a failed newGame must not start a session")
+	}
+}
+
+func TestSaveAndLoad(t *testing.T) {
+	var s bridge.Session
+	if _, err := s.Save(); !errors.Is(err, bridge.ErrNotStarted) {
+		t.Errorf("save before start: %v", err)
+	}
+	must(t)(s.NewGame(`{"seed":3,"airlineName":"Saver","homeCountry":"JP","difficulty":"easy"}`))
+	must(t)(s.Advance(30))
+	data, err := s.Save()
+	if err != nil {
+		t.Fatal(err)
+	}
+	before := decode[bridge.AdvanceResult](t, must(t)(s.Advance(10))).View
+
+	var other bridge.Session
+	v := decode[bridge.View](t, must(t)(other.Load(data)))
+	if v.Tick != 30 || v.AirlineName != "Saver" || v.HomeCountry != "JP" || !strings.HasPrefix(v.ContentVersion, "c") {
+		t.Fatalf("loaded view = %+v", v)
+	}
+	// The loaded game continues exactly like the original.
+	after := decode[bridge.AdvanceResult](t, must(t)(other.Advance(10))).View
+	if after != before {
+		t.Errorf("continued differently: %+v vs %+v", after, before)
+	}
+
+	// A bad save keeps the current game.
+	if _, err := other.Load([]byte("garbage")); err == nil {
+		t.Error("garbage loaded")
+	}
+	if v := decode[bridge.AdvanceResult](t, must(t)(other.Advance(0))).View; v.Tick != 40 {
+		t.Errorf("game lost after a failed load: tick %d", v.Tick)
+	}
+	empty, _ := save.Encode(state.New(1), "c")
+	if _, err := other.Load(empty); err == nil || !strings.Contains(err.Error(), "no player") {
+		t.Errorf("save without player: %v", err)
 	}
 }

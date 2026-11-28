@@ -102,14 +102,14 @@ type System interface {
 - **Commands and queries are JSON strings.** They are small, rare and easy to debug.
 - **State traffic is MessagePack bytes.** Go copies the bytes into a JS `Uint8Array` with `js.CopyBytesToJS`, and the Worker **transfers** its `ArrayBuffer` to the UI thread without copying.
 ```
-sim.newGame(json{airlineName, homeCountry, difficulty, seed}) → Uint8Array   // zstd(MessagePack) snapshot
+sim.newGame(json{airlineName, homeCountry, difficulty, seed}) → Uint8Array   // gzip(MessagePack) snapshot
 sim.load(Uint8Array snapshot) → json{ok, error?}                              // on success, the next update is kind "init"
-sim.save() → Uint8Array                                                       // zstd(MessagePack) snapshot → SaveStore
+sim.save() → Uint8Array                                                       // gzip(MessagePack) snapshot → SaveStore
 sim.command(json{type, ...}) → json{ok, errorKey?}
 sim.advance(ticks) → Uint8Array                                               // MessagePack {delta, notifications, prompts, analytics[]}
 sim.query(json{type: "routeForecast", routeId, priceEco, priceBiz}) → json{result}
 ```
-Worker → UI messages carry an **uncompressed** MessagePack buffer, always sent with `transfer: [buf]`. The UI never needs a zstd decompressor; zstd is used only between the simulation and `SaveStore`.
+Worker → UI messages carry an **uncompressed** MessagePack buffer, always sent with `transfer: [buf]`. The UI never needs a decompressor; gzip is used only between the simulation and `SaveStore` (ADR-0024).
 - **`{kind: "init", buf}`** is sent after `newGame` or a successful `load`, and after any detected sequence gap. It holds the full UI **state view**: every entity the UI renders, without simulation-internal caches.
 - **`{kind: "update", buf}`** is a delta envelope:
 ```
@@ -127,7 +127,7 @@ Worker → UI messages carry an **uncompressed** MessagePack buffer, always sent
 - **Request priority in the Worker**:
   - Commands and queries are handled **between ticks**, before the next tick runs.
   - `routeForecast` queries are **coalesced**: a newer query for the same route replaces the queued one, so only the latest slider value is evaluated.
-  - **Autosave is deferred**: at a day boundary the Worker first sends the tick delta, then answers pending queries, and only then encodes and writes the save (in a later macrotask). A slider never waits behind zstd encoding.
+  - **Autosave is deferred**: at a day boundary the Worker first sends the tick delta, then answers pending queries, and only then encodes and writes the save (in a later macrotask). A slider never waits behind save encoding.
 - Build: standard Go `GOOS=js GOARCH=wasm` with `-trimpath -ldflags="-s -w"`, then `wasm-opt -Oz`. Served brotli-compressed from the CDN.
   - **Realistic budget**: ≤ 10 MB raw and **≤ 2.5 MB brotli** including `expr`, measured in M0 and enforced in CI.
   - Compile and instantiate in ≤ 1.5 s on a low-end Android WebView, also measured in M0.
@@ -385,7 +385,7 @@ Restructuring: all debt becomes one loan (10 years, high rate); the lowest-value
 - `SaveStore` interface with one implementation per platform:
   - **Web**: IndexedDB.
   - **iOS/Android**: Capacitor Filesystem (the app data dir; avoids iOS WebView storage eviction).
-- Snapshot = **zstd(MessagePack state)**, about 3–5x smaller and faster than gzip JSON. A JSON export exists for debugging and bug reports.
+- Snapshot = **gzip(MessagePack state)** behind a `JTSV` header (ADR-0009, ADR-0024; zstd was dropped for WASM size). A JSON export exists for debugging and bug reports.
   - Each snapshot also has metadata `{saveId, revision, tick, schemaVersion, contentVersion, deviceId, updatedAt, summary{cash, netWorth, day}}`.
 - Autosave: every game day, on pause, and when the app goes to the background. Keep the last 3 rolling copies (corruption safety).
 - Old saves are upgraded on load by versioned Go migrator funcs inside the simulation.

@@ -12,7 +12,7 @@ Decisions are recorded in Nygard format (see `template.md` and ADR-0001). The cu
 | [0006](0006-determinism-rules.md) | Strict determinism in the simulation | Accepted |
 | [0007](0007-postgres-golang-migrate.md) | Postgres for accounts, save metadata and config; golang-migrate for schemas | Accepted |
 | [0008](0008-saves-object-storage-optimistic-sync.md) | Save files in object storage, synced with optimistic locking and presigned URLs | Accepted |
-| [0009](0009-binary-save-format.md) | MessagePack + zstd as the save format | Accepted |
+| [0009](0009-binary-save-format.md) | MessagePack + zstd as the save format | Superseded by ADR-0024 |
 | [0010](0010-guest-first-auth.md) | Guest-first accounts with Apple/Google/email linking; JWT + rotating refresh tokens | Accepted |
 | [0011](0011-clickhouse-analytics.md) | ClickHouse for gameplay and product analytics | Accepted |
 | [0012](0012-rabbitmq-telemetry-queue.md) | RabbitMQ between the API and a separate ClickHouse ingestor | Accepted |
@@ -27,3 +27,4 @@ Decisions are recorded in Nygard format (see `template.md` and ADR-0001). The cu
 | [0021](0021-deterministic-math-and-modifier-stacking.md) | Deterministic math library, rounding and modifier stacking order | Accepted |
 | [0022](0022-save-keys-account-merge-deletion.md) | Per-save object keys, account merge on sign-in, and outbox-based account deletion | Accepted |
 | [0023](0023-save-retention-staging-upload-limits.md) | Server-side save revision retention, staged uploads and upload abuse limits | Accepted |
+| [0024](0024-save-compression-gzip.md) | gzip instead of zstd for save compression (refines ADR-0009) | Accepted |

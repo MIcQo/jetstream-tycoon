@@ -16,6 +16,7 @@ import (
 	"github.com/MIcQo/jetstream-tycoon/sim/command"
 	"github.com/MIcQo/jetstream-tycoon/sim/content/bundle"
 	"github.com/MIcQo/jetstream-tycoon/sim/engine"
+	"github.com/MIcQo/jetstream-tycoon/sim/save"
 )
 
 // View is the UI state view.
@@ -99,6 +100,34 @@ func (s *Session) NewGame(requestJSON string) (string, error) {
 	}
 	s.contentVersion = b.ContentVersion
 	s.engine = e
+	return marshal(s.view())
+}
+
+// Save encodes the running game (sim/save: gzip MessagePack).
+func (s *Session) Save() ([]byte, error) {
+	if s.engine == nil {
+		return nil, ErrNotStarted
+	}
+	return save.Encode(s.engine.State, s.contentVersion)
+}
+
+// Load replaces the running game with a decoded save (migrated to the current
+// schema) and returns its view. On error the current game is kept.
+func (s *Session) Load(data []byte) (string, error) {
+	st, _, err := save.Decode(data)
+	if err != nil {
+		return "", err
+	}
+	b, err := bundle.Load()
+	if err != nil {
+		return "", err
+	}
+	if st.Player() == nil {
+		return "", fmt.Errorf("load: save has no player airline")
+	}
+	s.contentVersion = b.ContentVersion
+	s.engine = engine.New(st, &b, sim.Systems()...)
+	s.reports = nil
 	return marshal(s.view())
 }
 
