@@ -8,6 +8,8 @@ export interface SimView {
   day: number;
   speed: Speed;
   cashCents: number;
+  /** Version of the content compiled into sim.wasm (e.g. "c79fa5ed651d9"). */
+  contentVersion?: string;
 }
 
 export interface SimNotification {

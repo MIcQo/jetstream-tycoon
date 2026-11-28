@@ -1,0 +1,58 @@
+# Holiday periods on the fixed game calendar (TECH_DESIGN §7.1). Moving holidays use
+# a representative date. Regions are UN regions from content/world/countries.json.
+- id: christmas_new_year
+  nameKey: holidays.christmas_new_year.name
+  start: "12-20"
+  days: 14
+  regions: [Europe, Americas, Oceania]
+  tourism: 1.3
+  business: 0.6
+- id: easter
+  nameKey: holidays.easter.name
+  start: "04-10"
+  days: 5
+  regions: [Europe]
+  tourism: 1.2
+  business: 0.8
+- id: lunar_new_year
+  nameKey: holidays.lunar_new_year.name
+  start: "01-28"
+  days: 10
+  countries: [CN, TW, HK, SG, KR, VN]
+  tourism: 1.4
+  business: 0.6
+- id: eid_al_fitr
+  nameKey: holidays.eid_al_fitr.name
+  start: "03-30"
+  days: 5
+  countries: [SA, AE, QA, KW, BH, OM, EG, JO, MA, DZ, TN, TR, PK, BD, ID, MY]
+  tourism: 1.25
+  business: 0.7
+- id: golden_week_japan
+  nameKey: holidays.golden_week_japan.name
+  start: "04-29"
+  days: 7
+  countries: [JP]
+  tourism: 1.4
+  business: 0.6
+- id: golden_week_china
+  nameKey: holidays.golden_week_china.name
+  start: "10-01"
+  days: 7
+  countries: [CN]
+  tourism: 1.4
+  business: 0.6
+- id: diwali
+  nameKey: holidays.diwali.name
+  start: "11-01"
+  days: 5
+  countries: [IN, NP]
+  tourism: 1.3
+  business: 0.7
+- id: thanksgiving
+  nameKey: holidays.thanksgiving.name
+  start: "11-24"
+  days: 4
+  countries: [US]
+  tourism: 1.35
+  business: 0.7

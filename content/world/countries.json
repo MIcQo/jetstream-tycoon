@@ -1,0 +1,6638 @@
+[
+ {
+  "iso2": "AD",
+  "iso3": "AND",
+  "name": "Andorra",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   1.539409,
+   42.547643
+  ],
+  "stats": {
+   "population": 82904,
+   "gdpPerCapitaUsd": 54292,
+   "tourismArrivals": 8235000,
+   "business": 0.86,
+   "tourism": 1,
+   "wealth": 3,
+   "priceBase": 593749,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AE",
+  "iso3": "ARE",
+  "name": "United Arab Emirates",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   54.547256,
+   23.466285
+  ],
+  "stats": {
+   "population": 11513149,
+   "gdpPerCapitaUsd": 50274,
+   "tourismArrivals": 25282000,
+   "business": 0.852,
+   "tourism": 0.763,
+   "wealth": 3,
+   "priceBase": 6630366,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AF",
+  "iso3": "AFG",
+  "name": "Afghanistan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   66.496586,
+   34.164262
+  ],
+  "stats": {
+   "population": 43844111,
+   "gdpPerCapitaUsd": 417,
+   "tourismArrivals": 2928439,
+   "business": 0.021,
+   "tourism": 0.212,
+   "wealth": 0.3,
+   "priceBase": 451909,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "AG",
+  "iso3": "ATG",
+  "name": "Antigua and Barbuda",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -61.790612,
+   17.352249
+  ],
+  "stats": {
+   "population": 94209,
+   "gdpPerCapitaUsd": 24819,
+   "tourismArrivals": 1035000,
+   "business": 0.678,
+   "tourism": 0.945,
+   "wealth": 2.415,
+   "priceBase": 365928,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AI",
+  "iso3": "AIA",
+  "name": "Anguilla",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -63.026361,
+   18.242979
+  ],
+  "stats": {
+   "population": 14731,
+   "gdpPerCapitaUsd": 11880,
+   "tourismArrivals": 99761,
+   "business": 0.534,
+   "tourism": 0.898,
+   "wealth": 1.156,
+   "priceBase": 86395,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "AL",
+  "iso3": "ALB",
+  "name": "Albania",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   20.11384,
+   40.654855
+  ],
+  "stats": {
+   "population": 2349580,
+   "gdpPerCapitaUsd": 12998,
+   "tourismArrivals": 6406000,
+   "business": 0.551,
+   "tourism": 0.792,
+   "wealth": 1.265,
+   "priceBase": 1162007,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AM",
+  "iso3": "ARM",
+  "name": "Armenia",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   44.800564,
+   40.459077
+  ],
+  "stats": {
+   "population": 3086700,
+   "gdpPerCapitaUsd": 9474,
+   "tourismArrivals": 1894000,
+   "business": 0.492,
+   "tourism": 0.551,
+   "wealth": 0.922,
+   "priceBase": 1067384,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AO",
+  "iso3": "AGO",
+  "name": "Angola",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   17.984249,
+   -12.182762
+  ],
+  "stats": {
+   "population": 39040039,
+   "gdpPerCapitaUsd": 3129,
+   "tourismArrivals": 218000,
+   "business": 0.254,
+   "tourism": 0.021,
+   "wealth": 0.304,
+   "priceBase": 1747990,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AQ",
+  "iso3": "ATA",
+  "name": "Antarctica",
+  "continent": "Antarctica",
+  "region": "Antarctica",
+  "subregion": "Antarctica",
+  "label": [
+   35.885455,
+   -79.843222
+  ],
+  "stats": {
+   "population": 4490,
+   "gdpPerCapitaUsd": 200000,
+   "tourismArrivals": 2170,
+   "business": 0.992,
+   "tourism": 0.492,
+   "wealth": 3,
+   "priceBase": 344226,
+   "hemisphere": "south",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "AR",
+  "iso3": "ARG",
+  "name": "Argentina",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -64.173331,
+   -33.501159
+  ],
+  "stats": {
+   "population": 45851378,
+   "gdpPerCapitaUsd": 14898,
+   "tourismArrivals": 7399000,
+   "business": 0.597,
+   "tourism": 0.326,
+   "wealth": 1.449,
+   "priceBase": 5647624,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AS",
+  "iso3": "ASM",
+  "name": "American Samoa",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -170.747153,
+   -14.32671
+  ],
+  "stats": {
+   "population": 46029,
+   "gdpPerCapitaUsd": 18017,
+   "tourismArrivals": 19200,
+   "business": 0.619,
+   "tourism": 0.462,
+   "wealth": 1.753,
+   "priceBase": 204406,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AT",
+  "iso3": "AUT",
+  "name": "Austria",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   14.130515,
+   47.518859
+  ],
+  "stats": {
+   "population": 9208163,
+   "gdpPerCapitaUsd": 62930,
+   "tourismArrivals": 31884000,
+   "business": 0.907,
+   "tourism": 0.835,
+   "wealth": 3,
+   "priceBase": 6938841,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AU",
+  "iso3": "AUS",
+  "name": "Australia",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "label": [
+   134.04972,
+   -24.129522
+  ],
+  "stats": {
+   "population": 27614411,
+   "gdpPerCapitaUsd": 65130,
+   "tourismArrivals": 9466000,
+   "business": 0.915,
+   "tourism": 0.411,
+   "wealth": 3,
+   "priceBase": 12308770,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AW",
+  "iso3": "ABW",
+  "name": "Aruba",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -69.972795,
+   12.5174
+  ],
+  "stats": {
+   "population": 108785,
+   "gdpPerCapitaUsd": 38591,
+   "tourismArrivals": 1951000,
+   "business": 0.788,
+   "tourism": 0.962,
+   "wealth": 3,
+   "priceBase": 535580,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "AX",
+  "iso3": "ALA",
+  "name": "Åland",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   19.869671,
+   60.156467
+  ],
+  "stats": {
+   "population": 29884,
+   "gdpPerCapitaUsd": 52302,
+   "tourismArrivals": 61646,
+   "business": 0.856,
+   "tourism": 0.746,
+   "wealth": 3,
+   "priceBase": 347282,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "AZ",
+  "iso3": "AZE",
+  "name": "Azerbaijan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   47.210994,
+   40.402387
+  ],
+  "stats": {
+   "population": 10246996,
+   "gdpPerCapitaUsd": 7411,
+   "tourismArrivals": 3170000,
+   "business": 0.445,
+   "tourism": 0.394,
+   "wealth": 0.721,
+   "priceBase": 1637616,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BA",
+  "iso3": "BIH",
+  "name": "Bosnia and Herzegovina",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   18.06841,
+   44.091051
+  ],
+  "stats": {
+   "population": 3140095,
+   "gdpPerCapitaUsd": 10382,
+   "tourismArrivals": 1198000,
+   "business": 0.513,
+   "tourism": 0.436,
+   "wealth": 1.01,
+   "priceBase": 1147805,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BB",
+  "iso3": "BRB",
+  "name": "Barbados",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -59.568966,
+   13.163709
+  ],
+  "stats": {
+   "population": 282623,
+   "gdpPerCapitaUsd": 28365,
+   "tourismArrivals": 966000,
+   "business": 0.712,
+   "tourism": 0.831,
+   "wealth": 2.76,
+   "priceBase": 695908,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BD",
+  "iso3": "BGD",
+  "name": "Bangladesh",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   89.684963,
+   24.214956
+  ],
+  "stats": {
+   "population": 175686899,
+   "gdpPerCapitaUsd": 2597,
+   "tourismArrivals": 323000,
+   "business": 0.216,
+   "tourism": 0.004,
+   "wealth": 0.3,
+   "priceBase": 3254618,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BE",
+  "iso3": "BEL",
+  "name": "Belgium",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   4.800448,
+   50.785392
+  ],
+  "stats": {
+   "population": 11941781,
+   "gdpPerCapitaUsd": 60750,
+   "tourismArrivals": 9343000,
+   "business": 0.903,
+   "tourism": 0.623,
+   "wealth": 3,
+   "priceBase": 7709336,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BF",
+  "iso3": "BFA",
+  "name": "Burkina Faso",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -1.36388,
+   12.673048
+  ],
+  "stats": {
+   "population": 24074580,
+   "gdpPerCapitaUsd": 1148,
+   "tourismArrivals": 143000,
+   "business": 0.106,
+   "tourism": 0.025,
+   "wealth": 0.3,
+   "priceBase": 680360,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BG",
+  "iso3": "BGR",
+  "name": "Bulgaria",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   25.15709,
+   42.508785
+  ],
+  "stats": {
+   "population": 6433302,
+   "gdpPerCapitaUsd": 20328,
+   "tourismArrivals": 12552000,
+   "business": 0.653,
+   "tourism": 0.725,
+   "wealth": 1.978,
+   "priceBase": 2629561,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BH",
+  "iso3": "BHR",
+  "name": "Bahrain",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   50.554816,
+   26.055972
+  ],
+  "stats": {
+   "population": 1600366,
+   "gdpPerCapitaUsd": 30597,
+   "tourismArrivals": 11061000,
+   "business": 0.729,
+   "tourism": 0.915,
+   "wealth": 2.977,
+   "priceBase": 1746163,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BI",
+  "iso3": "BDI",
+  "name": "Burundi",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   29.917086,
+   -3.332836
+  ],
+  "stats": {
+   "population": 14390003,
+   "gdpPerCapitaUsd": 234,
+   "tourismArrivals": 299000,
+   "business": 0.017,
+   "tourism": 0.093,
+   "wealth": 0.3,
+   "priceBase": 172775,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
+ },
+ {
+  "iso2": "BJ",
+  "iso3": "BEN",
+  "name": "Benin",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   2.352018,
+   10.324775
+  ],
+  "stats": {
+   "population": 14814460,
+   "gdpPerCapitaUsd": 1658,
+   "tourismArrivals": 337000,
+   "business": 0.169,
+   "tourism": 0.106,
+   "wealth": 0.3,
+   "priceBase": 690323,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BL",
+  "iso3": "BLM",
+  "name": "Saint Barthélemy",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -62.833193,
+   17.901987
+  ],
+  "stats": {
+   "population": 9961,
+   "gdpPerCapitaUsd": 25600,
+   "tourismArrivals": 67458,
+   "business": 0.691,
+   "tourism": 0.911,
+   "wealth": 2.491,
+   "priceBase": 121596,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "BM",
+  "iso3": "BMU",
+  "name": "Bermuda",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Northern America",
+  "label": [
+   -64.763573,
+   32.296592
+  ],
+  "stats": {
+   "population": 64555,
+   "gdpPerCapitaUsd": 142250,
+   "tourismArrivals": 805000,
+   "business": 0.983,
+   "tourism": 0.953,
+   "wealth": 3,
+   "priceBase": 1028257,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BN",
+  "iso3": "BRN",
+  "name": "Brunei",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   114.551943,
+   4.448298
+  ],
+  "stats": {
+   "population": 466330,
+   "gdpPerCapitaUsd": 32235,
+   "tourismArrivals": 4449000,
+   "business": 0.737,
+   "tourism": 0.936,
+   "wealth": 3,
+   "priceBase": 977633,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BO",
+  "iso3": "BOL",
+  "name": "Bolivia",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -64.593433,
+   -16.666015
+  ],
+  "stats": {
+   "population": 12581843,
+   "gdpPerCapitaUsd": 5148,
+   "tourismArrivals": 1239000,
+   "business": 0.347,
+   "tourism": 0.258,
+   "wealth": 0.501,
+   "priceBase": 1406109,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BR",
+  "iso3": "BRA",
+  "name": "Brazil",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -49.55945,
+   -12.098687
+  ],
+  "stats": {
+   "population": 212812405,
+   "gdpPerCapitaUsd": 10713,
+   "tourismArrivals": 6353000,
+   "business": 0.521,
+   "tourism": 0.136,
+   "wealth": 1.042,
+   "priceBase": 9659091,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BS",
+  "iso3": "BHS",
+  "name": "The Bahamas",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -77.146688,
+   26.401789
+  ],
+  "stats": {
+   "population": 403033,
+   "gdpPerCapitaUsd": 39455,
+   "tourismArrivals": 7250000,
+   "business": 0.797,
+   "tourism": 0.966,
+   "wealth": 3,
+   "priceBase": 1046988,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BT",
+  "iso3": "BTN",
+  "name": "Bhutan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   90.040294,
+   27.536685
+  ],
+  "stats": {
+   "population": 796682,
+   "gdpPerCapitaUsd": 4493,
+   "tourismArrivals": 316000,
+   "business": 0.318,
+   "tourism": 0.445,
+   "wealth": 0.437,
+   "priceBase": 321676,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BW",
+  "iso3": "BWA",
+  "name": "Botswana",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "label": [
+   24.179216,
+   -22.102634
+  ],
+  "stats": {
+   "population": 2562122,
+   "gdpPerCapitaUsd": 7778,
+   "tourismArrivals": 1830000,
+   "business": 0.449,
+   "tourism": 0.576,
+   "wealth": 0.757,
+   "priceBase": 847047,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
+ },
+ {
+  "iso2": "BY",
+  "iso3": "BLR",
+  "name": "Belarus",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   28.417701,
+   53.821888
+  ],
+  "stats": {
+   "population": 9085991,
+   "gdpPerCapitaUsd": 10279,
+   "tourismArrivals": 11832000,
+   "business": 0.508,
+   "tourism": 0.691,
+   "wealth": 1,
+   "priceBase": 1938884,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "BZ",
+  "iso3": "BLZ",
+  "name": "Belize",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -88.712962,
+   17.202068
+  ],
+  "stats": {
+   "population": 422924,
+   "gdpPerCapitaUsd": 7865,
+   "tourismArrivals": 1674000,
+   "business": 0.453,
+   "tourism": 0.847,
+   "wealth": 0.765,
+   "priceBase": 346833,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CA",
+  "iso3": "CAN",
+  "name": "Canada",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Northern America",
+  "label": [
+   -101.9107,
+   60.324287
+  ],
+  "stats": {
+   "population": 41651653,
+   "gdpPerCapitaUsd": 55698,
+   "tourismArrivals": 32430000,
+   "business": 0.869,
+   "tourism": 0.614,
+   "wealth": 3,
+   "priceBase": 13548894,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CD",
+  "iso3": "COD",
+  "name": "Democratic Republic of the Congo",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   23.458829,
+   -1.858167
+  ],
+  "stats": {
+   "population": 112832473,
+   "gdpPerCapitaUsd": 807,
+   "tourismArrivals": 351000,
+   "business": 0.059,
+   "tourism": 0.008,
+   "wealth": 0.3,
+   "priceBase": 1150876,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2016"
+   }
+  }
+ },
+ {
+  "iso2": "CF",
+  "iso3": "CAF",
+  "name": "Central African Republic",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   20.906897,
+   6.989681
+  ],
+  "stats": {
+   "population": 5513282,
+   "gdpPerCapitaUsd": 556,
+   "tourismArrivals": 87000,
+   "business": 0.025,
+   "tourism": 0.068,
+   "wealth": 0.3,
+   "priceBase": 196001,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CG",
+  "iso3": "COG",
+  "name": "Republic of the Congo",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   15.9005,
+   0.142331
+  ],
+  "stats": {
+   "population": 6484437,
+   "gdpPerCapitaUsd": 2515,
+   "tourismArrivals": 158000,
+   "business": 0.208,
+   "tourism": 0.127,
+   "wealth": 0.3,
+   "priceBase": 611382,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
+ },
+ {
+  "iso2": "CH",
+  "iso3": "CHE",
+  "name": "Switzerland",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   7.463965,
+   46.719114
+  ],
+  "stats": {
+   "population": 9092436,
+   "gdpPerCapitaUsd": 114769,
+   "tourismArrivals": 11818000,
+   "business": 0.975,
+   "tourism": 0.686,
+   "wealth": 3,
+   "priceBase": 10500678,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CI",
+  "iso3": "CIV",
+  "name": "Ivory Coast",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -5.568618,
+   7.49139
+  ],
+  "stats": {
+   "population": 32711547,
+   "gdpPerCapitaUsd": 3050,
+   "tourismArrivals": 2070000,
+   "business": 0.242,
+   "tourism": 0.208,
+   "wealth": 0.3,
+   "priceBase": 1571667,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CK",
+  "iso3": "COK",
+  "name": "Cook Islands",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -159.785675,
+   -21.215993
+  ],
+  "stats": {
+   "population": 17459,
+   "gdpPerCapitaUsd": 13976,
+   "tourismArrivals": 14409,
+   "business": 0.568,
+   "tourism": 0.627,
+   "wealth": 1.36,
+   "priceBase": 105385,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "CL",
+  "iso3": "CHL",
+  "name": "Chile",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -72.318871,
+   -38.151771
+  ],
+  "stats": {
+   "population": 19859921,
+   "gdpPerCapitaUsd": 17995,
+   "tourismArrivals": 5431000,
+   "business": 0.614,
+   "tourism": 0.373,
+   "wealth": 1.751,
+   "priceBase": 4242238,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CM",
+  "iso3": "CMR",
+  "name": "Cameroon",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   12.473488,
+   4.585041
+  ],
+  "stats": {
+   "population": 29879337,
+   "gdpPerCapitaUsd": 1972,
+   "tourismArrivals": 1021000,
+   "business": 0.182,
+   "tourism": 0.144,
+   "wealth": 0.3,
+   "priceBase": 1106930,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CN",
+  "iso3": "CHN",
+  "name": "People's Republic of China",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   106.337289,
+   32.498178
+  ],
+  "stats": {
+   "population": 1406585000,
+   "gdpPerCapitaUsd": 13862,
+   "tourismArrivals": 162538000,
+   "business": 0.559,
+   "tourism": 0.292,
+   "wealth": 1.349,
+   "priceBase": 29741380,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CO",
+  "iso3": "COL",
+  "name": "Colombia",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -73.174347,
+   3.373111
+  ],
+  "stats": {
+   "population": 53425635,
+   "gdpPerCapitaUsd": 8562,
+   "tourismArrivals": 4531000,
+   "business": 0.479,
+   "tourism": 0.237,
+   "wealth": 0.833,
+   "priceBase": 4136924,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CR",
+  "iso3": "CRI",
+  "name": "Costa Rica",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -84.077922,
+   10.0651
+  ],
+  "stats": {
+   "population": 5152950,
+   "gdpPerCapitaUsd": 19970,
+   "tourismArrivals": 3366000,
+   "business": 0.648,
+   "tourism": 0.564,
+   "wealth": 1.943,
+   "priceBase": 2324302,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CU",
+  "iso3": "CUB",
+  "name": "Cuba",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -77.975855,
+   21.334024
+  ],
+  "stats": {
+   "population": 10937203,
+   "gdpPerCapitaUsd": 9605,
+   "tourismArrivals": 4276000,
+   "business": 0.496,
+   "tourism": 0.441,
+   "wealth": 0.934,
+   "priceBase": 2028623,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2020",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CV",
+  "iso3": "CPV",
+  "name": "Cape Verde",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -23.639434,
+   15.074761
+  ],
+  "stats": {
+   "population": 527326,
+   "gdpPerCapitaUsd": 5796,
+   "tourismArrivals": 758000,
+   "business": 0.369,
+   "tourism": 0.695,
+   "wealth": 0.564,
+   "priceBase": 312773,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CW",
+  "iso3": "CUW",
+  "name": "Curaçao",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -68.920578,
+   12.145039
+  ],
+  "stats": {
+   "population": 156263,
+   "gdpPerCapitaUsd": 22833,
+   "tourismArrivals": 1293000,
+   "business": 0.669,
+   "tourism": 0.928,
+   "wealth": 2.221,
+   "priceBase": 444552,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CY",
+  "iso3": "CYP",
+  "name": "Cyprus",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   33.084182,
+   34.913329
+  ],
+  "stats": {
+   "population": 1370754,
+   "gdpPerCapitaUsd": 41783,
+   "tourismArrivals": 4117000,
+   "business": 0.809,
+   "tourism": 0.805,
+   "wealth": 3,
+   "priceBase": 2009923,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "CZ",
+  "iso3": "CZE",
+  "name": "Czech Republic",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   15.377555,
+   49.882364
+  ],
+  "stats": {
+   "population": 10886878,
+   "gdpPerCapitaUsd": 35917,
+   "tourismArrivals": 37202000,
+   "business": 0.767,
+   "tourism": 0.826,
+   "wealth": 3,
+   "priceBase": 5095206,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "DE",
+  "iso3": "DEU",
+  "name": "Germany",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   9.678348,
+   50.961733
+  ],
+  "stats": {
+   "population": 83491249,
+   "gdpPerCapitaUsd": 60496,
+   "tourismArrivals": 39563000,
+   "business": 0.898,
+   "tourism": 0.483,
+   "wealth": 3,
+   "priceBase": 20324934,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "DJ",
+  "iso3": "DJI",
+  "name": "Djibouti",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   42.498825,
+   11.976343
+  ],
+  "stats": {
+   "population": 1184076,
+   "gdpPerCapitaUsd": 3906,
+   "tourismArrivals": 63000,
+   "business": 0.28,
+   "tourism": 0.191,
+   "wealth": 0.38,
+   "priceBase": 355551,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2013"
+   }
+  }
+ },
+ {
+  "iso2": "DK",
+  "iso3": "DNK",
+  "name": "Denmark",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   9.018163,
+   55.966965
+  ],
+  "stats": {
+   "population": 6009169,
+   "gdpPerCapitaUsd": 76970,
+   "tourismArrivals": 33093000,
+   "business": 0.936,
+   "tourism": 0.877,
+   "wealth": 3,
+   "priceBase": 6454049,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "DM",
+  "iso3": "DMA",
+  "name": "Dominica",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -61.344958,
+   15.458829
+  ],
+  "stats": {
+   "population": 65871,
+   "gdpPerCapitaUsd": 10989,
+   "tourismArrivals": 322000,
+   "business": 0.525,
+   "tourism": 0.869,
+   "wealth": 1.069,
+   "priceBase": 172989,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "DO",
+  "iso3": "DOM",
+  "name": "Dominican Republic",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -70.653998,
+   19.104137
+  ],
+  "stats": {
+   "population": 11520487,
+   "gdpPerCapitaUsd": 11059,
+   "tourismArrivals": 7550000,
+   "business": 0.53,
+   "tourism": 0.568,
+   "wealth": 1.076,
+   "priceBase": 2297929,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "DZ",
+  "iso3": "DZA",
+  "name": "Algeria",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "label": [
+   2.808241,
+   27.397406
+  ],
+  "stats": {
+   "population": 47435312,
+   "gdpPerCapitaUsd": 6051,
+   "tourismArrivals": 2371000,
+   "business": 0.386,
+   "tourism": 0.178,
+   "wealth": 0.589,
+   "priceBase": 3057242,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "EC",
+  "iso3": "ECU",
+  "name": "Ecuador",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -78.188375,
+   -1.259076
+  ],
+  "stats": {
+   "population": 18289896,
+   "gdpPerCapitaUsd": 7125,
+   "tourismArrivals": 2108000,
+   "business": 0.441,
+   "tourism": 0.288,
+   "wealth": 0.693,
+   "priceBase": 2128409,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "EE",
+  "iso3": "EST",
+  "name": "Estonia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   25.867126,
+   58.724865
+  ],
+  "stats": {
+   "population": 1366475,
+   "gdpPerCapitaUsd": 34418,
+   "tourismArrivals": 6103000,
+   "business": 0.754,
+   "tourism": 0.856,
+   "wealth": 3,
+   "priceBase": 1752067,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "EG",
+  "iso3": "EGY",
+  "name": "Egypt",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "label": [
+   29.445837,
+   26.186173
+  ],
+  "stats": {
+   "population": 118365995,
+   "gdpPerCapitaUsd": 3086,
+   "tourismArrivals": 13026000,
+   "business": 0.25,
+   "tourism": 0.275,
+   "wealth": 0.3,
+   "priceBase": 3014329,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "EH",
+  "iso3": "ESH",
+  "name": "Western Sahara",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "label": [
+   -12.630304,
+   23.967592
+  ],
+  "stats": {
+   "population": 603253,
+   "gdpPerCapitaUsd": 1504,
+   "tourismArrivals": 66387,
+   "business": 0.148,
+   "tourism": 0.271,
+   "wealth": 0.3,
+   "priceBase": 130114,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "ER",
+  "iso3": "ERI",
+  "name": "Eritrea",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   38.285566,
+   15.787401
+  ],
+  "stats": {
+   "population": 3607003,
+   "gdpPerCapitaUsd": 689,
+   "tourismArrivals": 142000,
+   "business": 0.051,
+   "tourism": 0.161,
+   "wealth": 0.3,
+   "priceBase": 184216,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2011",
+    "population": "wb:2025",
+    "tourism": "wb:2016"
+   }
+  }
+ },
+ {
+  "iso2": "ES",
+  "iso3": "ESP",
+  "name": "Spain",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   -3.464718,
+   40.090953
+  ],
+  "stats": {
+   "population": 49355143,
+   "gdpPerCapitaUsd": 38627,
+   "tourismArrivals": 126170000,
+   "business": 0.792,
+   "tourism": 0.78,
+   "wealth": 3,
+   "priceBase": 11415367,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "ET",
+  "iso3": "ETH",
+  "name": "Ethiopia",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   39.0886,
+   8.032795
+  ],
+  "stats": {
+   "population": 135472051,
+   "gdpPerCapitaUsd": 933,
+   "tourismArrivals": 812000,
+   "business": 0.076,
+   "tourism": 0.03,
+   "wealth": 0.3,
+   "priceBase": 1395860,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "FI",
+  "iso3": "FIN",
+  "name": "Finland",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   27.276449,
+   63.252361
+  ],
+  "stats": {
+   "population": 5646436,
+   "gdpPerCapitaUsd": 56149,
+   "tourismArrivals": 3290000,
+   "business": 0.873,
+   "tourism": 0.534,
+   "wealth": 3,
+   "priceBase": 5016798,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "FJ",
+  "iso3": "FJI",
+  "name": "Fiji",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "label": [
+   177.975427,
+   -17.826099
+  ],
+  "stats": {
+   "population": 933154,
+   "gdpPerCapitaUsd": 6642,
+   "tourismArrivals": 969000,
+   "business": 0.419,
+   "tourism": 0.661,
+   "wealth": 0.646,
+   "priceBase": 457705,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "FK",
+  "iso3": "FLK",
+  "name": "Falkland Islands",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -58.738602,
+   -51.608913
+  ],
+  "stats": {
+   "population": 3398,
+   "gdpPerCapitaUsd": 82990,
+   "tourismArrivals": 533,
+   "business": 0.941,
+   "tourism": 0.318,
+   "wealth": 3,
+   "priceBase": 161782,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "FM",
+  "iso3": "FSM",
+  "name": "Federated States of Micronesia",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "label": [
+   158.234019,
+   6.887553
+  ],
+  "stats": {
+   "population": 113683,
+   "gdpPerCapitaUsd": 4414,
+   "tourismArrivals": 18000,
+   "business": 0.309,
+   "tourism": 0.322,
+   "wealth": 0.429,
+   "priceBase": 120014,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "FO",
+  "iso3": "FRO",
+  "name": "Faroe Islands",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   -7.058429,
+   62.185604
+  ],
+  "stats": {
+   "population": 54900,
+   "gdpPerCapitaUsd": 74175,
+   "tourismArrivals": 113250,
+   "business": 0.928,
+   "tourism": 0.737,
+   "wealth": 3,
+   "priceBase": 601127,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "FR",
+  "iso3": "FRA",
+  "name": "France",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   2.552275,
+   46.696113
+  ],
+  "stats": {
+   "population": 68720337,
+   "gdpPerCapitaUsd": 48986,
+   "tourismArrivals": 217877000,
+   "business": 0.843,
+   "tourism": 0.814,
+   "wealth": 3,
+   "priceBase": 15907174,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GA",
+  "iso3": "GAB",
+  "name": "Gabon",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   11.835939,
+   -0.437739
+  ],
+  "stats": {
+   "population": 2593130,
+   "gdpPerCapitaUsd": 8263,
+   "tourismArrivals": 40920,
+   "business": 0.47,
+   "tourism": 0.072,
+   "wealth": 0.804,
+   "priceBase": 889014,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "GB",
+  "iso3": "GBR",
+  "name": "United Kingdom",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   -2.116346,
+   54.402739
+  ],
+  "stats": {
+   "population": 69487000,
+   "gdpPerCapitaUsd": 57602,
+   "tourismArrivals": 40857000,
+   "business": 0.881,
+   "tourism": 0.538,
+   "wealth": 3,
+   "priceBase": 17916702,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GD",
+  "iso3": "GRD",
+  "name": "Grenada",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -61.680461,
+   12.113156
+  ],
+  "stats": {
+   "population": 117303,
+   "gdpPerCapitaUsd": 12107,
+   "tourismArrivals": 526000,
+   "business": 0.538,
+   "tourism": 0.86,
+   "wealth": 1.178,
+   "priceBase": 247047,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GE",
+  "iso3": "GEO",
+  "name": "Georgia",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   43.735724,
+   41.870087
+  ],
+  "stats": {
+   "population": 3935766,
+   "gdpPerCapitaUsd": 9692,
+   "tourismArrivals": 7726000,
+   "business": 0.504,
+   "tourism": 0.729,
+   "wealth": 0.943,
+   "priceBase": 1224628,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GG",
+  "iso3": "GGY",
+  "name": "Guernsey",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   -2.561736,
+   49.463533
+  ],
+  "stats": {
+   "population": 62792,
+   "gdpPerCapitaUsd": 55182,
+   "tourismArrivals": 129530,
+   "business": 0.864,
+   "tourism": 0.742,
+   "wealth": 3,
+   "priceBase": 522649,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "GH",
+  "iso3": "GHA",
+  "name": "Ghana",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -1.036941,
+   7.717639
+  ],
+  "stats": {
+   "population": 35064272,
+   "gdpPerCapitaUsd": 3257,
+   "tourismArrivals": 897000,
+   "business": 0.267,
+   "tourism": 0.131,
+   "wealth": 0.317,
+   "priceBase": 1703746,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2015"
+   }
+  }
+ },
+ {
+  "iso2": "GL",
+  "iso3": "GRL",
+  "name": "Greenland",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Northern America",
+  "label": [
+   -39.335251,
+   74.319387
+  ],
+  "stats": {
+   "population": 56831,
+   "gdpPerCapitaUsd": 58499,
+   "tourismArrivals": 44249,
+   "business": 0.886,
+   "tourism": 0.619,
+   "wealth": 3,
+   "priceBase": 517960,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2023",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "GM",
+  "iso3": "GMB",
+  "name": "The Gambia",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -14.998318,
+   13.641721
+  ],
+  "stats": {
+   "population": 2822093,
+   "gdpPerCapitaUsd": 919,
+   "tourismArrivals": 620000,
+   "business": 0.072,
+   "tourism": 0.36,
+   "wealth": 0.3,
+   "priceBase": 199346,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GN",
+  "iso3": "GIN",
+  "name": "Guinea",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -10.016402,
+   10.618516
+  ],
+  "stats": {
+   "population": 15099727,
+   "gdpPerCapitaUsd": 1877,
+   "tourismArrivals": 99000,
+   "business": 0.174,
+   "tourism": 0.034,
+   "wealth": 0.3,
+   "priceBase": 760168,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
+ },
+ {
+  "iso2": "GQ",
+  "iso3": "GNQ",
+  "name": "Equatorial Guinea",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   8.9902,
+   2.333
+  ],
+  "stats": {
+   "population": 1938431,
+   "gdpPerCapitaUsd": 6615,
+   "tourismArrivals": 30589,
+   "business": 0.415,
+   "tourism": 0.076,
+   "wealth": 0.644,
+   "priceBase": 657803,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "GR",
+  "iso3": "GRC",
+  "name": "Greece",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   21.72568,
+   39.492763
+  ],
+  "stats": {
+   "population": 10413962,
+   "gdpPerCapitaUsd": 26948,
+   "tourismArrivals": 34005000,
+   "business": 0.703,
+   "tourism": 0.822,
+   "wealth": 2.622,
+   "priceBase": 4075459,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GS",
+  "iso3": "SGS",
+  "name": "South Georgia and the South Sandwich Islands",
+  "continent": "Seven seas (open ocean)",
+  "region": "Americas",
+  "subregion": "Seven seas (open ocean)",
+  "label": [
+   -31.063179,
+   -55.683402
+  ],
+  "stats": {
+   "population": 30,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 14,
+   "business": 0.006,
+   "tourism": 0.479,
+   "wealth": 1,
+   "priceBase": 0,
+   "hemisphere": "south",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "GT",
+  "iso3": "GTM",
+  "name": "Guatemala",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -90.497134,
+   14.982133
+  ],
+  "stats": {
+   "population": 18687881,
+   "gdpPerCapitaUsd": 6598,
+   "tourismArrivals": 2560000,
+   "business": 0.409,
+   "tourism": 0.305,
+   "wealth": 0.642,
+   "priceBase": 2038772,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GU",
+  "iso3": "GUM",
+  "name": "Guam",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "label": [
+   144.703614,
+   13.354173
+  ],
+  "stats": {
+   "population": 168999,
+   "gdpPerCapitaUsd": 41833,
+   "tourismArrivals": 1667000,
+   "business": 0.814,
+   "tourism": 0.941,
+   "wealth": 3,
+   "priceBase": 706326,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GW",
+  "iso3": "GNB",
+  "name": "Guinea-Bissau",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -14.52413,
+   12.163712
+  ],
+  "stats": {
+   "population": 2249515,
+   "gdpPerCapitaUsd": 1124,
+   "tourismArrivals": 52400,
+   "business": 0.1,
+   "tourism": 0.123,
+   "wealth": 0.3,
+   "priceBase": 204918,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "GY",
+  "iso3": "GUY",
+  "name": "Guyana",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -58.942643,
+   5.124317
+  ],
+  "stats": {
+   "population": 835986,
+   "gdpPerCapitaUsd": 32414,
+   "tourismArrivals": 315000,
+   "business": 0.746,
+   "tourism": 0.428,
+   "wealth": 3,
+   "priceBase": 1314051,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "HK",
+  "iso3": "HKG",
+  "name": "Hong Kong",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   114.097769,
+   22.448829
+  ],
+  "stats": {
+   "population": 7498900,
+   "gdpPerCapitaUsd": 56983,
+   "tourismArrivals": 55913000,
+   "business": 0.877,
+   "tourism": 0.919,
+   "wealth": 3,
+   "priceBase": 5841448,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "HM",
+  "iso3": "HMD",
+  "name": "Heard Island and McDonald Islands",
+  "continent": "Seven seas (open ocean)",
+  "region": "Africa",
+  "subregion": "Seven seas (open ocean)",
+  "label": [
+   73.50521,
+   -53.103462
+  ],
+  "stats": {
+   "population": 0,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 0,
+   "business": 0.006,
+   "tourism": 0,
+   "wealth": 1,
+   "priceBase": 0,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "HN",
+  "iso3": "HND",
+  "name": "Honduras",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -86.887604,
+   14.794801
+  ],
+  "stats": {
+   "population": 11005850,
+   "gdpPerCapitaUsd": 3598,
+   "tourismArrivals": 2315000,
+   "business": 0.275,
+   "tourism": 0.356,
+   "wealth": 0.35,
+   "priceBase": 1023422,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "HR",
+  "iso3": "HRV",
+  "name": "Croatia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   16.37241,
+   45.805799
+  ],
+  "stats": {
+   "population": 3876200,
+   "gdpPerCapitaUsd": 27104,
+   "tourismArrivals": 60021000,
+   "business": 0.708,
+   "tourism": 0.958,
+   "wealth": 2.637,
+   "priceBase": 2496471,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "HT",
+  "iso3": "HTI",
+  "name": "Haiti",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -72.224051,
+   19.263784
+  ],
+  "stats": {
+   "population": 11906095,
+   "gdpPerCapitaUsd": 2694,
+   "tourismArrivals": 938000,
+   "business": 0.22,
+   "tourism": 0.229,
+   "wealth": 0.3,
+   "priceBase": 869287,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "HU",
+  "iso3": "HUN",
+  "name": "Hungary",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   19.447867,
+   47.086841
+  ],
+  "stats": {
+   "population": 9514251,
+   "gdpPerCapitaUsd": 25907,
+   "tourismArrivals": 61397000,
+   "business": 0.695,
+   "tourism": 0.89,
+   "wealth": 2.52,
+   "priceBase": 3789477,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "ID",
+  "iso3": "IDN",
+  "name": "Indonesia",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   101.892949,
+   -0.954404
+  ],
+  "stats": {
+   "population": 285721236,
+   "gdpPerCapitaUsd": 5060,
+   "tourismArrivals": 16107000,
+   "business": 0.339,
+   "tourism": 0.195,
+   "wealth": 0.492,
+   "priceBase": 6620284,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "IE",
+  "iso3": "IRL",
+  "name": "Ireland",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   -7.798588,
+   53.078726
+  ],
+  "stats": {
+   "population": 5484367,
+   "gdpPerCapitaUsd": 131592,
+   "tourismArrivals": 10951000,
+   "business": 0.979,
+   "tourism": 0.733,
+   "wealth": 3,
+   "priceBase": 8974782,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "IL",
+  "iso3": "ISR",
+  "name": "Israel",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   34.847915,
+   30.911148
+  ],
+  "stats": {
+   "population": 10122800,
+   "gdpPerCapitaUsd": 60337,
+   "tourismArrivals": 4905000,
+   "business": 0.894,
+   "tourism": 0.504,
+   "wealth": 3,
+   "priceBase": 7064134,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "IM",
+  "iso3": "IMN",
+  "name": "Isle of Man",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   -4.530069,
+   54.220833
+  ],
+  "stats": {
+   "population": 84118,
+   "gdpPerCapitaUsd": 90015,
+   "tourismArrivals": 173523,
+   "business": 0.945,
+   "tourism": 0.754,
+   "wealth": 3,
+   "priceBase": 852050,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2023",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "IN",
+  "iso3": "IND",
+  "name": "India",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   79.358105,
+   22.686852
+  ],
+  "stats": {
+   "population": 1463865525,
+   "gdpPerCapitaUsd": 2702,
+   "tourismArrivals": 17914000,
+   "business": 0.225,
+   "tourism": 0.055,
+   "wealth": 0.3,
+   "priceBase": 9658959,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "IO",
+  "iso3": "IOT",
+  "name": "British Indian Ocean Territory",
+  "continent": "Seven seas (open ocean)",
+  "region": "Africa",
+  "subregion": "Seven seas (open ocean)",
+  "label": [
+   71.348349,
+   -6.190826
+  ],
+  "stats": {
+   "population": 3000,
+   "gdpPerCapitaUsd": 40000,
+   "tourismArrivals": 1450,
+   "business": 0.801,
+   "tourism": 0.496,
+   "wealth": 3,
+   "priceBase": 91202,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "IQ",
+  "iso3": "IRQ",
+  "name": "Iraq",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   43.26181,
+   33.09403
+  ],
+  "stats": {
+   "population": 47020774,
+   "gdpPerCapitaUsd": 5410,
+   "tourismArrivals": 892000,
+   "business": 0.36,
+   "tourism": 0.085,
+   "wealth": 0.526,
+   "priceBase": 2814382,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2013"
+   }
+  }
+ },
+ {
+  "iso2": "IR",
+  "iso3": "IRN",
+  "name": "Iran",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   54.931495,
+   32.166225
+  ],
+  "stats": {
+   "population": 92417681,
+   "gdpPerCapitaUsd": 3924,
+   "tourismArrivals": 9107000,
+   "business": 0.284,
+   "tourism": 0.263,
+   "wealth": 0.382,
+   "priceBase": 3151286,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "IS",
+  "iso3": "ISL",
+  "name": "Iceland",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   -18.673711,
+   64.779286
+  ],
+  "stats": {
+   "population": 392404,
+   "gdpPerCapitaUsd": 98323,
+   "tourismArrivals": 2202000,
+   "business": 0.958,
+   "tourism": 0.881,
+   "wealth": 3,
+   "priceBase": 1957606,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "IT",
+  "iso3": "ITA",
+  "name": "Italy",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   11.076907,
+   44.732482
+  ],
+  "stats": {
+   "population": 58915656,
+   "gdpPerCapitaUsd": 43309,
+   "tourismArrivals": 95399000,
+   "business": 0.822,
+   "tourism": 0.716,
+   "wealth": 3,
+   "priceBase": 13512013,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "JE",
+  "iso3": "JEY",
+  "name": "Jersey",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   -2.090146,
+   49.220808
+  ],
+  "stats": {
+   "population": 107800,
+   "gdpPerCapitaUsd": 47124,
+   "tourismArrivals": 222375,
+   "business": 0.831,
+   "tourism": 0.75,
+   "wealth": 3,
+   "priceBase": 613167,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "JM",
+  "iso3": "JAM",
+  "name": "Jamaica",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -77.318767,
+   18.137124
+  ],
+  "stats": {
+   "population": 2837077,
+   "gdpPerCapitaUsd": 8003,
+   "tourismArrivals": 4233000,
+   "business": 0.462,
+   "tourism": 0.699,
+   "wealth": 0.779,
+   "priceBase": 909311,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "JO",
+  "iso3": "JOR",
+  "name": "Jordan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   36.375991,
+   30.805025
+  ],
+  "stats": {
+   "population": 11520684,
+   "gdpPerCapitaUsd": 5348,
+   "tourismArrivals": 5361000,
+   "business": 0.356,
+   "tourism": 0.475,
+   "wealth": 0.52,
+   "priceBase": 1381889,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "JP",
+  "iso3": "JPN",
+  "name": "Japan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   138.44217,
+   36.142538
+  ],
+  "stats": {
+   "population": 123366734,
+   "gdpPerCapitaUsd": 35951,
+   "tourismArrivals": 31881000,
+   "business": 0.771,
+   "tourism": 0.369,
+   "wealth": 3,
+   "priceBase": 17163139,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KE",
+  "iso3": "KEN",
+  "name": "Kenya",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   37.907632,
+   0.549043
+  ],
+  "stats": {
+   "population": 57532493,
+   "gdpPerCapitaUsd": 2363,
+   "tourismArrivals": 2049000,
+   "business": 0.203,
+   "tourism": 0.153,
+   "wealth": 0.3,
+   "priceBase": 1743336,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KG",
+  "iso3": "KGZ",
+  "name": "Kyrgyzstan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "label": [
+   74.532637,
+   41.66854
+  ],
+  "stats": {
+   "population": 7343064,
+   "gdpPerCapitaUsd": 3081,
+   "tourismArrivals": 8508000,
+   "business": 0.246,
+   "tourism": 0.682,
+   "wealth": 0.3,
+   "priceBase": 749934,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KH",
+  "iso3": "KHM",
+  "name": "Cambodia",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   104.50487,
+   12.647584
+  ],
+  "stats": {
+   "population": 17847982,
+   "gdpPerCapitaUsd": 2872,
+   "tourismArrivals": 6611000,
+   "business": 0.229,
+   "tourism": 0.424,
+   "wealth": 0.3,
+   "priceBase": 1113073,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KI",
+  "iso3": "KIR",
+  "name": "Kiribati",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "label": [
+   -157.384577,
+   1.820437
+  ],
+  "stats": {
+   "population": 136488,
+   "gdpPerCapitaUsd": 2559,
+   "tourismArrivals": 12000,
+   "business": 0.212,
+   "tourism": 0.242,
+   "wealth": 0.3,
+   "priceBase": 89783,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KM",
+  "iso3": "COM",
+  "name": "Comoros",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   43.318094,
+   -11.727683
+  ],
+  "stats": {
+   "population": 882847,
+   "gdpPerCapitaUsd": 2056,
+   "tourismArrivals": 45099,
+   "business": 0.186,
+   "tourism": 0.182,
+   "wealth": 0.3,
+   "priceBase": 195911,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KN",
+  "iso3": "KNA",
+  "name": "Saint Kitts and Nevis",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -62.757975,
+   17.336558
+  ],
+  "stats": {
+   "population": 46922,
+   "gdpPerCapitaUsd": 25223,
+   "tourismArrivals": 1107000,
+   "business": 0.686,
+   "tourism": 0.975,
+   "wealth": 2.454,
+   "priceBase": 261184,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KP",
+  "iso3": "PRK",
+  "name": "North Korea",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   126.444516,
+   39.885252
+  ],
+  "stats": {
+   "population": 26571036,
+   "gdpPerCapitaUsd": 1558,
+   "tourismArrivals": 7932451,
+   "business": 0.157,
+   "tourism": 0.386,
+   "wealth": 0.3,
+   "priceBase": 885119,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "KR",
+  "iso3": "KOR",
+  "name": "South Korea",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   128.129504,
+   36.384924
+  ],
+  "stats": {
+   "population": 51684564,
+   "gdpPerCapitaUsd": 36227,
+   "tourismArrivals": 17503000,
+   "business": 0.775,
+   "tourism": 0.403,
+   "wealth": 3,
+   "priceBase": 11168712,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KW",
+  "iso3": "KWT",
+  "name": "Kuwait",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   47.313999,
+   29.413628
+  ],
+  "stats": {
+   "population": 4865298,
+   "gdpPerCapitaUsd": 32312,
+   "tourismArrivals": 8565000,
+   "business": 0.742,
+   "tourism": 0.72,
+   "wealth": 3,
+   "priceBase": 3163074,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KY",
+  "iso3": "CYM",
+  "name": "Cayman Islands",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -81.24055,
+   19.319862
+  ],
+  "stats": {
+   "population": 75844,
+   "gdpPerCapitaUsd": 104293,
+   "tourismArrivals": 2334000,
+   "business": 0.966,
+   "tourism": 0.979,
+   "wealth": 3,
+   "priceBase": 896890,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "KZ",
+  "iso3": "KAZ",
+  "name": "Kazakhstan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "label": [
+   68.685548,
+   49.054149
+  ],
+  "stats": {
+   "population": 20843754,
+   "gdpPerCapitaUsd": 14692,
+   "tourismArrivals": 8515000,
+   "business": 0.581,
+   "tourism": 0.449,
+   "wealth": 1.429,
+   "priceBase": 3770897,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LA",
+  "iso3": "LAO",
+  "name": "Laos",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   102.533912,
+   19.431821
+  ],
+  "stats": {
+   "population": 7873046,
+   "gdpPerCapitaUsd": 2325,
+   "tourismArrivals": 4791000,
+   "business": 0.199,
+   "tourism": 0.547,
+   "wealth": 0.3,
+   "priceBase": 637628,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LB",
+  "iso3": "LBN",
+  "name": "Lebanon",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   35.992892,
+   34.133368
+  ],
+  "stats": {
+   "population": 5849421,
+   "gdpPerCapitaUsd": 4473,
+   "tourismArrivals": 1936000,
+   "business": 0.314,
+   "tourism": 0.398,
+   "wealth": 0.435,
+   "priceBase": 868912,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LC",
+  "iso3": "LCA",
+  "name": "Saint Lucia",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -60.980094,
+   13.892371
+  ],
+  "stats": {
+   "population": 180149,
+   "gdpPerCapitaUsd": 14746,
+   "tourismArrivals": 1220000,
+   "business": 0.585,
+   "tourism": 0.894,
+   "wealth": 1.435,
+   "priceBase": 351470,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LI",
+  "iso3": "LIE",
+  "name": "Liechtenstein",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   9.559439,
+   47.111405
+  ],
+  "stats": {
+   "population": 41024,
+   "gdpPerCapitaUsd": 220167,
+   "tourismArrivals": 98099,
+   "business": 0.996,
+   "tourism": 0.771,
+   "wealth": 3,
+   "priceBase": 1112873,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LK",
+  "iso3": "LKA",
+  "name": "Sri Lanka",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   80.704823,
+   7.581097
+  ],
+  "stats": {
+   "population": 21756000,
+   "gdpPerCapitaUsd": 5002,
+   "tourismArrivals": 2027000,
+   "business": 0.335,
+   "tourism": 0.246,
+   "wealth": 0.487,
+   "priceBase": 1812133,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LR",
+  "iso3": "LBR",
+  "name": "Liberia",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -9.460379,
+   6.447177
+  ],
+  "stats": {
+   "population": 5731206,
+   "gdpPerCapitaUsd": 915,
+   "tourismArrivals": 131938,
+   "business": 0.068,
+   "tourism": 0.119,
+   "wealth": 0.3,
+   "priceBase": 283216,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "LS",
+  "iso3": "LSO",
+  "name": "Lesotho",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "label": [
+   28.246639,
+   -29.480158
+  ],
+  "stats": {
+   "population": 2363325,
+   "gdpPerCapitaUsd": 1089,
+   "tourismArrivals": 1142000,
+   "business": 0.093,
+   "tourism": 0.487,
+   "wealth": 0.3,
+   "priceBase": 205438,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LT",
+  "iso3": "LTU",
+  "name": "Lithuania",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   24.089932,
+   55.103703
+  ],
+  "stats": {
+   "population": 2888774,
+   "gdpPerCapitaUsd": 32959,
+   "tourismArrivals": 6150000,
+   "business": 0.75,
+   "tourism": 0.758,
+   "wealth": 3,
+   "priceBase": 2471375,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LU",
+  "iso3": "LUX",
+  "name": "Luxembourg",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   6.07762,
+   49.733732
+  ],
+  "stats": {
+   "population": 686970,
+   "gdpPerCapitaUsd": 147252,
+   "tourismArrivals": 1041000,
+   "business": 0.987,
+   "tourism": 0.703,
+   "wealth": 3,
+   "priceBase": 3436463,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LV",
+  "iso3": "LVA",
+  "name": "Latvia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   25.458723,
+   57.066872
+  ],
+  "stats": {
+   "population": 1847785,
+   "gdpPerCapitaUsd": 26312,
+   "tourismArrivals": 8342000,
+   "business": 0.699,
+   "tourism": 0.864,
+   "wealth": 2.56,
+   "priceBase": 1688237,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "LY",
+  "iso3": "LBY",
+  "name": "Libya",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "label": [
+   18.011015,
+   26.638944
+  ],
+  "stats": {
+   "population": 7458555,
+   "gdpPerCapitaUsd": 6449,
+   "tourismArrivals": 820803,
+   "business": 0.394,
+   "tourism": 0.28,
+   "wealth": 0.627,
+   "priceBase": 1267570,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "MA",
+  "iso3": "MAR",
+  "name": "Morocco",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "label": [
+   -7.187296,
+   31.650723
+  ],
+  "stats": {
+   "population": 38430770,
+   "gdpPerCapitaUsd": 4672,
+   "tourismArrivals": 13109000,
+   "business": 0.326,
+   "tourism": 0.407,
+   "wealth": 0.455,
+   "priceBase": 2296104,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MC",
+  "iso3": "MCO",
+  "name": "Monaco",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   7.398291,
+   43.739652
+  ],
+  "stats": {
+   "population": 38341,
+   "gdpPerCapitaUsd": 288002,
+   "tourismArrivals": 363000,
+   "business": 1,
+   "tourism": 0.932,
+   "wealth": 3,
+   "priceBase": 1298400,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MD",
+  "iso3": "MDA",
+  "name": "Moldova",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   28.487904,
+   47.434999
+  ],
+  "stats": {
+   "population": 2360527,
+   "gdpPerCapitaUsd": 8622,
+   "tourismArrivals": 174000,
+   "business": 0.483,
+   "tourism": 0.225,
+   "wealth": 0.839,
+   "priceBase": 873836,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "ME",
+  "iso3": "MNE",
+  "name": "Montenegro",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   19.143727,
+   42.803101
+  ],
+  "stats": {
+   "population": 623129,
+   "gdpPerCapitaUsd": 14817,
+   "tourismArrivals": 2510000,
+   "business": 0.593,
+   "tourism": 0.852,
+   "wealth": 1.441,
+   "priceBase": 655875,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MF",
+  "iso3": "MAF",
+  "name": "Saint Martin",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -63.049399,
+   18.081302
+  ],
+  "stats": {
+   "population": 24941,
+   "gdpPerCapitaUsd": 21668,
+   "tourismArrivals": 168905,
+   "business": 0.657,
+   "tourism": 0.903,
+   "wealth": 2.108,
+   "priceBase": 171210,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2021",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "MG",
+  "iso3": "MDG",
+  "name": "Madagascar",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   46.704241,
+   -18.628288
+  ],
+  "stats": {
+   "population": 32740678,
+   "gdpPerCapitaUsd": 599,
+   "tourismArrivals": 486000,
+   "business": 0.03,
+   "tourism": 0.059,
+   "wealth": 0.3,
+   "priceBase": 503202,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MH",
+  "iso3": "MHL",
+  "name": "Marshall Islands",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "label": [
+   171.193609,
+   7.082568
+  ],
+  "stats": {
+   "population": 36282,
+   "gdpPerCapitaUsd": 8489,
+   "tourismArrivals": 6099,
+   "business": 0.475,
+   "tourism": 0.331,
+   "wealth": 0.826,
+   "priceBase": 107163,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MK",
+  "iso3": "MKD",
+  "name": "North Macedonia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   21.555839,
+   41.558223
+  ],
+  "stats": {
+   "population": 1820909,
+   "gdpPerCapitaUsd": 10490,
+   "tourismArrivals": 758000,
+   "business": 0.517,
+   "tourism": 0.458,
+   "wealth": 1.021,
+   "priceBase": 880414,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "ML",
+  "iso3": "MLI",
+  "name": "Mali",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -2.038455,
+   18.692713
+  ],
+  "stats": {
+   "population": 25198821,
+   "gdpPerCapitaUsd": 1193,
+   "tourismArrivals": 217000,
+   "business": 0.114,
+   "tourism": 0.047,
+   "wealth": 0.3,
+   "priceBase": 715053,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MM",
+  "iso3": "MMR",
+  "name": "Myanmar",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   95.804497,
+   21.573855
+  ],
+  "stats": {
+   "population": 54850648,
+   "gdpPerCapitaUsd": 1489,
+   "tourismArrivals": 4364000,
+   "business": 0.144,
+   "tourism": 0.233,
+   "wealth": 0.3,
+   "priceBase": 1232018,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MN",
+  "iso3": "MNG",
+  "name": "Mongolia",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   104.150405,
+   45.997488
+  ],
+  "stats": {
+   "population": 3568978,
+   "gdpPerCapitaUsd": 7108,
+   "tourismArrivals": 637000,
+   "business": 0.436,
+   "tourism": 0.343,
+   "wealth": 0.692,
+   "priceBase": 938632,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MO",
+  "iso3": "MAC",
+  "name": "Macau",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   113.556038,
+   22.129735
+  ],
+  "stats": {
+   "population": 685900,
+   "gdpPerCapitaUsd": 75902,
+   "tourismArrivals": 39406000,
+   "business": 0.932,
+   "tourism": 0.996,
+   "wealth": 3,
+   "priceBase": 2159274,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MP",
+  "iso3": "MNP",
+  "name": "Northern Mariana Islands",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "label": [
+   145.734397,
+   15.188188
+  ],
+  "stats": {
+   "population": 43541,
+   "gdpPerCapitaUsd": 23786,
+   "tourismArrivals": 487000,
+   "business": 0.674,
+   "tourism": 0.949,
+   "wealth": 2.314,
+   "priceBase": 241476,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MR",
+  "iso3": "MRT",
+  "name": "Mauritania",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -9.740299,
+   19.587062
+  ],
+  "stats": {
+   "population": 5315065,
+   "gdpPerCapitaUsd": 2198,
+   "tourismArrivals": 122358,
+   "business": 0.195,
+   "tourism": 0.114,
+   "wealth": 0.3,
+   "priceBase": 503702,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "MS",
+  "iso3": "MSR",
+  "name": "Montserrat",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -62.188252,
+   16.73717
+  ],
+  "stats": {
+   "population": 4649,
+   "gdpPerCapitaUsd": 9464,
+   "tourismArrivals": 31484,
+   "business": 0.487,
+   "tourism": 0.907,
+   "wealth": 0.921,
+   "priceBase": 41393,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "MT",
+  "iso3": "MLT",
+  "name": "Malta",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   14.433005,
+   35.892886
+  ],
+  "stats": {
+   "population": 579704,
+   "gdpPerCapitaUsd": 47907,
+   "tourismArrivals": 3519000,
+   "business": 0.839,
+   "tourism": 0.886,
+   "wealth": 3,
+   "priceBase": 1438409,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MU",
+  "iso3": "MUS",
+  "name": "Mauritius",
+  "continent": "Seven seas (open ocean)",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   57.565848,
+   -20.299506
+  ],
+  "stats": {
+   "population": 1243741,
+   "gdpPerCapitaUsd": 12991,
+   "tourismArrivals": 1418000,
+   "business": 0.547,
+   "tourism": 0.678,
+   "wealth": 1.264,
+   "priceBase": 845113,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MV",
+  "iso3": "MDV",
+  "name": "Maldives",
+  "continent": "Seven seas (open ocean)",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   73.507554,
+   4.174441
+  ],
+  "stats": {
+   "population": 529676,
+   "gdpPerCapitaUsd": 14615,
+   "tourismArrivals": 1703000,
+   "business": 0.572,
+   "tourism": 0.818,
+   "wealth": 1.422,
+   "priceBase": 598914,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MW",
+  "iso3": "MWI",
+  "name": "Malawi",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   33.608082,
+   -13.386737
+  ],
+  "stats": {
+   "population": 22216120,
+   "gdpPerCapitaUsd": 672,
+   "tourismArrivals": 871000,
+   "business": 0.047,
+   "tourism": 0.157,
+   "wealth": 0.3,
+   "priceBase": 449255,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
+ },
+ {
+  "iso2": "MX",
+  "iso3": "MEX",
+  "name": "Mexico",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -102.289448,
+   23.919988
+  ],
+  "stats": {
+   "population": 131946900,
+   "gdpPerCapitaUsd": 13889,
+   "tourismArrivals": 97406000,
+   "business": 0.564,
+   "tourism": 0.597,
+   "wealth": 1.351,
+   "priceBase": 9121563,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MY",
+  "iso3": "MYS",
+  "name": "Malaysia",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   113.83708,
+   2.528667
+  ],
+  "stats": {
+   "population": 35977838,
+   "gdpPerCapitaUsd": 13125,
+   "tourismArrivals": 26101000,
+   "business": 0.555,
+   "tourism": 0.589,
+   "wealth": 1.277,
+   "priceBase": 4578119,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "MZ",
+  "iso3": "MOZ",
+  "name": "Mozambique",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   37.83789,
+   -13.94323
+  ],
+  "stats": {
+   "population": 35631653,
+   "gdpPerCapitaUsd": 627,
+   "tourismArrivals": 2033000,
+   "business": 0.034,
+   "tourism": 0.199,
+   "wealth": 0.3,
+   "priceBase": 542007,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NA",
+  "iso3": "NAM",
+  "name": "Namibia",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "label": [
+   17.108166,
+   -20.575298
+  ],
+  "stats": {
+   "population": 3092816,
+   "gdpPerCapitaUsd": 4876,
+   "tourismArrivals": 1651000,
+   "business": 0.331,
+   "tourism": 0.513,
+   "wealth": 0.474,
+   "priceBase": 671153,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NC",
+  "iso3": "NCL",
+  "name": "New Caledonia",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "label": [
+   165.084004,
+   -21.064697
+  ],
+  "stats": {
+   "population": 295333,
+   "gdpPerCapitaUsd": 29213,
+   "tourismArrivals": 130000,
+   "business": 0.725,
+   "tourism": 0.47,
+   "wealth": 2.842,
+   "priceBase": 726205,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NE",
+  "iso3": "NER",
+  "name": "Niger",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   9.504356,
+   17.446195
+  ],
+  "stats": {
+   "population": 27917831,
+   "gdpPerCapitaUsd": 775,
+   "tourismArrivals": 192000,
+   "business": 0.055,
+   "tourism": 0.038,
+   "wealth": 0.3,
+   "priceBase": 556483,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NF",
+  "iso3": "NFK",
+  "name": "Norfolk Island",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "label": [
+   167.954531,
+   -29.033042
+  ],
+  "stats": {
+   "population": 2169,
+   "gdpPerCapitaUsd": 14753,
+   "tourismArrivals": 1164,
+   "business": 0.589,
+   "tourism": 0.517,
+   "wealth": 1.435,
+   "priceBase": 38579,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "NG",
+  "iso3": "NGA",
+  "name": "Nigeria",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   7.50322,
+   9.439799
+  ],
+  "stats": {
+   "population": 237527782,
+   "gdpPerCapitaUsd": 1224,
+   "tourismArrivals": 5265000,
+   "business": 0.123,
+   "tourism": 0.102,
+   "wealth": 0.3,
+   "priceBase": 2235137,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2016"
+   }
+  }
+ },
+ {
+  "iso2": "NI",
+  "iso3": "NIC",
+  "name": "Nicaragua",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -85.069347,
+   12.670697
+  ],
+  "stats": {
+   "population": 7007502,
+   "gdpPerCapitaUsd": 3173,
+   "tourismArrivals": 1455000,
+   "business": 0.263,
+   "tourism": 0.352,
+   "wealth": 0.309,
+   "priceBase": 747843,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NL",
+  "iso3": "NLD",
+  "name": "Netherlands",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "label": [
+   5.61144,
+   52.422211
+  ],
+  "stats": {
+   "population": 18087633,
+   "gdpPerCapitaUsd": 73684,
+   "tourismArrivals": 20129000,
+   "business": 0.924,
+   "tourism": 0.674,
+   "wealth": 3,
+   "priceBase": 10860557,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NO",
+  "iso3": "NOR",
+  "name": "Norway",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   9.679975,
+   61.357092
+  ],
+  "stats": {
+   "population": 5610870,
+   "gdpPerCapitaUsd": 94594,
+   "tourismArrivals": 5879000,
+   "business": 0.953,
+   "tourism": 0.665,
+   "wealth": 3,
+   "priceBase": 7204762,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NP",
+  "iso3": "NPL",
+  "name": "Nepal",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   83.639914,
+   28.297925
+  ],
+  "stats": {
+   "population": 29618118,
+   "gdpPerCapitaUsd": 1536,
+   "tourismArrivals": 1197000,
+   "business": 0.153,
+   "tourism": 0.165,
+   "wealth": 0.3,
+   "priceBase": 925236,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "NR",
+  "iso3": "NRU",
+  "name": "Nauru",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "label": [
+   166.932644,
+   -0.520261
+  ],
+  "stats": {
+   "population": 12025,
+   "gdpPerCapitaUsd": 14640,
+   "tourismArrivals": 33008,
+   "business": 0.576,
+   "tourism": 0.797,
+   "wealth": 1.424,
+   "priceBase": 90349,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "NU",
+  "iso3": "NIU",
+  "name": "Niue",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -169.862565,
+   -19.045956
+  ],
+  "stats": {
+   "population": 1620,
+   "gdpPerCapitaUsd": 6173,
+   "tourismArrivals": 1337,
+   "business": 0.39,
+   "tourism": 0.631,
+   "wealth": 0.601,
+   "priceBase": 18118,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "NZ",
+  "iso3": "NZL",
+  "name": "New Zealand",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "label": [
+   172.787,
+   -39.759
+  ],
+  "stats": {
+   "population": 5324700,
+   "gdpPerCapitaUsd": 49591,
+   "tourismArrivals": 3888000,
+   "business": 0.847,
+   "tourism": 0.593,
+   "wealth": 3,
+   "priceBase": 4466112,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "OM",
+  "iso3": "OMN",
+  "name": "Oman",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   57.336553,
+   22.120427
+  ],
+  "stats": {
+   "population": 5494691,
+   "gdpPerCapitaUsd": 19947,
+   "tourismArrivals": 3506000,
+   "business": 0.644,
+   "tourism": 0.559,
+   "wealth": 1.941,
+   "priceBase": 2398203,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PA",
+  "iso3": "PAN",
+  "name": "Panama",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -80.352106,
+   8.72198
+  ],
+  "stats": {
+   "population": 4571189,
+   "gdpPerCapitaUsd": 19790,
+   "tourismArrivals": 2494000,
+   "business": 0.64,
+   "tourism": 0.521,
+   "wealth": 1.925,
+   "priceBase": 2175337,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PE",
+  "iso3": "PER",
+  "name": "Peru",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -72.90016,
+   -12.976679
+  ],
+  "stats": {
+   "population": 34576665,
+   "gdpPerCapitaUsd": 9684,
+   "tourismArrivals": 5275000,
+   "business": 0.5,
+   "tourism": 0.314,
+   "wealth": 0.942,
+   "priceBase": 3627688,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PF",
+  "iso3": "PYF",
+  "name": "French Polynesia",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -149.46157,
+   -17.628081
+  ],
+  "stats": {
+   "population": 282465,
+   "gdpPerCapitaUsd": 22440,
+   "tourismArrivals": 300000,
+   "business": 0.661,
+   "tourism": 0.669,
+   "wealth": 2.183,
+   "priceBase": 590471,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PG",
+  "iso3": "PNG",
+  "name": "Papua New Guinea",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "label": [
+   143.910216,
+   -5.695285
+  ],
+  "stats": {
+   "population": 10762817,
+   "gdpPerCapitaUsd": 3020,
+   "tourismArrivals": 211000,
+   "business": 0.233,
+   "tourism": 0.089,
+   "wealth": 0.3,
+   "priceBase": 895298,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PH",
+  "iso3": "PHL",
+  "name": "Philippines",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   122.465,
+   11.198
+  ],
+  "stats": {
+   "population": 116786962,
+   "gdpPerCapitaUsd": 4171,
+   "tourismArrivals": 8261000,
+   "business": 0.305,
+   "tourism": 0.216,
+   "wealth": 0.406,
+   "priceBase": 3697135,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PK",
+  "iso3": "PAK",
+  "name": "Pakistan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "label": [
+   68.545632,
+   29.328389
+  ],
+  "stats": {
+   "population": 255219554,
+   "gdpPerCapitaUsd": 1596,
+   "tourismArrivals": 966000,
+   "business": 0.161,
+   "tourism": 0.013,
+   "wealth": 0.3,
+   "priceBase": 2789844,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2012"
+   }
+  }
+ },
+ {
+  "iso2": "PL",
+  "iso3": "POL",
+  "name": "Poland",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   19.490468,
+   51.990316
+  ],
+  "stats": {
+   "population": 36435861,
+   "gdpPerCapitaUsd": 28420,
+   "tourismArrivals": 88515000,
+   "business": 0.716,
+   "tourism": 0.775,
+   "wealth": 2.765,
+   "priceBase": 7912275,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PM",
+  "iso3": "SPM",
+  "name": "Saint Pierre and Miquelon",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Northern America",
+  "label": [
+   -56.332352,
+   47.040344
+  ],
+  "stats": {
+   "population": 5997,
+   "gdpPerCapitaUsd": 35851,
+   "tourismArrivals": 4669,
+   "business": 0.763,
+   "tourism": 0.61,
+   "wealth": 3,
+   "priceBase": 119431,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "PN",
+  "iso3": "PCN",
+  "name": "Pitcairn Islands",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -128.317536,
+   -24.364576
+  ],
+  "stats": {
+   "population": 54,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 45,
+   "business": 0.006,
+   "tourism": 0.644,
+   "wealth": 1,
+   "priceBase": 0,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "PR",
+  "iso3": "PRI",
+  "name": "Puerto Rico",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -66.481065,
+   18.234668
+  ],
+  "stats": {
+   "population": 3184835,
+   "gdpPerCapitaUsd": 40620,
+   "tourismArrivals": 4931000,
+   "business": 0.805,
+   "tourism": 0.708,
+   "wealth": 3,
+   "priceBase": 3003734,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PS",
+  "iso3": "PSE",
+  "name": "Palestine",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   35.291341,
+   32.047431
+  ],
+  "stats": {
+   "population": 5413596,
+   "gdpPerCapitaUsd": 3171,
+   "tourismArrivals": 688000,
+   "business": 0.258,
+   "tourism": 0.297,
+   "wealth": 0.308,
+   "priceBase": 657023,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PT",
+  "iso3": "PRT",
+  "name": "Portugal",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   -8.271754,
+   39.606675
+  ],
+  "stats": {
+   "population": 10804871,
+   "gdpPerCapitaUsd": 32082,
+   "tourismArrivals": 17283000,
+   "business": 0.733,
+   "tourism": 0.712,
+   "wealth": 3,
+   "priceBase": 4690215,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PW",
+  "iso3": "PLW",
+  "name": "Palau",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "label": [
+   134.580157,
+   7.518252
+  ],
+  "stats": {
+   "population": 17663,
+   "gdpPerCapitaUsd": 19532,
+   "tourismArrivals": 94000,
+   "business": 0.636,
+   "tourism": 0.873,
+   "wealth": 1.9,
+   "priceBase": 133985,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "PY",
+  "iso3": "PRY",
+  "name": "Paraguay",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -60.146394,
+   -21.674509
+  ],
+  "stats": {
+   "population": 7013078,
+   "gdpPerCapitaUsd": 7027,
+   "tourismArrivals": 4368000,
+   "business": 0.428,
+   "tourism": 0.555,
+   "wealth": 0.684,
+   "priceBase": 1305249,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "QA",
+  "iso3": "QAT",
+  "name": "Qatar",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   51.143509,
+   25.237383
+  ],
+  "stats": {
+   "population": 2972215,
+   "gdpPerCapitaUsd": 72525,
+   "tourismArrivals": 2136500,
+   "business": 0.919,
+   "tourism": 0.585,
+   "wealth": 3,
+   "priceBase": 4353931,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "RO",
+  "iso3": "ROU",
+  "name": "Romania",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   24.972624,
+   45.733237
+  ],
+  "stats": {
+   "population": 19020271,
+   "gdpPerCapitaUsd": 22538,
+   "tourismArrivals": 12815000,
+   "business": 0.665,
+   "tourism": 0.572,
+   "wealth": 2.193,
+   "priceBase": 4860144,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "RS",
+  "iso3": "SRB",
+  "name": "Serbia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   20.787989,
+   44.189919
+  ],
+  "stats": {
+   "population": 6549143,
+   "gdpPerCapitaUsd": 15262,
+   "tourismArrivals": 1847000,
+   "business": 0.602,
+   "tourism": 0.377,
+   "wealth": 1.485,
+   "priceBase": 2170802,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "RU",
+  "iso3": "RUS",
+  "name": "Russia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   44.686469,
+   58.249357
+  ],
+  "stats": {
+   "population": 143513328,
+   "gdpPerCapitaUsd": 17547,
+   "tourismArrivals": 24419000,
+   "business": 0.61,
+   "tourism": 0.335,
+   "wealth": 1.707,
+   "priceBase": 11204388,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "RW",
+  "iso3": "RWA",
+  "name": "Rwanda",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   30.103894,
+   -1.897196
+  ],
+  "stats": {
+   "population": 14569341,
+   "gdpPerCapitaUsd": 1124,
+   "tourismArrivals": 1634000,
+   "business": 0.1,
+   "tourism": 0.284,
+   "wealth": 0.3,
+   "priceBase": 521502,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SA",
+  "iso3": "SAU",
+  "name": "Saudi Arabia",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   44.6996,
+   23.806908
+  ],
+  "stats": {
+   "population": 36973555,
+   "gdpPerCapitaUsd": 34537,
+   "tourismArrivals": 20292000,
+   "business": 0.758,
+   "tourism": 0.525,
+   "wealth": 3,
+   "priceBase": 9135763,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SB",
+  "iso3": "SLB",
+  "name": "Solomon Islands",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "label": [
+   159.170468,
+   -8.029548
+  ],
+  "stats": {
+   "population": 838645,
+   "gdpPerCapitaUsd": 2086,
+   "tourismArrivals": 28899,
+   "business": 0.191,
+   "tourism": 0.148,
+   "wealth": 0.3,
+   "priceBase": 192890,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SC",
+  "iso3": "SYC",
+  "name": "Seychelles",
+  "continent": "Seven seas (open ocean)",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   55.480175,
+   -4.676659
+  ],
+  "stats": {
+   "population": 122730,
+   "gdpPerCapitaUsd": 19449,
+   "tourismArrivals": 428000,
+   "business": 0.631,
+   "tourism": 0.839,
+   "wealth": 1.892,
+   "priceBase": 352130,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SD",
+  "iso3": "SDN",
+  "name": "Sudan",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "label": [
+   29.260657,
+   16.330746
+  ],
+  "stats": {
+   "population": 51662147,
+   "gdpPerCapitaUsd": 1165,
+   "tourismArrivals": 836000,
+   "business": 0.11,
+   "tourism": 0.081,
+   "wealth": 0.3,
+   "priceBase": 1006965,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
+ },
+ {
+  "iso2": "SE",
+  "iso3": "SWE",
+  "name": "Sweden",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "label": [
+   19.01705,
+   65.85918
+  ],
+  "stats": {
+   "population": 10596620,
+   "gdpPerCapitaUsd": 63133,
+   "tourismArrivals": 7616000,
+   "business": 0.911,
+   "tourism": 0.581,
+   "wealth": 3,
+   "priceBase": 7460418,
+   "hemisphere": "north",
+   "climate": "cold",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SG",
+  "iso3": "SGP",
+  "name": "Singapore",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   103.816925,
+   1.366587
+  ],
+  "stats": {
+   "population": 6111175,
+   "gdpPerCapitaUsd": 98814,
+   "tourismArrivals": 19116000,
+   "business": 0.962,
+   "tourism": 0.809,
+   "wealth": 3,
+   "priceBase": 7752384,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SH",
+  "iso3": "SHN",
+  "name": "Saint Helena",
+  "continent": "Seven seas (open ocean)",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -5.71262,
+   -15.950487
+  ],
+  "stats": {
+   "population": 4534,
+   "gdpPerCapitaUsd": 6837,
+   "tourismArrivals": 104,
+   "business": 0.424,
+   "tourism": 0.11,
+   "wealth": 0.665,
+   "priceBase": 32557,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "SI",
+  "iso3": "SVN",
+  "name": "Slovenia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   14.915312,
+   46.06076
+  ],
+  "stats": {
+   "population": 2130986,
+   "gdpPerCapitaUsd": 37376,
+   "tourismArrivals": 4702000,
+   "business": 0.78,
+   "tourism": 0.767,
+   "wealth": 3,
+   "priceBase": 2317956,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SK",
+  "iso3": "SVK",
+  "name": "Slovakia",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   19.049868,
+   48.734044
+  ],
+  "stats": {
+   "population": 5413813,
+   "gdpPerCapitaUsd": 28544,
+   "tourismArrivals": 15299000,
+   "business": 0.72,
+   "tourism": 0.801,
+   "wealth": 2.777,
+   "priceBase": 3059229,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
+ },
+ {
+  "iso2": "SL",
+  "iso3": "SLE",
+  "name": "Sierra Leone",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -11.763677,
+   8.617449
+  ],
+  "stats": {
+   "population": 8819794,
+   "gdpPerCapitaUsd": 846,
+   "tourismArrivals": 71000,
+   "business": 0.064,
+   "tourism": 0.042,
+   "wealth": 0.3,
+   "priceBase": 332574,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SM",
+  "iso3": "SMR",
+  "name": "San Marino",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   12.441206,
+   43.933916
+  ],
+  "stats": {
+   "population": 34109,
+   "gdpPerCapitaUsd": 59871,
+   "tourismArrivals": 1904000,
+   "business": 0.89,
+   "tourism": 0.992,
+   "wealth": 3,
+   "priceBase": 407836,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2023",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SN",
+  "iso3": "SEN",
+  "name": "Senegal",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   -14.778586,
+   15.138125
+  ],
+  "stats": {
+   "population": 18931966,
+   "gdpPerCapitaUsd": 1955,
+   "tourismArrivals": 1376000,
+   "business": 0.178,
+   "tourism": 0.22,
+   "wealth": 0.3,
+   "priceBase": 875791,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
+ },
+ {
+  "iso2": "SO",
+  "iso3": "SOM",
+  "name": "Somalia",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   45.19238,
+   3.568925
+  ],
+  "stats": {
+   "population": 19654739,
+   "gdpPerCapitaUsd": 661,
+   "tourismArrivals": 888900,
+   "business": 0.042,
+   "tourism": 0.169,
+   "wealth": 0.3,
+   "priceBase": 417710,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "SR",
+  "iso3": "SUR",
+  "name": "Suriname",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -55.91094,
+   4.143987
+  ],
+  "stats": {
+   "population": 639850,
+   "gdpPerCapitaUsd": 7070,
+   "tourismArrivals": 279000,
+   "business": 0.432,
+   "tourism": 0.466,
+   "wealth": 0.688,
+   "priceBase": 395943,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
+ },
+ {
+  "iso2": "SS",
+  "iso3": "SSD",
+  "name": "South Sudan",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   30.390151,
+   7.230477
+  ],
+  "stats": {
+   "population": 12188788,
+   "gdpPerCapitaUsd": 1080,
+   "tourismArrivals": 551247,
+   "business": 0.089,
+   "tourism": 0.174,
+   "wealth": 0.3,
+   "priceBase": 463849,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2015",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "ST",
+  "iso3": "STP",
+  "name": "São Tomé and Príncipe",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   7.021,
+   0.9709
+  ],
+  "stats": {
+   "population": 240254,
+   "gdpPerCapitaUsd": 4084,
+   "tourismArrivals": 33400,
+   "business": 0.297,
+   "tourism": 0.309,
+   "wealth": 0.397,
+   "priceBase": 165232,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
+ },
+ {
+  "iso2": "SV",
+  "iso3": "SLV",
+  "name": "El Salvador",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Central America",
+  "label": [
+   -88.890124,
+   13.685371
+  ],
+  "stats": {
+   "population": 6365503,
+   "gdpPerCapitaUsd": 5767,
+   "tourismArrivals": 2639000,
+   "business": 0.364,
+   "tourism": 0.453,
+   "wealth": 0.561,
+   "priceBase": 1082882,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SX",
+  "iso3": "SXM",
+  "name": "Sint Maarten",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -63.070133,
+   18.04088
+  ],
+  "stats": {
+   "population": 43923,
+   "gdpPerCapitaUsd": 42978,
+   "tourismArrivals": 1952000,
+   "business": 0.818,
+   "tourism": 0.987,
+   "wealth": 3,
+   "priceBase": 366960,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SY",
+  "iso3": "SYR",
+  "name": "Syria",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   38.277783,
+   35.006636
+  ],
+  "stats": {
+   "population": 25620427,
+   "gdpPerCapitaUsd": 1057,
+   "tourismArrivals": 2424000,
+   "business": 0.085,
+   "tourism": 0.25,
+   "wealth": 0.3,
+   "priceBase": 662439,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "SZ",
+  "iso3": "SWZ",
+  "name": "Eswatini",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "label": [
+   31.467264,
+   -26.533676
+  ],
+  "stats": {
+   "population": 1256174,
+   "gdpPerCapitaUsd": 4108,
+   "tourismArrivals": 1226000,
+   "business": 0.301,
+   "tourism": 0.653,
+   "wealth": 0.4,
+   "priceBase": 379373,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TC",
+  "iso3": "TCA",
+  "name": "Turks and Caicos Islands",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -71.752704,
+   21.81663
+  ],
+  "stats": {
+   "population": 46855,
+   "gdpPerCapitaUsd": 37507,
+   "tourismArrivals": 1599000,
+   "business": 0.784,
+   "tourism": 0.983,
+   "wealth": 3,
+   "priceBase": 344553,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2024",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TD",
+  "iso3": "TCD",
+  "name": "Chad",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "label": [
+   18.645041,
+   15.142959
+  ],
+  "stats": {
+   "population": 21003705,
+   "gdpPerCapitaUsd": 1022,
+   "tourismArrivals": 81000,
+   "business": 0.081,
+   "tourism": 0.017,
+   "wealth": 0.3,
+   "priceBase": 585819,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TF",
+  "iso3": "ATF",
+  "name": "French Southern and Antarctic Lands",
+  "continent": "Seven seas (open ocean)",
+  "region": "Africa",
+  "subregion": "Seven seas (open ocean)",
+  "label": [
+   69.122136,
+   -49.303721
+  ],
+  "stats": {
+   "population": 140,
+   "gdpPerCapitaUsd": 114286,
+   "tourismArrivals": 68,
+   "business": 0.97,
+   "tourism": 0.508,
+   "wealth": 3,
+   "priceBase": 41083,
+   "hemisphere": "south",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "TG",
+  "iso3": "TGO",
+  "name": "Togo",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "label": [
+   1.058113,
+   8.80722
+  ],
+  "stats": {
+   "population": 8591626,
+   "gdpPerCapitaUsd": 1384,
+   "tourismArrivals": 876000,
+   "business": 0.14,
+   "tourism": 0.267,
+   "wealth": 0.3,
+   "priceBase": 463269,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TH",
+  "iso3": "THA",
+  "name": "Thailand",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   101.073198,
+   15.45974
+  ],
+  "stats": {
+   "population": 71619863,
+   "gdpPerCapitaUsd": 8057,
+   "tourismArrivals": 39916000,
+   "business": 0.466,
+   "tourism": 0.53,
+   "wealth": 0.784,
+   "priceBase": 4590269,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TJ",
+  "iso3": "TJK",
+  "name": "Tajikistan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "label": [
+   72.587276,
+   38.199835
+  ],
+  "stats": {
+   "population": 10786734,
+   "gdpPerCapitaUsd": 1637,
+   "tourismArrivals": 1035000,
+   "business": 0.165,
+   "tourism": 0.254,
+   "wealth": 0.3,
+   "priceBase": 583820,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2018"
+   }
+  }
+ },
+ {
+  "iso2": "TL",
+  "iso3": "TLS",
+  "name": "East Timor",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   125.854679,
+   -8.803705
+  ],
+  "stats": {
+   "population": 1418517,
+   "gdpPerCapitaUsd": 1341,
+   "tourismArrivals": 74800,
+   "business": 0.136,
+   "tourism": 0.186,
+   "wealth": 0.3,
+   "priceBase": 184127,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TM",
+  "iso3": "TKM",
+  "name": "Turkmenistan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "label": [
+   58.676647,
+   39.855246
+  ],
+  "stats": {
+   "population": 7618847,
+   "gdpPerCapitaUsd": 6540,
+   "tourismArrivals": 2250067,
+   "business": 0.398,
+   "tourism": 0.381,
+   "wealth": 0.636,
+   "priceBase": 1293746,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "TN",
+  "iso3": "TUN",
+  "name": "Tunisia",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "label": [
+   9.007881,
+   33.687263
+  ],
+  "stats": {
+   "population": 12348573,
+   "gdpPerCapitaUsd": 4657,
+   "tourismArrivals": 9429000,
+   "business": 0.322,
+   "tourism": 0.602,
+   "wealth": 0.453,
+   "priceBase": 1298622,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TO",
+  "iso3": "TON",
+  "name": "Tonga",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -175.163014,
+   -21.210026
+  ],
+  "stats": {
+   "population": 103742,
+   "gdpPerCapitaUsd": 6547,
+   "tourismArrivals": 94000,
+   "business": 0.403,
+   "tourism": 0.648,
+   "wealth": 0.637,
+   "priceBase": 151080,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TR",
+  "iso3": "TUR",
+  "name": "Turkey",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   34.508268,
+   39.345388
+  ],
+  "stats": {
+   "population": 85878556,
+   "gdpPerCapitaUsd": 18599,
+   "tourismArrivals": 51747000,
+   "business": 0.623,
+   "tourism": 0.542,
+   "wealth": 1.809,
+   "priceBase": 9027866,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TT",
+  "iso3": "TTO",
+  "name": "Trinidad and Tobago",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -60.9184,
+   10.9989
+  ],
+  "stats": {
+   "population": 1367764,
+   "gdpPerCapitaUsd": 18967,
+   "tourismArrivals": 480000,
+   "business": 0.627,
+   "tourism": 0.415,
+   "wealth": 1.845,
+   "priceBase": 1155060,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TV",
+  "iso3": "TUV",
+  "name": "Tuvalu",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   179.209587,
+   -8.513717
+  ],
+  "stats": {
+   "population": 9492,
+   "gdpPerCapitaUsd": 6041,
+   "tourismArrivals": 3599,
+   "business": 0.381,
+   "tourism": 0.432,
+   "wealth": 0.588,
+   "priceBase": 43197,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "TW",
+  "iso3": "TWN",
+  "name": "Taiwan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "label": [
+   120.868204,
+   23.652408
+  ],
+  "stats": {
+   "population": 23568378,
+   "gdpPerCapitaUsd": 47818,
+   "tourismArrivals": 7036045,
+   "business": 0.835,
+   "tourism": 0.39,
+   "wealth": 3,
+   "priceBase": 9159649,
+   "hemisphere": "north",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "TZ",
+  "iso3": "TZA",
+  "name": "Tanzania",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   34.959183,
+   -6.051866
+  ],
+  "stats": {
+   "population": 70545865,
+   "gdpPerCapitaUsd": 1319,
+   "tourismArrivals": 1527000,
+   "business": 0.131,
+   "tourism": 0.097,
+   "wealth": 0.3,
+   "priceBase": 1283533,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "UA",
+  "iso3": "UKR",
+  "name": "Ukraine",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "label": [
+   32.140865,
+   49.724739
+  ],
+  "stats": {
+   "population": 38980376,
+   "gdpPerCapitaUsd": 5866,
+   "tourismArrivals": 13710000,
+   "business": 0.373,
+   "tourism": 0.419,
+   "wealth": 0.571,
+   "priceBase": 2711830,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "UG",
+  "iso3": "UGA",
+  "name": "Uganda",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   32.948555,
+   1.972589
+  ],
+  "stats": {
+   "population": 51384894,
+   "gdpPerCapitaUsd": 1206,
+   "tourismArrivals": 1543000,
+   "business": 0.119,
+   "tourism": 0.14,
+   "wealth": 0.3,
+   "priceBase": 1028871,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "US",
+  "iso3": "USA",
+  "name": "United States of America",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Northern America",
+  "label": [
+   -97.482602,
+   39.538479
+  ],
+  "stats": {
+   "population": 341784857,
+   "gdpPerCapitaUsd": 90027,
+   "tourismArrivals": 165478000,
+   "business": 0.949,
+   "tourism": 0.5,
+   "wealth": 3,
+   "priceBase": 54317197,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "UY",
+  "iso3": "URY",
+  "name": "Uruguay",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -55.966942,
+   -32.961127
+  ],
+  "stats": {
+   "population": 3384688,
+   "gdpPerCapitaUsd": 25216,
+   "tourismArrivals": 3480000,
+   "business": 0.682,
+   "tourism": 0.657,
+   "wealth": 2.453,
+   "priceBase": 2217852,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "UZ",
+  "iso3": "UZB",
+  "name": "Uzbekistan",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "label": [
+   64.005429,
+   41.693603
+  ],
+  "stats": {
+   "population": 37053428,
+   "gdpPerCapitaUsd": 3968,
+   "tourismArrivals": 6749000,
+   "business": 0.288,
+   "tourism": 0.347,
+   "wealth": 0.386,
+   "priceBase": 2011011,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "VA",
+  "iso3": "VAT",
+  "name": "Vatican City",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   12.453418,
+   41.903323
+  ],
+  "stats": {
+   "population": 825,
+   "gdpPerCapitaUsd": 0,
+   "tourismArrivals": 2179,
+   "business": 0.006,
+   "tourism": 0.784,
+   "wealth": 1,
+   "priceBase": 0,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "none",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "VC",
+  "iso3": "VCT",
+  "name": "Saint Vincent and the Grenadines",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -61.3359,
+   13.0879
+  ],
+  "stats": {
+   "population": 99924,
+   "gdpPerCapitaUsd": 12562,
+   "tourismArrivals": 392000,
+   "business": 0.542,
+   "tourism": 0.843,
+   "wealth": 1.222,
+   "priceBase": 233979,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "VE",
+  "iso3": "VEN",
+  "name": "Venezuela",
+  "continent": "South America",
+  "region": "Americas",
+  "subregion": "South America",
+  "label": [
+   -64.599381,
+   7.182476
+  ],
+  "stats": {
+   "population": 28516896,
+   "gdpPerCapitaUsd": 3495,
+   "tourismArrivals": 429000,
+   "business": 0.271,
+   "tourism": 0.064,
+   "wealth": 0.34,
+   "priceBase": 1614225,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2017"
+   }
+  }
+ },
+ {
+  "iso2": "VG",
+  "iso3": "VGB",
+  "name": "British Virgin Islands",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -64.63661,
+   18.426606
+  ],
+  "stats": {
+   "population": 39732,
+   "gdpPerCapitaUsd": 16650,
+   "tourismArrivals": 302399,
+   "business": 0.606,
+   "tourism": 0.924,
+   "wealth": 1.62,
+   "priceBase": 179705,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "VI",
+  "iso3": "VIR",
+  "name": "United States Virgin Islands",
+  "continent": "North America",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "label": [
+   -64.779172,
+   17.746706
+  ],
+  "stats": {
+   "population": 103792,
+   "gdpPerCapitaUsd": 44321,
+   "tourismArrivals": 2074000,
+   "business": 0.826,
+   "tourism": 0.97,
+   "wealth": 3,
+   "priceBase": 576380,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2022",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "VN",
+  "iso3": "VNM",
+  "name": "Vietnam",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "label": [
+   105.387292,
+   21.715416
+  ],
+  "stats": {
+   "population": 101598527,
+   "gdpPerCapitaUsd": 5066,
+   "tourismArrivals": 18009000,
+   "business": 0.343,
+   "tourism": 0.339,
+   "wealth": 0.493,
+   "priceBase": 3951021,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "VU",
+  "iso3": "VUT",
+  "name": "Vanuatu",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "label": [
+   166.908762,
+   -15.37153
+  ],
+  "stats": {
+   "population": 335169,
+   "gdpPerCapitaUsd": 4039,
+   "tourismArrivals": 256000,
+   "business": 0.292,
+   "tourism": 0.606,
+   "wealth": 0.393,
+   "priceBase": 193653,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "WF",
+  "iso3": "WLF",
+  "name": "Wallis and Futuna",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -178.137436,
+   -14.286415
+  ],
+  "stats": {
+   "population": 11558,
+   "gdpPerCapitaUsd": 5191,
+   "tourismArrivals": 9539,
+   "business": 0.352,
+   "tourism": 0.636,
+   "wealth": 0.505,
+   "priceBase": 42866,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "ne",
+    "population": "ne",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "WS",
+  "iso3": "WSM",
+  "name": "Samoa",
+  "continent": "Oceania",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "label": [
+   -172.438241,
+   -13.639139
+  ],
+  "stats": {
+   "population": 219306,
+   "gdpPerCapitaUsd": 5873,
+   "tourismArrivals": 181000,
+   "business": 0.377,
+   "tourism": 0.64,
+   "wealth": 0.571,
+   "priceBase": 203576,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "XK",
+  "iso3": "-99",
+  "name": "Kosovo",
+  "continent": "Europe",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "label": [
+   20.860719,
+   42.593587
+  ],
+  "stats": {
+   "population": 1576876,
+   "gdpPerCapitaUsd": 7899,
+   "tourismArrivals": 4165172,
+   "business": 0.458,
+   "tourism": 0.788,
+   "wealth": 0.768,
+   "priceBase": 671737,
+   "hemisphere": "north",
+   "climate": "temperate",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "estimate"
+   }
+  }
+ },
+ {
+  "iso2": "YE",
+  "iso3": "YEM",
+  "name": "Yemen",
+  "continent": "Asia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "label": [
+   45.874383,
+   15.328226
+  ],
+  "stats": {
+   "population": 41773878,
+   "gdpPerCapitaUsd": 634,
+   "tourismArrivals": 398000,
+   "business": 0.038,
+   "tourism": 0.051,
+   "wealth": 0.3,
+   "priceBase": 591446,
+   "hemisphere": "north",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2018",
+    "population": "wb:2025",
+    "tourism": "wb:2015"
+   }
+  }
+ },
+ {
+  "iso2": "ZA",
+  "iso3": "ZAF",
+  "name": "South Africa",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "label": [
+   23.665734,
+   -29.708776
+  ],
+  "stats": {
+   "population": 64747319,
+   "gdpPerCapitaUsd": 6598,
+   "tourismArrivals": 14797000,
+   "business": 0.409,
+   "tourism": 0.364,
+   "wealth": 0.642,
+   "priceBase": 3794893,
+   "hemisphere": "south",
+   "climate": "subtropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "ZM",
+  "iso3": "ZMB",
+  "name": "Zambia",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   26.395298,
+   -14.660804
+  ],
+  "stats": {
+   "population": 21913874,
+   "gdpPerCapitaUsd": 1318,
+   "tourismArrivals": 1266000,
+   "business": 0.127,
+   "tourism": 0.203,
+   "wealth": 0.3,
+   "priceBase": 714991,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ },
+ {
+  "iso2": "ZW",
+  "iso3": "ZWE",
+  "name": "Zimbabwe",
+  "continent": "Africa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "label": [
+   29.925444,
+   -18.91164
+  ],
+  "stats": {
+   "population": 16950795,
+   "gdpPerCapitaUsd": 3021,
+   "tourismArrivals": 2294000,
+   "business": 0.237,
+   "tourism": 0.301,
+   "wealth": 0.3,
+   "priceBase": 1123830,
+   "hemisphere": "south",
+   "climate": "tropical",
+   "sources": {
+    "gdpPerCapita": "wb:2025",
+    "population": "wb:2025",
+    "tourism": "wb:2019"
+   }
+  }
+ }
+]

@@ -1,0 +1,70 @@
+# Plane models (TECH_DESIGN §5). Names are fictional; never use real manufacturer brands.
+# Money in cents. A business seat uses 2 seat units. Fuel burn is in fuel units per km
+# (fuel price: balance.fuel.meanCentsPerUnit).
+- id: skylark_50
+  tier: 1
+  nameKey: planes.skylark_50.name
+  seatUnits: 50
+  rangeKm: 1500
+  speedKmh: 520
+  minRunwayFt: 4000
+  minAirportLevel: 1
+  priceCents: 1800000000      # $18M
+  upkeepDayCents: 350000      # $3,500
+  burnPerKm: 1.6
+  reliability: 0.96
+  maxAgeDays: 10950           # 30 years
+  levels:
+    - { costCents: 150000000, seatUnits: 4, efficiency: 0.03, reliability: 0.005 }
+    - { costCents: 300000000, seatUnits: 4, efficiency: 0.04, reliability: 0.005 }
+
+- id: swift_90
+  tier: 2
+  nameKey: planes.swift_90.name
+  seatUnits: 90
+  rangeKm: 3200
+  speedKmh: 800
+  minRunwayFt: 5500
+  minAirportLevel: 2
+  priceCents: 4200000000      # $42M
+  upkeepDayCents: 700000      # $7,000
+  burnPerKm: 2.8
+  reliability: 0.965
+  maxAgeDays: 10950
+  levels:
+    - { costCents: 350000000, seatUnits: 6, efficiency: 0.03, reliability: 0.005 }
+    - { costCents: 700000000, seatUnits: 6, efficiency: 0.04, reliability: 0.005 }
+
+- id: meridian_180
+  tier: 3
+  nameKey: planes.meridian_180.name
+  seatUnits: 180
+  rangeKm: 5600
+  speedKmh: 840
+  minRunwayFt: 7000
+  minAirportLevel: 3
+  priceCents: 9500000000      # $95M
+  upkeepDayCents: 1400000     # $14,000
+  burnPerKm: 4.2
+  reliability: 0.97
+  maxAgeDays: 10950
+  levels:
+    - { costCents: 800000000, seatUnits: 10, efficiency: 0.03, reliability: 0.005 }
+    - { costCents: 1600000000, seatUnits: 10, efficiency: 0.04, reliability: 0.005 }
+
+- id: meridian_180lr
+  tier: 3
+  nameKey: planes.meridian_180lr.name
+  seatUnits: 165
+  rangeKm: 7400
+  speedKmh: 840
+  minRunwayFt: 8000
+  minAirportLevel: 3
+  priceCents: 11800000000     # $118M
+  upkeepDayCents: 1600000     # $16,000
+  burnPerKm: 4.5
+  reliability: 0.97
+  maxAgeDays: 10950
+  levels:
+    - { costCents: 900000000, seatUnits: 8, efficiency: 0.03, reliability: 0.005 }
+    - { costCents: 1800000000, seatUnits: 8, efficiency: 0.04, reliability: 0.005 }

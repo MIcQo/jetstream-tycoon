@@ -14,15 +14,17 @@ import (
 
 	"github.com/MIcQo/jetstream-tycoon/sim"
 	"github.com/MIcQo/jetstream-tycoon/sim/command"
+	"github.com/MIcQo/jetstream-tycoon/sim/content/bundle"
 	"github.com/MIcQo/jetstream-tycoon/sim/engine"
 )
 
 // View is the UI state view.
 type View struct {
-	Tick      int64 `json:"tick"`
-	Day       int64 `json:"day"`
-	Speed     int   `json:"speed"`
-	CashCents int64 `json:"cashCents"`
+	Tick           int64  `json:"tick"`
+	Day            int64  `json:"day"`
+	Speed          int    `json:"speed"`
+	CashCents      int64  `json:"cashCents"`
+	ContentVersion string `json:"contentVersion"`
 }
 
 // AdvanceResult is the response of Advance.
@@ -59,8 +61,9 @@ var ErrNotStarted = &command.Error{Key: "errors.sim.not_started"}
 
 // Session holds one running game.
 type Session struct {
-	engine  *engine.Engine
-	reports []Report
+	engine         *engine.Engine
+	reports        []Report
+	contentVersion string
 }
 
 // ReportNonFinite records a NaN/±Inf that detmath.Finite clamped (release builds).
@@ -84,6 +87,11 @@ func (s *Session) NewGame(requestJSON string) (string, error) {
 	if err := json.Unmarshal([]byte(requestJSON), &req); err != nil {
 		return "", fmt.Errorf("newGame request: %w", err)
 	}
+	b, err := bundle.Load()
+	if err != nil {
+		return "", err
+	}
+	s.contentVersion = b.ContentVersion
 	s.engine = sim.NewGame(req.Seed)
 	return marshal(s.view())
 }
@@ -131,7 +139,7 @@ func (s *Session) Command(commandJSON string) string {
 
 func (s *Session) view() View {
 	st := s.engine.State
-	return View{Tick: st.Tick, Day: st.Day(), Speed: st.Speed, CashCents: st.CashCents}
+	return View{Tick: st.Tick, Day: st.Day(), Speed: st.Speed, CashCents: st.CashCents, ContentVersion: s.contentVersion}
 }
 
 // Guard runs a bridge call and always returns a JSON string: the call's result, or

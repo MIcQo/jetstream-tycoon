@@ -185,6 +185,8 @@ type Airline struct {
 - `planes.yaml`, `airport_levels.yaml`, `balance.yaml`
 - `events/*.yaml`: one schema for incidents and investments. Each event has choices; each choice has a cost and outcomes; each outcome has a chance, effects and an optional delayed reveal.
 - Conditions and formulas use `expr-lang/expr`.
+- **Pipeline** (M1): YAML in `content/` (`planes.yaml`, `airport_levels.yaml`, `balance.yaml`, `seasons.yaml`, `holidays.yaml`) is loaded **strictly** by `tools/contentc` (unknown or misspelled fields are errors) and validated by `sim/content.Validate` against the world data (country and region references) and `content/i18n/en.json` (name keys). `sim/content` has the Go types and a strict JSON `Decode`; it has no YAML dependency, because the simulation only reads compiled JSON. `make content-check` runs `datagen check` and `contentc verify`.
+- **Bundle** (M1.8): `make content-build` compiles the content and the simulation's subset of `content/world` (countries with stats, airports, cities, candidates; no names or map paths) into `sim/content/bundle/content.json.gz` (≈ 330 KB gzip, 1 MB JSON). It is **embedded** with `go:embed` in `sim.wasm` and the server, and **committed** so builds stay hermetic; `contentc verify` fails CI if it is stale. `contentVersion` = `"c"` + 12 hex digits of the SHA-256 of the content and world JSON, so it changes exactly when content changes. gzip output carries no timestamp, so builds are byte-identical. The bridge returns `contentVersion` in its view, and the server reports it at `GET /content/latest`.
 - Each content build has a `contentVersion`, which is stored in saves and analytics.
 - Later: the server can serve newer content bundles, so new events ship without an app release.
 
@@ -587,7 +589,7 @@ The server is stateless, so it scales horizontally.
 
 ## 14. Frontend and mobile
 - **Map rendering in layers**, all sharing one `d3-geo` projection and pan/zoom transform:
-  1. **SVG base layer**: country shapes from **TopoJSON** (about 80% smaller than GeoJSON). Shapes are pre-projected and simplified by `datagen` into SVG path strings, so there's no projection work at runtime. Two detail levels: world zoom and regional zoom. The layer also has ownership fill plus a **pattern or outline** for owned/leased (colour-blind safe), airport dots. Changes rarely; used for click hit-testing.
+  1. **SVG base layer**: country shapes **pre-projected by `datagen`** (Natural Earth I projection, 1000-unit-wide viewBox) into compact SVG path strings with relative coordinates rounded to 0.1 unit (`content/world/map/world-110m.json` ≈ 27 KB gzip, `world-50m.json` ≈ 134 KB gzip). Because paths are pre-projected, TopoJSON and runtime projection are not needed. Two detail levels: world zoom and regional zoom. The layer also has ownership fill plus a **pattern or outline** for owned/leased (colour-blind safe), airport dots. Changes rarely; used for click hit-testing.
   2. **Canvas overlay**: route arcs (great-circle) and **moving planes**, redrawn with `requestAnimationFrame`.
      - DPR-aware sizing.
      - Viewport culling.
