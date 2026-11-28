@@ -54,7 +54,7 @@ type envelope struct {
 
 func newEncoder(w io.Writer) *msgpack.Encoder {
 	enc := msgpack.NewEncoder(w)
-	enc.SetSortMapKeys(true)       // deterministic bytes
+	enc.SetSortMapKeys(true)       // sorts map[string]any and map[string]string only
 	enc.SetCustomStructTag("json") // one set of field names for JSON and MessagePack
 	enc.UseCompactInts(true)
 	return enc
@@ -64,6 +64,25 @@ func newDecoder(r io.Reader) *msgpack.Decoder {
 	dec := msgpack.NewDecoder(r)
 	dec.SetCustomStructTag("json") // generic maps decode as map[string]any by default
 	return dec
+}
+
+// canonical encodes v as MessagePack with every map's keys sorted. The library
+// sorts only map[string]any and map[string]string, so v is encoded once, decoded
+// into generic maps (map[string]any) and encoded again.
+func canonical(v any) ([]byte, error) {
+	var first bytes.Buffer
+	if err := newEncoder(&first).Encode(v); err != nil {
+		return nil, err
+	}
+	var generic any
+	if err := newDecoder(&first).Decode(&generic); err != nil {
+		return nil, err
+	}
+	var out bytes.Buffer
+	if err := newEncoder(&out).Encode(generic); err != nil {
+		return nil, err
+	}
+	return out.Bytes(), nil
 }
 
 // MetaOf builds the metadata for s.
@@ -77,8 +96,8 @@ func MetaOf(s *state.State, contentVersion string) Meta {
 
 // Encode writes s as a save. The output is deterministic: equal states give equal bytes.
 func Encode(s *state.State, contentVersion string) ([]byte, error) {
-	var raw bytes.Buffer
-	if err := newEncoder(&raw).Encode(envelope{Meta: MetaOf(s, contentVersion), State: s}); err != nil {
+	raw, err := canonical(envelope{Meta: MetaOf(s, contentVersion), State: s})
+	if err != nil {
 		return nil, fmt.Errorf("save: encode: %w", err)
 	}
 	var out bytes.Buffer
@@ -88,7 +107,7 @@ func Encode(s *state.State, contentVersion string) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	if _, err := zw.Write(raw.Bytes()); err != nil {
+	if _, err := zw.Write(raw); err != nil {
 		return nil, err
 	}
 	if err := zw.Close(); err != nil {

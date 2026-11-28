@@ -61,10 +61,17 @@ func TestRoundTripKeepsTheStateHash(t *testing.T) {
 
 func TestEncodeIsDeterministicAndCompact(t *testing.T) {
 	s := played(t)
+	// Many entries in typed maps: Go randomises map order on every walk.
+	for _, id := range []string{"e", "b", "d", "a", "c", "f", "h", "g"} {
+		s.Milestones[id] = 1
+		s.Countries[id] = &state.Country{ISO2: id}
+		s.Markets[id] = &state.Market{Key: id, LastShares: map[state.AirlineID]float64{"P": 0.5, "A1": 0.3, "A2": 0.2, "A3": 0.1}}
+	}
 	a, _ := save.Encode(s, "c1")
-	b, _ := save.Encode(s, "c1")
-	if !bytes.Equal(a, b) {
-		t.Fatal("encoding the same state twice gave different bytes")
+	for range 30 {
+		if b, _ := save.Encode(s, "c1"); !bytes.Equal(a, b) {
+			t.Fatal("encoding the same state twice gave different bytes")
+		}
 	}
 	j, _ := json.Marshal(s)
 	if len(a) >= len(j) {
