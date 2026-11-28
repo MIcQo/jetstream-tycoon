@@ -22,8 +22,8 @@ func decode[T any](t *testing.T, s string) T {
 
 func TestNewGameAndAdvance(t *testing.T) {
 	var s bridge.Session
-	v := decode[bridge.View](t, must(t)(s.NewGame(`{"seed":42}`)))
-	if v.Tick != 0 || v.Day != 0 || v.Speed != 1 || v.CashCents != 100_000_00 || !strings.HasPrefix(v.ContentVersion, "c") {
+	v := decode[bridge.View](t, must(t)(s.NewGame(`{"seed":42,"airlineName":"Test Air","homeCountry":"GB","difficulty":"normal"}`)))
+	if v.Tick != 0 || v.Day != 0 || v.Speed != 1 || v.CashCents <= 0 || v.AirlineName != "Test Air" || v.HomeCountry != "GB" || !strings.HasPrefix(v.ContentVersion, "c") {
 		t.Fatalf("initial view = %+v", v)
 	}
 
@@ -37,7 +37,7 @@ func TestNewGameAndAdvance(t *testing.T) {
 
 	// A second session with the same seed is identical (deterministic).
 	var s2 bridge.Session
-	must(t)(s2.NewGame(`{"seed":42}`))
+	must(t)(s2.NewGame(`{"seed":42,"airlineName":"Test Air","homeCountry":"GB","difficulty":"normal"}`))
 	r2 := decode[bridge.AdvanceResult](t, must(t)(s2.Advance(24)))
 	if r2.View != r.View {
 		t.Fatalf("same seed, different view: %+v vs %+v", r2.View, r.View)
@@ -49,7 +49,7 @@ func TestCommands(t *testing.T) {
 	if got := s.Command(`{"type":"setSpeed","speed":2}`); got != `{"ok":false,"errorKey":"errors.sim.not_started"}` {
 		t.Fatalf("command before start = %s", got)
 	}
-	must(t)(s.NewGame(`{"seed":1}`))
+	must(t)(s.NewGame(`{"seed":1,"airlineName":"Test Air","homeCountry":"GB","difficulty":"normal"}`))
 
 	cases := map[string]string{
 		`{"type":"setSpeed","speed":4}`: `{"ok":true}`,
@@ -77,7 +77,7 @@ func TestErrors(t *testing.T) {
 	if _, err := s.NewGame(`nope`); err == nil || !strings.Contains(err.Error(), "newGame") {
 		t.Errorf("bad newGame request = %v", err)
 	}
-	must(t)(s.NewGame(`{"seed":1}`))
+	must(t)(s.NewGame(`{"seed":1,"airlineName":"Test Air","homeCountry":"GB","difficulty":"normal"}`))
 	if _, err := s.Advance(-1); err == nil {
 		t.Error("negative ticks accepted")
 	}
@@ -95,7 +95,7 @@ func must(t *testing.T) func(string, error) string {
 
 func TestAdvanceReturnsEmptyArraysNotNull(t *testing.T) {
 	var s bridge.Session
-	must(t)(s.NewGame(`{"seed":1}`))
+	must(t)(s.NewGame(`{"seed":1,"airlineName":"Test Air","homeCountry":"GB","difficulty":"normal"}`))
 	out := must(t)(s.Advance(1))
 	if !strings.Contains(out, `"notifications":[]`) || !strings.Contains(out, `"rejected":[]`) || !strings.Contains(out, `"reports":[]`) {
 		t.Fatalf("Advance(1) = %s, want empty arrays", out)
@@ -120,7 +120,7 @@ func TestGuard(t *testing.T) {
 func TestReportsAreReturnedOnceAndBounded(t *testing.T) {
 	var s bridge.Session
 	s.ReportNonFinite("before_start", 1) // no game yet: tick 0
-	must(t)(s.NewGame(`{"seed":1}`))
+	must(t)(s.NewGame(`{"seed":1,"airlineName":"Test Air","homeCountry":"GB","difficulty":"normal"}`))
 	first := decode[bridge.AdvanceResult](t, must(t)(s.Advance(3)))
 	if want := []bridge.Report{{Kind: "nonFinite", Context: "before_start", Detail: "1", Tick: 0}}; !reflect.DeepEqual(first.Reports, want) {
 		t.Fatalf("first reports = %+v, want %+v", first.Reports, want)
@@ -140,5 +140,18 @@ func TestReportsAreReturnedOnceAndBounded(t *testing.T) {
 	}
 	if n := len(decode[bridge.AdvanceResult](t, must(t)(s.Advance(1))).Reports); n != 50 {
 		t.Fatalf("got %d reports, want the cap of 50", n)
+	}
+}
+
+func TestNewGameValidationErrorKeys(t *testing.T) {
+	var s bridge.Session
+	got := bridge.Guard(func() (string, error) {
+		return s.NewGame(`{"seed":1,"airlineName":"X","homeCountry":"ZZ","difficulty":"normal"}`)
+	})
+	if got != `{"error":"errors.newgame.home_country"}` {
+		t.Errorf("unknown home country = %s", got)
+	}
+	if _, err := s.Advance(1); !errors.Is(err, bridge.ErrNotStarted) {
+		t.Error("a failed newGame must not start a session")
 	}
 }

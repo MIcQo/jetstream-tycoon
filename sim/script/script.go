@@ -13,6 +13,7 @@ import (
 
 	"github.com/MIcQo/jetstream-tycoon/sim"
 	"github.com/MIcQo/jetstream-tycoon/sim/command"
+	"github.com/MIcQo/jetstream-tycoon/sim/content/bundle"
 	"github.com/MIcQo/jetstream-tycoon/sim/state"
 )
 
@@ -27,10 +28,10 @@ type Step struct {
 
 // Script is a scripted game.
 type Script struct {
-	Name  string `json:"name"`
-	Seed  uint64 `json:"seed"`
-	Days  int    `json:"days"`
-	Steps []Step `json:"steps"`
+	Name  string            `json:"name"`
+	Game  sim.NewGameParams `json:"game"`
+	Days  int               `json:"days"`
+	Steps []Step            `json:"steps"`
 }
 
 // Parse decodes a script and checks that steps are in tick order.
@@ -50,9 +51,17 @@ func Parse(data []byte) (Script, error) {
 	return s, nil
 }
 
-// Run plays the script and returns the state hash at the end of every day.
+// Run plays the script with the embedded content and returns the state hash at
+// the end of every day.
 func Run(s Script) ([]string, error) {
-	e := sim.NewGame(s.Seed)
+	data, err := bundle.Load()
+	if err != nil {
+		return nil, err
+	}
+	e, err := sim.NewGame(s.Game, &data)
+	if err != nil {
+		return nil, fmt.Errorf("script %q: new game: %w", s.Name, err)
+	}
 	hashes := make([]string, 0, s.Days)
 	next := 0
 	for tick := int64(0); tick < int64(s.Days)*state.TicksPerDay; tick++ {

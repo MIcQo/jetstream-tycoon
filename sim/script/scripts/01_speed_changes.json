@@ -1,12 +1,47 @@
 {
   "name": "speed_changes",
-  "seed": 42,
+  "game": {
+    "seed": 42,
+    "airlineName": "Script Air",
+    "homeCountry": "GB",
+    "difficulty": "normal"
+  },
   "days": 14,
   "steps": [
-    { "atTick": 0, "command": { "type": "setSpeed", "speed": 2 } },
-    { "atTick": 30, "command": { "type": "setSpeed", "speed": 3 } },
-    { "atTick": 48, "command": { "type": "setSpeed", "speed": 0 } },
-    { "atTick": 48, "command": { "type": "setSpeed", "speed": 4 } },
-    { "atTick": 200, "command": { "type": "setSpeed", "speed": 1 } }
+    {
+      "atTick": 0,
+      "command": {
+        "type": "setSpeed",
+        "speed": 2
+      }
+    },
+    {
+      "atTick": 30,
+      "command": {
+        "type": "setSpeed",
+        "speed": 3
+      }
+    },
+    {
+      "atTick": 48,
+      "command": {
+        "type": "setSpeed",
+        "speed": 0
+      }
+    },
+    {
+      "atTick": 48,
+      "command": {
+        "type": "setSpeed",
+        "speed": 4
+      }
+    },
+    {
+      "atTick": 200,
+      "command": {
+        "type": "setSpeed",
+        "speed": 1
+      }
+    }
   ]
 }

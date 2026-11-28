@@ -10,7 +10,7 @@ import (
 	"github.com/MIcQo/jetstream-tycoon/sim/engine"
 )
 
-// System adds a small random amount of cash every tick and announces each new day.
+// System adds a small random amount of cash to the player every tick and announces each new day.
 type System struct{}
 
 // Name implements engine.System.
@@ -18,7 +18,9 @@ func (System) Name() string { return "ledger" }
 
 // OnTick implements engine.System.
 func (System) OnTick(c *engine.TickCtx) {
-	c.State.CashCents += detmath.RoundCents(c.RNG().Float64() * 100)
+	if p := c.State.Player(); p != nil {
+		p.CashCents += detmath.RoundCents(c.RNG().Float64() * 100)
+	}
 }
 
 // OnDay implements engine.System.

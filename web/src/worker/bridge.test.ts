@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
 
 import { jsonBridge, type RawSimApi, SimError } from "./bridge";
+import type { NewGameParams } from "./protocol";
+
+const game = (seed: number): NewGameParams => ({ seed, airlineName: "A", homeCountry: "GB", difficulty: "normal" });
 
 const view = { tick: 1, day: 0, speed: 1, cashCents: 500 };
 
@@ -31,14 +34,14 @@ describe("jsonBridge", () => {
   it("serialises requests and parses responses", () => {
     const calls: string[] = [];
     const b = jsonBridge(fakeRaw(calls));
-    expect(b.newGame(7)).toEqual(view);
+    expect(b.newGame(game(7))).toEqual(view);
     const adv = b.advance(3);
     expect(adv.notifications).toEqual([{ key: "notifications.day.started", params: { day: "1" } }]);
     expect(adv.reports).toEqual([{ kind: "nonFinite", context: "c", detail: "NaN", tick: 1 }]);
     expect(b.advance(0)).toEqual({ view, notifications: [], reports: [] });
     expect(b.command({ type: "setSpeed", speed: 3 })).toEqual({ ok: false, errorKey: "errors.cmd.invalid_speed" });
     expect(calls).toEqual([
-      'newGame {"seed":7}',
+      'newGame {"seed":7,"airlineName":"A","homeCountry":"GB","difficulty":"normal"}',
       "advance 3",
       "advance 0",
       'command {"type":"setSpeed","speed":3}',
@@ -54,7 +57,7 @@ describe("jsonBridge errors", () => {
       command: () => JSON.stringify({ ok: true }),
     };
     const b = jsonBridge(raw);
-    expect(() => b.newGame(1)).toThrow(SimError);
+    expect(() => b.newGame(game(1))).toThrow(SimError);
     expect(() => b.advance(1)).toThrow("errors.sim.not_started");
     expect(b.command({ type: "setSpeed", speed: 1 })).toEqual({ ok: true });
   });
@@ -62,7 +65,7 @@ describe("jsonBridge errors", () => {
   it("does not treat JSON null or primitives as errors", () => {
     const raw: RawSimApi = { newGame: () => "null", advance: () => "1", command: () => '"x"' };
     const b = jsonBridge(raw);
-    expect(b.newGame(1)).toBeNull();
+    expect(b.newGame(game(1))).toBeNull();
     expect(b.command({ type: "t" })).toBe("x");
   });
 });

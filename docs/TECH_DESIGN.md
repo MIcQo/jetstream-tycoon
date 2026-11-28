@@ -174,6 +174,12 @@ type Airline struct {
 // Maps are for lookup only. Iteration always goes over sorted keys (see the determinism rules).
 // Full diagram: docs/DIAGRAMS.md §8
 ```
+**Implementation notes (M2)**: the code is in `sim/state/state.go`.
+- Entity IDs come from a sequential counter (`State.NewID("pl")` → `pl1`, `pl2`, …), so the same commands always produce the same IDs.
+- `Airports` holds only airports whose state differs from content; an absent airport runs at its base level. `Countries` holds only owned countries.
+- `state.SortedKeys` is the one way to walk a map in game logic.
+- A new game (`sim.NewGame`) validates the airline name (1–40 characters), the home country (it must have an airport) and the difficulty. It then gives the player the home country, its **main airport as hub** (largest city served, then longest runway), one starter plane (the cheapest lowest-tier model), and `StartCash` from §7.0.
+
 **Airport levels and access**:
 - Every airport has a real-world `baseLevel` from datagen: OurAirports `large_airport` = 3, `medium_airport` = 2.
 - An airport in an **unowned** country, or one leased by non-owners, runs at `level = baseLevel`.

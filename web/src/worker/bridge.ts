@@ -1,4 +1,4 @@
-import type { SimNotification, SimReport, SimView } from "./protocol";
+import type { NewGameParams, SimNotification, SimReport, SimView } from "./protocol";
 
 /** The JSON string API that sim.wasm registers as `globalThis.jetstreamSim` (M0.6). */
 export interface RawSimApi {
@@ -20,7 +20,7 @@ export interface CommandResult {
 
 /** Typed simulation API used by the Worker controller. */
 export interface SimBridge {
-  newGame(seed: number): SimView;
+  newGame(params: NewGameParams): SimView;
   advance(ticks: number): AdvanceResult;
   command(cmd: { type: string } & Record<string, unknown>): CommandResult;
 }
@@ -41,7 +41,7 @@ function parse<T>(json: string): T {
 /** Wraps the raw JSON API with parsing and typing. */
 export function jsonBridge(raw: RawSimApi): SimBridge {
   return {
-    newGame: (seed) => parse<SimView>(raw.newGame(JSON.stringify({ seed }))),
+    newGame: (params) => parse<SimView>(raw.newGame(JSON.stringify(params))),
     advance: (ticks) => {
       const res = parse<Partial<AdvanceResult> & { view: SimView }>(raw.advance(ticks));
       return { view: res.view, notifications: res.notifications ?? [], reports: res.reports ?? [] };

@@ -28,7 +28,7 @@ func (r recorder) OnDay(c *engine.TickCtx) {
 
 func TestSystemsRunInOrderAndDaysFire(t *testing.T) {
 	var log []string
-	e := engine.New(state.New(1), recorder{"a", &log}, recorder{"b", &log})
+	e := engine.New(state.New(1), nil, recorder{"a", &log}, recorder{"b", &log})
 	out := e.Advance(24)
 
 	if e.State.Tick != 24 {
@@ -60,7 +60,7 @@ func (badCmd) Apply(*state.State)          { panic("must not apply") }
 func TestCommandsApplyAtTickBoundaryInOrder(t *testing.T) {
 	var seen []int
 	probe := probeSystem{seen: &seen}
-	e := engine.New(state.New(1), probe)
+	e := engine.New(state.New(1), nil, probe)
 
 	e.Enqueue(command.SetSpeed{Speed: 2})
 	e.Enqueue(command.SetSpeed{Speed: 4})
@@ -113,7 +113,7 @@ func (rngSystem) OnDay(*engine.TickCtx) {}
 
 func TestRNGStreamsPerSystemAndKey(t *testing.T) {
 	var a, b []uint64
-	engine.New(state.New(5), rngSystem{"a", &a}, rngSystem{"b", &b}).Advance(2)
+	engine.New(state.New(5), nil, rngSystem{"a", &a}, rngSystem{"b", &b}).Advance(2)
 	if a[0] == b[0] {
 		t.Error("two systems got the same stream")
 	}
@@ -124,7 +124,7 @@ func TestRNGStreamsPerSystemAndKey(t *testing.T) {
 		t.Error("consecutive ticks got the same stream")
 	}
 	var again []uint64
-	engine.New(state.New(5), rngSystem{"a", &again}).Advance(2)
+	engine.New(state.New(5), nil, rngSystem{"a", &again}).Advance(2)
 	if !reflect.DeepEqual(a, again) {
 		t.Errorf("stream depends on other systems: %v vs %v", a, again)
 	}

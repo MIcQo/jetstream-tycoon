@@ -24,6 +24,8 @@ type View struct {
 	Day            int64  `json:"day"`
 	Speed          int    `json:"speed"`
 	CashCents      int64  `json:"cashCents"`
+	AirlineName    string `json:"airlineName"`
+	HomeCountry    string `json:"homeCountry"`
 	ContentVersion string `json:"contentVersion"`
 }
 
@@ -79,11 +81,11 @@ func (s *Session) ReportNonFinite(context string, x float64) {
 	s.reports = append(s.reports, Report{Kind: "nonFinite", Context: context, Detail: fmt.Sprint(x), Tick: tick})
 }
 
-// NewGame starts a new game from `{"seed": n}` and returns the initial view.
+// NewGame starts a new game from sim.NewGameParams JSON
+// (`{"seed", "airlineName", "homeCountry", "difficulty"}`) and returns the initial
+// view. Invalid choices fail with an i18n error key (e.g. errors.newgame.home_country).
 func (s *Session) NewGame(requestJSON string) (string, error) {
-	var req struct {
-		Seed uint64 `json:"seed"`
-	}
+	var req sim.NewGameParams
 	if err := json.Unmarshal([]byte(requestJSON), &req); err != nil {
 		return "", fmt.Errorf("newGame request: %w", err)
 	}
@@ -91,8 +93,12 @@ func (s *Session) NewGame(requestJSON string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	e, err := sim.NewGame(req, &b)
+	if err != nil {
+		return "", err
+	}
 	s.contentVersion = b.ContentVersion
-	s.engine = sim.NewGame(req.Seed)
+	s.engine = e
 	return marshal(s.view())
 }
 
@@ -139,7 +145,11 @@ func (s *Session) Command(commandJSON string) string {
 
 func (s *Session) view() View {
 	st := s.engine.State
-	return View{Tick: st.Tick, Day: st.Day(), Speed: st.Speed, CashCents: st.CashCents, ContentVersion: s.contentVersion}
+	p := st.Player()
+	return View{
+		Tick: st.Tick, Day: st.Day(), Speed: st.Speed, CashCents: p.CashCents,
+		AirlineName: p.Name, HomeCountry: p.Home, ContentVersion: s.contentVersion,
+	}
 }
 
 // Guard runs a bridge call and always returns a JSON string: the call's result, or
