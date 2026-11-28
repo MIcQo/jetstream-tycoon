@@ -2,6 +2,7 @@
 package sim
 
 import (
+	"github.com/MIcQo/jetstream-tycoon/sim/effects"
 	"github.com/MIcQo/jetstream-tycoon/sim/engine"
 	"github.com/MIcQo/jetstream-tycoon/sim/systems/ledger"
 )
@@ -10,6 +11,7 @@ import (
 // (TECH_DESIGN §3). The order is part of the game rules: changing it changes results.
 func Systems() []engine.System {
 	return []engine.System{
+		effects.System{}, // first: prune expired modifiers
 		ledger.System{},
 	}
 }

@@ -48,7 +48,7 @@ func TestDeterministicStateHash(t *testing.T) {
 
 func TestSystemsOrder(t *testing.T) {
 	systems := sim.Systems()
-	if len(systems) != 1 || systems[0].Name() != "ledger" {
+	if len(systems) != 2 || systems[0].Name() != "effects" || systems[1].Name() != "ledger" {
 		t.Fatalf("systems = %v", systems)
 	}
 }
