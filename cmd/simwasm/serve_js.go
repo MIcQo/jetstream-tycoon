@@ -28,6 +28,29 @@ func serve() {
 	api.Set("command", js.FuncOf(func(_ js.Value, args []js.Value) any {
 		return bridge.Guard(func() (string, error) { return session.Command(args[0].String()), nil })
 	}))
+	// save returns the save bytes as a Uint8Array, or an {"error"} JSON string.
+	api.Set("save", js.FuncOf(func(_ js.Value, _ []js.Value) any {
+		var data []byte
+		out := bridge.Guard(func() (string, error) {
+			var err error
+			data, err = session.Save()
+			return "", err
+		})
+		if out != "" {
+			return out
+		}
+		arr := js.Global().Get("Uint8Array").New(len(data))
+		js.CopyBytesToJS(arr, data)
+		return arr
+	}))
+	// load takes save bytes (Uint8Array) and returns the view JSON or {"error"}.
+	api.Set("load", js.FuncOf(func(_ js.Value, args []js.Value) any {
+		return bridge.Guard(func() (string, error) {
+			data := make([]byte, args[0].Length())
+			js.CopyBytesToGo(data, args[0])
+			return session.Load(data)
+		})
+	}))
 	js.Global().Set("jetstreamSim", api)
 	select {}
 }

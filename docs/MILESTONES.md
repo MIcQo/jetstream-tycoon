@@ -64,7 +64,7 @@ Each milestone has a goal, its scope (issues), exit criteria and the owning agen
 | 2.1 | Full state model (multi-airline from day one, per ADR-0020) + sorted-ID helpers | sim | sim | M |
 | 2.2 | Command framework: Validate/Apply, typed errors with i18n keys, registry, `setSpeed`, `newGame` | sim | sim | M |
 | 2.3 | Effects engine: Modifier/Action, `effects.Apply`, expiry, stacking order + tests | sim | sim | M |
-| 2.4 | Save format: MessagePack + zstd, schemaVersion, migrator framework + JSON debug export | sim | sim | M |
+| 2.4 | Save format: MessagePack + gzip (ADR-0024), schemaVersion, migrator framework + JSON debug export | sim | sim | M |
 | 2.5 | Bridge deltas: changed-entity tracking, MessagePack transferable buffers, 4/s UI throttle | sim | sim | M |
 | 2.6 | `SaveStore` (IndexedDB web, Filesystem Capacitor), autosave per day/pause/background, 3 rolling copies | web | frontend | M |
 | 2.7 | New-game flow UI: airline name, home country picker, difficulty (stored for M8.5) | web | frontend | S |
